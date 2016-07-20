@@ -7,7 +7,7 @@
 //
 // SETTINGS
 // Config...............Configuration and environment settings.
-// Global...............Gl  obally-available variables and settings/config.
+// Global...............Globally-available variables and settings/config.
 // Colors...............Manage our color palette in isolation.
 //
 // TOOLS
@@ -68,55 +68,15 @@
 // Shame................Temporary hacks.
 
 
-@import 'settings/settings.global';
-@import 'settings/settings.colors';
-
-@import 'tools/tools.functions';
-@import 'tools/tools.mixins';
-@import 'tools/tools.breakpoints';
-@import 'tools/tools.typography';
-
-@import 'generic/generic.normalize';
-@import 'generic/generic.box-sizing';
-@import 'generic/generic.reset';
-@import 'generic/generic.shared';
-@import 'generic/generic.keyframes';
-
-@import 'elements/elements.focus';
-@import 'elements/elements.page';
-@import 'elements/elements.headings';
-@import 'elements/elements.images';
-@import 'elements/elements.links';
-@import 'elements/elements.lists';
-@import 'elements/elements.tables';
-
-@import 'objects/objects.grid';
-@import 'objects/objects.list.inline';
-@import 'objects/objects.media';
-@import 'objects/objects.wrappers';
-
-@import 'components/components.buttons';
-@import 'components/components.icon-text';
-@import 'components/components.icons';
-@import 'components/components.images';
-@import 'components/components.links';
-@import 'components/components.logo';
-@import 'components/components.modals';
-@import 'components/components.nav.primary';
-@import 'components/components.page.content';
-@import 'components/components.page.header';
-@import 'components/components.page.footer';
-@import 'components/components.form.radio-picker';
-
-@import 'utilities/utilities.align';
-@import 'utilities/utilities.margins';
-@import 'utilities/utilities.text';
-@import 'utilities/utilities.visibility';
-@import 'utilities/utilities.widths';
-@import 'utilities/utilities';
+@import 'settings';
+@import 'tools';
+@import 'generic';
+@import 'elements';
+@import 'objects';
+@import 'components';
+@import 'utilities';
 
 @import 'scope.prose';
 
 @import 'theming';
-
 @import 'shame';

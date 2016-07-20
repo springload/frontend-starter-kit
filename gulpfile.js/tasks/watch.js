@@ -6,8 +6,8 @@ var bs = require('browser-sync').create('main');
 gulp.task('watch', ['js', 'css'], function() {
     bs.init({
         open: false,
-        server: config.paths.views
-        //proxy: 'example.com:1337'
+        //server: config.paths.views
+        proxy: 'example.com:1337'
     });
 
     var justReload = [
