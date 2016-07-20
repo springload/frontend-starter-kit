@@ -68,51 +68,52 @@
 // Shame................Temporary hacks.
 
 
-@import 'settings.global';
-@import 'settings.colors';
+@import 'settings/settings.global';
+@import 'settings/settings.colors';
 
-@import 'tools.functions';
-@import 'tools.mixins';
-@import 'tools.breakpoints';
-@import 'tools.typography';
+@import 'tools/tools.functions';
+@import 'tools/tools.mixins';
+@import 'tools/tools.breakpoints';
+@import 'tools/tools.typography';
 
-@import 'generic.normalize';
-@import 'generic.box-sizing';
-@import 'generic.reset';
-@import 'generic.shared';
-@import 'generic.keyframes';
+@import 'generic/generic.normalize';
+@import 'generic/generic.box-sizing';
+@import 'generic/generic.reset';
+@import 'generic/generic.shared';
+@import 'generic/generic.keyframes';
 
-@import 'elements.focus';
-@import 'elements.headings';
-@import 'elements.images';
-@import 'elements.links';
-@import 'elements.lists';
-@import 'elements.page';
+@import 'elements/elements.focus';
+@import 'elements/elements.page';
+@import 'elements/elements.headings';
+@import 'elements/elements.images';
+@import 'elements/elements.links';
+@import 'elements/elements.lists';
+@import 'elements/elements.tables';
 
-@import 'objects.grid';
-@import 'objects.list-inline';
-@import 'objects.media';
-@import 'objects.wrappers';
+@import 'objects/objects.grid';
+@import 'objects/objects.list.inline';
+@import 'objects/objects.media';
+@import 'objects/objects.wrappers';
 
-@import 'components.buttons';
-@import 'components.icon-text';
-@import 'components.icons';
-@import 'components.images';
-@import 'components.links';
-@import 'components.logo';
-@import 'components.modals';
-@import 'components.nav-primary';
-@import 'components.page-content';
-@import 'components.page-header';
-@import 'components.page-footer';
-@import 'components.radio-picker';
+@import 'components/components.buttons';
+@import 'components/components.icon-text';
+@import 'components/components.icons';
+@import 'components/components.images';
+@import 'components/components.links';
+@import 'components/components.logo';
+@import 'components/components.modals';
+@import 'components/components.nav.primary';
+@import 'components/components.page.content';
+@import 'components/components.page.header';
+@import 'components/components.page.footer';
+@import 'components/components.form.radio-picker';
 
-@import 'utilities.align';
-@import 'utilities.margins';
-@import 'utilities.text';
-@import 'utilities.visibility';
-@import 'utilities.widths';
-@import 'utilities';
+@import 'utilities/utilities.align';
+@import 'utilities/utilities.margins';
+@import 'utilities/utilities.text';
+@import 'utilities/utilities.visibility';
+@import 'utilities/utilities.widths';
+@import 'utilities/utilities';
 
 @import 'scope.prose';
 
