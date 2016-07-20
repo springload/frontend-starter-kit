@@ -65,18 +65,15 @@
 // OTHERS
 // Prose................Set up a new styling context for long-format text.
 // Theming..............Theming styles.
-// Shame................Temporary hacks.
 
-
-@import 'settings';
-@import 'tools';
-@import 'generic';
-@import 'elements';
-@import 'objects';
-@import 'components';
-@import 'utilities';
+@import 'settings/index';
+@import 'tools/index';
+@import 'generic/index';
+@import 'elements/index';
+@import 'objects/index';
+@import 'components/index';
+@import 'utilities/index';
 
 @import 'scope.prose';
 
 @import 'theming';
-@import 'shame';

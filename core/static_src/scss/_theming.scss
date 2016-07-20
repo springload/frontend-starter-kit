@@ -12,17 +12,17 @@ $themes: (
     $color: save-nth-list-value($colors, 1);
 
     .t-#{$alias} {
-        & .u-color-current {
+        & .u-current-color {
             color: $color;
         }
 
-        & .u-color-current\:hover {
+        & .u-current-color\:hover {
             @include hover {
                 color: $color;
             }
         }
 
-        & .u-background-color-current {
+        & .u-current-background-color {
             background-color: $color;
         }
     }
