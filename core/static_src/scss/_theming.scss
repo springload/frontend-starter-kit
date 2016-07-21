@@ -2,42 +2,67 @@
 // Follwing themes will override the default
 
 $themes: (
-    'orange': (#f38231),
-    'green': (#1c650c),
-    'blue': (#095576)
+    'pink': (
+        theme-color: #f5b1d8,
+        text-color: #333333
+    ),
+    'green': (
+        theme-color: #A5CC8E,
+        text-color: #333333
+    ),
+    'blue': (
+        theme-color: #509AC7,
+        text-color: #333333
+    )
 );
 
 @each $alias, $colors in $themes {
 
-    $color: save-nth-list-value($colors, 1);
+    $theme-color: map-get($colors, theme-color);
+    $text-color: map-get($colors, text-color);
 
     .t-#{$alias} {
-        & .u-current-color {
-            color: $color;
+
+        .u-current-color {
+            color: $theme-color;
         }
 
-        & .u-current-color\:hover {
+        .u-current-color\:hover {
             @include hover {
-                color: $color;
+                color: $theme-color;
             }
         }
 
-        & .u-current-background-color {
-            background-color: $color;
+        // Only use the --bg modifier when you want to apply background
+        // color to the container you have set the theme class on.
+        // eg. <div class-"t-green t-green--bg"></div>
+        &.t-#{$alias}--bg,
+        .u-current-bg-color {
+            background-color: $theme-color;
         }
+
+        .u-current-text-color {
+            color: $text-color;
+        }
+
     }
 
     .u-color-#{$alias} {
-        color: $color;
+        color: $theme-color;
     }
 
     .u-color-#{$alias}\:hover {
         @include hover {
-            color: $color;
+            color: $theme-color;
         }
     }
 
-    & .u-background-color-#{$alias} {
-        background-color: $color;
+    .u-bg-color-#{$alias} {
+        background-color: $theme-color;
     }
+
+    .u-text-color-#{$alias} {
+        color: $text-color;
+    }
+
 }
