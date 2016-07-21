@@ -11,9 +11,9 @@
         text-align: left;
     }
 
-    &:after{
-        content: '';
+    &:after {
         display: inline-block;
         width: 100%;
+        content: '';
     }
 }

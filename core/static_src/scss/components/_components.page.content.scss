@@ -1,5 +1,7 @@
 // Main content max width?
-.site-width {}
+.site-width {
+    max-width: $breakpoint-xlarge;
+}
 
 // Vertical spacing
 .section {

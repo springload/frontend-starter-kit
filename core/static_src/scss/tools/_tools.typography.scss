@@ -2,13 +2,9 @@
 
     @if ($family == 'sans-serif') {
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
-
-    @elseif ($family == 'serif') {
+    } @elseif ($family == 'serif') {
         font-family: 'Times New Roman', serif;
-    }
-
-    @else {
+    } @else {
         @warn '#{$family} is not a valid font-family.'
     }
 
