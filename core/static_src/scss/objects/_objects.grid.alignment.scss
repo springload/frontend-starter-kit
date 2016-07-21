@@ -1,0 +1,11 @@
+// -----------------------------------------------------------------------------
+// Grid item alignment modifiers - they are top aligned by default
+// -----------------------------------------------------------------------------
+
+.grid--middle > * {
+    vertical-align: middle;
+}
+
+.grid--bottom > * {
+    vertical-align: bottom;
+}

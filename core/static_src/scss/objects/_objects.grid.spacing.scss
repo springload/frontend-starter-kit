@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// Universal Grid spacing
+// -----------------------------------------------------------------------------
+
+.grid--row-spacing {
+    margin-bottom: $spacing-grid;
+
+    & > * {
+        margin-bottom: $spacing-grid;
+    }
+}
+
+.grid--col-spacing {
+    margin-left: -$spacing-grid;
+
+    > * {
+        padding-left: $spacing-grid;
+    }
+}

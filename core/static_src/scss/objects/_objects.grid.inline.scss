@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// Inline Grid
+// -----------------------------------------------------------------------------
+
+.grid {
+    @include clearfix;
+    margin:  0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+    .grid > * {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        font-size: medium; // Font-size medium reset the block to the context of body (ie, 16px)
+        text-justify: auto;
+    }

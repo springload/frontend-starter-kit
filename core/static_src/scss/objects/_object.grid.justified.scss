@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// Justify grid - push items apart from each other
+// -----------------------------------------------------------------------------
+
+.grid--justified,
+.grid--polar {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+
+    > * {
+        text-align: left;
+    }
+
+    &:after{
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+}
