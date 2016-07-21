@@ -37,6 +37,8 @@ $padding-btn: $base-spacing-unit;
     transition: $base-transition;
 
     white-space: nowrap;                // [7]
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     padding-top: 0;                     // [4]
     padding-right: $padding-btn;        // [8]
@@ -51,6 +53,13 @@ $padding-btn: $base-spacing-unit;
 
     font-size: rem(24);
     font-weight: $font-weight-bold;
+
+    // Ensures that buttons with too much text don't overflow
+    // past page width on smaller screens. This ensures text
+    // is truncated with no word wrap and text overflow ellipsis
+    @include small {
+        max-width: 100%;
+    }
 
     &,
     &:hover {
