@@ -49,9 +49,7 @@
 // add arrow to block element
 @mixin arrow($orientation: 'up', $color: #000, $size: 1em) {
 
-    //& {
-    //    position: relative;
-    //}
+    position: relative;
 
     &:after {
         position: absolute;

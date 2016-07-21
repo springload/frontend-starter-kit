@@ -5,7 +5,7 @@
 .grid--row-spacing {
     margin-bottom: $spacing-grid;
 
-    & > * {
+    > * {
         margin-bottom: $spacing-grid;
     }
 }

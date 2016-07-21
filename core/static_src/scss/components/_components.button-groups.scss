@@ -12,49 +12,38 @@ $button-margin: .5em;
     border-spacing: $button-margin 0;
     table-layout: fixed;
 
-    & > * {
+    > * {
         display: table-cell;
         float: none;
         width: 1%;
     }
 }
 
-.btn-group {
-    > * {
-        display: inline-block;
-        margin-right: $button-margin;
-        margin-bottom: 0;
-        text-align: center;
-        vertical-align: middle;
+.btn-group > * {
 
-        &:last-child {
-            margin-right: 0;
-        }
+    display: inline-block;
+    margin-right: $button-margin;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
+.btn-group--block > * {
+    width: 100%;
+    margin-right: 0;
+
+    &:not(:last-child) {
+        margin-bottom: $button-margin * 2;
     }
 }
 
-    .btn-group--block > * {
-        width: 100%;
-        margin-right: 0;
-
-        &:not(:last-child) {
-            margin-bottom: $button-margin * 2;
-        }
-    }
-
-    .btn-group--justified {
-        @include justify-table;
-
-        white-space: nowrap;
-    }
-
-
-@include small {
-    .btn-group--justified\@small {
-        @include justify-table;
-    }
-
-    .btn-group--block\@small > * {
+.btn-group--block\@small > * {
+    @include small {
         width: 100%;
         margin-right: 0;
         margin-bottom: $spacing;
@@ -63,18 +52,31 @@ $button-margin: .5em;
             margin-bottom: 0;
         }
     }
+}
 
-    .btn-group--reverse\@small {
+.btn-group--justified {
+    @include justify-table;
+
+    white-space: nowrap;
+}
+
+.btn-group--justified\@small {
+    @include small {
+        @include justify-table;
+    }
+}
+
+.btn-group--reverse\@small {
+    @include small {
         display: flex;
-
         flex-direction: column-reverse;
 
-        & > * {
+        > * {
             margin-top: $button-margin * 2;
             margin-bottom: 0;
         }
 
-        & > *:last-child {
+        > *:last-child {
             margin-top: 0;
         }
     }
