@@ -1,3 +1,7 @@
+// -----------------------------------------------------------------------------
+// Inline Grid
+// -----------------------------------------------------------------------------
+
 .grid {
     @include clearfix;
     margin:  0;
@@ -15,36 +19,64 @@
     }
 
 
-    // Push items apart from each other
-    .grid--justified,
-    .grid--polar {
-        text-align: justify;
+// -----------------------------------------------------------------------------
+// Justify grid - push items apart from each other
+// -----------------------------------------------------------------------------
+
+.grid--justified,
+.grid--polar {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+
+    > * {
+        text-align: left;
     }
 
-    .grid--row-spacing {
+    &:after{
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+// Grid spacing
+// -----------------------------------------------------------------------------
+
+.grid--row-spacing {
+    margin-bottom: $spacing-grid;
+
+    & > * {
         margin-bottom: $spacing-grid;
-
-        & > * {
-            margin-bottom: $spacing-grid;
-        }
     }
+}
 
-    .grid--col-spacing {
-        margin-left: -$spacing-grid;
+.grid--col-spacing {
+    margin-left: -$spacing-grid;
 
-        > * {
-            padding-left: $spacing-grid;
-        }
+    > * {
+        padding-left: $spacing-grid;
     }
+}
 
-    .grid--middle > * {
-        vertical-align: middle;
-    }
 
-    .grid--bottom > * {
-        vertical-align: bottom;
-    }
+// -----------------------------------------------------------------------------
+// Grid item alignment modifiers - they are top aligned by default
+// -----------------------------------------------------------------------------
 
+.grid--middle > * {
+    vertical-align: middle;
+}
+
+.grid--bottom > * {
+    vertical-align: bottom;
+}
+
+
+// -----------------------------------------------------------------------------
+// Float grid
+// -----------------------------------------------------------------------------
 
 .grid-float {
     @include clearfix;
@@ -56,18 +88,13 @@
     }
 }
 
-    .grid-float--row-spacing {
-        margin-bottom: $spacing-grid;
 
-        & > * {
-            margin-bottom: $spacing-grid;
-        }
-    }
+// -----------------------------------------------------------------------------
+// Flex grid
+// -----------------------------------------------------------------------------
 
-    .grid-float--col-spacing {
-        margin-left: -$spacing-grid;
-
-        > * {
-            padding-left: $spacing-grid;
-        }
-    }
+.grid-flex {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
