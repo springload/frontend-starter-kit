@@ -1,0 +1,19 @@
+// Page gutters
+.gutters {
+    padding-right: $base-padding;
+    padding-left: $base-padding;
+}
+
+.gutters\@small {
+    @include small {
+        padding-right: $base-padding;
+        padding-left: $base-padding;
+    }
+}
+
+.gutters--off\@small {
+    @include small {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

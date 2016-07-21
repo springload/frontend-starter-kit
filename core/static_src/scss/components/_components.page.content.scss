@@ -1,11 +1,39 @@
+// Main content max width?
+.site-width {}
+
+// Vertical spacing
+.section {
+    padding-top: $base-padding;
+    padding-bottom: $base-padding;
+}
+
+.section--stacked {
+    & + & {
+        padding-top: 0;
+    }
+}
+
+.section--no-top {
+    padding-top: 0;
+}
+
+.section--no-bottom {
+    padding-bottom: 0;
+}
+
+
+// TODO we have object.wrappers and components.page.content
+// Which one do we want to use for layout + spacing and why?
 .page-content {
-    padding: $base-padding;
+    padding-top: $base-padding;
+    padding-bottom: $base-padding;
 
     & + & {
         padding-top: 0;
     }
 }
-.page-content--no-vertical-padding {
+
+.page-content--no-top {
     padding-top: 0;
     padding-bottom: 0;
 }

@@ -12,23 +12,21 @@
 // </span>
 
 
-.icon-text {
-    > svg {
-        width: 1.25em;
-        height: 1.25em;
-        vertical-align: middle;
-        margin-top: -.125em;
-        margin-right: .25em;
+.icon-text > svg {
+    width: 1.25em;
+    height: 1.25em;
+    vertical-align: middle;
+    margin-top: -.125em;
+    margin-right: .25em;
 
-        &:last-child {
-            margin-right: 0;
-            margin-left: .25em;
-        }
+    &:last-child {
+        margin-right: 0;
+        margin-left: .25em;
     }
 }
 
-    .icon-text--small > svg {
-        width: 1em;
-        height: 1em;
-        margin-top: -.125em;
-    }
+.icon-text--small > svg {
+    width: 1em;
+    height: 1em;
+    margin-top: -.125em;
+}

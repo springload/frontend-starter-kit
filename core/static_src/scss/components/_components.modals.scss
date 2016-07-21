@@ -113,7 +113,7 @@ $color-modal-content-bg: #fff;
     margin-top: $spacing-half;
     margin-right: $spacing;
 
-    & > .i {
+    > .i {
         width: 20px;
         height: 20px;
 
@@ -127,11 +127,11 @@ $color-modal-content-bg: #fff;
 
 // video modals
 .modal--video {
-    & .modal__overlay {
+    .modal__overlay {
         background: transparentize($color-black, .1);
     }
 
-    & .modal__content {
+    .modal__content {
         width: 100%;
         padding: 0;
 

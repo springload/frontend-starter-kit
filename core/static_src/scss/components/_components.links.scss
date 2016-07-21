@@ -2,7 +2,7 @@
     display: inline-block;
     line-height: 1;
 
-    & > .i {
+    > .link-social__icon {
         width: 20px;
         height: 20px;
     }
@@ -13,6 +13,7 @@
         padding: .25em .25em .125em;
     }
 
+
 .link {
     transition: $base-transition;
 
@@ -21,30 +22,30 @@
     }
 }
 
-    .link--tag {
-        font-weight: $font-weight-bold;
-        font-size: rem(18);
-        line-height: 1.2;
+.link--tag {
+    font-weight: $font-weight-bold;
+    font-size: rem(18);
+    line-height: 1.2;
 
-        @include medium {
-            font-size: rem(21);
-            line-height: 1.1;
-        }
-
-        @include large {
-            font-size: rem(23);
-            line-height: 1.05;
-        }
+    @include medium {
+        font-size: rem(21);
+        line-height: 1.1;
     }
 
-
-    .link--underline {
-        box-shadow: inset 0 -.062em 0 $color-white;
-
-        @include hover {
-            box-shadow: inset 0 -.062em 0 $color-page-text;
-        }
+    @include large {
+        font-size: rem(23);
+        line-height: 1.05;
     }
+}
+
+
+.link--underline {
+    box-shadow: inset 0 -.062em 0 $color-white;
+
+    @include hover {
+        box-shadow: inset 0 -.062em 0 $color-page-text;
+    }
+}
 
 .faux-link--underline {
     transition: $base-transition;

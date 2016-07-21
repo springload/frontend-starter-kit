@@ -7,13 +7,13 @@
 //
 // <div class="radio-picker">
 //     <label>
-//         <input class="radio-picker__input" type="radio" name="" checked="checked">
+//         <input class="radio-picker__input" type="radio" name="" checked>
 //         <span class="radio-picker__body">
 //             Rich context goes here!
 //         </span>
 //     </label>
 //     <label>
-//         <input class="radio-picker__input" type="radio" name="" checked="checked">
+//         <input class="radio-picker__input" type="radio" name="">
 //         <span class="radio-picker__body">
 //             Rich context goes here!
 //         </span>
@@ -48,26 +48,26 @@ $color-white-opacity-01: rgba(0, 0, 0, .1);
     opacity: 0;
     filter: alpha(opacity=0);
     appearance: none;
-
     -webkit-appearance: none;
 
     &:focus {
         outline: none;
     }
 
-    //
-    //    Note that :checked isn't supported by IE8 so you'll need to implement
-    //    some JavaScript to add the `.checked` class to the input.
-    //
-    .checked + .radio-picker__body {
-        background-color: $color-radio-picker-bg-checked;
-        border-color: $color-radio-picker-border-checked;
-        box-shadow: 0 1px 3px $color-white-opacity-01;
-    }
-
     &:hover + .radio-picker__body {
         background-color: $color-radio-picker-bg-hover;
     }
+}
+
+//
+//  Note that :checked isn't supported by IE8 so you'll need to implement
+//  some JavaScript to add the `.checked` class to the input.
+//
+.radio-picker__input:checked + .radio-picker__body,
+.radio-picker__input--checked + .radio-picker__body {
+    background-color: $color-radio-picker-bg-checked;
+    border-color: $color-radio-picker-border-checked;
+    box-shadow: 0 1px 3px $color-white-opacity-01;
 }
 
 .radio-picker__body {
