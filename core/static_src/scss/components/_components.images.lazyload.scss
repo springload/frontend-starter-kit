@@ -1,27 +1,18 @@
 // ----------------------------------------------------------------------------
 // Lazyloading images
+//
+// To makes sure that any image captions get faded in alongside the lazyloaded
+// image this class and any data hooks should be applied to that element also.
+//
 // ----------------------------------------------------------------------------
 
 .lazyload,
 .lazyloading {
     opacity: 0;
-
-    ~ div {
-        opacity: 0;
-    }
-
-    .no-js &,
-    .no-js & ~ div {
-        opacity: 1;
-    }
 }
 
-.lazyloaded {
+.lazyloaded,
+.no-js .lazyload {
     opacity: 1;
     transition: opacity .45s;
-
-    ~ div {
-        transition: opacity .45s;
-        opacity: 1;
-    }
 }

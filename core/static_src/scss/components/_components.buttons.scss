@@ -95,3 +95,9 @@ $padding-btn: $base-spacing-unit;
 .btn--block {
     width: 100%;
 }
+
+.btn--block\@small {
+    @include small {
+        width: 100%;
+    }
+}
