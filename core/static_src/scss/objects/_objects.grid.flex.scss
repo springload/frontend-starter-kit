@@ -1,5 +1,13 @@
 // -----------------------------------------------------------------------------
 // Flex grid
+//
+// Be weary of browser support when using this http://caniuse.com/#search=flex
+// Make sure you bake in a fallback, either a no-flexbox detection with js eg:
+// https://github.com/springload/nzredcross/blob/master/core/static_src/js/site.js#L43
+// Or IE specific inline-block fallback? Dependant on your browser support,
+// check out this list of issues and workarounds:
+// https://github.com/philipwalton/flexbugs
+//
 // -----------------------------------------------------------------------------
 
 .grid-flex {

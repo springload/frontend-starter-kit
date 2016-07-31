@@ -165,3 +165,9 @@ export function initFeatureDetection() {
     const touchClass = 'ontouchstart' in window ? ' touch' : ' no-touch';
     document.documentElement.className += touchClass;
 }
+
+export function initFlexboxSupport() {
+    const docStyles = document.documentElement.style;
+    const flexClass = ('flexWrap' in docStyles) || ('WebkitFlexWrap' in docStyles) || ('msFlexWrap' in docStyles) ? ' flexbox' : ' no-flexbox';
+    document.documentElement.className += flexClass;
+}

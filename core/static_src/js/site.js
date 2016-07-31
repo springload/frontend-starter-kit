@@ -12,6 +12,7 @@ import {
     // addYouTubePlayerAPI,
     tabFocus,
     initFeatureDetection,
+    initFlexboxSupport,
 } from './utils';
 
 const TRACK_PERFORMANCE = true && !!console.time;
@@ -24,6 +25,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 initErrorTracking();
 initFeatureDetection();
+initFlexboxSupport();
 
 class Site {
     constructor() {
