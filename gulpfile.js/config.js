@@ -10,7 +10,7 @@ module.exports = {
 
     paths: {
         appName: 'site.js',
-        sass: path.join(sourcePath, 'scss'),
+        scss: path.join(sourcePath, 'scss'),
         css: path.join(distPath, 'css'),
         jsSrc: path.join(sourcePath, 'js'),
         js: path.join(distPath, 'js'),

@@ -16,7 +16,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var critical = require('critical');
 
 gulp.task('css', function() {
-    return gulp.src(path.join( config.paths.sass, '**', "*.scss" ), {base: config.paths.sass})
+    return gulp.src(path.join( config.paths.scss, '**', "*.scss" ), {base: config.paths.scss})
         .pipe(config.prod ? gutil.noop() : sourcemaps.init())
             .pipe(sass())
             .on('error', function handleError(err) {
