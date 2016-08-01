@@ -62,6 +62,8 @@ gulp.task('critical:css', function (cb) {
 // CSS Reporter
 // ----------------------------------------------------------------------------
 
+// Helpful link to decipher these results:
+// http://csswizardry.com/2016/06/improving-your-css-with-parker/
 gulp.task('report:css', function() {
     return gulp.src( path.join(config.paths.css, '**', '*.css') )
         .pipe(parker({
