@@ -22,7 +22,7 @@
 #### JS
 
 - [ ] JS code matches the code style guide via `npm run lint`.
-- [ ] JS code is written in ES6.
+- [ ] JS code is written in ES2015 (ES6), ES2016 (ES7), or later.
 - [ ] Data attributes are used to select elements, not classes or ids or tags.
 - [ ] Polyfills are included if appropriate (Respond.js, `fetch`, `babel-polyfill`, etc).
 
