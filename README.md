@@ -112,7 +112,7 @@ The CI tests require the following setup. Some of those might already be done wi
 ```sh
 nvm install
 npm install
-npm install -g david depcheck hyperlink
+npm install -g david hyperlink
 ```
 
 Use `npm run test:ci` as part of the test pipeline.
