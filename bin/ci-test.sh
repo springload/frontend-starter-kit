@@ -56,6 +56,5 @@ hyperlink "http://example.com/"
 
 ## Dependencies checking.
 david || echo ok
-depcheck || echo ok
 
 exit 0
