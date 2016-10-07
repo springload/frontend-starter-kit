@@ -1,6 +1,6 @@
 # Project launch checklist
 
-> Handy things to check when launching a project.
+> Handy things to check when building a website or web app.
 
 > **This checklist is where we want to be**, not necessarily where we always are. Ideally we would want as many of those line items to already be taken care of by our starter kit and other boilerplates. In practice, it is not that simple and we need such a checklist to make sure that we deliver top-notch experiences.
 
@@ -15,6 +15,8 @@
 ```
 
 ## How to use this
+
+> This is meant to be used when a site goes live, but do go through it sooner to make sure there won't be too many surprises.
 
 1. It will take you **around 2 hours** to go through this list if you've done it before. Make sure you have the time. Ask for support.
 2. Open the [raw markdown files](#checklists), copy the content of the checklist sections and paste it into a new GitHub issue on the relevant project.
