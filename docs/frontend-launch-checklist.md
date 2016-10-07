@@ -87,13 +87,13 @@
 
 ### Testing
 
+- [ ] Site tested in [all relevant browsers and devices](https://github.com/springload/frontend-starter-kit/tree/master/docs#browser--device-support).
 - [ ] Site is visually tested on non-retina, low contrast screens.
 - [ ] Relevant unit tests are written.
 - [ ] Unit tests pass (`npm run test:unit`).
 - [ ] Relevant integration tests are written.
 - [ ] Integration tests pass (`npm run test:integration`).
 - [ ] Site works with JavaScript turned off, or the sections that do not work are [indicated to the user via messages in `<noscript>` tags](https://github.com/springload/frontend-starter-kit/blob/master/core/templates/core/snippets/enable-javascript.html), styled according to the site's branding.
-- [ ] Site tested in [all relevant browsers and devices](https://github.com/springload/frontend-starter-kit/tree/master/docs#browser--device-support) (including IE if relevant).
 - [ ] ['Upgrade your browser'](https://github.com/springload/frontend-starter-kit/blob/master/core/templates/core/snippets/outdated-browser.html) message displayed on unsupported browsers.
 - [ ] Run site url through the Facebook debugger (https://developers.facebook.com/tools/debug/) to check it will appear correctly if shared.
 - [ ] Run the link checker [`hyperlink -r http://example.com/`](https://github.com/springload/frontend-starter-kit/blob/master/docs/useful-tooling.md#hyperlink).
@@ -134,7 +134,7 @@
 
 ### Accessibility
 
-- [ ] Roles are assigned to basic site sections.
+- [ ] Roles (ARIA landmarks) are assigned to basic site sections.
 header - `role="banner"`, main content - `role="main"`, footer - `role="contentinfo"`
 - [ ] All images must have appropriate alt tags - extra great if you include all text that appears eg English and Māori translation text in a lot of company logos in NZ. [empty `alt=""` can be appropriate](http://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/).
 - [ ] If relevant, icons include an accessible label with the `<title>` SVG tag.
