@@ -79,40 +79,50 @@
 
 ### Build systems
 
+- [ ] No compiled code in the `master` branch (check the project's `.gitignore` file to make sure no `static/`, `dist/` files are committed in.
+
+#### Gulp asset pipeline configuration
+
 - [ ] Use [Pleeease/Autoprefixer](http://pleeease.io) for all styles.
-- [ ] No compiled code in the `master` branch.
+- [ ] SVG icons are compressed in production.
+- [ ] CSS & SVG is minified and concatenated in production.
+
+#### Webpack / Browserify configuration
+
 - [ ] JS development aids are removed in production.
 - [ ] Source maps are removed in production.
-- [ ] SVG icons are compressed in production.
+- [ ] JS is minified and concatenated in production.
 
 ### Testing
 
 - [ ] Site tested in [all relevant browsers and devices](https://github.com/springload/frontend-starter-kit/tree/master/docs#browser--device-support).
 - [ ] Site is visually tested on non-retina, low contrast screens.
+- [ ] Site works with JavaScript turned off, or the sections that do not work are [indicated to the user via messages in `<noscript>` tags](https://github.com/springload/frontend-starter-kit/blob/master/core/templates/core/snippets/enable-javascript.html), styled according to the site's branding.
+- [ ] ['Upgrade your browser'](https://github.com/springload/frontend-starter-kit/blob/master/core/templates/core/snippets/outdated-browser.html) message displayed on unsupported browsers.
+
+#### Automated tests
+
 - [ ] Relevant unit tests are written.
 - [ ] Unit tests pass (`npm run test:unit`).
 - [ ] Relevant integration tests are written.
 - [ ] Integration tests pass (`npm run test:integration`).
-- [ ] Site works with JavaScript turned off, or the sections that do not work are [indicated to the user via messages in `<noscript>` tags](https://github.com/springload/frontend-starter-kit/blob/master/core/templates/core/snippets/enable-javascript.html), styled according to the site's branding.
-- [ ] ['Upgrade your browser'](https://github.com/springload/frontend-starter-kit/blob/master/core/templates/core/snippets/outdated-browser.html) message displayed on unsupported browsers.
 - [ ] Run site url through the Facebook debugger (https://developers.facebook.com/tools/debug/) to check it will appear correctly if shared.
-- [ ] Run the link checker [`hyperlink -r http://example.com/`](https://github.com/springload/frontend-starter-kit/blob/master/docs/useful-tooling.md#hyperlink).
+- [ ] Run the link checker [`hyperlink -r http://example.com/`](https://github.com/springload/frontend-starter-kit/blob/master/docs/useful-tooling.md#hyperlink) to find & fix broken links.
 
 ### Performance
 
-- [ ] All static assets (CSS, JS, SVG, JSON) are minified and concatenated in production.
-- [x] TODO - Single pages are less than the allocated performance budget (unless there's a very good reason not to).
-- [ ] Run through [Google PageSpeed](https://developers.google.com/speed/pagespeed/), [GTmetrix](https://gtmetrix.com/).
-- [x] TODO – Critical CSS is extracted and inlined in the HTML file if relevant.
+- [ ] The site has a score above 90 in [Google PageSpeed](https://developers.google.com/speed/pagespeed/) and [GTmetrix](https://gtmetrix.com/).
 - [ ] Web fonts should be kept to a minimum (talk with designers).
 - [ ] Subset webfonts to remove unused characters (http://www.subsetter.com/, https://github.com/miguelsousa/source-sans-pro-subset).
 - [ ] Font files are available in WOFF, WOFF2, and EOT/OTF if relevant (IE8 / Android Stock Browser).
 - [ ] Static files are cache-busted with a query parameter (eg. `?v=4hjk54j6`) in production (JS/CSS/etc).
+- [x] TODO - Single pages are less than the allocated performance budget (unless there's a very good reason not to).
+- [x] TODO – Critical CSS is extracted and inlined in the HTML file if relevant.
 
 ### Deployment
 
 - [ ] The project is [`shrinkwrapped`](https://github.com/springload/frontend-starter-kit/#adding-and-upgrading-dependencies) to pin its dependencies.
-- [ ] The build service / CI is using `NODE_ENV=production` for compilation tasks.
+- [ ] The build service / CI is using `NODE_ENV=production` for compilation tasks via the `npm run dist` command.
 - [ ] CI runs the CI tests (`npm run test:ci`, or `npm run test`), and the build breaks if they fail.
 
 ### Semantics
