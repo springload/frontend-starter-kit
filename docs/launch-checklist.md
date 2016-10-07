@@ -50,6 +50,7 @@
 
 #### Tests
 
+- [ ] Site tested in [all relevant browsers and devices](https://github.com/springload/frontend-starter-kit/tree/master/docs#browser--device-support) by multiple people, including the client.
 - [ ] Spelling and grammar checked thoroughly (copy/paste the site's content in Google Docs, or better yet get someone else on the team or from the client to do it for you).
 
 #### Monitoring
