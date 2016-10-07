@@ -5,7 +5,7 @@
 ### Code quality
 
 - [ ] Clean up commented/unnecessary code.
-- [ ] Check all TODO comments are still relevant.
+- [ ] Check all TODO comments in the code are still relevant.
 - [ ] Debugging console logs and breakpoints removed.
 
 ####  CSS
@@ -32,14 +32,14 @@
 - [ ] Use absolute paths for all URLS. `/thing/` not `thing/`.
 - [ ] Use HTTPS, or exclude protocol from URLs `//foo.com/` not `http://foo.com/`.
 - [ ] [HTML validation](https://validator.w3.org/nu/#textarea) passes.
-- [ ] Links do not use `target="_blank"`, or use [`rel="noopener`](https://mathiasbynens.github.io/rel-noopener/) if they need to.
+- [ ] Links with `target="_blank"` use [`rel="noopener`](https://mathiasbynens.github.io/rel-noopener/).
+- [ ] Links from user-submitted (untrusted) content use [`rel="nofollow`](https://support.google.com/webmasters/answer/96569)
 
-#### Images
+### Images
 
 - [ ] Images use the right file format (SVG if possible, PNG for graphics, JPG for pictures).
 - [ ] All images with the `img` tag define `width` and `height` attributes to prevent content reflows when the images load.
 - [ ] Icons are built using [SVG icons](https://github.com/springload/frontend-starter-kit/blob/master/core/templates/core/snippets/icon.html), with appropriate fallback if necessary.
-- [ ] All of the images are [losslessly optimized with ImageOptim](https://imageoptim.com/).
 
 ### Functional completeness
 
@@ -51,7 +51,6 @@
 - [ ] Platform-specific ([Apple](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html), Android, Windows, etc) meta tags and favicons are added and checked with the [Favicon checker](https://realfavicongenerator.net/favicon_checker).
 - [ ] Ensure meta tags, Open Graph tags, Twitter card tags, and descriptions are set.
 - [ ] Ensure the social meta tags only use a default sharing image if there is no page-specific image to use.
-- [ ] Google Search Console / Webmaster Tools is configured on the project.
 - [ ] Long-running actions (AJAX calls) trigger a spinner or other loading message in the UI.
 - [ ] UI text uses correct typographic marks (`’` instead of `'`, `“”` instead of `""`).
 - [ ] Significant UI states (tabs, modals, etc) should be tracked in the URL via query parameter or the hash.
@@ -98,33 +97,23 @@
 - [ ] ['Upgrade your browser'](https://github.com/springload/frontend-starter-kit/blob/master/core/templates/core/snippets/outdated-browser.html) message displayed on unsupported browsers.
 - [ ] Run site url through the Facebook debugger (https://developers.facebook.com/tools/debug/) to check it will appear correctly if shared.
 - [ ] Run the link checker [`hyperlink -r http://example.com/`](https://github.com/springload/frontend-starter-kit/blob/master/docs/useful-tooling.md#hyperlink).
-- [ ] Spelling and grammar checked thoroughly (copy/paste the site's content in Google Docs, or better yet get someone else on the team or from the client to do it for you).
 
 ### Performance
 
 - [ ] All static assets (CSS, JS, SVG, JSON) are minified and concatenated in production.
 - [x] TODO - Single pages are less than the allocated performance budget (unless there's a very good reason not to).
 - [ ] Run through [Google PageSpeed](https://developers.google.com/speed/pagespeed/), [GTmetrix](https://gtmetrix.com/).
-- [ ] Use [SpeedCurve](https://speedcurve.com) to configure the performance monitoring on the site's most important page (homepage?).
 - [x] TODO – Critical CSS is extracted and inlined in the HTML file if relevant.
 - [ ] Web fonts should be kept to a minimum (talk with designers).
 - [ ] Subset webfonts to remove unused characters (http://www.subsetter.com/, https://github.com/miguelsousa/source-sans-pro-subset).
 - [ ] Font files are available in WOFF, WOFF2, and EOT/OTF if relevant (IE8 / Android Stock Browser).
 - [ ] Static files are cache-busted with a query parameter (eg. `?v=4hjk54j6`) in production (JS/CSS/etc).
 
-#### Server configuration
-
-- [ ] Static files are gzipped in production (JS/CSS/SVG/etc, check this with PageSpeed or GTmetrix).
-- [ ] Static files are cached for a long time in production (JS/CSS/images/etc, check this with PageSpeed or GTmetrix).
-- [ ] Canonical URL redirect exists, if relevant (`example.com` ➞ `www.example.com`).
-
 ### Deployment
 
 - [ ] The project is [`shrinkwrapped`](https://github.com/springload/frontend-starter-kit/#adding-and-upgrading-dependencies) to pin its dependencies.
 - [ ] The build service / CI is using `NODE_ENV=production` for compilation tasks.
-- [ ] No unnecessary files (`node_modules`) are sent to the production server, slowing down the build (look for the list of files sent to the server in the `rsync` step of the deployment).
 - [ ] CI runs the CI tests (`npm run test:ci`, or `npm run test`), and the build breaks if they fail.
-- [ ] CI builds trigger notifications in the appropriate Slack channel.
 
 ### Semantics
 
@@ -132,11 +121,7 @@
 
 ### SEO
 
-- [ ] Link to sitemap `<link rel=”sitemap” type=”application/xml” title=”Sitemap” href=”/sitemap.xml”>”`.
-- [ ] Sitemap content is relevant.
-- [ ] Help pagination with rel=”next” and rel=”prev” tag.
-- [ ] robots.txt is here.
-- [ ] humans.txt is here (forbidden in robots.txt).
+- [ ] Help pagination with `rel=”next”` and `rel=”prev”` attributes.
 
 ### Analytics
 
@@ -169,13 +154,6 @@ header - `role="banner"`, main content - `role="main"`, footer - `role="contenti
 
 #### The README contains
 
-- [ ] Continuous integration service badge for the project (CodeShip).
-- [ ] A table of important links, with:
-- [ ] Stage and Live site links.
-- [ ] Links to Trello board, Harvest project, project run sheet, Drive folder.
-- [ ] Links to design resources - Zeplin, InVision, other.
-- [ ] Analytics and montoring URLs.
-- [ ] Links to other important documents and services.
 - [ ] Project installation instructions.
 - [ ] Project development commands.
 - [ ] Test commands.
@@ -185,4 +163,4 @@ header - `role="banner"`, main content - `role="main"`, footer - `role="contenti
 - [ ] Debugging tricks.
 - [ ] Testing data.
 
-You made it to the end! Whoo, high five my friend :pray:! Now go treat yourself to a drink :tropical_drink:, a hug :hugging_face:, or whatever floats your boat :rainbow:. Don’t forget to let your team know that you’ve got this under control, and be proud of that top-notch site you just built. :metal:
+You made it to the end! Whoo, high five my friend :pray:! Now go treat yourself to a drink :tropical_drink:, a hug, or whatever floats your waka :rainbow:. Don’t forget to let your team know that you’ve got this under control, and be proud of that top-notch site you just built. :metal:
