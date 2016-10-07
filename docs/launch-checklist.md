@@ -45,8 +45,8 @@
 
 - [ ] Link to sitemap `<link rel=”sitemap” type=”application/xml” title=”Sitemap” href=”/sitemap.xml”>”`.
 - [ ] Sitemap content is relevant.
-- [ ] robots.txt is here.
-- [ ] humans.txt is here (forbidden in robots.txt).
+- [ ] `/robots.txt` is here.
+- [ ] `/humans.txt` is here (Disallowed in robots.txt).
 
 #### Tests
 
@@ -59,8 +59,8 @@
 
 #### Server configuration
 
-- [ ] Static files are gzipped in production (JS/CSS/SVG/etc, check this with PageSpeed or GTmetrix).
-- [ ] Static files are cached for a long time in production (JS/CSS/images/etc, check this with PageSpeed or GTmetrix).
+- [ ] Static files are gzipped in production (JS/CSS/SVG/etc, check this with [PageSpeed](https://developers.google.com/speed/pagespeed/insights/) or [GTmetrix](https://gtmetrix.com/)).
+- [ ] Static files are cached for a long time in production (JS/CSS/images/etc, check this with [PageSpeed](https://developers.google.com/speed/pagespeed/insights/) or [GTmetrix](https://gtmetrix.com/)).
 - [ ] Canonical URL redirect exists, if relevant (`example.com` ➞ `www.example.com`).
 
 #### Deployment
