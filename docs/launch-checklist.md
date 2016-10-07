@@ -55,12 +55,12 @@
 #### Monitoring
 
 - [ ] Use [SpeedCurve](https://speedcurve.com) to configure the performance monitoring on the site's most important page (homepage?).
-- [ ] [Google Search Console / Webmaster Tools](https://www.google.com/webmasters/tools) is configured on the project.
+- [ ] [Google Search Console / Webmaster Tools](https://www.google.com/webmasters/tools) is configured on the live site.
 
 #### Server configuration
 
-- [ ] Static files are gzipped in production (JS/CSS/SVG/etc, check this with [PageSpeed](https://developers.google.com/speed/pagespeed/insights/) or [GTmetrix](https://gtmetrix.com/)).
-- [ ] Static files are cached for a long time in production (JS/CSS/images/etc, check this with [PageSpeed](https://developers.google.com/speed/pagespeed/insights/) or [GTmetrix](https://gtmetrix.com/)).
+- [ ] Static files are gzipped in production (JS/CSS/SVG/etc, check this with [PageSpeed](https://developers.google.com/speed/pagespeed/insights/) or [GTmetrix](https://gtmetrix.com/)) on the live site.
+- [ ] Static files are cached for a long time in production (JS/CSS/images/etc, check this with [PageSpeed](https://developers.google.com/speed/pagespeed/insights/) or [GTmetrix](https://gtmetrix.com/)) on the live site.
 - [ ] Canonical URL redirect exists, if relevant (`example.com` ➞ `www.example.com`).
 
 #### Deployment

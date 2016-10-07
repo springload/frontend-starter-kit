@@ -111,7 +111,7 @@
 
 ### Performance
 
-- [ ] The site has a score above 90 in [Google PageSpeed](https://developers.google.com/speed/pagespeed/) and [GTmetrix](https://gtmetrix.com/).
+- [ ] The live site has a score above 90 in [Google PageSpeed](https://developers.google.com/speed/pagespeed/) and [GTmetrix](https://gtmetrix.com/).
 - [ ] Web fonts should be kept to a minimum (talk with designers).
 - [ ] Subset webfonts to remove unused characters (http://www.subsetter.com/, https://github.com/miguelsousa/source-sans-pro-subset).
 - [ ] Font files are available in WOFF, WOFF2, and EOT/OTF if relevant (IE8 / Android Stock Browser).
@@ -137,7 +137,7 @@
 
 - [ ] Google Tag Manager or Google Analytics are loaded on all pages (but not both).
 - [ ] Check analytics are configured in development with a development property.
-- [ ] Check analytics are configured in production with the production property.
+- [ ] Check analytics are configured in production with the production property on the live site.
 - [ ] Check the relevant client-side interactions are tracked with events.
 - [ ] If relevant, client-side JS errors are logged as [exceptions](https://developers.google.com/analytics/devguides/collection/analyticsjs/exceptions).
 - [ ] Page and event tracking is being displayed correctly in the GA dashboard.
