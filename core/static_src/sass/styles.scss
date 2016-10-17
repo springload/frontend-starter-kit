@@ -2,16 +2,16 @@
 // MAIN
 // -----------------------------------------------------------------------------
 
-@import 'settings/index';
-@import 'tools/index';
+@import 'settings';
+@import 'tools';
 
-@import 'generic/index';
-@import 'elements/index';
-@import 'objects/index';
-@import 'components/index';
-@import 'utilities/index';
+@import 'generic';
+@import 'elements';
+@import 'objects';
+@import 'components';
+@import 'utilities';
 
-@import 'theming/index';
+@import 'theming';
 
 // boilerplate print styles
 @import 'h5bp-print-styles';
