@@ -8,7 +8,7 @@ describe('analytics', () => {
         global.ga = gaSpy;
     });
 
-    test('#initErrorTracking', () => {
+    describe('#initErrorTracking', () => {
         let onerrorSpy;
 
         beforeEach(() => {
@@ -39,7 +39,8 @@ describe('analytics', () => {
 
         it('contains error message', () => {
             global.onerror('Test', 'script.js', 5, 5);
-            expect(gaSpy).lastCalledWith('send', 'exception', { exDescription: 'script.js: Test (5:5)', exFatal: false });
+            const params = { exDescription: 'script.js: Test (5:5)', exFatal: false };
+            expect(gaSpy).lastCalledWith('send', 'exception', params);
         });
     });
 
@@ -72,7 +73,8 @@ describe('analytics', () => {
 
             it('captures AJAX errors', () => {
                 errors.ajax(400, '/api/v1/bananas');
-                expect(gaSpy).lastCalledWith('send', 'exception', { exDescription: 'AJAX error: 400 /api/v1/bananas', exFatal: false });
+                const params = { exDescription: 'AJAX error: 400 /api/v1/bananas', exFatal: false };
+                expect(gaSpy).lastCalledWith('send', 'exception', params);
             });
         });
     });
