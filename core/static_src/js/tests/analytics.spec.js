@@ -1,80 +1,78 @@
-import { expect } from 'chai';
-import sinon from 'sinon';
 import { initErrorTracking, social, errors } from '../api/analytics';
 
 describe('analytics', () => {
     let gaSpy;
 
-    beforeEach('spy on ga', () => {
-        gaSpy = sinon.spy();
+    beforeEach(() => {
+        gaSpy = jest.fn();
         global.ga = gaSpy;
     });
 
-    describe('#initErrorTracking', () => {
+    test('#initErrorTracking', () => {
         let onerrorSpy;
 
-        beforeEach('set onerror, and initialise', () => {
-            onerrorSpy = sinon.spy();
+        beforeEach(() => {
+            onerrorSpy = jest.fn();
             global.onerror = onerrorSpy;
 
             initErrorTracking();
         });
 
         it('exists', () => {
-            expect(initErrorTracking).to.be.a('function');
+            expect(initErrorTracking).toBeDefined();
         });
 
         it('captures errors with onerror', () => {
             global.onerror('Test', 'script.js', 5, 5);
-            expect(gaSpy.calledOnce).to.equal(true);
+            expect(gaSpy).toHaveBeenCalledTimes(1);
         });
 
         it('preserves previous window.onerror callback', () => {
             global.onerror('Test', 'script.js', 5, 5);
-            expect(onerrorSpy.calledOnce).to.equal(true);
+            expect(onerrorSpy).toHaveBeenCalledTimes(1);
         });
 
         it('ignores "Script error." errors', () => {
             global.onerror('Script error.', 'script.js', 5, 5);
-            expect(gaSpy.calledOnce).to.equal(false);
+            expect(gaSpy).not.toHaveBeenCalled();
         });
 
         it('contains error message', () => {
             global.onerror('Test', 'script.js', 5, 5);
-            expect(gaSpy.calledWith('send', 'exception', { exDescription: 'script.js: Test (5:5)', exFatal: false })).to.equal(true);
+            expect(gaSpy).lastCalledWith('send', 'exception', { exDescription: 'script.js: Test (5:5)', exFatal: false });
         });
     });
 
     describe('social', () => {
         it('exists', () => {
-            expect(social).to.be.a('object');
+            expect(social).toBeDefined();
         });
 
         describe('#share', () => {
             it('exists', () => {
-                expect(social.share).to.be.a('function');
+                expect(social.share).toBeDefined();
             });
 
             it('captures share events', () => {
                 social.share('facebook', 'http://example.com');
-                expect(gaSpy.calledWith('send', 'social', 'facebook', 'share', 'http://example.com')).to.equal(true);
+                expect(gaSpy).lastCalledWith('send', 'social', 'facebook', 'share', 'http://example.com');
             });
         });
     });
 
     describe('errors', () => {
         it('exists', () => {
-            expect(errors).to.be.a('object');
+            expect(errors).toBeDefined();
         });
 
         describe('#ajax', () => {
             it('exists', () => {
-                expect(errors.ajax).to.be.a('function');
+                expect(errors.ajax).toBeDefined();
             });
 
             it('captures AJAX errors', () => {
                 errors.ajax(400, '/api/v1/bananas');
-                expect(gaSpy.calledWith('send', 'exception', { exDescription: 'AJAX error: 400 /api/v1/bananas', exFatal: false })).to.equal(true);
+                expect(gaSpy).lastCalledWith('send', 'exception', { exDescription: 'AJAX error: 400 /api/v1/bananas', exFatal: false });
             });
         });
     });

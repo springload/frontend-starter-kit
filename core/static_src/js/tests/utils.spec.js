@@ -1,32 +1,23 @@
-import { expect } from 'chai';
-import sinon from 'sinon';
 import { debounce } from '../utils';
 
-let clock;
+jest.useFakeTimers();
 
 describe('Utils', () => {
-    beforeEach('bend time', () => {
-        clock = sinon.useFakeTimers();
-    });
-
-    afterEach('restore time', () => {
-        clock.restore();
-    });
-
     it('has a debounce function', () => {
-        expect(debounce).to.be.a('function');
+        expect(debounce).toBeDefined();
     });
 
     it('debounce calls its callback', () => {
-        const callback = sinon.spy();
+        const callback = jest.fn();
         const proxy = debounce(callback, 5000);
 
         proxy();
 
-        // Move the sinon clock to 5001ms.
-        clock.tick(5001);
+        // Fast forward and exhaust only currently pending timers
+        // (but not any new timers that get created during that process)
+        jest.runOnlyPendingTimers();
 
-        expect(callback.called).to.equal(true);
-        expect(callback.calledOnce).to.equal(true);
+        expect(callback).toBeCalled();
+        expect(callback).toHaveBeenCalledTimes(1);
     });
 });
