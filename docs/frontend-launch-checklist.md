@@ -103,9 +103,9 @@
 #### Automated tests
 
 - [ ] Relevant unit tests are written.
-- [ ] Unit tests pass (`npm run test:unit`).
-- [ ] Relevant integration tests are written.
-- [ ] Integration tests pass (`npm run test:integration`).
+- [ ] Unit tests pass (`npm run test`).
+- [ ] If any, relevant integration tests are written.
+- [ ] If any, integration tests pass (`npm run test:integration`).
 - [ ] Run site url through the Facebook debugger (https://developers.facebook.com/tools/debug/) to check it will appear correctly if shared.
 - [ ] Run the link checker [`hyperlink -r http://example.com/`](https://github.com/springload/frontend-starter-kit/blob/master/docs/useful-tooling.md#hyperlink) to find & fix broken links.
 

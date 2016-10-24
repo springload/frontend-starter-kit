@@ -67,15 +67,13 @@ git commit --no-verify
 
 ### Tests
 
-We use `mocha`, `chai` and `sinon` and for unit tests.
+We use `jest` for unit tests.
 
 ```sh
 # Run all the tests.
 npm run test
-# Run unit tests.
-npm run test:unit
-# Run unit tests in a watcher.
-npm run test:unit:watch
+# Run tests in a watcher.
+npm run test:watch
 ```
 
 #### Manual tests
