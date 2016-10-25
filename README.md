@@ -90,7 +90,7 @@ This project is [shrinkwrapped](https://docs.npmjs.com/cli/shrinkwrap). Its depe
 1. Use `npm run lint:versions` to confirm you are using the right node version.
 2. Use `npm install <package>` with `--save` or `--save-dev` options to change the dependencies.
 3. Check the project still works with the new dependencies / new versions.
-4. Run **`npm run shrinkwrap`** to regenerate `npm-shrinkwrap.json`.
+4. Run **`npm run lock`** to regenerate `npm-shrinkwrap.json`.
 5. Commit this file, and push.
 
 ## Deploying a new version
