@@ -68,6 +68,7 @@
     "iconv": "^2.1.11",
     "jest": "^16.0.2",
     "loose-envify": "^1.2.0",
+    "react-test-renderer": "^15.3.2",
     "sass-lint": "1.5.0",
     "sass-module-importer": "^1.2.1",
     "uglifyify": "^3.0.1",

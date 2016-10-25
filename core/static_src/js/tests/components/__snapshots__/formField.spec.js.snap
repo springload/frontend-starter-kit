@@ -1,0 +1,22 @@
+exports[`FormField renders correctly 1`] = `
+<div
+  className="form-field">
+  <label
+    className="h6"
+    htmlFor="field1" />
+  <input
+    autoCapitalize="off"
+    autoCorrect="off"
+    className="theme__color theme__border"
+    defaultValue={undefined}
+    id="field1"
+    name="field1"
+    onBlur={undefined}
+    onChange={[Function]}
+    onFocus={undefined}
+    onKeyDown={[Function]}
+    spellCheck="off"
+    type="text"
+    value="Hello world!" />
+</div>
+`;
