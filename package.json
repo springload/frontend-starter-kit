@@ -76,14 +76,12 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "flickity": "^1.1.2",
     "focus-trap": "^1.0.1",
     "h5bp-print-styles": "springload/h5bp-print-styles#master",
     "normalize.css": "^4.1.1",
     "react": "^15.2.0",
     "react-dom": "^15.2.0",
     "springload-analytics.js": "^2.0.0",
-    "tabbable": "^1.0.0",
-    "youtube-player": "^3.0.2"
+    "tabbable": "^1.0.0"
   }
 }
