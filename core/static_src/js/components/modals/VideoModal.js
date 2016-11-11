@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Modal from './Modal';
+import Modal from 'react-accessible-modal';
 import YouTubePlayer from 'youtube-player';
 
 import {

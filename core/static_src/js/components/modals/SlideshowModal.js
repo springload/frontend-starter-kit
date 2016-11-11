@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Modal from './Modal';
+import Modal from 'react-accessible-modal';
 import Flickity from 'flickity';
 
 const SlideshowModal = React.createClass({
