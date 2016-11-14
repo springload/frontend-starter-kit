@@ -1,4 +1,4 @@
-<svg class="i{% if className %} {{ className }}{% endif %}"{% if not title %} aria-hidden="true" aria-role="presentation"{% endif %}>
+<svg class="i{% if className %} {{ className }}{% endif %}"{% if not title %} aria-hidden="true" role="presentation"{% endif %}>
     {% if title %}<title>{{ title }}</title>{% endif %}
-    <use xlink:href="#i-{{ icon }}"{% if title %} aria-hidden="true" aria-role="presentation"{% endif %}></use>
+    <use xlink:href="#i-{{ icon }}"{% if title %} aria-hidden="true" role="presentation"{% endif %}></use>
 </svg>
