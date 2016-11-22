@@ -31,26 +31,29 @@ We use Flexbox for our layouts when browser support allows it, providing appropr
 
 ### Libraries
 
-> We use __React and Redux__, lodash, jQuery, D3, and Google Analytics.
+> We use __React and Redux__, lodash, D3, and Google Analytics.
 
 To learn more about those libraries:
 
-- https://facebook.github.io/react/index.html
+- https://facebook.github.io/react/
 - http://redux.js.org/
 - https://lodash.com/
-- https://jquery.com/
 - https://d3js.org/
 - https://github.com/springload/Analytics.js
 
-To learn React, in that order:
+To learn React, for beginners, in that order:
+
+- https://github.com/petehunt/react-howto
+- https://facebook.github.io/react/tutorial/tutorial.html
+- https://www.codecademy.com/lrn/react-101
+
+To learn React, if you have experience with front-end frameworks, in that order:
 
 - http://firstdoit.com/react-1/
 - http://www.banderson.me/2014/11/01/react-series-intro/
 - http://blog.andrewray.me/reactjs-for-stupid-people/
-- https://github.com/petehunt/react-howto
 - https://facebook.github.io/react/docs/thinking-in-react.html
 - https://www.youtube.com/watch?v=x7cQ3mrcKaY
-- https://www.codecademy.com/lrn/react-101
 
 To understand Flux/Redux:
 
