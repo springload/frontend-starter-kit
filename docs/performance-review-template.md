@@ -16,7 +16,7 @@ Fast sites create happy users. Studies show that when a site responds slowly, vi
 
 **Speeds across a variety of networks:**
 
-| Connection Speed | Start Render | Document Complate |
+| Connection Speed | Start Render | Document Complete |
 |---------|-----------|---------|
 | Slow - 2G | 18+ seconds | 38+ seconds |
 | Medium - 3G | 4 seconds | 10 seconds |
