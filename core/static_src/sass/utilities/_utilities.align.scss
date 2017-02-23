@@ -50,3 +50,48 @@
 .u-clear {
     clear: both !important;
 }
+
+
+/* SG
+# Utilities/align
+TODO FIX EXAMPLES
+Here are some utility classes to help modify the vertical alignment, text alignment, margins and floats. To see the code used scroll to the code example below.
+
+```
+<h5>VERTICAL ALIGN:</h5>
+<div class="u-align-middle">
+    <img src="http://placekitten.com/200/150">
+    <img src="http://placekitten.com/220/80">
+</div>
+<div class="u-align-bottom">
+  <img src="http://placekitten.com/200/150">
+  <img src="http://placekitten.com/220/80">
+</div>
+<br />
+
+<h5>TEXT ALIGN:</h5>
+
+<p class='u-text-left'>Left Text</p>
+<p class='u-text-right'>Right Text</p>
+<p class='u-text-center'>Centered Text</p>
+<br />
+
+<h5>MARGIN CENTER: </h5>
+<div class='u-auto'>
+  <img src="http://placekitten.com/200/150">
+  <img src="http://placekitten.com/220/80">
+</div>
+<div class='u-margin-center'>
+  <img src="http://placekitten.com/200/150">
+  <img src="http://placekitten.com/220/80">
+</div>
+<br />
+
+<h5>FLOATS: </h5>
+<div class='u-clear'>
+    <img class='u-left' src="http://placekitten.com/200/150">
+    <img class='u-right' src="http://placekitten.com/220/80">
+</div>
+
+```
+*/

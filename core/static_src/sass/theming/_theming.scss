@@ -21,6 +21,8 @@ $themes: (
     $text-color: map-get($colors, text-color);
 
     .t-#{$alias} {
+
+        //todo why ? when do we use this
         .u-current-color {
             color: $theme-color;
         }
@@ -62,3 +64,47 @@ $themes: (
         color: $text-color;
     }
 }
+
+
+/* SG
+# Theming/theming
+
+Fred gives you three default themes to get you up and running.
+//todo
+```
+<div class="[ grid grid--row-spacing grid--col-spacing ]">
+    <div class="[ width-1/4@large width-1/2@medium ]">
+        <div class="">
+            <div class="t-pink--bg">
+                Aa <a href>a</a>
+            </div>
+            <div>
+                <p class='t-pink'>t-pink</p>
+            </div>
+        </div>
+    </div>
+    <div class="[ width-1/4@large width-1/2@medium ]">
+        <div class="">
+            <div class="t-green ">
+                Aa <a href>a</a>
+            </div>
+            <div class="">
+                <p>t-green</p>
+            </div>
+        </div>
+    </div>
+    <div class="[ width-1/4@large width-1/2@medium ]">
+        <div class="">
+            <div class="t-blue">
+                Aa <a href>a</a>
+            </div>
+            <div>
+                <p>t-blue</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+```
+*/

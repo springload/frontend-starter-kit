@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// Page content
+// -----------------------------------------------------------------------------
+
+
+.site-wrapper {
+    max-width: $breakpoint-xlarge;
+}
+
+.wrapper {
+    @include clearfix;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left:  auto;
+}
+
+    .wrapper--wide {
+        max-width: 1400px;
+    }
+
+    .wrapper--narrow {
+        max-width: 960px;
+    }

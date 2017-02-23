@@ -1,28 +1,29 @@
 // -----------------------------------------------------------------------------
 // Radio picker
 // -----------------------------------------------------------------------------
-//
-// Turns a group of radio elements into tappable regions, while still being
-// accessible through keyboard navigation:
-//
-// <form action="">
-//     <div class="radio-picker">
-//         <label class="radio-picker__item">
-//             <input class="radio-picker__input" type="radio" name="thing">
-//             <span class="radio-picker__body">
-//                 Rich content goes here!
-//             </span>
-//         </label><!--
-//         --><label class="radio-picker__item">
-//             <input class="radio-picker__input" type="radio" name="thing">
-//             <span class="radio-picker__body">
-//                 Rich content goes here!
-//             </span>
-//         </label>
-//     </div>
-// </form>
 
+/* SG
+# Components/form.radio-picker
+Turns a group of radio elements into big tappable regions, while still being
+accessible through keyboard navigation:
 
+```
+<div class="radio-picker">
+     <label>
+        <input class="radio-picker__input" type="radio" name="" checked>
+        <span class="radio-picker__body">
+             Rich context goes here!
+        </span>
+    </label>
+    <label>
+        <input class="radio-picker__input" type="radio" name="">
+        <span class="radio-picker__body">
+             Rich context goes here!
+        </span>
+    </label>
+</div>
+```
+*/
 
 $color-radio-picker-white: #ffffff;
 $color-radio-picker-border: #dfdfdf;
@@ -69,7 +70,6 @@ $color-radio-picker-focus-outline: rgba(0, 0, 0, .5);
         border-color: $color-radio-picker-focus-outline;
     }
 
-
     .radio-picker__body {
         display: block;
         padding: 1em;
@@ -81,10 +81,7 @@ $color-radio-picker-focus-outline: rgba(0, 0, 0, .5);
         background-color: $color-radio-picker-hover;
     }
 
-    //  Note that :checked isn't supported by IE8 so you'll need to implement
-    //  some JavaScript to add the `.checked` class to the input.
-    .radio-picker__input:checked + .radio-picker__body,
-    .radio-picker__input--checked + .radio-picker__body {
+    .radio-picker__input:checked + .radio-picker__body {
         background-color: $color-radio-picker-checked;
         border-color: $color-radio-picker-checked;
         color: $color-radio-picker-white;

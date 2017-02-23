@@ -1,0 +1,106 @@
+// ============================================================================
+// Striped coloured Tables
+// ============================================================================
+
+$color-table-stripe: #F4FFFF;
+
+.table--striped {
+}
+
+    .table--striped .table__body .table__row:nth-child(odd) {
+        background-color: $color-table-stripe;
+    }
+
+    .table--striped\@medium .table__body .table__row:nth-child(odd) {
+        //todo make this work @medium isnt a default query
+        @include medium {
+            background-color: $color-table-stripe;
+        }
+    }
+
+
+/* SG
+# Components/page.table.striped
+
+//todo clean up comment
+This component adds stripes to each odd row in the table body section.
+Sometimes we only want stripes from medium and up, ie responsive tables don't want stripes at small sizes otherwise we have to create a rather specific override to remove.
+Striped tables, we don't want this as a base style on all tables otherwise we have to remove them from various breakpoints in various situations. Better to lock it down to a class of its own since the declaration to style the stripes is quite specific.
+
+```
+<table class="table table--striped ">
+    <tbody class="table__body">
+        <tr class="table__row">
+            <td class="table__cell">
+                <p>Claire</p>
+            </td>
+            <td class="table__cell">
+                <p>Campbell</p>
+            </td>
+        </tr>
+        <tr class="table__row">
+            <td class="table__cell">
+                <p>Laura</p>
+            </td>
+            <td class="table__cell">
+                <p>Bunea</p>
+            </td>
+        </tr>
+        <tr class="table__row">
+            <td class="table__cell">
+               <p>Sam</p>
+            </td>
+            <td class="table__cell">
+                <p>Sanders</p>
+            </td>
+        </tr>
+        <tr class="table__row">
+            <td class="table__cell">
+                <p>Katie</p>
+            </td>
+            <td class="table__cell">
+               <p>Day</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h5>1. table--striped@medium </h5>
+<table class="table table--striped ">
+    <tbody class="table__body">
+        <tr class="table__row">
+            <td class="table__cell">
+                <p>Claire</p>
+            </td>
+            <td class="table__cell">
+                <p>Campbell</p>
+            </td>
+        </tr>
+        <tr class="table__row">
+            <td class="table__cell">
+                <p>Laura</p>
+            </td>
+            <td class="table__cell">
+                <p>Bunea</p>
+            </td>
+        </tr>
+        <tr class="table__row">
+            <td class="table__cell">
+               <p>Sam</p>
+            </td>
+            <td class="table__cell">
+                <p>Sanders</p>
+            </td>
+        </tr>
+        <tr class="table__row">
+            <td class="table__cell">
+                <p>Katie</p>
+            </td>
+            <td class="table__cell">
+               <p>Day</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+```
+*/

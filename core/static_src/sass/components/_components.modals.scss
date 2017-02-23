@@ -2,20 +2,6 @@
 // Modal lightboxes
 // -----------------------------------------------------------------------------
 //
-// As of 2015, the vertical-align: middle table is still the best cross-browser
-// way to vertically centre stuff. This modal component uses this pattern with
-// the following structure:
-//
-// <div class="modal modal--active">
-//     <div class="modal__table">
-//         <div class="modal__center">
-//             <div class="modal__content">
-//                 Hello!
-//             </div>
-//         </div>
-//     </div>
-// </div>
-//
 // Requires '_generic.keyframes.scss';
 
 
@@ -42,87 +28,87 @@ $color-modal-content-bg: #fff;
     animation: modal-in .15s ease-out 0s backwards;
 }
 
-// To close the modal, apply the modal--exit class and wait for the
-// animationEnd event to fire
+    // To close the modal, apply the modal--exit class and wait for the
+    // animationEnd event to fire
 
-.modal--exit {
-    animation: modal-out .3s ease-out .2s forwards;
+    .modal--exit {
+        animation: modal-out .3s ease-out .2s forwards;
+
+        .modal__content {
+            animation: affordance-out .3s ease-in 0s forwards;
+        }
+
+        .modal__control {
+            animation: affordance-out-top .3s ease-in 0s forwards;
+        }
+    }
+
+    .modal__overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: $z-index-modal-matte;
+        background-color: transparentize($color-modal-content-bg, .05);
+    }
+
+    .modal__table {
+        display: table;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    .modal__center {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        animation: modal-in .15s ease-out .25s backwards;
+    }
 
     .modal__content {
-        animation: affordance-out .3s ease-in 0s forwards;
+        display: inline-block;
+        position: relative;
+        z-index: $z-index-modal-content;
+        min-width: 10.5em;
+        max-width: 32em;
+        min-height: 6em;
+        padding: 1em 2em;
+        background: $color-modal-content-bg;
+        animation: affordance-in .5s $easing-circ .3s backwards;
     }
 
     .modal__control {
-        animation: affordance-out-top .3s ease-in 0s forwards;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: $z-index-modal-content;
+        text-align: right;
+        animation: affordance-in-top .5s $easing-circ .25s backwards;
     }
-}
 
-.modal__overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: $z-index-modal-matte;
-    background-color: transparentize($color-modal-content-bg, .05);
-}
+    .modal__control-item {
+        display: inline-block;
+        color: $color-modal-control-text;
+        padding: .5em;
+        line-height: 1;
+        cursor: pointer;
+        background: $color-modal-control-bg;
+        margin-top: $spacing-half;
+        margin-right: $spacing;
 
-.modal__table {
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-}
+        > .i {
+            width: 20px;
+            height: 20px;
 
-.modal__center {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    animation: modal-in .15s ease-out .25s backwards;
-}
-
-.modal__content {
-    display: inline-block;
-    position: relative;
-    z-index: $z-index-modal-content;
-    min-width: 10.5em;
-    max-width: 32em;
-    min-height: 6em;
-    padding: 1em 2em;
-    background: $color-modal-content-bg;
-    animation: affordance-in .5s $easing-circ .3s backwards;
-}
-
-.modal__control {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: $z-index-modal-content;
-    text-align: right;
-    animation: affordance-in-top .5s $easing-circ .25s backwards;
-}
-
-.modal__control-item {
-    display: inline-block;
-    color: $color-modal-control-text;
-    padding: .5em;
-    line-height: 1;
-    cursor: pointer;
-    background: $color-modal-control-bg;
-    margin-top: $spacing-half;
-    margin-right: $spacing;
-
-    > .i {
-        width: 20px;
-        height: 20px;
-
-        @include medium {
-            width: 36px;
-            height: 36px;
+            @include medium {
+                width: 36px;
+                height: 36px;
+            }
         }
     }
-}
 
 
 // video modals
@@ -141,29 +127,60 @@ $color-modal-content-bg: #fff;
     }
 }
 
-.modal__video-inner {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 60%;
-    background: $color-black;
-    box-shadow: 0 .1em .2em transparentize($color-black, .95);
-}
-
-.modal__video-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    > .spinner {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 40px;
-        height: 40px;
-        margin-top: -1.25rem;
-        margin-left: -1.25rem;
+    .modal__video-inner {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 60%;
+        background: $color-black;
+        box-shadow: 0 .1em .2em transparentize($color-black, .95);
     }
-}
+
+    .modal__video-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        > .spinner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 40px;
+            height: 40px;
+            margin-top: -1.25rem;
+            margin-left: -1.25rem;
+        }
+    }
+
+/* SG
+# Components/modals
+
+Requires '_generic.keyframes.scss';
+As of 2015, the vertical-align: middle table is still the best cross-browser
+way to vertically centre stuff. This modal component uses this pattern with
+the following structure:
+
+<xmp><div class="modal modal--active">
+    <div class="modal__table">
+        <div class="modal__center">
+            <div class="modal__content">
+               Hello!
+          </div>
+        </div>
+   </div>
+</div>
+
+<div class="modal modal--active modal--video ">
+    <div class="modal__table">
+        <div class="modal__center">
+            <div class="modal__content">
+               Modal video
+           </div>
+        </div>
+    </div>
+</div>
+</xmp>
+
+*/

@@ -1,0 +1,22 @@
+// Vertical spacing
+
+$section-spacing: 3rem;
+
+.section {
+    padding-top: $section-spacing;
+    padding-bottom: $section-spacing;
+}
+
+    .section--stacked {
+        & + & {
+            padding-top: 0;
+        }
+    }
+
+    .section--no-top {
+        padding-top: 0;
+    }
+
+    .section--no-bottom {
+        padding-bottom: 0;
+    }

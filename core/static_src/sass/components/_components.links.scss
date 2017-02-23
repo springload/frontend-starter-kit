@@ -1,3 +1,15 @@
+// -----------------------------------------------------------------------------
+// Links
+// -----------------------------------------------------------------------------
+
+.link {
+    transition: $base-transition;
+
+    @include hover {
+        color: $color-page-text;
+    }
+}
+
 .link-social {
     display: inline-block;
     line-height: 1;
@@ -14,13 +26,15 @@
     }
 
 
-.link {
+.faux-link--underline {
     transition: $base-transition;
-
-    @include hover {
-        color: $color-page-text;
-    }
+    box-shadow: inset 0 -.062em 0 $color-white;
 }
+
+
+// -----------------------------------------------------------------------------
+// Link modifiers
+// -----------------------------------------------------------------------------
 
 .link--tag {
     font-weight: $font-weight-bold;
@@ -47,7 +61,20 @@
     }
 }
 
-.faux-link--underline {
-    transition: $base-transition;
-    box-shadow: inset 0 -.062em 0 $color-white;
-}
+/* SG
+# Components/links
+
+```
+<p><a href='#' class='link'><i class='link-social__icon'>icon</i>link social</a></p>
+<p><a href='#' class='link'><i class='link-social__icon'>icon</i>link social with invert</a></p>
+
+<p><a href='#' class='link'>link</a></p>
+<h5>1. link--underline</h5>
+<p><a href='#' class='link link--underline'>link underline</a></p>
+<h5>2. link--tag</h5>
+<p><a href='#' class='link link--tag'>link tag</a></p>
+<h5>3. faux-link--underline</h5>
+<p><a href='#' class='faux-link--underline'>faux link with underline</a></p>
+
+```
+*/

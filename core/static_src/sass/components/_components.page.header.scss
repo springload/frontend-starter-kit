@@ -1,3 +1,7 @@
+// -----------------------------------------------------------------------------
+// Page header
+// -----------------------------------------------------------------------------
+
 $height-logo: 2.25rem;
 
 $height-header: $height-logo + (2 * $spacing-grid);
@@ -9,16 +13,36 @@ $height-header: $height-logo + (2 * $spacing-grid);
     padding: $spacing-grid;
 }
 
-.page-header--fixed {
-    position: fixed;
-    z-index: 10;
-    height: $height-header;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    //page header modifier fixes the header in place
+    .page-header--fixed {
+        position: fixed;
+        z-index: 10;
+        height: $height-header;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
 
-    + * {
-        margin-top: $height-header;
+        + * {
+            margin-top: $height-header;
+        }
     }
-}
+
+
+/* SG
+# Components/page.header
+
+
+<xmp>
+    <div class="page-header page-header--fixed">
+        <p>fixed header</p>
+    </div>
+
+</xmp>
+```
+<div class="page-header ">
+    <p>header</p>
+</div>
+
+```
+*/

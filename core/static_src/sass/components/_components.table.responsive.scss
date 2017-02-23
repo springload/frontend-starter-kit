@@ -1,0 +1,107 @@
+// ============================================================================
+// Responsive tables
+// ============================================================================
+$size-space-default: 20px;
+
+@mixin full-width-styles\@small {
+    @include small {
+        display: block;
+        width: 100%;
+        text-align: left;
+        border-right: none;
+        margin-top: 0;
+    }
+}
+
+.table--responsive {
+    @include small {
+        display: block;
+        border: none;
+        border-bottom: 0;
+    }
+}
+
+    // Hide table header, we apply the content to pseudo elements of the corresponding cell instead
+    .table--responsive .table__head {
+        @include small {
+            display: none;
+        }
+    }
+
+    .table--responsive .table__body,
+    .table--responsive .table__row {
+        @include small {
+            // removes awkward ghost table spacing
+            display: block;
+        }
+    }
+
+        .table--responsive .table__cell {
+            @include full-width-styles\@small;
+            @include small {
+                overflow: hidden;
+                position: relative;
+                padding-left: 50%;
+                background: #F7F7F7;
+                border-top: solid 1px #e6e6e6;
+            }
+        }
+
+        // Make it look like the table headers have moved to the left column
+        .table--responsive .table__cell:before {
+            @include small {
+                content: attr(data-header);
+                float: left;
+                width: 95%;
+                margin-left: -100%;
+                color: #777;
+            }
+        }
+
+        // Table cell that acts more like a table header on small screens
+        .table--responsive .table__cell--title\@small {
+            @include small {
+                padding: 0;
+                margin-top: $size-space-default;
+                margin-bottom: $size-space-default/3;
+                background: transparent;
+                font-weight: bold;
+                border-top: 0;
+            }
+        }
+
+/* SG
+# Components/page.table.responsive
+
+Responsive tables with more than two columns break to a different
+and easier to read format on small screens.
+
+```
+<h5>page.table.responsive</h5>
+<table cellspacing="0" class='table table--responsive table--striped@medium'>
+    <thead class="table__head">
+        <tr class="table__row">
+            <th class="table__header-cell">Transaction fee</th>
+            <th class="table__header-cell">Fast Forward Saver</th>
+            <th class="table__header-cell">Back-up Saver</th>
+            <th class="table__header-cell">First Saver</th>
+        </tr>
+    </thead>
+    <tbody class="table__body">
+        <tr class="table__row">
+            <td class='table__cell table__cell--title@small'>Account Management Fee</td>
+            <td class='table__cell' data-header="Fast Forward Saver">Free</td>
+            <td class='table__cell' data-header="Back-up Saver">Free</td>
+            <td class='table__cell' data-header="First Saver">Free</td>
+        </tr>
+        <tr class="table__row">
+            <td class='table__cell table__cell--title@small'>Deposits</td>
+            <td class='table__cell' data-header="Fast Forward Saver">Free</td>
+            <td class='table__cell' data-header="Back-up Saver">Free</td>
+            <td class='table__cell' data-header="First Saver">Free</td>
+        </tr>
+    </tbody>
+</table>
+
+```
+*/

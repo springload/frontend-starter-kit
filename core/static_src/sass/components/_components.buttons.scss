@@ -16,7 +16,6 @@
 //    of space to the left and right, as padding, to keep consistent spacing.
 // 9. Don’t allow buttons to have underlines; it kinda ruins the illusion.
 
-
 $color-btn:                             $color-page-text;
 $color-border:                          $color-page-text;
 $color-btn-background:                  #fff;
@@ -81,6 +80,10 @@ $padding-btn: $base-spacing-unit;
 
 }
 
+// --------------------------------------------------
+// ** Button modifiers
+// -------------------------------------------------
+
 .btn--small {
     padding-right: $padding-btn / 1.5;
     padding-left: $padding-btn / 1.5;
@@ -96,8 +99,31 @@ $padding-btn: $base-spacing-unit;
     width: 100%;
 }
 
-.btn--block\@small {
-    @include small {
-        width: 100%;
+    .btn--block\@small {
+        @include small {
+            width: 100%;
+        }
     }
-}
+
+
+/* SG
+# Components/button
+
+For a base button just add the class "btn" to your anchor. To modify the base button Fred has some handy classes you can add alongside your btn class:
+```
+<p><a href='#' class='btn'> button </a></p>
+
+
+<h5>1. btn--small</h5>
+<p><a href='#' class='btn btn--small'> button </a></p>
+
+
+<h5>2. btn--wide</h5>
+<p><a href='#' class='btn btn--wide'> button </a></p>
+
+
+<h5>3. btn--block </h5>
+<p><a href='#' class='btn btn--block'> button </a></p>
+
+```
+*/
