@@ -32,7 +32,7 @@
     "test:coverage": "jest --coverage",
     "test:ci": "./bin/ci-test.sh",
     "build": "NODE_ENV=development gulp build",
-    "dist": "NODE_ENV=production gulp build",
+    "dist": "NODE_ENV=production webpack --config ./webpack/webpack.config.prod.js && gulp build",
     "css": "gulp css",
     "critical:css": "gulp critical:css",
     "js": "gulp js",
@@ -44,9 +44,11 @@
   },
   "devDependencies": {
     "babel": "^6.3.26",
+    "babel-core": "^6.24.0",
     "babel-eslint": "^6.0.3",
     "babel-jest": "^19.0.0",
     "babel-preset-es2015": "^6.3.13",
+    "babel-loader": "^6.3.2",
     "babel-preset-react": "^6.3.13",
     "babelify": "^7.2.0",
     "browser-sync": "^2.8.0",
@@ -79,12 +81,14 @@
     "sass-module-importer": "^1.2.1",
     "uglifyify": "^3.0.1",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "webpack": "^2.2.1"
   },
   "dependencies": {
     "h5bp-print-styles": "springload/h5bp-print-styles#master",
     "normalize.css": "^5.0.0",
     "react": "^15.3.2",
+    "react-accessible-modal": "^1.0.0",
     "react-dom": "^15.3.2",
     "springload-analytics.js": "^2.0.0"
   }
