@@ -18,6 +18,7 @@
 - [x] TODO – CSS specificity graph is flat :rainbow:.
 - [x] TODO – Print stylesheets exist if appropriate.
 - [ ] Site does not use `-webkit-font-rendering: antialised;` for body copy.
+- [ ] The filename of the root level stylesheet is `styles.scss`, unless there are multiple root-level stylesheets.
 
 #### JS
 
