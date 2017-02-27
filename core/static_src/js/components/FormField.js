@@ -53,7 +53,7 @@ const FormField = React.createClass({
             className.push('error');
         }
 
-        const classError = 'form-field__error ' + this.props.errorClass;
+        const classError = `form-field__error ${this.props.errorClass}`;
 
         return (
             <div className="form-field">
