@@ -1,34 +1,20 @@
-const path = require('path');
 const webpack = require('webpack');
+const config = require('./webpack.config.js');
 
-const sourcePath = path.join(__dirname, '..', 'core', 'static_src', 'js');
-const distPath = path.join(__dirname, '..', 'core', 'static', 'js');
-
-module.exports = {
-    context: sourcePath,
-    entry: {
-        site: './site.js',
-        vendor: ['react', 'react-dom'],
+config.watch = false;
+config.plugins.push(new webpack.optimize.UglifyJsPlugin({
+    compress: {
+        screw_ie8: true, // React doesn't support IE8
+        warnings: false,
+    },
+    mangle: {
+        screw_ie8: true,
     },
     output: {
-        path: distPath,
-        filename: '[name].bundle.js',
+        comments: false,
+        screw_ie8: true,
     },
-    plugins: [
-        new webpack.optimize.CommonsChunkPlugin({
-            names: ['vendor'], // Specify the common bundle's name.
-        }),
-    ],
-    module: {
-        rules: [{
-            test: /\.js$/,
-            exclude: [/node_modules/],
-            use: [{
-                loader: 'babel-loader',
-                options: {
-                    presets: ['es2015'],
-                },
-            }],
-        }],
-    },
-};
+    sourceMap: true,
+}));
+
+module.exports = config;
