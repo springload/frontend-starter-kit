@@ -9,11 +9,9 @@ module.exports = {
     prod: prod,
 
     paths: {
-        appName: 'site.js',
+        appName: 'site.bundle.js',
         sass: path.join(sourcePath, 'sass'),
         css: path.join(distPath, 'css'),
-        jsSrc: path.join(sourcePath, 'js'),
-        js: path.join(distPath, 'js'),
         svg: path.join(sourcePath, 'svg'),
         images: path.join(distPath, 'images'),
         slug: 'my-site',

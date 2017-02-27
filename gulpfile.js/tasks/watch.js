@@ -3,7 +3,7 @@ var config = require("../config");
 var path = require("path");
 var bs = require('browser-sync').create('main');
 
-gulp.task('watch', ['js', 'css'], function() {
+gulp.task('watch', ['css'], function() {
     bs.init({
         open: false,
         //server: config.paths.views
@@ -16,5 +16,4 @@ gulp.task('watch', ['js', 'css'], function() {
 
     gulp.watch(justReload, bs.reload);
     gulp.watch(path.join(config.paths.sass, '**', '*.scss'), ['css']);
-    gulp.watch(path.join(config.paths.jsSrc, '**', '*.js'), ['js']);
 });
