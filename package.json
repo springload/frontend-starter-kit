@@ -31,7 +31,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:ci": "./bin/ci-test.sh",
-    "dist": "NODE_ENV=production gulp build",
+    "dist": "NODE_ENV=production webpack --config ./webpack/webpack.config.prod.js && gulp build",
     "build": "NODE_ENV=development gulp watch",
     "css": "gulp css",
     "critical:css": "gulp critical:css",

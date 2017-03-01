@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 
 const sourcePath = path.join(__dirname, '..', 'core', 'static_src', 'js');
 const distPath = path.join(__dirname, '..', 'core', 'static', 'js');
@@ -9,17 +8,12 @@ module.exports = {
     devtool: 'source-map',
     entry: {
         site: './site.js',
-        vendor: [require.resolve('./polyfills'), 'react', 'react-dom'],
     },
     output: {
         path: distPath,
         filename: '[name].bundle.js',
     },
-    plugins: [
-        new webpack.optimize.CommonsChunkPlugin({
-            names: ['vendor'], // Specify the common bundle's name.
-        }),
-    ],
+    plugins: [],
     module: {
         rules: [
             // Disable require.ensure as it's not a standard language feature.
@@ -27,7 +21,7 @@ module.exports = {
             // First, run the linter.
             // It's important to do this before Babel processes the JS.
             {
-                test: /\.(js|jsx)$/,
+                test: /\.js$/,
                 enforce: 'pre',
                 use: [{
                     // Point ESLint to our predefined config.
@@ -45,7 +39,7 @@ module.exports = {
                 use: [{
                     loader: 'babel-loader',
                     options: {
-                        presets: ['react', 'es2015'],
+                        presets: ['es2015'],
                     },
                 }],
             },
