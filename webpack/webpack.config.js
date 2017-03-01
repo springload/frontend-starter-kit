@@ -18,21 +18,6 @@ module.exports = {
         rules: [
             // Disable require.ensure as it's not a standard language feature.
             { parser: { requireEnsure: false } },
-            // First, run the linter.
-            // It's important to do this before Babel processes the JS.
-            {
-                test: /\.js$/,
-                enforce: 'pre',
-                use: [{
-                    // Point ESLint to our predefined config.
-                    options: {
-                        configFile: path.join(__dirname, '../.eslintrc.js'),
-                        useEslintrc: false,
-                    },
-                    loader: 'eslint-loader',
-                }],
-                include: sourcePath,
-            },
             {
                 test: /\.js$/,
                 exclude: [/node_modules/],
