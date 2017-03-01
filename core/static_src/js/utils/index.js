@@ -33,8 +33,6 @@ export function whichTransitionEvent() {
             return transitions[tr];
         }
     }
-
-    return null;
 }
 
 export function whichAnimationEvent() {
@@ -52,8 +50,6 @@ export function whichAnimationEvent() {
             return transitions[tr];
         }
     }
-
-    return null;
 }
 
 export function getTransformPropertyName() {
@@ -173,8 +169,6 @@ export function initFeatureDetection() {
 
 export function initFlexboxSupport() {
     const docStyles = document.documentElement.style;
-    const flexClass = ('flexWrap' in docStyles)
-    || ('WebkitFlexWrap' in docStyles)
-    || ('msFlexWrap' in docStyles) ? ' flexbox' : ' no-flexbox';
+    const flexClass = ('flexWrap' in docStyles) || ('WebkitFlexWrap' in docStyles) || ('msFlexWrap' in docStyles) ? ' flexbox' : ' no-flexbox';
     document.documentElement.className += flexClass;
 }

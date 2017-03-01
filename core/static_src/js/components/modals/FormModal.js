@@ -38,7 +38,7 @@ const LoginModal = React.createClass({
     },
 
     updateField: (name, newValue) => {
-        console.log(`updating field value: ${newValue}`);
+        console.log('updating field value: ' + newValue);
     },
 
     sendForm: () => {
