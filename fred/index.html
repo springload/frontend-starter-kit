@@ -1,0 +1,122 @@
+<!doctype html>
+<!--[if IE 8]> <html class="ie8 no-js" lang="en"><![endif]-->
+<!--[if !IE]><!--><html class="no-js" lang="en"><!--<![endif]--><head>
+    <!-- Made by Springload -->
+    <meta charset="utf-8">
+    <title>Fred</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--{% include "core/includes/favicons.html" %}-->
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+    $(function(){
+      $("#styleguide-app").load("styleguide/dist/styleguide.html");
+    });
+    </script>
+</head>
+<body style='background-color:#fff; height:100%'>
+
+    <div class='[ wrapper ] t-plain' id='header' role="contentinfo" >
+        <div class='[ gutters ]'>
+            <div class='[ grid ]'>
+                <div class='[ width-1/2 ]'>
+                    <p>
+                        <img src='logo-springload.jpg' alt='add image' class=''/>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div  style='background-color:#3D4149; color:#fff'>
+        <div class='[ wrapper ]' style=''>
+            <div class='[ section gutters ]'>
+                <div class='u-text-center u-auto' style='max-width:50rem'>
+                    <img src='fred-logo.png'>
+                    <h1>
+                        FRED
+                    </h1>
+                    <p>
+                        Meet Fred, the friendly front-end style guru.
+                        He helps solve a classic front-end problem: sharing and re-using common components between projects while documenting how they work so everyone in the team can use and understand them.
+                    </p>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <div class='[ wrapper ]' >
+        <div class='[ section gutters ]'>
+            <div class=' u-auto' style='max-width:50rem'>
+                <h2>
+                    Code structure
+                </h2>
+                <p>
+                    To keep Fred happy we have organised our front end code into sections (based on a <a href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/">ITCSS architecture</a> ).
+                </p>
+                <p>
+                    Those sections are as follows:
+                </p>
+                <ol>
+                    <li><strong>settings</strong> – used with preprocessors and contain font, colors definitions, etc.</li>
+                    <li><strong>tools</strong> – globally used mixins and functions. It’s important not to output any CSS in the first 2 layers.</li>
+                    <li><strong>generic</strong> – reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.</li>
+                    <li><strong>elements</strong> – styling for bare HTML elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here.</li>
+                    <li><strong>objects</strong> – class-based selectors which define undecorated design patterns, for example media object known from OOCSS</li>
+                    <li><strong>components</strong>  – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components</li>
+                    <li><strong>utilities</strong> – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class</li>
+                    <li><strong>theming</strong> – website themes</li>
+                </ol>
+                <h2>
+                    How the Code is documented
+                </h2>
+                <p>
+                    To document our code we use an NPM package <a href="https://www.npmjs.com/package/markdown-styleguide-generator">mark-down-styleguide-generator</a>
+                    This tool will search all your style files (your .css, .scss _partial.scss, .whatever) for comments and create a html file living style guide for your developers to use!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class='[ section ]' style='background-color:#3D4149;'>
+        <div class='[ wrapper ]'  style='max-width:60rem'>
+
+            <div class='styleguide-wrapper u-auto' style='overflow: auto;'>
+                <div id="styleguide-app" style='width:100%; '></div>
+            </div>
+
+            <div style="clear: both"></div>
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <div class='[ wrapper ]' >
+        <div  id='footer' role="contentinfo" >
+            <div class='[ gutters section ]'>
+                <div class='[ grid ]'>
+                    <p>
+                        Made with love by a friendly FED <span style='color:#0F9850'>&#10084;</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    </script>
+    <script async src="{{ site.paths.js }}/site.js?{{ extensions.cachebuster }}"></script>
+
+    <script>
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','UA-XXXXXXX-X','auto');
+        ga('require', 'eventTracker');
+        ga('require', 'outboundLinkTracker');
+        ga('send','pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+</body>
+</html>

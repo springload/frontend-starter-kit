@@ -1,10 +1,16 @@
-// Vertical spacing
 
-$section-spacing: 3rem;
+// --------------------------------------------------
+// Vertical spacing
+//
+// The sections are set in settings.global.scss
+// --------------------------------------------------
+//shoudl we have this in the gloabl config or just in each partial??
+
+$spacing-section: 3rem;
 
 .section {
-    padding-top: $section-spacing;
-    padding-bottom: $section-spacing;
+    padding-top: $spacing-section;
+    padding-bottom: $spacing-section;
 }
 
     .section--stacked {
@@ -20,3 +26,18 @@ $section-spacing: 3rem;
     .section--no-bottom {
         padding-bottom: 0;
     }
+
+/* SG
+# Components/page.sections
+
+Page Gutters determine the vertical spacing of the site
+
+```
+<div class='[ sections ]' style='background-color:#0F984F'>
+    <p class='u-text-center' style='background-color:#f8f8f8'>
+        You can see the sections highlighted by the green background
+    </p>
+</div>
+
+```
+*/

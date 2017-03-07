@@ -4,15 +4,32 @@
 // The gutters are set in settings.global.scss
 // --------------------------------------------------
 
+/* SG
+# Components/page.gutters
+
+Page Gutters determine the horizontal spacing of the site
+
+```
+<div class='[ gutters ]' style='background-color:#0F984F'>
+    <p class='u-text-center' style='background-color:#f8f8f8'>
+        You can see the gutters highlighted by the green background
+    </p>
+</div>
+
+```
+*/
+
+$spacing-gutters: 1.5rem;
+
 .gutters {
-    padding-right: $base-padding;
-    padding-left: $base-padding;
+    padding-right: $spacing-gutters;
+    padding-left: $spacing-gutters;
 }
 
     .gutters\@small {
         @include small {
-            padding-right: $base-padding;
-            padding-left: $base-padding;
+            padding-right: $spacing-gutters;
+            padding-left: $spacing-gutters;
         }
     }
     //turns the gutters off while on the breakpoint small

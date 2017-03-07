@@ -1,16 +1,16 @@
 // -----------------------------------------------------------------------------
 // Page header
+
+// this is where the
 // -----------------------------------------------------------------------------
 
 $height-logo: 2.25rem;
 
 $height-header: $height-logo + (2 * $spacing-grid);
 
+
 .page-header {
     @include clearfix;
-    background-color: $color-page-header-background;
-    color: $color-page-header;
-    padding: $spacing-grid;
 }
 
     //page header modifier fixes the header in place
@@ -32,6 +32,9 @@ $height-header: $height-logo + (2 * $spacing-grid);
 /* SG
 # Components/page.header
 
+The page.header file is where the sites primary navigation normally sits.
+1. page-header--fixed
+You can modify this element by adding the above class this will fix the header to the top of the page. We are unable to show an example as it will break the site but the code is outlined below.
 
 <xmp>
     <div class="page-header page-header--fixed">
@@ -39,10 +42,5 @@ $height-header: $height-logo + (2 * $spacing-grid);
     </div>
 
 </xmp>
-```
-<div class="page-header ">
-    <p>header</p>
-</div>
 
-```
 */

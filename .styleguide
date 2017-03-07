@@ -1,0 +1,26 @@
+{
+	"sgComment": "SG",
+	"srcFolder": "/Users/laura/Sites/frontend-starter-kit-with-fred",
+	"outputFile": "/Users/laura/Sites/frontend-starter-kit-with-fred/fred/styleguide/dist/styleguide.html",
+	"templateFile": "/usr/local/lib/node_modules/markdown-styleguide-generator/template/template.html",
+	"themeFile": "/Users/laura/Sites/frontend-starter-kit-with-fred/fred/styleguide/styleguide-theme/theme.css",
+	"highlightFolder": "/usr/local/lib/node_modules/markdown-styleguide-generator/node_modules/highlight.js/styles",
+	"highlightStyle": "github",
+	"excludeDirs": [
+		"target",
+		"node_modules"
+	],
+	"fileExtensions": {
+		"scss": true,
+		"sass": true,
+		"css": true,
+		"less": true
+	},
+	"walkerOptions": {
+		"followLinks": false
+	},
+	"customVars": {
+		"sampleVar": "Hello from customVars!"
+	},
+	"jqFile": "/usr/local/lib/node_modules/markdown-styleguide-generator/template/jquery.js"
+}

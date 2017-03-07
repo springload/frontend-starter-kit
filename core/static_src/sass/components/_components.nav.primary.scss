@@ -2,20 +2,14 @@
 // primary navigation
 // -----------------------------------------------------------------------------
 
-// .nav-primary {
-// }
+.nav-primary__link {
+    display: inline-block;
+    padding-right: $spacing;
+    padding-left:  $spacing;
+    font-weight: $font-weight-normal;
 
-//    .nav-primary__item {
-//    }
-
-    .nav-primary__link {
-        display: inline-block;
-        padding-right: $spacing;
-        padding-left:  $spacing;
-        font-weight: $font-weight-normal;
-
-        &.is-active {
-            text-decoration: underline;
-            cursor: default;
-        }
+    &.is-active {
+        text-decoration: underline;
+        cursor: default;
     }
+}

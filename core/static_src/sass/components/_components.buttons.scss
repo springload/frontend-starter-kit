@@ -50,7 +50,8 @@ $padding-btn: $base-spacing-unit;
     border-width: 3px;
     border-radius: 0;
 
-    font-size: rem(24);
+    //font-size: rem(16);
+    font-size: inherit;
     font-weight: $font-weight-bold;
 
     // Ensures that buttons with too much text don't overflow
