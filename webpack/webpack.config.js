@@ -1,6 +1,9 @@
 const path = require('path');
 const config = require('../gulpfile.js/config');
 
+/**
+ * Base Webpack config, defining how our code should compile.
+ */
 module.exports = {
     entry: {
         site: path.join(config.paths.source, 'js', 'site.js'),

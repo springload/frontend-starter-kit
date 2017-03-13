@@ -1,22 +1,22 @@
-var path = require('path');
+const path = require('path');
 
-var sourcePath = path.join(__dirname, '..', 'core', 'static_src');
-var distPath = path.join(__dirname, '..', 'core', 'static');
+const source = path.join(__dirname, '..', 'core', 'static_src');
+const dist = path.join(__dirname, '..', 'core', 'static');
 
-var prod = process.env.NODE_ENV === 'production';
+const prod = process.env.NODE_ENV === 'production';
 
 module.exports = {
     prod: prod,
 
     paths: {
-        source: sourcePath,
-        dist: distPath,
+        source: source,
+        dist: dist,
 
-        sass: path.join(sourcePath, 'sass'),
-        svg: path.join(sourcePath, 'svg'),
+        sass: path.join(source, 'sass'),
+        svg: path.join(source, 'svg'),
         views: path.join('.', 'core'),
-        css: path.join(distPath, 'css'),
-        images: path.join(distPath, 'images'),
+        css: path.join(dist, 'css'),
+        images: path.join(dist, 'images'),
     },
 
     PlzOptions: {
