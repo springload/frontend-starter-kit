@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom';
 
 import GA from 'springload-analytics.js';
 
-import VideoModal from './components/modals/VideoModal';
-import FormModal from './components/modals/FormModal';
-
 import { initErrorTracking } from './api/analytics';
 import {
     querySelectArray,
