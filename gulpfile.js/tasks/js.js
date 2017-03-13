@@ -24,10 +24,9 @@ gulp.task('js', (done) => {
             console.warn(info.warnings)
         }
 
-        console.log(stats.toString({
-            chunks: false,
-            colors: true,
-        }));
+        console.log(stats.toString(Object.assign({}, webpackConfig.stats, {
+            timings: false,
+        })));
 
         done();
     });
