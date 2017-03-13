@@ -3,23 +3,42 @@ Documentation
 
 ## Front-end technology stack
 
-> The goal of this stack is to empower front-end developers to excel at their craft.
+> The goal of this stack is to empower front-end developers to excel at their craft. Our main front-end development languages are [__JavaScript__](https://developer.mozilla.org/en-US/docs/Web/JavaScript) ([ES6/ES2015](https://babeljs.io/docs/learn-es2015/)) and __Sass (SCSS)__. The ES6 and Sass code are compiled to ES5 and CSS as part of our _build process_.
+Learn more about JavaScript (ES6/ES2015):
 
-### Languages
+### JavaScript
 
-> Our main front-end development languages are __JavaScript__ (ES6/ES2015) and __Sass (SCSS)__.
+#### JavaScript coding standards
 
-The ES6 and Sass code are compiled to ES5 and CSS as part of our _build process_.
+We use the [Airbnb style for Javascript](https://github.com/airbnb/javascript) except:
 
-Learn more about Sass:
+* Four space indents, no hard tabs, ever.
+* Use a single DOMContentLoaded/Ready event, not multiple events.
+
+#### JavaScript principles
+
+* Write JavaScript with the next developer in mind, or as if it'll be released as Open Source, so keep it clear and readable.
+* General advice for readability:
+  * Choose your variable and function names carefully.
+  * Abstraction is generally good, but abstraction for the sake of it is Indirection which harms readability.
+* Feature Detection, not Browser Detection. E.g. https://modernizr.com/
+* Have Unit Tests:
+  * [Jest](https://facebook.github.io/jest/).
+  * BackstopJS for testing visual regressions.
+* Try to keep state in JavaScript, not in DOM. E.g. if code tests whether a class exists then that's probably something that should be moved to a JavaScript `const` or `let`.
+* Cache DOM selectors. Don't keep reselecting the same nodes because that's slow.
+* [Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+
+##### Polyfills
+
+* Babel's Polyfills
+* Mostly for IE10-11 compatibility.
+* or [any of these](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills)
+
+### Sass
 
 - http://sass-lang.com/guide
 - http://thesassway.com/
-
-Learn more about JavaScript (ES6/ES2015):
-
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript
-- https://babeljs.io/docs/learn-es2015/
 
 #### Flexbox
 
@@ -68,12 +87,12 @@ To understand Flux/Redux:
 
 #### Build tools
 
-> Our build process is based on __Gulp__ and __Browserify__.
+> Our build process is based on __npm scripts__, __Gulp__, and __Webpack__.
 
 - [Node](https://nodejs.org/) – The platform on top of which the tools run.
 - [Gulp](http://gulpjs.com/) – The glue between all of our build tools.
-- [Browserify](http://browserify.org/) – Node-style modules for the browser.
-- [Babel](https://babeljs.io/) – JavaScript compiler to transform ES6 into ES5.
+- [Webpack](https://webpack.js.org/) – Modern module bundler.
+- [Babel](https://babeljs.io/) – JavaScript compiler to transform ES6 and beyond into ES5.
 - [Pleeease](http://pleeease.io/) – "All the annoying CSS stuff we don't want to do in 1 tool!"
 - [npm](https://www.npmjs.com) – Package manager for everything that runs on Node (and more).
 
