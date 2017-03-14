@@ -9,6 +9,7 @@
     <!--{% include "core/includes/favicons.html" %}-->
 
     <link rel="stylesheet" href="styles.css" />
+    {{> theme}}
 </head>
 <body style='background-color:#fff; height:100%'>
 
@@ -142,6 +143,8 @@
             </div>
         </div>
     </div>
+
+    {{> highlight}}
 
     <script>
         window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
