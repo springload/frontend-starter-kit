@@ -1,22 +1,8 @@
 {
 	"sgComment": "SG",
-	"srcFolder": ".",
+	"srcFolder": "./core/static_src/sass",
 	"outputFile": "./dist/fred/index.html",
 	"templateFile": "./docs/fred/template.html",
 	"themeFile": "./docs/fred/theme.css",
-	"highlightStyle": "github",
-	"excludeDirs": [
-		"node_modules"
-	],
-	"fileExtensions": {
-		"scss": true,
-		"sass": true,
-		"css": true,
-		"less": true
-	},
-	"walkerOptions": {
-		"followLinks": false
-	},
-	"customVars": {
-	}
+	"highlightStyle": "github"
 }
