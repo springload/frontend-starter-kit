@@ -9,12 +9,6 @@
     <!--{% include "core/includes/favicons.html" %}-->
 
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script>
-    $(function(){
-      $("#styleguide-app").load("styleguide/dist/styleguide.html");
-    });
-    </script>
 </head>
 <body style='background-color:#fff; height:100%'>
 
@@ -23,7 +17,7 @@
             <div class='[ grid ]'>
                 <div class='[ width-1/2 ]'>
                     <p>
-                        <img src='logo-springload.jpg' alt='add image' class=''/>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="28px" viewBox="0 0 64 28" xml:space="preserve"><path fill="#7DC265" d="M54.17,2.91c-6.3,0-8.53-1.81-15.07-1.81c-5.77,0-11.21,2.19-12.31,11.64c-0.81,7.06-4.19,9.54-8.1,9.54 c-3.01,0-5.01-1-5.96-3.38c3.86-1.19,6.01-4.44,6.01-8.63c0-5.34-3.44-9.15-9.39-9.15C3.43,1.1,0,4.91,0,10.25 c0,4.34,2.29,7.68,6.35,8.77c1.38,6.3,6.2,8.68,12.3,8.68c7.11,0,12.73-4.34,13.88-12.78c2.86,3.1,6.72,4.05,10.64,4.05 c10.73,0,18.5-8.2,20.84-17.98C60.71,2.29,57.65,2.91,54.17,2.91z M9.35,13.97c-2.19,0-3.39-1.53-3.39-3.62 c0-2.15,1.19-3.67,3.39-3.67c2.24,0,3.43,1.52,3.43,3.67C12.78,12.45,11.59,13.97,9.35,13.97z"/></svg>
                     </p>
                 </div>
             </div>
@@ -70,6 +64,23 @@
                     <li><strong>utilities</strong> – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class</li>
                     <li><strong>theming</strong> – website themes</li>
                 </ol>
+                <ul>
+                    {{#each menu}}
+                        <li>
+                            {{#if headings.0.name}}
+                                <a class="submenulink" href="#" data-section="{{name}}">{{name}}</a>
+                                <ul class="submenu" data-submenu="{{../name}}">
+                                {{#each headings}}
+                                    <li><a href="#{{id}}">{{name}}</a></li>
+                                {{/each}}
+                                </ul>
+                            {{/if}}
+                            {{#unless headings.0.name}}
+                                <a class="sectionlink" href="#" data-section="{{name}}">{{name}}</a>
+                            {{/unless}}
+                        </li>
+                    {{/each}}
+                </ul>
                 <h2>
                     How the Code is documented
                 </h2>
@@ -85,8 +96,31 @@
         <div class='[ wrapper ]'  style='max-width:60rem'>
 
             <div class='styleguide-wrapper u-auto' style='overflow: auto;'>
-                <div id="styleguide-app" style='width:100%; '>
+                <div style='width:100%; background-color: #fff;'>
+                    {{#each sections}}
+                        <div class="section" id="{{id}}" data-section="{{section}}" data-heading="{{heading}}">
 
+                            <div class="comment">
+                                <h1>{{section}}{{#if heading}}/{{heading}}{{/if}}</h1>
+                                {{{comment}}}
+                            </div>
+
+                            {{#if code}}
+                                <div class="result">
+                                    {{{code}}}
+                                </div>
+                            {{/if}}
+
+                            {{#if markup}}
+                                <div class="markup hljs">
+<pre>
+{{{markup}}}
+</pre>
+                                </div>
+                            {{/if}}
+
+                        </div>
+                    {{/each}}
                 </div>
             </div>
 
@@ -108,11 +142,6 @@
             </div>
         </div>
     </div>
-
-
-    <script>
-    </script>
-    <!--<script async src="{{ site.paths.js }}/site.js?{{ extensions.cachebuster }}"></script>-->
 
     <script>
         window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;

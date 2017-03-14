@@ -1,13 +1,11 @@
 {
 	"sgComment": "SG",
-	"srcFolder": "/Users/laura/Sites/frontend-starter-kit-with-fred",
-	"outputFile": "/Users/laura/Sites/frontend-starter-kit-with-fred/fred/styleguide/dist/styleguide.html",
-	"templateFile": "/usr/local/lib/node_modules/markdown-styleguide-generator/template/template.html",
-	"themeFile": "/Users/laura/Sites/frontend-starter-kit-with-fred/fred/styleguide/styleguide-theme/theme.css",
-	"highlightFolder": "/usr/local/lib/node_modules/markdown-styleguide-generator/node_modules/highlight.js/styles",
+	"srcFolder": ".",
+	"outputFile": "./dist/fred/index.html",
+	"templateFile": "./docs/fred/template.html",
+	"themeFile": "./docs/fred/theme.css",
 	"highlightStyle": "github",
 	"excludeDirs": [
-		"target",
 		"node_modules"
 	],
 	"fileExtensions": {
@@ -20,7 +18,5 @@
 		"followLinks": false
 	},
 	"customVars": {
-		"sampleVar": "Hello from customVars!"
-	},
-	"jqFile": "/usr/local/lib/node_modules/markdown-styleguide-generator/template/jquery.js"
+	}
 }
