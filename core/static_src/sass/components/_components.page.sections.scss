@@ -1,16 +1,12 @@
+// ============================================================================
+// Page sections ( Vertical spacing )
+// ============================================================================
 
-// --------------------------------------------------
-// Vertical spacing
-//
-// The sections are set in settings.global.scss
-// --------------------------------------------------
-//shoudl we have this in the gloabl config or just in each partial??
-
-$spacing-section: 3rem;
+$section-spacing: 3rem;
 
 .section {
-    padding-top: $spacing-section;
-    padding-bottom: $spacing-section;
+    padding-top: $section-spacing;
+    padding-bottom: $section-spacing;
 }
 
     .section--stacked {

@@ -1,9 +1,6 @@
-// --------------------------------------------------
+// ============================================================================
 // Page gutters
-//
-// The gutters are set in settings.global.scss
-// --------------------------------------------------
-
+// ============================================================================
 /* SG
 # Components/page.gutters
 
@@ -19,17 +16,17 @@ Page Gutters determine the horizontal spacing of the site
 ```
 */
 
-$spacing-gutters: 1.5rem;
+$gutter-spacing: 1.5rem;
 
 .gutters {
-    padding-right: $spacing-gutters;
-    padding-left: $spacing-gutters;
+    padding-right: $gutter-spacing;
+    padding-left: $gutter-spacing;
 }
 
     .gutters\@small {
         @include small {
-            padding-right: $spacing-gutters;
-            padding-left: $spacing-gutters;
+            padding-right: $gutter-spacing;
+            padding-left: $gutter-spacing;
         }
     }
     //turns the gutters off while on the breakpoint small

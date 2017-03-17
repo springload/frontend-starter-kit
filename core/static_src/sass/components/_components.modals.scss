@@ -1,17 +1,12 @@
-// -----------------------------------------------------------------------------
+// ============================================================================
 // Modal lightboxes
-// -----------------------------------------------------------------------------
-//
 // Requires '_generic.keyframes.scss';
-
+// ============================================================================
 
 $z-index-modal: 3000;
 $z-index-modal-matte: 1001;
 $z-index-modal-content: 1002;
 
-$color-modal-control-bg: #333;
-$color-modal-control-text: $color-page-text;
-$color-modal-content-bg: #fff;
 
 // class attached to body, when modal is active
 .u-body-modal-active {

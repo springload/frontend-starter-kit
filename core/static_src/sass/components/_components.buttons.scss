@@ -1,6 +1,6 @@
-// --------------------------------------------------
-// Buttons
-// -------------------------------------------------
+// ============================================================================
+// Button
+// ============================================================================
 
 // 1. Allow us to style box model properties.
 // 2. Line different sized buttons up a little nicer.
@@ -16,11 +16,6 @@
 //    of space to the left and right, as padding, to keep consistent spacing.
 // 9. Don’t allow buttons to have underlines; it kinda ruins the illusion.
 
-$color-btn:                             $color-page-text;
-$color-border:                          $color-page-text;
-$color-btn-background:                  #fff;
-$color-btn-hover:                       #fff;
-$color-btn-background-hover:            $color-page-text;
 
 $padding-btn: $base-spacing-unit;
 
@@ -45,7 +40,7 @@ $padding-btn: $base-spacing-unit;
     padding-left: $padding-btn;         // [8]
     line-height: 2.5;                   // [8]
 
-    border-color: $color-border;
+    border-color: $color-btn-border;
     border-style: solid;
     border-width: 3px;
     border-radius: 0;
@@ -81,9 +76,9 @@ $padding-btn: $base-spacing-unit;
 
 }
 
-// --------------------------------------------------
-// ** Button modifiers
-// -------------------------------------------------
+
+//  Modifiers
+// -----------------------------------------------------------------------------
 
 .btn--small {
     padding-right: $padding-btn / 1.5;

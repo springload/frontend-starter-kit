@@ -1,36 +1,70 @@
-$color-brand-primary:               #378bb5;
-$color-brand-primary-highlight:     lighten($color-brand-primary, 5%);
-$color-brand-primary-shadow:        darken($color-brand-primary,  5%);
-
-$color-brand-secondary:             #c1813d;
-$color-brand-secondary-highlight:   lighten($color-brand-secondary, 5%);
-$color-brand-secondary-shadow:      darken($color-brand-secondary,  5%);
-
-// Common Colors
-$color-grey:                        #666;
-$color-grey-dark:                   #333;
-$color-grey-light:                  #999;
-$color-black:                       #000;
-$color-white:                       #fff;
-
-// Accessibilty Colors
-$color-focus:                       #6cc6ee;
-$color-select:                      #e5e5e5;
-$color-error:                       #f77;
+// ============================================================================
+// Site colors
+// ============================================================================
 
 
-// Reassign literal variables to meaningful ones.
-$color-page-text:                   $color-grey-dark;
-$color-page-background:             #fff;
+//  Brand
+// -----------------------------------------------------------------------------
+$color-brand-primary:               	#378bb5;
+$color-brand-primary-highlight:     	lighten($color-brand-primary, 5%);
+$color-brand-primary-shadow:        	darken($color-brand-primary,  5%);
 
-$color-logo:                        $color-brand-primary;
+$color-brand-secondary:             	#c1813d;
+$color-brand-secondary-highlight:   	lighten($color-brand-secondary, 5%);
+$color-brand-secondary-shadow:      	darken($color-brand-secondary,  5%);
 
-$color-links:                       inherit;
+
+// Common
+// -----------------------------------------------------------------------------
+$color-black:                       	#000;
+$color-white:                       	#fff;
 
 
-// do we need these ?? maybe they are just theme classes to keep in consistent
-// $color-page-header:                 $color-page-text;
-// $color-page-header-background:      #fff;
+// Page
+// -----------------------------------------------------------------------------
+$color-page-text:                   	$color-grey-dark;
+$color-page-links:                  	inherit;
+$color-page-background:             	#fff;
 
-// $color-page-footer:                 $color-page-text;
-// $color-page-footer-background:      #f3f3f3;
+
+// Accesibility
+// -----------------------------------------------------------------------------
+$color-focus:                      		#6cc6ee;
+$color-select:                     		#e5e5e5;
+
+
+// Opacity
+// -----------------------------------------------------------------------------
+$color-white-opacity-01: rgba(0, 0, 0, .1);
+
+
+// Buttons
+// -----------------------------------------------------------------------------
+$color-btn:                             $color-page-text;
+$color-btn-border:                      $color-page-text;
+$color-btn-background:                  #fff;
+$color-btn-hover:                       #fff;
+$color-btn-background-hover:            $color-page-text;
+
+
+// Radio picker
+// -----------------------------------------------------------------------------
+$color-radio-picker-border: 			#dfdfdf;
+$color-radio-picker-border-checked: 	#d2d2d2;
+$color-radio-picker-bg: 				#eaeaea;
+$color-radio-picker-bg-hover: 			#fafafa;
+$color-radio-picker-bg-checked: 		#fff;
+
+// Modals
+// -----------------------------------------------------------------------------
+$color-modal-control-bg: 				#333;
+$color-modal-control-text: $color-page-text;
+$color-modal-content-bg: 				#fff;
+
+// Table
+// -----------------------------------------------------------------------------
+$color-table-border: 					#5CE59D;
+$color-table-stripe: 					#F4FFFF;
+
+
+

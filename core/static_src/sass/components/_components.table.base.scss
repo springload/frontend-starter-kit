@@ -36,24 +36,24 @@
 
 
 .table {
-    border: 1px solid $table-border-color;
+    border: 1px solid $color-table-border;
     background-color: $color-white;
 }
 
     // Table sections
     .table__head {
-        border-bottom: solid 1px $table-border-color;
+        border-bottom: solid 1px $color-table-border;
     }
 
     .table__foot {
-        border-top: solid 1px $table-border-color;
+        border-top: solid 1px $color-table-border;
     }
 
         // Table cells
         .table__cell,
         .table__header-cell {
             padding: .75em;
-            border-right: solid 1px $table-border-color;
+            border-right: solid 1px $color-table-border;
             vertical-align: top;
         }
 
@@ -61,7 +61,7 @@
 // add body divider line
 // Foreign exchange rates table - needs to be added to tr element
 .table__row--border\+\+ {
-    border-bottom: 5px solid  $table-border-color;
+    border-bottom: 5px solid  $color-table-border;
 }
 
 

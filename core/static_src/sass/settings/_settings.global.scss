@@ -1,3 +1,6 @@
+// ============================================================================
+// Global settings
+// ============================================================================
 
 // Fonts
 // ----------------------------------------------------------------------------
@@ -14,22 +17,16 @@ $font-weight-normal:    400;
 $font-weight-medium:    500;
 $font-weight-bold:      700;
 
-
 // Spacing
 // ----------------------------------------------------------------------------
 
 $base-spacing-unit:     1.5rem; // 24px
-
-$base-padding:          $base-spacing-unit;
-
-$spacing-grid:          $base-spacing-unit;
 
 $spacing:               $base-spacing-unit;
 // Smaller
 $spacing-half:          ($spacing / 2);
 // Larger
 $spacing-double:        ($spacing * 2);
-
 
 
 // Others
@@ -41,5 +38,3 @@ $base-transition:       all .1s ease-in;
 
 $ease:                  cubic-bezier(.43, .11, .41, 1);
 $easing-circ:           cubic-bezier(.075, .82, .165, 0);
-
-$table-border-color: 	#5CE59D;

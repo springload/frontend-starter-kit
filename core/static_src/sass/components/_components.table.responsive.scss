@@ -1,7 +1,8 @@
 // ============================================================================
 // Responsive tables
 // ============================================================================
-$size-space-default: 20px;
+
+$table-title-spacing: 20px;
 
 @mixin full-width-styles\@small {
     @include small {
@@ -62,8 +63,8 @@ $size-space-default: 20px;
         .table--responsive .table__cell--title\@small {
             @include small {
                 padding: 0;
-                margin-top: $size-space-default;
-                margin-bottom: $size-space-default/3;
+                margin-top: $table-title-spacing;
+                margin-bottom: $table-title-spacing/3;
                 background: transparent;
                 font-weight: bold;
                 border-top: 0;

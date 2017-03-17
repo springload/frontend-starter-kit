@@ -23,8 +23,8 @@
 	// Add a divider line to rows when they're stacked
     .table--stacked .table__row {
         @include small {
-		display: block;
-            border-bottom: 1px solid $table-border-color;
+        	display: block;
+            border-bottom: 1px solid $color-table-border;
             padding-bottom: .75rem;
         }
     }

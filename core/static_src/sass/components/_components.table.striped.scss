@@ -2,7 +2,6 @@
 // Striped coloured Tables
 // ============================================================================
 
-$color-table-stripe: #F4FFFF;
 
 .table--striped {
 }
@@ -22,10 +21,11 @@ $color-table-stripe: #F4FFFF;
 /* SG
 # Components/page.table.striped
 
-//todo clean up comment
 This component adds stripes to each odd row in the table body section.
+We don't want this as a base style on all tables otherwise we have to remove them from various breakpoints in various situations. Better to lock it down to a class of its own since the declaration to style the stripes is quite specific.
+#### table--striped@medium
+
 Sometimes we only want stripes from medium and up, ie responsive tables don't want stripes at small sizes otherwise we have to create a rather specific override to remove.
-Striped tables, we don't want this as a base style on all tables otherwise we have to remove them from various breakpoints in various situations. Better to lock it down to a class of its own since the declaration to style the stripes is quite specific.
 
 ```
 <table class="table table--striped ">
