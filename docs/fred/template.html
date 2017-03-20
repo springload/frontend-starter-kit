@@ -26,10 +26,10 @@
     </div>
 
 
-    <div  style='background-color:#3D4149; color:#fff'>
-        <div class='[ wrapper ]' style=''>
+    <div  class='theme--dark'>
+        <div class='[ wrapper wrapper--narrow ]' style=''>
             <div class='[ section gutters ]'>
-                <div class='u-text-center u-auto' style='max-width:50rem'>
+                <div class='u-text-center '>
                     <img src='fred-logo.png'>
                     <h1>
                         FRED
@@ -43,9 +43,9 @@
         </div>
      </div>
 
-    <div class='[ wrapper ]' >
+    <div class='[ wrapper wrapper--narrow ]' >
         <div class='[ section gutters ]'>
-            <div class=' u-auto' style='max-width:50rem'>
+            <div class=''>
                 <h2>
                     Code structure
                 </h2>
@@ -65,23 +65,7 @@
                     <li><strong>utilities</strong> – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class</li>
                     <li><strong>theming</strong> – website themes</li>
                 </ol>
-                <ul>
-                    {{#each menu}}
-                        <li>
-                            {{#if headings.0.name}}
-                                <a class="submenulink" href="#" data-section="{{name}}">{{name}}</a>
-                                <ul class="submenu" data-submenu="{{../name}}">
-                                {{#each headings}}
-                                    <li><a href="#{{id}}">{{name}}</a></li>
-                                {{/each}}
-                                </ul>
-                            {{/if}}
-                            {{#unless headings.0.name}}
-                                <a class="sectionlink" href="#" data-section="{{name}}">{{name}}</a>
-                            {{/unless}}
-                        </li>
-                    {{/each}}
-                </ul>
+
                 <h2>
                     How the Code is documented
                 </h2>
@@ -94,32 +78,17 @@
         </div>
     </div>
 
-    <div class='[ wrapper ]' style='background-color:#0F9850' >
-        <div class='[ section gutters ]'>
-            <div class=' u-auto' style='max-width:50rem'>
-                <h2>
-                    How to update or add code to FRED
-                </h2>
-                <p>
-                    Guidelines
-                </p>
-                <p>If you are using b</p>
-                <p>
-                    YAY, the more people that collaborate on this the better! .... example of how to add comments ect
-            </div>
-        </div>
-    </div>
+    <div class='[ section gutters ]' style='background-color:#3D4149;'>
+        <div class='[ wrapper ] styleguide'  >
+            <div class='[ grid ]' >
 
-    <div class='[ section ]' style='background-color:#3D4149;'>
-        <div class='[ wrapper ]'  style='max-width:60rem'>
-
-            <div class='styleguide-wrapper u-auto' style='overflow: auto;'>
-                <div style='width:100%; background-color: #fff;'>
+                <div class='[ width-full width-3/4@medium ] theme--content' >
+                    <div class='[ gutters section ]'>
                     {{#each sections}}
-                        <div class="section" id="{{id}}" data-section="{{section}}" data-heading="{{heading}}">
+                        <div class="styleguide-section" id="{{id}}" data-section="{{section}}" data-heading="{{heading}}">
 
                             <div class="comment">
-                                <h1>{{section}}{{#if heading}}/{{heading}}{{/if}}</h1>
+                                <h2>{{section}}{{#if heading}}/{{heading}}{{/if}}</h2>
                                 {{{comment}}}
                             </div>
 
@@ -128,7 +97,7 @@
                                     {{{code}}}
                                 </div>
                             {{/if}}
-
+                            <!--the html code-->
                             {{#if markup}}
                                 <div class="markup hljs">
 <pre>
@@ -139,10 +108,33 @@
 
                         </div>
                     {{/each}}
+                    </div>
+
+                </div>
+
+                 <div class='[ width-full width-1/4@medium ] theme--fred' >
+                    <div class='[ gutters section ]'>
+                        <ul class='list-unstyled styleguide-menu'>
+                            {{#each menu}}
+                                <li>
+                                    {{#if headings.0.name}}
+                                        <a class="submenulink" href="#" data-section="{{name}}">{{name}}</a>
+                                        <ul class="submenu" data-submenu="{{../name}}">
+                                        {{#each headings}}
+                                            <li><a href="#{{id}}">{{name}}</a></li>
+                                        {{/each}}
+                                        </ul>
+                                    {{/if}}
+                                    {{#unless headings.0.name}}
+                                        <a class="sectionlink" href="#" data-section="{{name}}">{{name}}</a>
+                                    {{/unless}}
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <div style="clear: both"></div>
         </div>
     </div>
 

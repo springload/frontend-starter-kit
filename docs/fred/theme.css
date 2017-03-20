@@ -1,147 +1,82 @@
-#styleguide {
-    float: right;
-    width:70%;
-    border-left:1px solid #efefef;
-    background-color:#fff;
-    padding:2em;
+/* REALLY NEED TO TIDY THIS FILE SINCE WE DON'T NEED TO HACK IT ANYMORE  */
 
+/*
+//  Themes
+*/
+
+.theme--dark {
+    background-color:#3D4149;
+    color:#fff
 }
- @media screen and (max-width: 600px) {
-    #styleguide {
-          float: none;
-          width:100%;
-    }
-}
-.styleguide-wrapper {
-    background-color: #0F9850;
+.theme--fred {
+    background-color:#7DC265;
+    color:#fff;
 }
 
-#styleguide .section {
-    display: none;
+.theme--content {
+    background-color:#ffffff;
+}
+
+/*
+//  Themes
+*/
+.styleguide-section {
     border-bottom:1px solid #efefef;
     margin-bottom:30px;
 }
 
-#styleguide .result,
-#styleguide .comment {
+.styleguide-section .result,
+.styleguide-section .comment {
     padding: 0 1em 1em 1em;
 
 }
 
-
-#styleguide .comment h1 {
-    font-size:22px;
-}
-#styleguide .section .comment code {
+/*.styleguide-section  .comment code {
     color: #3fbead;
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
     font-size: 13px;
 }
+*/
 
-
-#styleguide code,
-#styleguide pre {
-    border: none;
-    font-family: Consolas, Monaco, 'Andale Mono', monospace;
-    font-size: 13px;
-    line-height: 20px;
-    direction: ltr;
-    text-align: left;
-    white-space: pre-wrap;
-    word-spacing: normal;
-    margin: 0;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-}
 
 
 /* menu */
-#styleguide-menu {
-    float: left;
-    width:20%;
-    padding:2em;
 
-}
- @media screen and (max-width: 600px) {
-    #styleguide-menu {
-          float: none;
-          width:100%;
-    }
-}
-#styleguide-menu .submenu {
-    display: none;
 
-}
-
-#styleguide-menu .submenu.on{
-    display: block;
-
-    font-size: 14px;
-
-}
-#styleguide-menu .submenu.on a {
-    margin: 0 0 9px 0;
-
-}
-
-#styleguide-menu ul {
-    list-style-type: none;
+.styleguide-menu li {
     padding: 0;
     margin: 0;
 }
 
-#styleguide-menu li {
-    padding: 0;
-    margin: 0;
-}
-
-
-
-#styleguide-menu a {
+.styleguide-menu a {
     display: block;
     text-decoration: none;
-    color:#75FFB6;
     margin-bottom:9px;
 
 }
 
-#styleguide-menu ul ul a {
+.styleguide-menu ul ul a {
     padding: 0 1em 0 1em;
 }
 
-#styleguide-menu a:visited,
-#styleguide-menu a:hover,
-#styleguide-menu a:active {
+.styleguide-menu a:visited,
+.styleguide-menu a:hover,
+.styleguide-menu a:active {
     display: block;
 }
 
 
 
-#styleguide-menu a.on {
-    color:#75FFB6;
-}
-#styleguide-menu .submenu.on a{
-      color:#42CC83;
-}
-.styleguide-wrapper .section {
-    padding-top:0;
-}
-
-
-#styleguide .btn {
-    background-color: #0F9850;
+/* overide to make the buttons a bit prettier :) */
+.styleguide .btn {
+    background-color: #7DC265;
     color: #fff;
-    border-color: #0F9850;
+    border-color: #7DC265;
     border-radius:0.2rem;
 }
 
-#styleguide .btn:hover{
-    color:  #0F9850;
+.styleguide .btn:hover{
+    color:  #7DC265;
     background-color:#fff;
 
 }

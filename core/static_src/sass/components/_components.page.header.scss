@@ -18,7 +18,7 @@ You can modify this element by adding the above class this will fix the header t
 
 $height-logo: 2.25rem;
 
-$height-header: $height-logo + (2 * $spacing-grid);
+$height-header: $height-logo + (2 * $grid-spacing);
 
 
 .page-header {

@@ -2,20 +2,19 @@
 // Grid spacing
 // ============================================================================
 
-$grid-margin:          $base-spacing-unit;
 
 .grid--row-spacing {
-    margin-bottom: $grid-margin;
+    margin-bottom: $grid-spacing;
 
     > * {
-        margin-bottom: $grid-margin;
+        margin-bottom: $grid-spacing;
     }
 }
 
 .grid--col-spacing {
-    margin-left: -$grid-margin;
+    margin-left: -$grid-spacing;
 
     > * {
-        padding-left: $grid-margin;
+        padding-left: $grid-spacing;
     }
 }
