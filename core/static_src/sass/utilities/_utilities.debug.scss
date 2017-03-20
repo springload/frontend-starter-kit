@@ -1,0 +1,32 @@
+// Define styles for errors and warns that we can reuse throughout this file.
+
+@mixin debug-warn() {
+  outline: 5px solid yellow;
+}
+
+@mixin debug-error() {
+  outline: 5px solid red;
+}
+
+@if (config(debug) == true) {
+/*------------------------------------*\
+  #DEBUG
+\*------------------------------------*/
+
+
+/**
+ * Images missing `alt` attributes is an error. Empty `alt` attributes are
+ * allowed; perhaps we need to do that…?
+ */
+img:not([alt]) {
+  @include debug-error();
+}
+
+
+/**
+ * Warn about links pointing to just `#`; it’s usually better to point them to
+ * `#0` if we have to point to `#` at all.
+ */
+[href="#"] {
+  @include debug-warn();
+}

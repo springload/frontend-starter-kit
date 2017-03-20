@@ -2,13 +2,25 @@
 // Headings
 // ============================================================================
 
+/**
+ * Simple default styles for headings 1 through 6.
+ */
+
+$font-size-h1:  36;
+$font-size-h2:  28;
+$font-size-h3:  24;
+$font-size-h4:  20;
+$font-size-h5:  18;
+$font-size-h6:  16;
+
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: $font-weight-bold;
     line-height: $line-height-headline;
 }
 
 h1 {
-    font-size: rem(34);
+    font-size: rem($font-size-h1);
 
     @include medium {
         font-size: rem(64);
@@ -22,24 +34,24 @@ h1 {
 }
 
 h2 {
-    font-size: rem(22);
+    font-size: rem($font-size-h2);
 }
 
 h3 {
-    font-size: rem(20);
+    font-size: rem($font-size-h3);
 }
 
 h4 {
-    font-size: rem(18);
+    font-size: rem($font-size-h4);
 }
 
 h5 {
-    font-size: rem(16);
+    font-size: rem($font-size-h5);
 }
 
 h6 {
     font-weight: $font-weight-normal;
-    font-size: rem(16);
+    font-size: rem($font-size-h6);
 }
 
 /* SG

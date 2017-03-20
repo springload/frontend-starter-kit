@@ -17,11 +17,12 @@
 // Form.radio-picker....Radio picker form.
 // Rich text............Set up a new styling context for long-format text.
 
+@import 'components/components.avatar';
 @import 'components/components.buttons';
 @import 'components/components.button-groups';
 @import 'components/components.icon-text';
 @import 'components/components.icons';
-//@import 'components/components.images.lazyload'; -- library not starter kit ??
+@import 'components/components.images.lazyload';
 @import 'components/components.links';
 @import 'components/components.logo';
 @import 'components/components.modals';
@@ -31,10 +32,11 @@
 @import 'components/components.page.sections';
 @import 'components/components.page.header';
 @import 'components/components.form';
-//@import 'components/components.form.radio-picker'; -- library not starter kit ??
+@import 'components/components.form.radio-picker';
 @import 'components/components.rich-text';
 @import 'components/components.table.base';
 @import 'components/components.table.responsive';
 @import 'components/components.table.scrollable';
 @import 'components/components.table.stacked';
 @import 'components/components.table.striped';
+@import 'components/components.pagination';

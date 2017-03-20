@@ -23,6 +23,7 @@
 .styleguide-section {
     border-bottom:1px solid #efefef;
     margin-bottom:30px;
+    padding-bottom:30px;
 }
 
 .styleguide-section .result,
@@ -30,13 +31,6 @@
     padding: 0 1em 1em 1em;
 
 }
-
-/*.styleguide-section  .comment code {
-    color: #3fbead;
-    font-family: Consolas, Monaco, 'Andale Mono', monospace;
-    font-size: 13px;
-}
-*/
 
 
 

@@ -1,0 +1,63 @@
+// ============================================================================
+// Quotes
+// ============================================================================
+
+/**
+ * Basic styling for quoted text.
+ */
+
+q {
+  font-style: italic;
+  quotes: "‘" "’";
+
+  &:before {
+    content: open-quote;
+  }
+
+  &:after {
+    content: close-quote;
+  }
+
+}
+
+blockquote {
+  quotes: "“" "”";
+
+  p {
+    text-indent: -0.42em;
+
+    &:before {
+      content: open-quote;
+    }
+
+    &:after {
+      content: no-close-quote;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+
+      &:after {
+          content: close-quote;
+      }
+
+    }
+
+  }
+
+}
+
+
+/* SG
+# Elements/quotes
+
+```
+<q> Talk is cheap. Show me the code </q>
+
+<blockquote>
+  <p>
+   They don't make bugs like Bunny anymore.
+  </p>
+</blockquote>
+```
+*/

@@ -1,0 +1,120 @@
+/*------------------------------------*\
+  #PAGINATION
+\*------------------------------------*/
+
+
+
+
+.pagination {
+
+  font-size: rem(12);
+  margin:  0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: $base-spacing-unit;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+  border: 1px solid $color-pagination-border;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+  /**
+   * 1. Hide all of the pagination items to start off with…
+   * 2. …but show them all on big enough screens.
+   */
+  .pagination__item {
+    display: none;
+
+    @include medium {
+      display: table-cell;
+    }
+
+    & + & {
+      border-left: 1px solid $color-pagination-border;
+    }
+
+  }
+
+  /**
+   * Despite the show/hide stuff above, let’s explicitly force all relative
+   * pagination controls to be always visible.
+   *
+   * This means that on small screens, we only get First, Previous, Next, Last
+   * links, but on larger screens we get all of the numbers as well.
+   */
+  .pagination__item--first,
+  .pagination__item--prev,
+  .pagination__item--next,
+  .pagination__item--last {
+    display: table-cell;
+  }
+
+    .pagination__link {
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      color: $color-pagination;
+      background-color: $color-pagination-bg;
+
+      @include medium {
+        padding: 1rem;
+      }
+
+      @include hocus() {
+        background-color: $color-pagination-bg-hover;
+      }
+
+      &.is-current {
+        background-color: $color-pagination-bg-current;
+        text-decoration: underline;
+        cursor: default;
+      }
+
+    }
+
+/* SG
+# Components/pagination
+
+
+```
+<ol class="pagination">
+
+    <li class="pagination__item  pagination__item--first">
+      <a href="#0" class="pagination__link">First</a>
+    </li>
+
+    <li class="pagination__item  pagination__item--prev">
+      <a href="#0" class="pagination__link">Previous</a>
+    </li>
+
+    <li class="pagination__item">
+      <a href="#0" class="pagination__link">1</a>
+    </li>
+    <li class="pagination__item">
+      <a href="#0" class="pagination__link  is-current">2</a>
+    </li>
+    <li class="pagination__item">
+      <a href="#0" class="pagination__link">3</a>
+    </li>
+    <li class="pagination__item">
+      <a href="#0" class="pagination__link">4</a>
+    </li>
+    <li class="pagination__item">
+      <a href="#0" class="pagination__link">5</a>
+    </li>
+
+    <li class="pagination__item  pagination__item--next">
+      <a href="#0" class="pagination__link">Next</a>
+    </li>
+
+    <li class="pagination__item  pagination__item--last">
+      <a href="#0" class="pagination__link">Last</a>
+    </li>
+
+  </ol>
+
+```
+*/

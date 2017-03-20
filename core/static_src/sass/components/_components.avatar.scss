@@ -1,0 +1,37 @@
+// ============================================================================
+// AVATAR
+// ============================================================================
+
+$avatar-size:       $base-spacing-unit * 3;
+$avatar-size-large: $avatar-size * 2;
+$avatar-size-small: $avatar-size / 2;
+
+.avatar {
+  display: block;
+  width:  $avatar-size;
+  height: $avatar-size;
+  border-radius: 100%;
+}
+
+.avatar--small {
+  width:  $avatar-size-small;
+  height: $avatar-size-small;
+}
+
+.avatar--large {
+  width:  $avatar-size-large;
+  height: $avatar-size-large;
+}
+
+
+/* SG
+# Components/avatar
+
+```
+<img class="avatar" src="http://placekitten.com/150/150">
+<h5>1. avatar--small</h5>
+<img class="avatar avatar--small" src="http://placekitten.com/150/150">
+<h5>2. avatar--large</h5>
+<img class="avatar avatar--large" src="http://placekitten.com/150/150">
+```
+*/

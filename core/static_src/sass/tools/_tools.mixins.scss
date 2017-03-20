@@ -31,6 +31,13 @@
     }
 }
 
+// Generate `:hover` and `:focus` styles in one go.
+@mixin hocus() {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
 // enable/disable font smoothing
 @mixin font-smoothing($toggle: true) {
     @if ($toggle == true) {
