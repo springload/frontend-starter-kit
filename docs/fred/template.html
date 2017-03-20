@@ -48,46 +48,76 @@
 
     <div class='[ wrapper wrapper--narrow ]' >
         <div class='[ section gutters ]'>
-            <div class=''>
+
                 <h2>
                     Code structure
                 </h2>
                 <p>
-                    We have organised our front end code into sections (based on a <a href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/">ITCSS architecture</a> ).
+                    We have seperated our CSS codebase into several sections (called layers), which take form of an inverted triangle: (based on <a href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/">ITCSS architecture</a> ).
                 </p>
+
+                <p>
+                    Those layers are as follows:
+                </p>
+
+                <ol>
+                    <li><strong>SETTINGS</strong> – used with preprocessors and contain font, colors definitions, etc.</li>
+                    <li><strong>TOOLS</strong> – globally used mixins and functions. It’s important not to output any CSS in the first 2 layers.</li>
+                    <li><strong>GENERIC</strong> – reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.</li>
+                    <li><strong>ELEMENTS</strong> – styling for bare HTML elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here.</li>
+                    <li><strong>OBJECTS</strong> – class-based selectors which define undecorated design patterns, for example media object known from OOCSS</li>
+                    <li><strong>COMPONENTS</strong>  – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components</li>
+                    <li><strong>UTILITIES</strong> – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class</li>
+                    <li><strong>THEMING</strong> – website themes</li>
+                </ol>
+                 <p class='u-text-center'><img src='itcss-triangle.png' alt='Inverted triangle'/></p>
+
                 <p>
                     ITCSS stands for Inverted Triangle CSS and it helps you to organize your project CSS files in such way that you can better deal with (not always easy-to-deal with) CSS specifics like global namespace, cascade and selectors specificity.
                 </p>
-                <p>
-                    Those sections are as follows:
-                </p>
-                <ol>
-                    <li><strong>settings</strong> – used with preprocessors and contain font, colors definitions, etc.</li>
-                    <li><strong>tools</strong> – globally used mixins and functions. It’s important not to output any CSS in the first 2 layers.</li>
-                    <li><strong>generic</strong> – reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.</li>
-                    <li><strong>elements</strong> – styling for bare HTML elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here.</li>
-                    <li><strong>objects</strong> – class-based selectors which define undecorated design patterns, for example media object known from OOCSS</li>
-                    <li><strong>components</strong>  – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components</li>
-                    <li><strong>utilities</strong> – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class</li>
-                    <li><strong>theming</strong> – website themes</li>
-                </ol>
 
+                <p>
+                    The triangle also shows how styles represented by selectors are ordered in the resulting CSS: from generic styles to explicit ones, from low-specificity selectors to more specific ones (but still not too specific, IDs are not allowed) and from far reaching to localized ones.
+                </p>
+
+
+
+        </div>
+    </div>
+
+    <div class='theme--fred'>
+        <div class='[ wrapper wrapper--narrow ]' >
+            <div class='[ section gutters ]'>
                 <h2>
                     How the Code is documented
                 </h2>
                 <p>
-                    To document our code we use an NPM package <a href="https://www.npmjs.com/package/markdown-styleguide-generator">mark-down-styleguide-generator</a>
+                    To document our CSS codebase we use an NPM package <a href="https://www.npmjs.com/package/markdown-styleguide-generator">mark-down-styleguide-generator</a>
                     This tool will search all your style files (your .css, .scss _partial.scss, .whatever) for comments and create a html file living style guide for your developers to use!
                 </p>
-                <h2>
+                <h3>
                     How to use it
-                </h2>
+                </h3>
                 <p>
                     CD into your directory and run "npm run styleguide" this will run the npm package and open a window with the styleguide in it.
+                    The more people that add to this and update this the more valuable resource this will be.
                 </p>
             </div>
         </div>
     </div>
+
+    <div class='[ wrapper wrapper--narrow ]' >
+        <div class='[ section gutters ]'>
+            <h2>
+                Rules
+            </h2>
+            <p>
+                If you are adding to this codebase please check out our
+                <a href='https://github.com/springload/frontend-starter-kit/blob/master/docs/front-end-principles.md'>coding guidelines</a> before you submit your code.
+            </p>
+        </div>
+    </div>
+
 
     <div class='[ section gutters ]' style='background-color:#3D4149;' id='fred'>
         <div class='[ wrapper ] styleguide' style=' background-color:#7DC265; ' >
