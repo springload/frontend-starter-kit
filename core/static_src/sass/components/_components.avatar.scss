@@ -13,25 +13,30 @@ $avatar-size-small: $avatar-size / 2;
   border-radius: 100%;
 }
 
-.avatar--small {
-  width:  $avatar-size-small;
-  height: $avatar-size-small;
-}
+//  Modifiers
+// -----------------------------------------------------------------------------
 
-.avatar--large {
-  width:  $avatar-size-large;
-  height: $avatar-size-large;
-}
+	.avatar--small {
+	  width:  $avatar-size-small;
+	  height: $avatar-size-small;
+	}
+
+	.avatar--large {
+	  width:  $avatar-size-large;
+	  height: $avatar-size-large;
+	}
 
 
 /* SG
 # Components/avatar
-
+Use the "avatar" class to transform your image to a circular image.
+To modify avatar you can add the modifiers listed below:
 ```
 <img class="avatar" src="http://placekitten.com/150/150">
-<h5>1. avatar--small</h5>
-<img class="avatar avatar--small" src="http://placekitten.com/150/150">
-<h5>2. avatar--large</h5>
+
+<h5>1. avatar--large</h5>
 <img class="avatar avatar--large" src="http://placekitten.com/150/150">
+<h5>2. avatar--small</h5>
+<img class="avatar avatar--small" src="http://placekitten.com/150/150">
 ```
 */

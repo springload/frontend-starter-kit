@@ -26,13 +26,15 @@ $section-spacing: 3rem;
 /* SG
 # Components/page.sections
 
-Page Gutters determine the vertical spacing of the site
+Page sections determine the vertical spacing of the site.
 
 ```
-<div class='[ sections ]' style='background-color:#0F984F'>
-    <p class='u-text-center' style='background-color:#f8f8f8'>
-        You can see the sections highlighted by the green background
-    </p>
+<div style="background-color:#0F984F">
+    <div class='[ section ]' >
+        <p class="u-text-center" style="background-color:#f8f8f8">
+            You can see the sections highlighted by the green background
+        </p>
+    </div>
 </div>
 
 ```

@@ -5,7 +5,7 @@
 
 //  Brand
 // -----------------------------------------------------------------------------
-$color-brand-primary:               	#378bb5;
+$color-brand-primary:               	#0F984F;
 $color-brand-primary-highlight:     	lighten($color-brand-primary, 5%);
 $color-brand-primary-shadow:        	darken($color-brand-primary,  5%);
 
@@ -63,7 +63,7 @@ $color-modal-content-bg: 				#fff;
 
 // Table
 // -----------------------------------------------------------------------------
-$color-table-border: 					#5CE59D;
+$color-table-border: 					#0F984F;
 $color-table-stripe: 					#F4FFFF;
 
 
@@ -74,3 +74,28 @@ $color-pagination-border:               $color-pagination;
 $color-pagination-bg:                   $color-brand-primary;
 $color-pagination-bg-hover:             $color-brand-primary-shadow;
 $color-pagination-bg-current:           $color-brand-primary-highlight;
+
+// Forms
+// -----------------------------------------------------------------------------
+$base-form-color:					#ccc;
+$base-form-color-border: 			#ccc;
+$input-text-color:              #668 !default;
+$input-text-color-border-hover: rgba(39,41,43,.6) !default;
+$input-text-color-bg:           #FFF !default;
+$input-text-color-shadow:       rgba(0, 137, 91, .6) !default;
+
+
+$input-radio-color-bg:          $base-form-color !default;
+$input-radio-color-border:      $base-form-color-border !default;
+
+$input-checkbox-color-border:      rgb(192,192,192) !default;
+$input-checkbox-color-bg:          rgb(224,224,224);
+
+/* SG
+# Settings/colors
+
+All of the sites colours sit in this file, by having all of the colours in one file allows us to get a nice overview of the site.
+```
+
+```
+*/

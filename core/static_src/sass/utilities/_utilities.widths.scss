@@ -64,41 +64,49 @@
 /* SG
 # Utilities/widths
 
-Here is a series of width helper classes that you can use to size things like grid systems.
-//todo add media quiery info
+Here is a series of width helper classes that you can use to size grid systems.
+
 ```
 <div class='grid'>
     <div class='width-1/4' >
-        <p style='border:1px solid #222'>width-1/4</p>
+        <p style='border:1px solid #7DC265; padding:0.5em'>width-1/4</p>
     </div>
     <div class='width-1/4'>
-        <p style='border:1px solid #222'>width-1/4</p>
+        <p style='border:1px solid #7DC265; padding:0.5em'>width-1/4</p>
     </div>
     <div class='width-1/2'>
-        <p style='border:1px solid #222'>width-1/2</p>
+        <p style='border:1px solid #7DC265; padding:0.5em'>width-1/2</p>
     </div>
 </div>
 <div class='grid'>
     <div class='width-1/3' >
-        <p style='border:1px solid #222'>width-1/3</p>
+        <p style='border:1px solid #7DC265; padding:0.5em'>width-1/3</p>
     </div>
     <div class='width-2/3'>
-        <p style='border:1px solid #222'>width-2/3</p>
+        <p style='border:1px solid #7DC265; padding:0.5em'>width-2/3</p>
     </div>
 </div>
 <div class='grid'>
     <div class='width-1/10' >
-        <p style='border:1px solid #222'>width-1/10</p>
+        <p style='border:1px solid #7DC265; padding:0.5em'>width-1/10</p>
     </div>
     <div class='width-2/10' >
-        <p style='border:1px solid #222'>width-2/10</p>
+        <p style='border:1px solid #7DC265; padding:0.5em'>width-2/10</p>
     </div>
     <div class='width-3/10' >
-        <p style='border:1px solid #222'>width-3/10</p>
+        <p style='border:1px solid #7DC265; padding:0.5em'>width-3/10</p>
     </div>
     <div class='width-4/10' >
-        <p style='border:1px solid #222'>width-4/10</p>
+        <p style='border:1px solid #7DC265; padding:0.5em'>width-4/10</p>
     </div>
 </div>
+<h4>Responsive widths</h4>
+<p>This works exactly the same as what's mentioned above. You just need to add an extra suffix onto the classes which relates to the breakpoint you want to target. </p>
+<h5>1. @small </h5>
+<p>width-1/3@small</p>
+<h5>2. @medium </h5>
+<p>width-1/3@medium</p>
+<h5>3. @large </h5>
+<p>width-1/3@large</p>
 ```
 */

@@ -58,8 +58,7 @@
                 <p>
                     Those layers are as follows:
                 </p>
-
-                <ol>
+                <ol class='styleguide-layers'>
                     <li><strong>SETTINGS</strong> – used with preprocessors and contain font, colors definitions, etc.</li>
                     <li><strong>TOOLS</strong> – globally used mixins and functions. It’s important not to output any CSS in the first 2 layers.</li>
                     <li><strong>GENERIC</strong> – reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.</li>
@@ -74,11 +73,15 @@
                 <p>
                     ITCSS stands for Inverted Triangle CSS and it helps you to organize your project CSS files in such way that you can better deal with (not always easy-to-deal with) CSS specifics like global namespace, cascade and selectors specificity.
                 </p>
-
                 <p>
                     The triangle also shows how styles represented by selectors are ordered in the resulting CSS: from generic styles to explicit ones, from low-specificity selectors to more specific ones (but still not too specific, IDs are not allowed) and from far reaching to localized ones.
                 </p>
-
+                <p>
+                    Secondly, you need to work to a componentised UI architecture. You no longer build to the 'pages' model, but to the modules/components pattern (ITCSS refers to these as 'components'). You build discrete, self-contained pieces of UI as reusable components.
+                </p>
+                <p>
+                    Finally, ITCSS requires that you are in favour of a class-based architecture. You are not afraid of adding classes to your HTML; you don't believe that 'less markup' and 'clean markup' are the same thing; and you understand that binding onto classes, rather than bare HTML elements, provides a more robust and scalable architecture.
+                </p>
         </div>
     </div>
 
@@ -99,19 +102,26 @@
                     CD into your directory and run "npm run styleguide" this will run the npm package and open a window with the styleguide in it.
                     The more people that add to this and update this the more valuable resource this will be.
                 </p>
+                <h3>
+                    Rules
+                </h3>
+                <p>
+                    If you are adding to this codebase please check out our
+                    <a href='https://github.com/springload/frontend-starter-kit/blob/master/docs/front-end-principles.md'>coding guidelines</a>.
+                </p>
             </div>
         </div>
     </div>
 
     <div class='[ wrapper wrapper--narrow ]' >
         <div class='[ section gutters ]'>
-            <h2>
-                Rules
-            </h2>
-            <p>
-                If you are adding to this codebase please check out our
-                <a href='https://github.com/springload/frontend-starter-kit/blob/master/docs/front-end-principles.md'>coding guidelines</a>.
-            </p>
+            <blockquote>
+            <!--i know this style is a hack sorry -->
+                <p style='font-size:2.8em'>
+                    This is how it is <strong>now</strong>, until we change it
+                </p>
+                <cite>- Nick Walsh</cite>
+            </blockquote>
         </div>
     </div>
 
@@ -184,7 +194,7 @@
             <div class='[ gutters section ]'>
                 <div class='[ grid ]'>
                     <p class='u-text-right'>
-                        Made with love by a friendly FED <span style='color:#0F9850'>&#10084;</span>
+                        Made with love by FRED <span style='color:#7DC265'>&#10084;</span>
                     </p>
                 </div>
             </div>

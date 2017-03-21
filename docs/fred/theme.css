@@ -17,9 +17,9 @@
     background-color:#ffffff;
 }
 
-
+/* sections */
 .styleguide-section {
-    border-bottom:1px solid #efefef;
+    border-bottom:4px solid #efefef;
     margin-bottom:30px;
     padding-bottom:30px;
 }
@@ -27,11 +27,18 @@
 .styleguide-section .result,
 .styleguide-section .comment {
     padding: 0 1em 1em 1em;
-
 }
 
+.styleguide-section .markup {
+    padding: 1em;
+}
 
+.styleguide-layers li {
+    padding:0.5rem 0;
+    border-top: 2px solid #ddd;
+    border-top-style: dashed;
 
+}
 /* menu */
 .styleguide-menu  {
     color:#CAFFB2;
@@ -44,19 +51,7 @@
     display: block;
     text-decoration: none;
     margin-bottom:9px;
-
 }
-
-.styleguide-menu ul ul a {
-    padding: 0 1em 0 1em;
-}
-
-.styleguide-menu a:visited,
-.styleguide-menu a:hover,
-.styleguide-menu a:active {
-    display: block;
-}
-
 
 
 /* overide to make the buttons a bit prettier :) */

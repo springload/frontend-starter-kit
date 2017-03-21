@@ -9,6 +9,34 @@
         color: $color-page-text;
     }
 }
+//  Modifiers
+// -----------------------------------------------------------------------------
+
+    .link--tag {
+        font-weight: $font-weight-bold;
+        font-size: rem(18);
+        line-height: 1.2;
+
+        @include medium {
+            font-size: rem(21);
+            line-height: 1.1;
+        }
+
+        @include large {
+            font-size: rem(23);
+            line-height: 1.05;
+        }
+    }
+
+
+    .link--underline {
+        box-shadow: inset 0 -.062em 0 $color-white;
+
+        @include hover {
+            box-shadow: inset 0 -.062em 0 $color-page-text;
+        }
+    }
+
 
 .link-social {
     display: inline-block;
@@ -29,33 +57,4 @@
 .faux-link--underline {
     transition: $base-transition;
     box-shadow: inset 0 -.062em 0 $color-white;
-}
-
-
-//  Modifiers
-// -----------------------------------------------------------------------------
-
-.link--tag {
-    font-weight: $font-weight-bold;
-    font-size: rem(18);
-    line-height: 1.2;
-
-    @include medium {
-        font-size: rem(21);
-        line-height: 1.1;
-    }
-
-    @include large {
-        font-size: rem(23);
-        line-height: 1.05;
-    }
-}
-
-
-.link--underline {
-    box-shadow: inset 0 -.062em 0 $color-white;
-
-    @include hover {
-        box-shadow: inset 0 -.062em 0 $color-page-text;
-    }
 }
