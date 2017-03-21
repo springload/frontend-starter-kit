@@ -10,16 +10,14 @@
 }
 .theme--fred {
     background-color:#7DC265;
-    color:#fff;
+    color:#CAFFB2;
 }
 
 .theme--content {
     background-color:#ffffff;
 }
 
-/*
-//  Themes
-*/
+
 .styleguide-section {
     border-bottom:1px solid #efefef;
     margin-bottom:30px;
@@ -35,13 +33,13 @@
 
 
 /* menu */
-
-
-.styleguide-menu li {
-    padding: 0;
-    margin: 0;
+.styleguide-menu  {
+    color:#CAFFB2;
 }
 
+.styleguide-menu .submenu {
+    list-style-type: none;
+}
 .styleguide-menu a {
     display: block;
     text-decoration: none;
