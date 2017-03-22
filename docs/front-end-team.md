@@ -94,3 +94,24 @@ Also have a look at:
     - 15 Springloaders using it every week
     - 3 public relations items done about it (blog posts, meetup talks, open-source projects)
     - 10 feature changes / new features delivered according to user feedback after the first launch
+
+## Front-end code reviews
+
+The front-end team frequently collaborates on their different projects, formally and informally. This collaboration can happen through pair programming and code reviews, among other practices.
+
+### Why we do code reviews
+
+- Improve the overall quality of the work.
+- Enforce and propagate our standards of quality, best practices, and coding styles.
+- Spread the responsibility and knowledge for any given piece of work.
+- Be beneficial for both reviewee and reviewer – in varying proportions depending on the purpose of the review.
+
+> Want to know more? Go have a look at [Code Reviews: Just Do It](https://blog.codinghorror.com/code-reviews-just-do-it/) from Jeff Atwood.
+
+### Doing a code review
+
+When presenting code for review, or reviewing a code, follow those guidelines:
+
+```
+// TODO
+```
