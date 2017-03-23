@@ -1,5 +1,7 @@
 # Front-end starter kit [![Build Status](https://travis-ci.org/springload/frontend-starter-kit.svg?branch=master)](https://travis-ci.org/springload/frontend-starter-kit) [![Coverage Status](https://coveralls.io/repos/github/springload/frontend-starter-kit/badge.svg)](https://coveralls.io/github/springload/frontend-starter-kit) [![Dependency Status](https://david-dm.org/springload/frontend-starter-kit.svg?style=flat-square)](https://david-dm.org/springload/frontend-starter-kit) [![devDependency Status](https://david-dm.org/springload/frontend-starter-kit/dev-status.svg?style=flat-square)](https://david-dm.org/springload/frontend-starter-kit#info=devDependencies)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/springload/frontend-starter-kit.svg)](https://greenkeeper.io/)
+
 > Springload's reference and starter kit for front-end development.
 
 | Documentation in [`docs/`](docs/) :book:|
