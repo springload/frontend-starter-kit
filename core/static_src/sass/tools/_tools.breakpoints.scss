@@ -2,6 +2,7 @@
 // Breakpoints and simple media query mixins
 // ----------------------------------------------------------------------------
 
+/* //todo marybe we should move these to global */
 $breakpoint-xsmall: 480px;
 $breakpoint-small: 767px;
 $breakpoint-medium: $breakpoint-small + 1px;
@@ -43,3 +44,64 @@ $breakpoint-xlarge: 1280px;
         @content;
     }
 }
+
+
+//todo just to show the different breakpoints can move this to styleguide theme
+@include xsmall {
+    .breakpoint-on-xsmall { background-color:#7DC265; }
+}
+@include smallish {
+    .breakpoint-on-smallish { background-color:#7DC265; }
+}
+@include xsmall {
+    .breakpoint-on-small { background-color:#7DC265; }
+}
+@include medium {
+    .breakpoint-on-medium { background-color:#7DC265; }
+}
+@include large {
+    .breakpoint-on-large { background-color:#7DC265; }
+}
+@include xlarge {
+    .breakpoint-on-xlarge { background-color:#7DC265; }
+}
+
+.breakpoint-on-xsmall,
+.breakpoint-on-smallish,
+.breakpoint-on-small,
+.breakpoint-on-medium,
+.breakpoint-on-large,
+.breakpoint-on-xlarge,
+{ padding:1em; }
+
+/* SG
+# Tools/breakpoint
+
+We have 6 default breakpoints set up these are: xsmall, smallish, medium, large and xlarge. These variables are set at the top of this file. These breakpoints always change per project.
+To use a breakpoint all you need to do is call them like an include ( @include small { code here } ).
+Resize the browser to see how our default breakpoints work.
+
+```
+<div class='[ grid ]'>
+    <div class='[ width-1/3 ]'>
+        <p class='breakpoint-on-xsmall'>xsmall</p>
+    </div>
+    <div class='[ width-1/3 ]'>
+        <p class='breakpoint-on-smallish'>Smallish</p>
+    </div>
+    <div class='[ width-1/3 ]'>
+        <p class='breakpoint-on-small'>Small</p>
+    </div>
+
+    <div class='[ width-1/3 ]'>
+        <p class='breakpoint-on-medium'>Medium</p>
+    </div>
+    <div class='[ width-1/3 ]'>
+        <p class='breakpoint-on-large'>Large</p>
+    </div>
+    <div class='[ width-1/3 ]'>
+        <p class='breakpoint-on-xlarge'>xlarge</p>
+    </div>
+</div>
+```
+*/
