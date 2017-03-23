@@ -1,25 +1,25 @@
 <!doctype html>
-<!--[if IE 8]> <html class="ie8 no-js" lang="en"><![endif]-->
-<!--[if !IE]><!--><html class="no-js" lang="en"><!--<![endif]--><head>
+<html class="no-js" lang="en">
+<head>
     <!-- Made by Springload -->
     <meta charset="utf-8">
-    <title>Fred</title>
+    <title>Fred - the friendly front-end styleguide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--{% include "core/includes/favicons.html" %}-->
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/static/css/styleguide.css" />
     {{> theme}}
 </head>
 <body style='background-color:#fff; height:100%'>
 
-    <div class='[ wrapper ] t-plain' id='header' role="contentinfo" >
+    <div class='[ wrapper ] t-plain header' role="contentinfo" >
         <div class='[ gutters ]' style='padding-top:15px;padding-bottom:15px;'>
             <div class='[ grid ]'>
                 <div class='[ width-1/2 ]'>
-                    <p>
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="28px" viewBox="0 0 64 28" xml:space="preserve"><path fill="#7DC265" d="M54.17,2.91c-6.3,0-8.53-1.81-15.07-1.81c-5.77,0-11.21,2.19-12.31,11.64c-0.81,7.06-4.19,9.54-8.1,9.54 c-3.01,0-5.01-1-5.96-3.38c3.86-1.19,6.01-4.44,6.01-8.63c0-5.34-3.44-9.15-9.39-9.15C3.43,1.1,0,4.91,0,10.25 c0,4.34,2.29,7.68,6.35,8.77c1.38,6.3,6.2,8.68,12.3,8.68c7.11,0,12.73-4.34,13.88-12.78c2.86,3.1,6.72,4.05,10.64,4.05 c10.73,0,18.5-8.2,20.84-17.98C60.71,2.29,57.65,2.91,54.17,2.91z M9.35,13.97c-2.19,0-3.39-1.53-3.39-3.62 c0-2.15,1.19-3.67,3.39-3.67c2.24,0,3.43,1.52,3.43,3.67C12.78,12.45,11.59,13.97,9.35,13.97z"/></svg>
-                    </p>
+                    <a href="/">
+                        <svg class="icon icon--leaf" aria-hidden="true" aria-role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="28px" viewBox="0 0 64 28" xml:space="preserve"><path fill="#7DC265" d="M54.17,2.91c-6.3,0-8.53-1.81-15.07-1.81c-5.77,0-11.21,2.19-12.31,11.64c-0.81,7.06-4.19,9.54-8.1,9.54 c-3.01,0-5.01-1-5.96-3.38c3.86-1.19,6.01-4.44,6.01-8.63c0-5.34-3.44-9.15-9.39-9.15C3.43,1.1,0,4.91,0,10.25 c0,4.34,2.29,7.68,6.35,8.77c1.38,6.3,6.2,8.68,12.3,8.68c7.11,0,12.73-4.34,13.88-12.78c2.86,3.1,6.72,4.05,10.64,4.05 c10.73,0,18.5-8.2,20.84-17.98C60.71,2.29,57.65,2.91,54.17,2.91z M9.35,13.97c-2.19,0-3.39-1.53-3.39-3.62 c0-2.15,1.19-3.67,3.39-3.67c2.24,0,3.43,1.52,3.43,3.67C12.78,12.45,11.59,13.97,9.35,13.97z"/></svg>
+                    </a>
                 </div>
                 <div class='[ width-1/2 ]'>
                     <p class='u-text-right'><a href='#fred'>Styleguide</a></p>
@@ -32,12 +32,12 @@
         <div class='[ wrapper wrapper--narrow ]' style=''>
             <div class='[ section gutters ]'>
                 <div class='u-text-center '>
-                    <img src='fred-logo.png' alt='Fred the friendly front end' class='u-mb'>
+                    <img src='/styleguide/fred-logo.png' alt='Fred the friendly front end' class='u-mb'>
                     <h1>
                         FRED
                     </h1>
                     <p>
-                        Meet Fred, the friendly front-end style guru.
+                        Meet Fred, the friendly front-end styleguide.
                         He helps solve a classic front-end problem: sharing and re-using common components between projects while documenting how they work so everyone in the team can use and understand them.
                     </p>
                 </div>
@@ -68,7 +68,7 @@
                     <li><strong>UTILITIES</strong> – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class</li>
                     <li><strong>THEMING</strong> – website themes</li>
                 </ol>
-                 <p class='u-text-center'><img src='itcss-triangle.png' alt='Inverted triangle'/></p>
+                 <!--<p class='u-text-center'><img src='/styleguide/itcss-triangle.png' alt='Inverted triangle'/></p>-->
 
                 <p>
                     ITCSS stands for Inverted Triangle CSS and it helps you to organize your project CSS files in such way that you can better deal with (not always easy-to-deal with) CSS specifics like global namespace, cascade and selectors specificity.

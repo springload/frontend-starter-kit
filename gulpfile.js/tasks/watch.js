@@ -10,7 +10,9 @@ gulp.task('watch', ['build'], function() {
     webpackConfig.watch = true;
 
     bs.init({
-        proxy: 'localhost:3000',
+        server: ['core', 'docs'],
+        // Use this for our projects, with the port the project uses.
+        // proxy: 'localhost:8111',
     }, function() {
         webpack(webpackConfig).watch({}, (err, stats) => {
             const hasErrors = err || stats.hasErrors();

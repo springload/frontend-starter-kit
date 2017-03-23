@@ -2,7 +2,8 @@
 // STYLEGUIDE
 // -----------------------------------------------------------------------------
 
-@import 'styles';
+@import 'settings';
+@import 'tools';
 
 /* REALLY NEED TO TIDY THIS FILE SINCE WE DON'T NEED TO HACK IT ANYMORE  */
 
@@ -72,4 +73,37 @@
     color:  #7DC265;
     background-color:#fff;
 
+}
+
+// Page header
+
+$height-logo: 2.25rem;
+
+$height-header: $height-logo + (2 * $spacing);
+
+.header {
+    @include clearfix;
+    background-color: $color-white;
+    box-shadow: 0 3px 5px 0 rgba(63,63,63,0.30);
+}
+
+.header--fixed {
+    position: fixed;
+    z-index: 10;
+    height: $height-header;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    + * {
+        margin-top: $height-header;
+    }
+}
+
+// Logo
+
+.icon--leaf {
+    width: 33px;
+    height: 13px;
 }
