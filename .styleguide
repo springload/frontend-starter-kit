@@ -1,8 +1,8 @@
 {
 	"sgComment": "SG",
 	"srcFolder": "./core/static_src/sass",
-	"outputFile": "./dist/fred/index.html",
-	"templateFile": "./docs/fred/template.html",
-	"themeFile": "./docs/fred/theme.css",
+	"outputFile": "./docs/styleguide/index.html",
+	"templateFile": "./docs/styleguide/template.html",
+	"themeFile": "./core/static/css/styleguide.css",
 	"highlightStyle": "github"
 }
