@@ -16,7 +16,7 @@ gulp.task('watch', ['build'], function() {
             const hasErrors = err || stats.hasErrors();
             if (err) {
                 console.error(err.stack || err);
-                console.log('details');
+
                 if (err.details) {
                     console.error(err.details);
                 }
