@@ -1,7 +1,6 @@
-Documentation
-=============
+# Front-end starter kit
 
-## Front-end technology stack
+## Technology stack
 
 > The goal of this stack is to empower front-end developers to excel at their craft. Our main front-end development languages are [__JavaScript__](https://developer.mozilla.org/en-US/docs/Web/JavaScript) ([ES6/ES2015](https://babeljs.io/docs/learn-es2015/)) and __Sass (SCSS)__. The ES6 and Sass code are compiled to ES5 and CSS as part of our _build process_.
 Learn more about JavaScript (ES6/ES2015):
