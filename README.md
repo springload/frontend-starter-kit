@@ -129,7 +129,7 @@ The starter kit's demo site is hosted on [GitHub Pages](https://pages.github.com
 ```sh
 # Make sure to have the styleguide generator installed.
 npm install -g markdown-styleguide-generator
-./bin/deploy-pages.sh
+./docs/deploy-pages.sh
 ```
 
 ## Documentation
