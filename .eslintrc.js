@@ -9,6 +9,7 @@ const config = {
         'object-shorthand': [2, 'methods'],
         'arrow-body-style': [0],
         'no-new': [1],
+        'eol-last': [1],
         'no-multi-spaces': [0],
         'no-warning-comments': [1, { 'terms': ['todo', 'fixme', 'xxx'], 'location': 'start' }],
         'react/sort-comp': [0],
