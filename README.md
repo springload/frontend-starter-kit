@@ -122,6 +122,16 @@ npm install -g david hyperlink
 
 Use `npm run test:ci` as part of the test pipeline.
 
+### Deploying the starter kit demo site
+
+The starter kit's demo site is hosted on [GitHub Pages](https://pages.github.com/).
+
+```sh
+# Make sure to have the styleguide generator installed.
+npm install -g markdown-styleguide-generator
+./bin/deploy-pages.sh
+```
+
 ## Documentation
 
 ### Code styleguide and linting

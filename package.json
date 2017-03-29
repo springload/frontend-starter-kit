@@ -93,7 +93,7 @@
     "watch": "NODE_ENV=development gulp watch",
     "patterns": "styleguide && cp core/static/css/styles.css dist/fred && open dist/fred/index.html",
     "lock": "npm run lint:versions -s && npm shrinkwrap --dev && sed -i '' 's/https:/http:/g' npm-shrinkwrap.json",
-    "pages": "rm -rf pages && cp -R docs pages && cp -R core/static pages/static && ./bin/deploy-pages.sh",
+    "pages": "./bin/deploy-pages.sh",
     "deploy:preview": "git push origin master:deploy/preview",
     "deploy:production": "git push origin master:deploy/production"
   }
