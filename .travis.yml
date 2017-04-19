@@ -4,18 +4,12 @@ cache:
   - node_modules
 node_js:
 - 6
-before_install:
-- npm install -g greenkeeper-shrinkwrap@1
 install:
 - npm install
 - npm install -g david hyperlink coveralls
-before_script:
-- greenkeeper-shrinkwrap-update
 script:
 - npm run dist
 - npm run test:ci
-after_script:
-- greenkeeper-shrinkwrap-upload
 after_success:
 - cat ./coverage/lcov.info | coveralls
 branches:
