@@ -45,6 +45,8 @@ Also have a look at:
 
 ### Examples of objectives and key results
 
+> [BetterWorks](https://www.betterworks.com/resources/) also has comprehensive resources and examples of OKRs across all disciplines.
+
 - __React: Deliver first-class interfaces with React__
     - 10 React components created with 100% test coverage
     - 3 blog posts published showing our (your) React expertise

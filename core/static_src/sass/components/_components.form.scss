@@ -1,0 +1,84 @@
+// -----------------------------------------------------------------------------
+// Basic form fields
+// -----------------------------------------------------------------------------
+//
+// Simple input field with label
+// <div class="form__field">
+//     <label>
+//         <span class="form__label">
+//             How old are you?
+//         </span>
+//         <input class="form__input" type="text" name="age" />
+//     </label>
+// </div>
+
+// Simple select with custom arrow
+// <div class="form__field">
+//     <label>
+//         <span class="form__label">
+//             Select an option
+//         </span>
+//         <div class="form__select-container">
+//             <select class="form__select" name="" id="">
+//                 <option value="">Select option...</option>
+//                 <option value="1">1</option>
+//                 <option value="2">2</option>
+//             </select>
+//         </div>
+//     </label>
+// </div>
+
+
+$form-field-height: 2.5rem;
+
+.form {}
+
+	.form__field {
+        margin-bottom: $base-spacing-unit;
+	}
+
+        .form__label {
+            display: inline-block;
+            margin-bottom: .5rem;
+        }
+
+        @mixin base-input-styles {
+            display: block;
+            width: 100%;
+            line-height: $form-field-height;
+            height: $form-field-height;
+            appearance: none;
+            border: 1px solid $color-grey-light;
+            background-color: $color-white;
+            font-size: inherit;
+        }
+
+        .form__input {
+            @include base-input-styles;
+            padding-left: 1rem;
+            padding-right: 1rem;
+	    }
+
+        .form__select-container {
+            position: relative;
+            width: 100%;
+        }
+
+            .form__select-container::after {
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+                border-left: .3125rem solid transparent;
+                border-right: .3125rem solid transparent;
+                border-top: .3125rem solid currentColor;
+                content: '';
+            }
+
+            .form__select {
+                @include base-input-styles;
+                padding-right: 2rem;
+                padding-left: .5rem;
+                border-radius: 0;
+            }
+
