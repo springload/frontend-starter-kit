@@ -30,47 +30,63 @@ The world is your oyster. |  `\.__.-''       `.
 
 ### Description
 
-> Develop, maintain and improve user interfaces for browser-based products and services. You’ll do this by producing high quality, cross-browser, cross-device, standards compliant, front-end code (HTML, CSS, SVG and JavaScript).
+> Create, develop, maintain and improve user interfaces for browser-based products and services. Collaborate with other disciplines and individuals to produce high quality experiences with front-end code (HTML, CSS, SVG and JavaScript).
+>
+> Contribute to Springload's front-end capabilities by researching new ideas, maintaining our projects, improving our practices, and demonstrating our expertise.
 
 ---
 
 ### Key responsibilities
 
-- Working closely with the design and development teams, and the Account Managers, produce high-performance front-end code for responsive sites and applications.
-- Work with the content team to architect the site structure and identify content management requirements.
+Collaborating in a multidisciplinary environment.
+
+- Working closely with other disciplines and individuals to produce high-quality responsive sites and applications.
 - Work with the design team to realise projects with a high level of visual refinement.
-- Work with the development team to ensure websites and applications meet our technical standards for performance and maintainability.
-- Work with the Account Managers and our clients to ensure the timely delivery of projects.
-- Contribute to project documentation.
-- Write valid, compliant HTML and CSS.
-- Develop rich interactions and single-page applications through JavaScript.
+- Work with the content team to architect the site structure and identify content management requirements.
+- Work with the development team to ensure websites and applications meet our technical standards for quality and maintainability.
+- Work with the client service team and our clients to ensure the timely delivery of projects.
 - Communication – talking to clients and team members about requirements, decisions, limitations – in clear, simple language.
+
+Producing high-quality work.
+
+- Write valid, compliant front-end code (HTML, CSS, SVG, JavaScript).
+- Develop rich interactions and single-page applications through JavaScript.
 - Maintain websites and test changes across a range of browsers and devices. Be familiar with unit and integration tests and use them where applicable.
-- Basic server administration where necessary.
-- Set-up, deploy, and test using command line tools.- Continually improve your knowledge of languages and technologies, stay abreast of new ideas as the industry develops.
+- Contribute to project documentation and code reuse.
+- Set-up, deploy, and test using command line tools.
+
+Evolving our practices.
+
+- Continually improve your knowledge of languages and technologies, stay abreast of new ideas as the industry develops.
 - Contribute these learnings to the business and assist in developing Springload’s front-end development capabilities.
-- Contribute to Springload’s internal front-end toolkit and shared code repositories.
-- Assist the Front-end Director and Technical director with reviewing code produced by the team.
-- Any other tasks as required.
+- Contribute to Springload’s internal and open-source projects and toolkits.
+- Contribute to reviewing your pairs' code to ensure quality and consistency.
+
+Any other tasks as required.
 
 ---
 
 ### Required skills
 
+Core front-end skills.
+
 - Ability to communicate front-end development matters clearly to other team members, clients, and partners.
 - Understanding of browser, platform, device, performance, and accessibility constraints.
-- Experience with browser development tools (such as Chrome or FireFox DevTools).
-- Working knowledge of the Unix command line and a shell of your choice.
 - Advanced HTML and CSS knowledge – standards compliance, pattern libraries.
 - Experience with CSS preprocessing (SCSS, PostCSS) and HTML templating.
 - Experience with large-scale CSS architecture (BEM, ITCSS).
-- High level of experience with JavaScript (vanilla).
-- Experience with client-side frameworks such as React, Angular, or Backbone.
+- Experience with programming in JavaScript (vanilla).
 - Basic understanding of object-oriented and functional programming concepts.
-- Familiarity with content management systems or e-commerce platforms.
+- Experience with browser development tools (such as Chrome or FireFox DevTools).
+
+Supporting design, engineering skills.
+
+- Experience with client-side frameworks (such as React, Angular, or Backbone).
+- Experience with content management systems or e-commerce platforms.
 - Familiarity with version control via Git, continuous integration, issue trackers, wikis, and pull request workflows.
 - Familiarity with front-end build tools and task runners (npm, Grunt, Gulp, Webpack, Browserify).
 - Familiarity with software testing – unit tests, integration tests.
+- Working knowledge of the Unix command line and a shell of your choice.
 - Working knowledge of graphic software (Illustrator, Sketch, Photoshop), comfortable working with vectors and SVG.
 - Eye for detail, understanding of fundamentals of typography. Pixels out of place will annoy you.
 
@@ -78,14 +94,14 @@ The world is your oyster. |  `\.__.-''       `.
 
 ### Other useful skills
 
-- Advanced knowledge of React – Redux, client-side routing, code splitting, etc.
-- Experience writing ES6/ES2015 JavaScript.
-- Ability to do basic server administration from the command-line.
+- Experience designing user interfaces with a user experience (UX) approach.
+- Experience with programming in ES6/ES2015+ JavaScript.
+- Ability to do basic server administration from the command line.
 - Familiarity with server-side programming stacks (we use Python and Node).
 - Experience with the Django framework, and Wagtail CMS.
 - Understanding of RESTful principles and HTTP verbs.
-- Advanced testing skills – accessibility tests, automated cross-browser tests, automated UI regression.
-- Experience working with web development and open-source communities.
+- Experience working with styleguides and pattern libraries.
+- Familiarity with web development and open-source communities.
 
 ---
 
@@ -100,57 +116,45 @@ The world is your oyster. |  `\.__.-''       `.
 
 ### Description
 
-> Work with Springload’s Designers and Developers to deliver finished web sites and applications. Producing high quality, cross-browser, cross-device, standards compliant, front-end code (HTML, CSS and JavaScript).
+See [Front-end Developer](#front-end-developer). In addition,
 
-> Working with the Technical Director and Technical Director, Front-end Development to research new technologies and help maintain Front-end coding standards.
+> Contribute to the front-end leadership by participating in our efforts for: business development, recruitement and learning & growth, technical architecture and development workflows, sales and estimates, public relations.
 
 ---
 
 ### Key responsibilities
 
-- Work closely with the design and development teams, and the Account Managers, produce top-notch front-end code for responsive sites and applications.
-- Work with the design team to realise projects with a high level of visual refinement.
-- Work with the development team to ensure websites and applications meet our technical standards for performance and maintainability.
-- Work with the Account Managers and our clients to ensure the timely delivery of projects.
-- Write valid, compliant HTML and CSS.
-- Develop rich interactions and single-page applications through JavaScript.
-- Communication – talking to clients and team members about requirements, decisions, and limitations.
-- Assist the Technical Director and Technical Director, Front-end Development with reviewing code produced by the team.
-- Maintain websites and test changes across a range of browsers and devices.
-- Basic server administration where necessary. Set-up, deploy, and test using command line tools.
-- Continually improve your knowledge of languages and technologies, stay abreast of new ideas as the industry develops. Contribute these learnings to the business and assist in developing Springload’s front-end development capabilities.
-- Contribute to Springload’s internal front-end toolkit and shared code repositories.
-- Any other tasks as required.
+See [Front-end Developer](#front-end-developer). In addition,
+
+- Contribute to business development by pitching for new work and finding new opportunities with existing relationships.
+- Assist in growing the team by sourcing and recruiting professionals to join Springload.
+- Train others via workshops, code reviews, pair programming, and other forms of collaboration.
+- Architect front-end codebases and development workflows internally and for our clients.
+- Sell our capabilities by proposing solutions for front-end needs for our existing and prospective clients.
+- Demonstrate our expertise publicly via blog posts, talks, social media presence, open-source contributions.
 
 ---
 
 ### Required skills
 
-- Understanding of browser, platform, device and accessibility issues.
-- Experience with browser development tools (such as Chrome’s DevTools).
-- Working knowledge of the Unix command line and a shell of your choice.
-- Advanced HTML and CSS – standards compliance, pattern libraries, templating languages (we use mainly Twig, Jinja and Nunjucks).
-- Experience with large-scale CSS architecture (Block-Element-Modifier and Object-oriented CSS).
-- High level of experience with JavaScript (vanilla), and client-side MVC frameworks such as React, Angular, or Backbone.
-- Solid understanding of object-oriented and functional programming concepts.
-- Familiarity with version control via Subversion or Git.
-- Familiarity with build tools and pre-processors (Grunt, Gulp, Sass).
-- Working knowledge of graphic software (Illustrator, Sketch, Photoshop), comfortable working with vectors and SVG.
-- Assist and train other developers on the front-end team, by performing code reviews and technical audits.
-- Assist the Head of Business Development with pitching for new work and finding opportunities within existing clients.
+See [Front-end Developer](#front-end-developer). In addition,
+
+- Higher level of expertise across the board.
+- Experience training development teams.
+- Experience architecting front-end codebases in server-side web development stacks.
+- Familiarity with the software development lifecycle, agile and waterfall methodologies.
+- Consider about half of the Front-end Developer's "useful skills" as required.
 
 ---
 
 ### Other useful skills
 
-- Familiarity with server-side programming languages (we use Python and PHP).
-- Understanding of RESTful principles and HTTP verbs.
-- Advanced knowledge of React – Redux, client-side routing, split bundles, etc
-- Knowledge of ES6/ES2015+, transpilers (Babel)
-- Ability to do basic server administration from the command-line.
-- Familiarity with server-side programming languages (we use Python and Node).
-- Understanding of RESTful principles and HTTP verbs.
-- Advanced testing skills – accessibility tests, automated cross-browser tests, automated UI regression
+See [Front-end Developer](#front-end-developer). In addition,
+
+- Advanced knowledge of React – Redux, client-side routing, code splitting, etc.
+- Advanced testing skills – accessibility tests, automated cross-browser tests, automated UI regression.
+- Experience architecting front-end codebases in client-side JS stacks.
+- Familiarity with other development stacks and platforms (iOS, Android, .NET, etc).
 
 ---
 
@@ -165,43 +169,27 @@ The world is your oyster. |  `\.__.-''       `.
 
 ### Description
 
-> Assist with developing, maintaining and improving user interfaces for browser-based products and services. You’ll do this by helping the team to produce high quality, cross-browser, cross-device, standards compliant, front-end code (HTML, CSS, SVG, and JavaScript).
+See [Front-end Developer](#front-end-developer). In addition,
+
+> Throughout the work, get direct access to senior practicioners and receive ongoing support from the wider team.
 
 ---
 
 ### Key responsibilities
 
-- Working closely with the design and development teams, and following instructions from the front-end development team to assist to produce top-notch front-end code for responsive sites and applications.
-- Assist in developing and maintaining websites by executing design and maintaining high design/production quality.
-- Develop site content and graphics by coordinating with copywriters and designers.
-- Maintain site appearance by developing and enforcing content and display standards.
-- Maintain high design/production quality; ensuring that site content is consistent.
-- Contribute to project documentation.
-- Have a good understanding of HTML and CSS.
-- Begin to develop interactions through JavaScript with progressive enhancement.
-- Communication – talking to clients and team members about requirements, decisions, limitations – in plain English.
-- Basic server administration where necessary. Set-up, deploy, and test using command line tools.
-- Continually improve your knowledge of languages and technologies, stay abreast of new ideas as the industry develops. Contribute these learnings to the business and assist in developing Springload’s front-end development capabilities.
-
-Any other tasks as required.
+See [Front-end Developer](#front-end-developer).
 
 ---
 
 ### Required skills
 
-- 1-2 years of relevant work experience.
-- Proficiency with web technologies required: HTML and CSS.
-- Knowledge of jQuery/Javascript is required.
-- Have an understanding of web standards and web browser capabilities and ability to create cross-browser and cross-platform compliant pages.
-- Understanding Adobe Creative Suite (Photoshop, Illustrator, Sketch) for front-end web development especially working with vectors and SVG.
-- Understanding of browser, platform, device and accessibility issues.
-- Eye for detail, understanding of fundamentals of typography. Pixels out of place will annoy you.
+See Core front-end skills for [Front-end Developer](#front-end-developer).
 
 ---
 
 ### Other useful skills
 
-- Experience with JavaScript frameworks (React, Vue, or similar).
+See Supporting design, front-end skills for [Front-end Developer](#front-end-developer).
 
 ---
 
