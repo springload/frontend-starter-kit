@@ -113,7 +113,7 @@ Our Node/npm versions are managed with [nvm](https://github.com/creationix/nvm).
 
 > Our client projects are tested and shipped with [CodeShip](https://codeship.com). Our open-source / public work uses [Travis](https://travis-ci.org/springload/). Because it's free, public, and doesn't interfere with our client project builds.
 
-## Browser & device support
+### Browser & device support
 
 > Browser & device support is informed by Web Analytics (GA) on the existing site and on competitors' sites.
 
@@ -150,8 +150,7 @@ If JavaScript is the only way for a feature to work (double check with a teammat
 
 ## Accessibility
 
-> [Link to Sam's accessibility blog post](#)
-
+> Go read Sam's [Being pragmatic about accessibility](https://www.springload.co.nz/blog/pragmatic-about-accessibility/)
 
 ### Icons and icon links
 

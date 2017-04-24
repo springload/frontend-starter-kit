@@ -1,19 +1,20 @@
 # Front-end starter kit [![Build Status](https://travis-ci.org/springload/frontend-starter-kit.svg?branch=master)](https://travis-ci.org/springload/frontend-starter-kit) [![Coverage Status](https://coveralls.io/repos/github/springload/frontend-starter-kit/badge.svg)](https://coveralls.io/github/springload/frontend-starter-kit) [![Greenkeeper badge](https://badges.greenkeeper.io/springload/frontend-starter-kit.svg)](https://greenkeeper.io/)
 
-> Springload's reference and starter kit for front-end development.
+> Springload’s reference and starter kit for front-end development.
 
-| Documentation in [`docs/`](docs/) :book:|
-|---------------------|
-|[Front-end tech stack](docs/README.md)|
-|[Front-end principles](docs/front-end-principles.md)|
-|[Frontend guidelines questionnaire](docs/front-end-questionnaire.md)|
-|[Launch QA checklists](docs/launch-checklist.md)|
-|[Useful tooling](docs/useful-tooling.md)|
-|[Demo page](https://rawgit.com/springload/frontend-starter-kit/master/core/templates/demo.html)|
+| Important links :book:                                                      |
+|-----------------------------------------------------------------------------|
+| Documentation in [`docs/`](docs/)                                           |
+| [Front-end tech stack](docs/README.md) |
+| [Front-end principles](docs/front-end-principles.md) |
+| [Frontend guidelines questionnaire](docs/front-end-questionnaire.md) |
+| [Launch QA checklists](docs/launch-checklist.md) |
+| [Useful tooling](docs/useful-tooling.md) |
+| [Demo page](https://rawgit.com/springload/frontend-starter-kit/master/core/templates/demo.html) |
 
 ## Installation
 
-> Clone the project on your computer, and install [Node](https://nodejs.org). This project also uses [nvm](https://github.com/springload/frontend-starter-kit/blob/master/docs/useful-tooling.md#nvm).
+> Clone the project on your computer, and install [Node](https://nodejs.org). This project also uses [nvm](https://github.com/creationix/nvm).
 
 From the command-line:
 
