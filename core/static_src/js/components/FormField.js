@@ -1,5 +1,6 @@
 import React from 'react';
 
+// eslint-disable-next-line react/prefer-es6-class
 const FormField = React.createClass({
     propTypes: {
         id: React.PropTypes.string.isRequired,
