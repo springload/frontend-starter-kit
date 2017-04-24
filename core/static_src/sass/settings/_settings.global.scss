@@ -4,6 +4,7 @@
 
 // Fonts
 // ----------------------------------------------------------------------------
+
 $font-family-default-sans-serif: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family-default-serif: 'Georgia', 'Times New Roman', Times, serif;
 
@@ -17,25 +18,61 @@ $font-weight-normal:    400;
 $font-weight-medium:    500;
 $font-weight-bold:      700;
 
+
+
 // Spacing
 // ----------------------------------------------------------------------------
 
-$base-spacing-unit:     1.5rem; // 24px
+$base-spacing-unit: 1.5rem; // 24px
+$spacing: $base-spacing-unit;
 
-$spacing:               $base-spacing-unit;
-// Smaller
-$spacing-half:          ($spacing / 2);
-// Larger
-$spacing-double:        ($spacing * 2);
+// Smaller Spacing
+$spacing-xxs: ($spacing *.25);    // 6px
+$spacing-xs: ($spacing *.5);      // 12px
+$spacing-s: ($spacing - .5);      // 16px
 
-$grid-spacing:          $base-spacing-unit;
+// Larger Spacing
+$spacing-l: ($spacing + .5);      // 32px
+$spacing-xl: ($spacing + 1);      // 40px
+$spacing-xxl: ($spacing + 2.5);   // 64px
 
-// Others
+// Grid spacing
+$grid-spacing: $spacing;
+
+//Gutters -- horizontal spacing
+$gutter-spacing: $spacing;
+
+//Sections -- Vertical spacing
+$section-spacing:  3rem;
+
+
+
+// Breakpoints
 // ----------------------------------------------------------------------------
 
-$base-radius:           3px;
+$breakpoint-xsmall: 480px;
+$breakpoint-small: 767px;
+$breakpoint-medium: $breakpoint-small + 1px;
+$breakpoint-large: 1000px;
+$breakpoint-xlarge: 1280px;
+
+
+
+// Animations/Transitions
+// ----------------------------------------------------------------------------
 
 $base-transition:       all .1s ease-in;
 
+$ease-primary : cubic-bezier(.51,.11,.59,.92);
+$ease-out-primary : cubic-bezier(.2,.42,.59,.92);
+$ease-in-primary : cubic-bezier(.55,.12,1,1);
+
 $ease:                  cubic-bezier(.43, .11, .41, 1);
 $easing-circ:           cubic-bezier(.075, .82, .165, 0);
+
+
+
+// Other
+// ----------------------------------------------------------------------------
+
+$base-radius:           3px;

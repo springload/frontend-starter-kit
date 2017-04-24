@@ -82,3 +82,4 @@ bower_components
 # -------------------------------------------------
 .styleguide
 docs/styleguide/index.html
+docs/styleguide/styles.css

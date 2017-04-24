@@ -12,7 +12,7 @@
         display: inline-block;
 
         & + & {
-            margin-left: $spacing-half;
+            margin-left: $spacing-s;
         }
     }
 

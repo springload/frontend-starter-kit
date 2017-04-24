@@ -12,11 +12,8 @@ Page gutters determine the horizontal spacing of the site.
         You can see the gutters highlighted by the green background
     </p>
 </div>
-
 ```
 */
-
-$gutter-spacing: 1.5rem;
 
 .gutters {
     padding-right: $gutter-spacing;
