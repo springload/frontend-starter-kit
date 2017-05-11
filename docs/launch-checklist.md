@@ -43,10 +43,9 @@
 
 #### SEO
 
-- [ ] Link to sitemap `<link rel=”sitemap” type=”application/xml” title=”Sitemap” href=”/sitemap.xml”>”`.
-- [ ] Sitemap content is relevant.
-- [ ] `/robots.txt` is here.
-- [ ] `/humans.txt` is here (Disallowed in robots.txt).
+- [ ] `/sitemap.xml` is here, with relevant and up to date content.
+- [ ] `/robots.txt` is here, with relevant and up to date content.
+- [ ] `/humans.txt` is here, disallowed in `/robots.txt`.
 
 #### Tests
 
@@ -62,7 +61,8 @@
 
 - [ ] Static files are gzipped in production (JS/CSS/SVG/etc, check this with [PageSpeed](https://developers.google.com/speed/pagespeed/insights/) or [GTmetrix](https://gtmetrix.com/)) on the live site.
 - [ ] Static files are cached for a long time in production (JS/CSS/images/etc, check this with [PageSpeed](https://developers.google.com/speed/pagespeed/insights/) or [GTmetrix](https://gtmetrix.com/)) on the live site.
-- [ ] Canonical URL redirect exists, if relevant (`example.com` ➞ `www.example.com`).
+- [ ] Canonical URL redirect exists, if relevant (eg. `example.com` ➞ `www.example.com`).
+- [ ] HTTP to HTTPS redirect exists, if relevant.
 
 #### Deployment
 
@@ -78,18 +78,20 @@
 
 #### The README contains
 
-- [ ] Continuous integration service badge for the project (CodeShip).
+- [ ] Continuous integration service badge for the project (CodeShip, CircleCI, Travis).
 - [ ] All of the important links as a table.
-- [ ] Stage and Live site links.
+- [ ] Live and Preview/staging sites links.
 - [ ] Links to Trello board, Harvest project, project run sheet, Drive folder.
 - [ ] Links to design resources - Zeplin, InVision, other.
 - [ ] Analytics, Search Console, and other monitoring URLs.
 - [ ] Links to other important documents and services.
-- [ ] Instructions on how to deploy to production
-- [ ] Instructions on how to deploy to staging
+- [ ] Instructions on how to deploy to production.
+- [ ] Instructions on how to deploy to staging/preview.
 
 #### The GitHub repository has
 
 - [ ] A description set on GitHub.
 - [ ] If relevant, a website set on GitHub.
-- [ ] Appropriate topics / tags set on GitHub.
+- [ ] Appropriate labels set on GitHub. See https://github.com/springload/labels.
+- [ ] Branch protection enabled with CI checks and code reviews on `master`.
+- [ ] Basic branch protection enabled on deployment branches.

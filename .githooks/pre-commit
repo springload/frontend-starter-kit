@@ -20,7 +20,7 @@ else
     NEW_FILES=$(git --no-pager diff --name-only --cached --diff-filter=d)
     JS_FILES=$(echo "$NEW_FILES" | { grep .js$ || true; })
     SNAPSHOT_FILES=$(echo "$NEW_FILES" | { grep .snap$ || true; })
-    SASS_FILES=$(echo "$NEW_FILES" | { grep .sass$ || true; })
+    SASS_FILES=$(echo "$NEW_FILES" | { grep .scss$ || true; })
 
     if [ -n "$JS_FILES" ];
     then

@@ -16,7 +16,7 @@
 - [ ] Flexbox usage has a non-flexbox fallback if appropriate.
 - [ ] Sass code is free of vendor prefixes and IE filters.
 - [x] TODO – CSS specificity graph is flat :rainbow:.
-- [x] TODO – Print stylesheets exist if appropriate.
+- [ ] Print styles are defined.
 - [ ] Site does not use `-webkit-font-rendering: antialised;` for body copy.
 - [ ] The filename of the root level stylesheet is `styles.scss`, unless there are multiple root-level stylesheets.
 

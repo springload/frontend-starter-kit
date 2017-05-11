@@ -98,7 +98,7 @@ This project is [shrinkwrapped](https://docs.npmjs.com/cli/shrinkwrap). Its depe
 4. Run **`npm run lock`** to regenerate `npm-shrinkwrap.json`.
 5. Commit this file, and push.
 
-## Deploying a new version
+## Deployments
 
 ### To production
 
