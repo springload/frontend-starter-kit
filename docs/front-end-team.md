@@ -15,15 +15,15 @@ You'll rock this.       |  `\.__.-''       `.
 
 Each person’s objectives and key results are tracked in a Trello board based on a [reusable template](https://trello.com/b/URsGqKMe/person-s-okr-template).
 
-To start using it,
+The basic board structure is very simple. If you feel the need to change it, go for it. To start using it as-is, look at the instructions on the [OKR template card](https://trello.com/c/WsoJOi7z/28-okr):
 
-1. Create a new board with Trello's "Copy Board" feature, under the whole organisation.
-2. Create new cards by using the "Copy Card" feature on each template card.
-3. Set your objectives as labels (use neutral colors, teal - green - blue - purple)
-4. Create cards for each key results of each goal.
-5. Add relevant Members to the cards so we support you achieving your key results.
-
-The basic board structure is very simple. If you feel the need to change it, go for it.
+- The **Member** on the card defines whose OKR this is.
+- The **Title** is the `Objective`. Make it inspiring!
+- **Labels** with colors define the general theme. We do not want to have too many labels around, so only go for one or two themes.
+- **Labels** without colors allow further classification as required without cluttering the board.
+- The **Checklists** are the `Key Results`. Use one Checklist per Key Result.
+- **Checklist Items** are "Actions". They are either done (checked) or not.
+- The **Due Date** defines when the OKR is due (end of quarter).
 
 ### Defining objectives and key results
 
