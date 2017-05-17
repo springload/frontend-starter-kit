@@ -73,12 +73,13 @@ We use [Jest](https://facebook.github.io/jest/) for unit tests.
 ```sh
 # Run all the tests.
 npm run test
+# Run all the tests, collecting coverage.
+npm run test:coverage
 # Run tests in a watcher.
 npm run test:watch
-# Run test coverage
-npm run test:coverage
+# Run tests in a watcher, with coverage.
 # Open the coverage report with:
-open coverage/lcov-report/index.html
+npm run report:coverage
 ```
 
 #### Manual tests
