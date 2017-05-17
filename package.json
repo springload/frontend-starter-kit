@@ -86,6 +86,7 @@
     "build": "NODE_ENV=development gulp build",
     "critical:css": "gulp critical:css",
     "report:css": "gulp report:css",
+    "report:coverage": "open coverage/lcov-report/index.html",
     "js": "gulp js",
     "css": "gulp css",
     "svg": "gulp svg",
