@@ -78,6 +78,7 @@ npm run test:coverage
 # Run tests in a watcher.
 npm run test:watch
 # Run tests in a watcher, with coverage.
+npm run test:watch:coverage
 # Open the coverage report with:
 npm run report:coverage
 ```
