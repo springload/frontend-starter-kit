@@ -77,7 +77,7 @@ Core front-end skills.
 - Experience with large-scale CSS architecture (BEM, ITCSS).
 - Experience with programming in JavaScript (vanilla).
 - Basic understanding of object-oriented and functional programming concepts.
-- Experience with browser development tools (such as Chrome or FireFox DevTools).
+- Experience with browser development tools (such as Chrome or Firefox DevTools).
 
 Supporting design, engineering skills.
 
@@ -183,7 +183,13 @@ See [Front-end Developer](#front-end-developer).
 
 ### Required skills
 
-See Core front-end skills for [Front-end Developer](#front-end-developer).
+- Ability to communicate front-end development matters clearly to other team members, clients, and partners.
+- Understanding of browser, platform, device constraints.
+- Basic HTML and CSS knowledge.
+- Experience with CSS preprocessing and HTML templating.
+- Experience with programming in JavaScript.
+- Basic understanding of object-oriented and functional programming concepts.
+- Experience with browser development tools (such as Chrome or Firefox DevTools).
 
 ---
 
