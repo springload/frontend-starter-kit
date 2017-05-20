@@ -42,7 +42,7 @@
     "eslint-config-springload": "1.0.2",
     "eslint-loader": "^1.6.3",
     "eslint-plugin-import": "2.2.0",
-    "eslint-plugin-jsx-a11y": "3.0.2",
+    "eslint-plugin-jsx-a11y": "5.0.1",
     "eslint-plugin-react": "6.10.3",
     "gulp": "^3.9.1",
     "gulp-parker": "^0.1.0",
