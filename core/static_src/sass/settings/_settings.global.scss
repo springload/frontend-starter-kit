@@ -36,15 +36,26 @@ $spacing-l: ($spacing + .5);      // 32px
 $spacing-xl: ($spacing + 1);      // 40px
 $spacing-xxl: ($spacing + 2.5);   // 64px
 
-// Grid spacing
-$grid-spacing: $spacing;
 
-//Gutters -- horizontal spacing
-$gutter-spacing: $spacing;
 
-//Sections -- Vertical spacing
-$section-spacing:  3rem;
+// Spacing --- Grid
+// ----------------------------------------------------------------------------
 
+$spacing-grid-row: $spacing-s;
+$spacing-grid-row-s: $spacing-xs;
+
+$spacing-grid-col: $spacing;
+
+
+// Spacing --- Gutters 
+// ----------------------------------------------------------------------------
+$gutter-spacing: 3.5rem;
+$gutter-spacing-s: $spacing;
+
+// Spacing --- Sections 
+// ----------------------------------------------------------------------------
+$section-spacing: 3rem;
+$section-spacing-s: $spacing;
 
 
 // Breakpoints

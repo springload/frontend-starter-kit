@@ -1,0 +1,26 @@
+// ============================================================================
+// list border -- Make a list look like table columns
+// ============================================================================
+
+.list-border {
+    border-bottom: 1px solid $color-list-border;
+    border-left: 1px solid $color-list-border;
+	border-right: 1px solid $color-list-border;
+
+    li {
+		border-top: 1px solid $color-list-border;
+    }
+}
+
+/* SG
+# Objects/list.border
+This makes all children a block element
+
+```
+<ul class="list-border">
+	<li>List item 1 </li>
+	<li>List item 2 </li>		
+</ul>
+
+```
+*/

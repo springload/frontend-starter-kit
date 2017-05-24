@@ -1,0 +1,34 @@
+// ============================================================================
+// Definition lists
+// ============================================================================
+
+.dl--table {
+	overflow: hidden;
+	padding: 0;
+	margin-bottom: .7em;
+}
+
+	.dl--table dt,
+	.dl--table dd {
+		padding: 0;
+		float: left;
+		margin: 0;
+	}
+
+	.dl--table dt {
+		clear: left;
+		width: 200px;
+	}
+
+/* SG
+# Objects/Defintition list
+
+```
+ <dl class="dl--table">
+    <dt>Name:</dt>
+    <dd>Special person</dd>
+</dl>
+
+
+```
+*/

@@ -1,0 +1,43 @@
+// ============================================================================
+// Page wrappers
+// ============================================================================
+
+/* SG
+# Components/Page wrappers
+
+Page wrappers control the width of the content they contain.
+
+```
+<div class="wrapper">
+    <div class="section gutters">
+        Wrapper
+    </div>
+</div>
+<div class="wrapper wrapper--wide">
+    <div class="section gutters">
+        Wide wrapper
+    </div>
+</div>
+<div class="wrapper wrapper--narrow">
+    <div class="section gutters">
+        Narrow wrapper
+    </div>
+</div>
+```
+*/
+
+
+.wrapper {
+    @include clearfix;
+    max-width: $breakpoint-xlarge;
+    margin-right: auto;
+    margin-left:  auto;
+}
+
+    .wrapper--wide {
+        max-width: 1400px;
+    }
+
+    .wrapper--narrow {
+        max-width: 960px;
+    }

@@ -151,3 +151,13 @@
         object-fit: cover;
     }
 }
+
+@mixin border-dotted {
+    border-style: dotted;
+    border-color: $color-grey;
+    border-width: 0;
+
+    border-image-source: url('../images/dots-grey.svg');
+    border-image-slice: 23%;
+    border-image-repeat: round;
+}
