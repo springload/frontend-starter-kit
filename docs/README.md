@@ -2,7 +2,7 @@
 
 | Contents :book:                                        |
 |--------------------------------------------------------|
-| [Pattern library](pattern-library) |
+| [Pattern library](https://springload.github.io/frontend-starter-kit/pattern-library) |
 | [Front-end principles](front-end-principles.md) |
 | [Front-end questionnaire](front-end-questionnaire.md) |
 | [Team methodologies](front-end-team.md) |
