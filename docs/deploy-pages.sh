@@ -8,7 +8,7 @@
 npm run dist
 
 # Regenerate the pattern library.
-npm run patterns:build
+npm run patterns:dist
 
 # Copy to pages subfolder.
 rm -rf pages
