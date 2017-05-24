@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{{ site.title | default: site.github.repository_name }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta name="description" content="{{ site.description | default: site.github.project_tagline }}">
+    <style>
+      body {
+        font-size: 16px;
+        color: #5e5e5e;
+      }
+
+      .notice a {
+        color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="/{{ site.github.repository_name }}">
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        </a>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><a href="https://www.springload.co.nz/"><img alt="Springload" src="{{ '/springload-logo.svg' | relative_url }}"</a></small></p>
+        <p class="notice"><small><a href="https://creativecommons.org/publicdomain/zero/1.0/">Public domain</a> - <a href="{{ site.github.repository_url }}/edit/gh-pages/{{ page.path}}">Edit this page</a></small></p>
+      </footer>
+    </div>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+
+  {% if site.google_analytics %}
+    <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', '{{ site.google_analytics }}', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  {% endif %}
+  </body>
+</html>
