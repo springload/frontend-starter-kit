@@ -26,9 +26,7 @@ function before_exit {
 # trap before_exit EXIT
 
 npm run lint:js
-
-# Sass file linting errors cannot break the build
-npm run lint:sass || echo ok
+npm run lint:sass
 
 # Project tests.
 npm run test:coverage
