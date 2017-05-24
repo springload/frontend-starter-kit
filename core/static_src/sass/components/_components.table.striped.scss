@@ -37,7 +37,6 @@ We don't want this as a base style on all tables otherwise we have to remove the
     }
 
     .table--striped\@medium .table__body .table__row:nth-child(odd) {
-        //todo make this work @medium isnt a default query
         @include medium {
             background-color: $color-table-stripe;
         }

@@ -54,7 +54,6 @@ $themes: (
 
     .t-#{$alias} {
 
-        //todo why ? when do we use this
         .u-current-color {
             color: $theme-color;
         }
