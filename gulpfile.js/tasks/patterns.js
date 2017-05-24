@@ -9,7 +9,7 @@ const options = {
 };
 
 const values = {
-    GOOGLE_ANALYTICS: config.prod ? 'UA-79835767-11' : 'UA-XXXXXXX-X',
+    GOOGLE_ANALYTICS: config.prod ? 'UA-79835767-5' : 'UA-XXXXXXX-X',
 };
 
 gulp.task('patterns:build', ['svg', 'css'], shell.task([

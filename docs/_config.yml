@@ -23,7 +23,7 @@ url: https://springload.github.io # the base hostname & protocol for your site, 
 twitter_username: springloadnz
 github_username:  springload
 show_downloads: false
-google_analytics: UA-79835767-11
+google_analytics: UA-79835767-5
 
 github:
   is_project_page: false
