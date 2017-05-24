@@ -1,16 +1,16 @@
-# Front-end starter kit [![Build Status](https://travis-ci.org/springload/frontend-starter-kit.svg?branch=master)](https://travis-ci.org/springload/frontend-starter-kit) [![Coverage Status](https://coveralls.io/repos/github/springload/frontend-starter-kit/badge.svg)](https://coveralls.io/github/springload/frontend-starter-kit) [![Greenkeeper badge](https://badges.greenkeeper.io/springload/frontend-starter-kit.svg)](https://greenkeeper.io/)
+# [Front-end starter kit](https://springload.github.io/frontend-starter-kit/) [![Build Status](https://travis-ci.org/springload/frontend-starter-kit.svg?branch=master)](https://travis-ci.org/springload/frontend-starter-kit) [![Coverage Status](https://coveralls.io/repos/github/springload/frontend-starter-kit/badge.svg)](https://coveralls.io/github/springload/frontend-starter-kit) [![Greenkeeper badge](https://badges.greenkeeper.io/springload/frontend-starter-kit.svg)](https://greenkeeper.io/)
 
 > Springload’s reference and starter kit for front-end development.
 
 | Important links :book:                                 |
 |--------------------------------------------------------|
 | Documentation in [`docs/`](docs/)                      |
+| [Pattern library](https://springload.github.io/frontend-starter-kit/pattern-library) |
 | [Front-end tech stack](docs/README.md) |
 | [Front-end principles](docs/front-end-principles.md) |
 | [Front-end guidelines questionnaire](docs/front-end-questionnaire.md) |
 | [Launch QA checklists](docs/launch-checklist.md) |
 | [Useful tooling](docs/useful-tooling.md) |
-| [Demo page](https://rawgit.com/springload/frontend-starter-kit/master/core/templates/demo.html) |
 
 ## Installation
 
@@ -99,6 +99,19 @@ This project is [shrinkwrapped](https://docs.npmjs.com/cli/shrinkwrap). Its depe
 3. Check the project still works with the new dependencies / new versions.
 4. Run **`npm run lock`** to regenerate `npm-shrinkwrap.json`.
 5. Commit this file, and push.
+
+### Pattern library
+
+Our projects come with a [pattern library](https://springload.github.io/frontend-starter-kit/pattern-library) to facilitate development, documentation, and long-term maintenance.
+
+Here are the available commands:
+
+```sh
+# Start the pattern library in development mode.
+npm run patterns
+# Export the pattern library.
+npm run patterns:dist
+```
 
 ## Deployments
 

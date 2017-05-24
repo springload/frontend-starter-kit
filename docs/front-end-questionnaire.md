@@ -200,21 +200,15 @@ https://github.com/springload/frontend-starter-kit/blob/master/.sass-lint.yml
 ## Version control
 
 - **What version control system are you using for your frontend code** *(such as [Git](https://git-scm.com/) or [Subversion](https://subversion.apache.org/))*?
-- We got all kinds of VCS round here.
-
+- Git
 - **Where is your version-controlled code hosted** *(such  as [Github](https://github.com/) or [Bitbucket](https://bitbucket.org/))* ?
 - GitHub
 - **Do you use a version control workflow** *(such as [gitflow](http://nvie.com/posts/a-successful-git-branching-model/), [centralized](https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow), [feature-branch](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow), etc)*?
-
-- TBC with the devs. We branch + PR.
-- Deployment branches:
-    - deploy/staging
-    - deploy/production
+- Feature branches with pull requests and code reviews
 
 - **Who's responsible for managing and governing the version controlled code?**?
 - **Where are issues tracked**?
 - GitHub issues for everything!
-- TODO: Set up the Trello + Slack integrations for Github Issues.
 
 -----------
 

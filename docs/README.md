@@ -1,14 +1,15 @@
-# Front-end starter kit
+# [Front-end documentation](https://springload.github.io/frontend-starter-kit/)
 
 | Contents :book:                                        |
 |--------------------------------------------------------|
 | [Pattern library](pattern-library) |
 | [Front-end principles](front-end-principles.md) |
 | [Front-end questionnaire](front-end-questionnaire.md) |
-| [Front-end team](front-end-team.md) |
+| [Team methodologies](front-end-team.md) |
 | [Launch QA checklists](launch-checklist.md) |
 | [Job descriptions](job-descriptions.md) |
-| [Useful tooling](useful-tooling.md) |
+| [Useful tools](useful-tools.md) |
+| [Troubleshooting](troubleshooting.md) |
 
 ## Technology stack
 
@@ -30,11 +31,8 @@ We use the [Airbnb style for Javascript](https://github.com/airbnb/javascript), 
   * BackstopJS for testing visual regressions.
 * Try to keep state in JavaScript, not in DOM. E.g. if code tests whether a class exists then that's probably something that should be moved to a JavaScript `const` or `let`.
 * Cache DOM selectors. Don't keep reselecting the same nodes because that's slow.
-* [Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
-
-##### Polyfills
-
-Use as little as necessary.
+* Use [JS design patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/) when appropriate.
+* Use as few [polyfills](https://en.wikipedia.org/wiki/Polyfill) as necessary.
 
 ### Sass
 
