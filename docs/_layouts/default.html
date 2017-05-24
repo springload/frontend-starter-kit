@@ -44,12 +44,23 @@
       </footer>
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/instantclick/3.0.1/instantclick.min.js" data-no-instant></script>
+    <script data-no-instant>InstantClick.init();</script>
 
   {% if site.google_analytics %}
-    <script>
+    <script data-no-instant>
     window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
     ga('create', '{{ site.google_analytics }}', 'auto');
-    ga('send', 'pageview');
+
+    if (InstantClick) {
+        InstantClick.on('change', function() {
+            ga('send', 'pageview', location.pathname + location.search);
+        });
+    } else {
+        ga('send', 'pageview');
+    }
+
+    InstantClick.init();
     </script>
     <script async src='https://www.google-analytics.com/analytics.js'></script>
   {% endif %}
