@@ -1,136 +1,138 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
-    <!-- Made by Springload -->
     <meta charset="utf-8">
-    <title>Fred - the friendly front-end styleguide</title>
+    <title>Springload Pattern library</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--{% include "core/includes/favicons.html" %}-->
-
     <link rel="stylesheet" href="/css/styles.css" />
-    {{> theme}}
+    <link rel="stylesheet" href="/css/pattern-library.css" />
 </head>
-<body style='background-color:#fff; height:100%'>
+<body>
 
-    <div class='[ wrapper ] t-plain header'  role="contentinfo" >
-        <div class='[ gutters ]' style='padding-top:15px;padding-bottom:15px;'>
-            <div class='[ grid ]'>
-                <div class='[ width-1/2 ]'>
+    <div class="wrapper t-plain header" role="contentinfo">
+        <div class="gutters" style="padding-top:15px;padding-bottom:15px;">
+            <div class="grid">
+                <div class="width-1/2">
                     <a href="/">
                         <svg class="icon icon--leaf" aria-hidden="true" aria-role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="28px" viewBox="0 0 64 28" xml:space="preserve"><path fill="#7DC265" d="M54.17,2.91c-6.3,0-8.53-1.81-15.07-1.81c-5.77,0-11.21,2.19-12.31,11.64c-0.81,7.06-4.19,9.54-8.1,9.54 c-3.01,0-5.01-1-5.96-3.38c3.86-1.19,6.01-4.44,6.01-8.63c0-5.34-3.44-9.15-9.39-9.15C3.43,1.1,0,4.91,0,10.25 c0,4.34,2.29,7.68,6.35,8.77c1.38,6.3,6.2,8.68,12.3,8.68c7.11,0,12.73-4.34,13.88-12.78c2.86,3.1,6.72,4.05,10.64,4.05 c10.73,0,18.5-8.2,20.84-17.98C60.71,2.29,57.65,2.91,54.17,2.91z M9.35,13.97c-2.19,0-3.39-1.53-3.39-3.62 c0-2.15,1.19-3.67,3.39-3.67c2.24,0,3.43,1.52,3.43,3.67C12.78,12.45,11.59,13.97,9.35,13.97z"/></svg>
                     </a>
                 </div>
-                <div class='[ width-1/2 ]'>
-                    <p class='u-text-right'><a href='#fred'>Styleguide</a></p>
+                <div class="width-1/2">
+                    <p class="u-text-right">Pattern library</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div  class='theme--dark'>
-        <div class='[ wrapper wrapper--narrow ]' style=''>
-            <div class='[ section gutters ]'>
-                <div class='u-text-center '>
-                    <img src='../pattern-library/fred-logo.png' alt='Fred the friendly front end' class='u-mb'>
+    <div  class="theme--dark">
+        <div class="wrapper wrapper--narrow">
+            <div class="section gutters">
+                <div class="u-text-center">
+                    <p class="logo" aria-hidden="true">▽</p>
                     <h1>
-                        FRED
+                        Pattern library
                     </h1>
                     <p>
-                        Meet Fred, the friendly front-end styleguide.
-                        He helps solve a classic front-end problem: sharing and re-using common components between projects while documenting how they work so everyone in the team can use and understand them.
+                        Springload’s repository of reusable patterns
                     </p>
                 </div>
             </div>
         </div>
-     </div>
-
-     <div class='[ wrapper wrapper--narrow ]' >
-        <div class='[ section gutters ]'>
-
-                <h2>
-                    Code structure
-                </h2>
-                <p>
-                    We have seperated our CSS codebase into several sections (called layers), which take form of an inverted triangle: (based on <a href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/">ITCSS architecture</a> ).
-                </p>
-
-                <p>
-                    Those layers are as follows:
-                </p>
-                <ol class='styleguide-layers'>
-                    <li><strong>SETTINGS</strong> – used with preprocessors and contain font, colors definitions, etc.</li>
-                    <li><strong>TOOLS</strong> – globally used mixins and functions. It’s important not to output any CSS in the first 2 layers.</li>
-                    <li><strong>GENERIC</strong> – reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.</li>
-                    <li><strong>ELEMENTS</strong> – styling for bare HTML elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here.</li>
-                    <li><strong>OBJECTS</strong> – class-based selectors which define undecorated design patterns, for example media object known from OOCSS</li>
-                    <li><strong>COMPONENTS</strong>  – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components</li>
-                    <li><strong>UTILITIES</strong> – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class</li>
-                    <li><strong>THEMING</strong> – website themes</li>
-                </ol>
-                 <!--<p class='u-text-center'><img src='../styleguide/itcss-triangle.png' alt='Inverted triangle'/></p>-->
-
-                <p>
-                    ITCSS stands for Inverted Triangle CSS and it helps you to organize your project CSS files in such way that you can better deal with (not always easy-to-deal with) CSS specifics like global namespace, cascade and selectors specificity.
-                </p>
-                <p>
-                    The triangle also shows how styles represented by selectors are ordered in the resulting CSS: from generic styles to explicit ones, from low-specificity selectors to more specific ones (but still not too specific, IDs are not allowed) and from far reaching to localized ones.
-                </p>
-                <p>
-                    Secondly, you need to work to a componentised UI architecture. You no longer build to the 'pages' model, but to the modules/components pattern (ITCSS refers to these as 'components'). You build discrete, self-contained pieces of UI as reusable components.
-                </p>
-                <p>
-                    Finally, ITCSS requires that you are in favour of a class-based architecture. You are not afraid of adding classes to your HTML; you don't believe that 'less markup' and 'clean markup' are the same thing; and you understand that binding onto classes, rather than bare HTML elements, provides a more robust and scalable architecture.
-                </p>
-        </div>
     </div>
+    <!--<div class="wrapper wrapper--narrow">
+        <div class="section gutters">
+            <h2>
+                Getting started
+            </h2>
+            <p>This aims to solve classic front-end problems:</p>
+            <ul>
+                <li>Sharing and re-using common patterns between projects</li>
+                <li>Documenting the patterns to maximise their further reuse</li>
+            </ul>
+        </div>
+    </div>-->
 
-    <div class='theme--fred'>
-        <div class='[ wrapper wrapper--narrow ]' >
-            <div class='[ section gutters ]'>
+
+    <div class="">
+        <div class="wrapper wrapper--narrow">
+            <div class="section gutters">
                 <h2>
-                    How the Code is documented
+                    Getting started
                 </h2>
                 <p>
-                    To document our CSS codebase we use an NPM package <a href="https://www.npmjs.com/package/markdown-styleguide-generator">mark-down-styleguide-generator</a>
-                    This tool will search all your style files (your .css, .scss _partial.scss, .whatever) for comments and create a html file living style guide for your developers to use!
+                    To reuse the patterns, head over to our <a href="https://github.com/springload/frontend-starter-kit/">front-end starter kit</a> on GitHub and copy the styles as required.
                 </p>
                 <h3>
-                    How to use it
+                    Maintaining the patterns
                 </h3>
                 <p>
-                    CD into your directory and run "npm run styleguide" this will run the npm package and open a window with the styleguide in it.
-                    The more people that add to this and update this the more valuable resource this will be.
+                    At the moment, we rely on <a href="https://www.npmjs.com/package/markdown-styleguide-generator">markdown-styleguide-generator</a> to automatically generate the pattern library from comments in the stylesheets.
                 </p>
-                <h3>
-                    Rules
-                </h3>
                 <p>
-                    If you are adding to this codebase please check out our
-                    <a href='https://github.com/springload/frontend-starter-kit/blob/master/docs/front-end-principles.md'>coding guidelines</a>.
+                    If you are adding to this codebase please check out our <a href="https://github.com/springload/frontend-starter-kit/blob/master/docs/front-end-principles.md">coding guidelines</a>.
                 </p>
             </div>
         </div>
     </div>
 
-    <div class='[ wrapper wrapper--narrow ]' >
-        <div class='[ section gutters ]'>
-            <blockquote>
-            <!--i know this style is a hack sorry -->
-                <p style='font-size:2.8em'>
-                    This is how it is <strong>now</strong>, until we change it
-                </p>
-                <cite>- Nick Walsh</cite>
-            </blockquote>
+    <div class="theme--fred">
+        <div class="wrapper wrapper--narrow">
+            <div class="section gutters">
+                <blockquote>
+                    <p style="font-size:2.8em">
+                        This is how it is <strong>now</strong>, until we change it
+                    </p>
+                    <cite>- Nick Walsh</cite>
+                </blockquote>
+            </div>
         </div>
     </div>
 
+    <div class="wrapper wrapper--narrow">
+        <div class="section gutters">
+            <h2>
+                Organisation
+            </h2>
+            <p>
+                We have seperated our CSS codebase into several sections (called layers), which take form of an inverted triangle: (based on <a href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/">ITCSS architecture</a> ).
+            </p>
 
-    <div class='[ section gutters ]' style='background-color:#3D4149;' id='fred'>
-        <div class='[ wrapper ] styleguide' style=' background-color:#7DC265; ' >
-            <div class='[ grid ]' >
-                <div class='[ width-full width-3/4@medium ] theme--content' >
-                    <div class='[ gutters section ]'>
+            <p>
+                Those layers are as follows:
+            </p>
+            <ol class="styleguide-layers">
+                <li><strong>SETTINGS</strong> – used with preprocessors and contain font, colors definitions, etc.</li>
+                <li><strong>TOOLS</strong> – globally used mixins and functions. It’s important not to output any CSS in the first 2 layers.</li>
+                <li><strong>GENERIC</strong> – reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.</li>
+                <li><strong>ELEMENTS</strong> – styling for bare HTML elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here.</li>
+                <li><strong>OBJECTS</strong> – class-based selectors which define undecorated design patterns, for example media object known from OOCSS</li>
+                <li><strong>COMPONENTS</strong>  – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components</li>
+                <li><strong>UTILITIES</strong> – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class</li>
+                <li><strong>THEMING</strong> – website themes</li>
+            </ol>
+                <!--<p class="u-text-center"><img src="../styleguide/itcss-triangle.png' alt="Inverted triangle'/></p>-->
+
+            <p>
+                ITCSS stands for Inverted Triangle CSS and it helps you to organize your project CSS files in such way that you can better deal with (not always easy-to-deal with) CSS specifics like global namespace, cascade and selectors specificity.
+            </p>
+            <p>
+                The triangle also shows how styles represented by selectors are ordered in the resulting CSS: from generic styles to explicit ones, from low-specificity selectors to more specific ones (but still not too specific, IDs are not allowed) and from far reaching to localized ones.
+            </p>
+            <p>
+                Secondly, you need to work to a componentised UI architecture. You no longer build to the 'pages' model, but to the modules/components pattern (ITCSS refers to these as 'components'). You build discrete, self-contained pieces of UI as reusable components.
+            </p>
+            <p>
+                Finally, ITCSS requires that you are in favour of a class-based architecture. You are not afraid of adding classes to your HTML; you don't believe that 'less markup' and 'clean markup' are the same thing; and you understand that binding onto classes, rather than bare HTML elements, provides a more robust and scalable architecture.
+            </p>
+        </div>
+    </div>
+
+    <div class="section gutters" style="background-color:#3D4149;">
+        <div class="wrapper styleguide" style="background-color:#7DC265;">
+            <div class="grid">
+                <div class="width-full width-3/4@medium theme--content">
+                    <div class="gutters section">
                     {{#each sections}}
                         <div class="styleguide-section" id="{{id}}" data-section="{{section}}" data-heading="{{heading}}">
 
@@ -161,9 +163,9 @@
 
                 </div>
 
-                 <div class='[ width-full width-1/4@medium ] theme--fred' >
-                    <div class='[ gutters section ]'>
-                        <ul class='list-unstyled styleguide-menu'>
+                 <div class="width-full width-1/4@medium theme--fred">
+                    <div class="gutters section">
+                        <ul class="list-unstyled styleguide-menu">
                             {{#each menu}}
                                 <li>
                                     {{#if headings.0.name}}
@@ -190,12 +192,12 @@
 
     <!--footer-->
 
-    <div  id='footer' role="contentinfo" >
-        <div class='[ wrapper ]' >
-            <div class='[ gutters section ]'>
-                <div class='[ grid ]'>
-                    <p class='u-text-right'>
-                        Made with love by FRED <span style='color:#7DC265'>&#10084;</span>
+    <div  id="footer" role="contentinfo">
+        <div class="wrapper">
+            <div class="gutters section">
+                <div class="grid">
+                    <p class="u-text-right">
+                        Made with love by FRED <span style="color:#7DC265">&#10084;</span>
                     </p>
                 </div>
             </div>

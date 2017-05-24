@@ -9,7 +9,7 @@ const options = {
 };
 
 gulp.task('patterns:build', ['svg', 'css'], shell.task([
-    `styleguide && cp ${config.paths.css}/styles.css ${config.paths.patterns}`,
+    `styleguide`,
     // `sed -i.bak -e 's/UA-XXXXXXX-X/${config.values.GOOGLE_ANALYTICS}/g' ${config.paths.www}/*.html && rm ${config.paths.www}/*.bak`
 ], options));
 

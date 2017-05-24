@@ -8,12 +8,12 @@
 npm run dist
 
 # Regenerate the pattern library.
-npm run patterns
+npm run patterns:build
 
 # Copy to pages subfolder.
 rm -rf pages
 cp -R docs pages
-cp -R core/static pages/static
+cp -R core/static/* pages
 
 # Deploy pages subfolder to gh-pages branch.
 git checkout -B gh-pages
