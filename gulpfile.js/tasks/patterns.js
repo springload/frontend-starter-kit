@@ -8,9 +8,13 @@ const options = {
     ignoreErrors: !config.prod,
 };
 
+const values = {
+    GOOGLE_ANALYTICS: config.prod ? 'UA-79835767-11' : 'UA-XXXXXXX-X',
+};
+
 gulp.task('patterns:build', ['svg', 'css'], shell.task([
     `styleguide`,
-    // `sed -i.bak -e 's/UA-XXXXXXX-X/${config.values.GOOGLE_ANALYTICS}/g' ${config.paths.www}/*.html && rm ${config.paths.www}/*.bak`
+    `sed -i.bak -e 's/UA-XXXXXXX-X/${values.GOOGLE_ANALYTICS}/g' ${config.paths.patterns}/index.html && rm ${config.paths.patterns}/*.bak`
 ], options));
 
 gulp.task('patterns', ['patterns:build'], function() {
