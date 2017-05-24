@@ -9,24 +9,13 @@
 }
 
 @if (config(debug) == true) {
-/*------------------------------------*\
-  #DEBUG
-\*------------------------------------*/
+    // Images missing `alt` attributes is an error.
+    img:not([alt]) {
+    @include debug-error();
+    }
 
-
-/**
- * Images missing `alt` attributes is an error. Empty `alt` attributes are
- * allowed; perhaps we need to do that…?
- */
-img:not([alt]) {
-  @include debug-error();
-}
-
-
-/**
- * Warn about links pointing to just `#`; it’s usually better to point them to
- * `#0` if we have to point to `#` at all.
- */
-[href="#"] {
-  @include debug-warn();
+    // Warn about links pointing to `#`.
+    [href="#"] {
+    @include debug-warn();
+    }
 }
