@@ -2,12 +2,12 @@
 
 > Springload’s reference and starter kit for front-end development.
 
-| Important links :book:                                                      |
-|-----------------------------------------------------------------------------|
-| Documentation in [`docs/`](docs/)                                             |
+| Important links :book:                                 |
+|--------------------------------------------------------|
+| Documentation in [`docs/`](docs/)                      |
 | [Front-end tech stack](docs/README.md) |
 | [Front-end principles](docs/front-end-principles.md) |
-| [Frontend guidelines questionnaire](docs/front-end-questionnaire.md) |
+| [Front-end guidelines questionnaire](docs/front-end-questionnaire.md) |
 | [Launch QA checklists](docs/launch-checklist.md) |
 | [Useful tooling](docs/useful-tooling.md) |
 | [Demo page](https://rawgit.com/springload/frontend-starter-kit/master/core/templates/demo.html) |

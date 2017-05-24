@@ -1,27 +1,31 @@
 # Front-end starter kit
 
+| Contents :book:                                        |
+|--------------------------------------------------------|
+| [Pattern library](pattern-library) |
+| [Front-end principles](front-end-principles.md) |
+| [Front-end questionnaire](front-end-questionnaire.md) |
+| [Front-end team](front-end-team.md) |
+| [Launch QA checklists](launch-checklist.md) |
+| [Job descriptions](job-descriptions.md) |
+| [Useful tooling](useful-tooling.md) |
+
 ## Technology stack
 
 > The goal of this stack is to empower front-end developers to excel at their craft. Our main front-end development languages are [__JavaScript__](https://developer.mozilla.org/en-US/docs/Web/JavaScript) ([ES6/ES2015](https://babeljs.io/docs/learn-es2015/)) and __Sass (SCSS)__. The ES6 and Sass code are compiled to ES5 and CSS as part of our _build process_.
-Learn more about JavaScript (ES6/ES2015):
 
 ### JavaScript
 
-#### JavaScript coding standards
-
-We use the [Airbnb style for Javascript](https://github.com/airbnb/javascript) except:
-
-* Four space indents, no hard tabs, ever.
-* Use a single DOMContentLoaded/Ready event, not multiple events.
+We use the [Airbnb style for Javascript](https://github.com/airbnb/javascript), with a few exceptions. See [eslint-config-springload](https://github.com/springload/eslint-config-springload) for further details.
 
 #### JavaScript principles
 
 * Write JavaScript with the next developer in mind, or as if it'll be released as Open Source, so keep it clear and readable.
 * General advice for readability:
   * Choose your variable and function names carefully.
-  * Abstraction is generally good, but abstraction for the sake of it is Indirection which harms readability.
-* Feature Detection, not Browser Detection. E.g. https://modernizr.com/
-* Have Unit Tests:
+  * Abstraction is generally good, but abstraction for the sake of it is indirection which harms readability.
+* Feature Detection, not Browser Detection, with tools like [Modernizr](https://modernizr.com/)
+* Have unit tests:
   * [Jest](https://facebook.github.io/jest/).
   * BackstopJS for testing visual regressions.
 * Try to keep state in JavaScript, not in DOM. E.g. if code tests whether a class exists then that's probably something that should be moved to a JavaScript `const` or `let`.
@@ -30,8 +34,7 @@ We use the [Airbnb style for Javascript](https://github.com/airbnb/javascript) e
 
 ##### Polyfills
 
-* As little as necessary.
-* Mostly for IE10-11 compatibility.
+Use as little as necessary.
 
 ### Sass
 
@@ -42,9 +45,9 @@ We use the [Airbnb style for Javascript](https://github.com/airbnb/javascript) e
 
 We use Flexbox for our layouts when browser support allows it, providing appropriate fallbacks. Here are three great resources to learn Flexbox:
 
-- http://flexboxfroggy.com/, amazingly fun game to learn Flexbox.
-- https://philipwalton.github.io/solved-by-flexbox/, best resource for people who have learned layout the old ways.
-- https://github.com/philipwalton/flexbugs, necessary knowledge to make Flexbox work across browsers.
+- [Flexbox Froggy](http://flexboxfroggy.com/), amazingly fun game to learn Flexbox.
+- [Solved by Flexbox](https://philipwalton.github.io/solved-by-flexbox/), best resource for people who have learned layout the old ways.
+- [Flexbugs](https://github.com/philipwalton/flexbugs), necessary knowledge to make Flexbox work across browsers.
 
 ### Libraries
 
@@ -56,7 +59,6 @@ To learn more about those libraries:
 - http://redux.js.org/
 - https://lodash.com/
 - https://d3js.org/
-- https://github.com/springload/Analytics.js
 
 To learn React, for beginners, in that order:
 
@@ -78,7 +80,6 @@ To learn React, if you have experience with front-end frameworks, in that order:
 To understand Flux/Redux:
 
 - http://jonathancreamer.com/what-the-flux/
-- http://blog.andrewray.me/flux-for-stupid-people/
 - https://egghead.io/courses/getting-started-with-redux
 
 ### Tooling
@@ -110,7 +111,7 @@ Our Node/npm versions are managed with [nvm](https://github.com/creationix/nvm).
 
 #### Continuous Integration & Deployment
 
-> Our client projects are tested and shipped with [CodeShip](https://codeship.com). Our open-source / public work uses [Travis](https://travis-ci.org/springload/). Because it's free, public, and doesn't interfere with our client project builds.
+> Our client projects are tested and shipped with [CodeShip](https://codeship.com) or [CircleCI](https://circleci.com/). Our open-source / public work uses [Travis](https://travis-ci.org/springload/).
 
 ### Browser & device support
 
@@ -143,7 +144,7 @@ Our Node/npm versions are managed with [nvm](https://github.com/creationix/nvm).
 
 ### No-JavaScript users
 
-Features should only be built in JavaScript where relevant. JavaScript should be applied as a [progressive enhancement (PE)](https://en.wikipedia.org/wiki/Progressive_enhancement) where possible.
+Features should only be built in JavaScript where relevant. JavaScript should be applied as a [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement) (PE) where possible.
 
 If JavaScript is the only way for a feature to work (double check with a teammate!), a ["please enable JavaScript"](https://github.com/springload/frontend-starter-kit/blob/master/core/templates/core/snippets/enable-javascript.html) message should be present in a `<noscript>` tag to address the issue.
 
@@ -155,10 +156,10 @@ If JavaScript is the only way for a feature to work (double check with a teammat
 
 We use inline SVG for our icons. They are made accessible by including text that describes what the icon represents, in a `<title>` tag. Here are implementations:
 
-- React: https://github.com/springload/react-svg-icon
-- Django templates / Jinja: https://github.com/springload/frontend-starter-kit/blob/master/core/templates/core/snippets/icon.html
+- React: [React SVG icon](https://github.com/springload/react-svg-icon)
+- Django templates / Jinja: [`snippets/icon.html`](/core/templates/core/snippets/icon.html)
 
 ## Performance
 
-- [Performance Review Template](https://github.com/springload/frontend-starter-kit/blob/master/docs/performance-review-template.md)
-- [Check performance off on the Launch list](https://github.com/springload/frontend-starter-kit/blob/master/docs/launch-checklist.md#performance)
+- [Performance Review Template](performance-review-template.md)
+- [Check performance off on the Launch list](launch-checklist.md#performance)
