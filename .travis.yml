@@ -10,6 +10,7 @@ install:
 script:
 - npm run dist
 - npm run test:ci
+- npm run patterns:dist
 after_success:
 - cat ./coverage/lcov.info | coveralls
 branches:
