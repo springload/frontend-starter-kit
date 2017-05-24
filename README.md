@@ -5,7 +5,7 @@
 | Important links :book:                                 |
 |--------------------------------------------------------|
 | Documentation in [`docs/`](docs/)                      |
-| <a href="https://springload.github.io/frontend-starter-kit/pattern-library" data-no-instant>Pattern library</a> |
+| [Pattern library](https://springload.github.io/frontend-starter-kit/pattern-library) |
 | [Front-end tech stack](docs/README.md) |
 | [Front-end principles](docs/front-end-principles.md) |
 | [Front-end guidelines questionnaire](docs/front-end-questionnaire.md) |
