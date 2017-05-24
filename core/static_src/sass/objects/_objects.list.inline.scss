@@ -1,6 +1,13 @@
-// ============================================================================
-// Inline lists
-// ============================================================================
+/* SG
+# Objects/Inline list
+
+```
+<ul class="list-inline">
+	<li class="list-inline__item">List item one</li>
+	<li class="list-inline__item">List item two</li>
+</ul>
+```
+*/
 
 .list-inline {
     margin-left: 0;
@@ -15,17 +22,3 @@
             margin-left: $spacing-s;
         }
     }
-
-
-/* SG
-# Objects/list.inline
-
-```
-
-<ul class='list-inline'>
-	<li class='list-inline__item'>List item one</li>
-	<li class='list-inline__item'>List item two</li>
-</ul>
-
-```
-*/

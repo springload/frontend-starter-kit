@@ -1,9 +1,35 @@
-// ============================================================================
-// Striped coloured Tables
-// ============================================================================
+/* SG
+# Components/Striped tables
 
+This component adds stripes to each odd row in the table body section.
+We don't want this as a base style on all tables otherwise we have to remove them from various breakpoints in various situations. Better to lock it down to a class of its own since the declaration to style the stripes is quite specific.
+
+```
+<table class="table table--striped">
+    <tbody class="table__body">
+        <tr class="table__row">
+            <td class="table__cell">Claire</td>
+            <td class="table__cell">Campbell</td>
+        </tr>
+        <tr class="table__row">
+            <td class="table__cell">Laura</td>
+            <td class="table__cell">Bunea</td>
+        </tr>
+        <tr class="table__row">
+            <td class="table__cell">Sam</td>
+            <td class="table__cell">Sanders</td>
+        </tr>
+        <tr class="table__row">
+            <td class="table__cell">Katie</td>
+            <td class="table__cell">Day</td>
+        </tr>
+    </tbody>
+</table>
+```
+*/
 
 .table--striped {
+
 }
 
     .table--striped .table__body .table__row:nth-child(odd) {
@@ -16,91 +42,3 @@
             background-color: $color-table-stripe;
         }
     }
-
-
-/* SG
-# Components/page.table.striped
-
-This component adds stripes to each odd row in the table body section.
-We don't want this as a base style on all tables otherwise we have to remove them from various breakpoints in various situations. Better to lock it down to a class of its own since the declaration to style the stripes is quite specific.
-#### table--striped@medium
-
-Sometimes we only want stripes from medium and up, ie responsive tables don't want stripes at small sizes otherwise we have to create a rather specific override to remove.
-
-```
-<table class="table table--striped ">
-    <tbody class="table__body">
-        <tr class="table__row">
-            <td class="table__cell">
-                <p>Claire</p>
-            </td>
-            <td class="table__cell">
-                <p>Campbell</p>
-            </td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__cell">
-                <p>Laura</p>
-            </td>
-            <td class="table__cell">
-                <p>Bunea</p>
-            </td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__cell">
-               <p>Sam</p>
-            </td>
-            <td class="table__cell">
-                <p>Sanders</p>
-            </td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__cell">
-                <p>Katie</p>
-            </td>
-            <td class="table__cell">
-               <p>Day</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-<h5>1. table--striped@medium </h5>
-<table class="table table--striped ">
-    <tbody class="table__body">
-        <tr class="table__row">
-            <td class="table__cell">
-                <p>Claire</p>
-            </td>
-            <td class="table__cell">
-                <p>Campbell</p>
-            </td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__cell">
-                <p>Laura</p>
-            </td>
-            <td class="table__cell">
-                <p>Bunea</p>
-            </td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__cell">
-               <p>Sam</p>
-            </td>
-            <td class="table__cell">
-                <p>Sanders</p>
-            </td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__cell">
-                <p>Katie</p>
-            </td>
-            <td class="table__cell">
-               <p>Day</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-```
-*/

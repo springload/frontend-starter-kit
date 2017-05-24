@@ -1,6 +1,38 @@
-/*------------------------------------*\
-  #PAGINATION
-\*------------------------------------*/
+/* SG
+# Components/Pagination
+
+```
+<ol class="pagination">
+    <li class="pagination__item  pagination__item--first">
+        <a href="#" class="pagination__link">First</a>
+    </li>
+    <li class="pagination__item  pagination__item--prev">
+        <a href="#" class="pagination__link">Previous</a>
+    </li>
+    <li class="pagination__item">
+        <a href="#" class="pagination__link">1</a>
+    </li>
+    <li class="pagination__item">
+        <a href="#" class="pagination__link is-current">2</a>
+    </li>
+    <li class="pagination__item">
+        <a href="#" class="pagination__link">3</a>
+    </li>
+    <li class="pagination__item">
+        <a href="#" class="pagination__link">4</a>
+    </li>
+    <li class="pagination__item">
+        <a href="#" class="pagination__link">5</a>
+    </li>
+    <li class="pagination__item  pagination__item--next">
+        <a href="#" class="pagination__link">Next</a>
+    </li>
+    <li class="pagination__item  pagination__item--last">
+        <a href="#" class="pagination__link">Last</a>
+    </li>
+</ol>
+```
+*/
 
 .pagination {
   font-size: rem(12);
@@ -70,47 +102,3 @@
       }
 
     }
-
-/* SG
-# Components/pagination
-
-
-```
-<ol class="pagination">
-
-    <li class="pagination__item  pagination__item--first">
-      <a href="#0" class="pagination__link">First</a>
-    </li>
-
-    <li class="pagination__item  pagination__item--prev">
-      <a href="#0" class="pagination__link">Previous</a>
-    </li>
-
-    <li class="pagination__item">
-      <a href="#0" class="pagination__link">1</a>
-    </li>
-    <li class="pagination__item">
-      <a href="#0" class="pagination__link  is-current">2</a>
-    </li>
-    <li class="pagination__item">
-      <a href="#0" class="pagination__link">3</a>
-    </li>
-    <li class="pagination__item">
-      <a href="#0" class="pagination__link">4</a>
-    </li>
-    <li class="pagination__item">
-      <a href="#0" class="pagination__link">5</a>
-    </li>
-
-    <li class="pagination__item  pagination__item--next">
-      <a href="#0" class="pagination__link">Next</a>
-    </li>
-
-    <li class="pagination__item  pagination__item--last">
-      <a href="#0" class="pagination__link">Last</a>
-    </li>
-
-  </ol>
-
-```
-*/

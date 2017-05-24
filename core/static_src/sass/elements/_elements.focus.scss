@@ -1,6 +1,12 @@
-// ============================================================================
-// Focus states
-// ============================================================================
+/* SG
+# Elements/Focus states
+
+```
+<p>
+	You can change the selection colour, select this paragraph to see what colour it is.
+</p>
+```
+*/
 
 *:active,
 *:focus {
@@ -24,15 +30,3 @@
 ::-moz-selection {
     background: $color-select; // Gecko Browsers
 }
-
-
-/* SG
-# Elements/focus
-
-```
-<p>
-	You can change the selection colour, select this paragraph to see what colour it is.
-</p>
-
-```
-*/

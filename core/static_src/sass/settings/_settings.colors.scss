@@ -19,6 +19,7 @@ $color-brand-secondary-shadow:      	darken($color-brand-secondary,  5%);
 $color-black:                       	#000;
 $color-white:                       	#fff;
 $color-grey-dark: 						#333;
+$color-grey-light:                        #666;
 
 // Page
 // -----------------------------------------------------------------------------
@@ -90,12 +91,3 @@ $input-radio-color-border:      $base-form-color-border !default;
 
 $input-checkbox-color-border:      rgb(192,192,192) !default;
 $input-checkbox-color-bg:          rgb(224,224,224);
-
-/* SG
-# Settings/colors
-
-All of the sites colours sit in this file, by having all of the colours in one file allows us to get a nice overview of the site.
-```
-
-```
-*/

@@ -1,6 +1,43 @@
-// -----------------------------------------------------------------------------
-// ALIGNMENTS
-// -----------------------------------------------------------------------------
+/* SG
+# Utilities/Align
+
+Here are some utility classes to help modify the vertical alignment, text alignment, margins and floats.
+
+```
+<h5>Vertical align</h5>
+<div class="u-align-middle">
+    <img src="https://placekitten.com/200/150" alt="">
+    <img src="https://placekitten.com/200/150" alt="">
+</div>
+<div>
+  <img src="https://placekitten.com/200/150">
+  <img src="https://placekitten.com/200/150" class="u-align-bottom">
+</div>
+<br />
+
+<h5>Text align</h5>
+
+<p class="u-text-left" style="background-color:#eee">Left Text</p>
+<p class="u-text-right" style="background-color:#eee">Right Text</p>
+<p class="u-text-center" style="background-color:#eee">Centered Text</p>
+<br />
+
+<h5>Margin center</h5>
+<div class="u-auto">
+  <img src="https://placekitten.com/200/150" alt="">
+</div>
+<div class="u-margin-center">
+  <img src="https://placekitten.com/200/150" alt="">
+</div>
+
+<h5>Floats</h5>
+<div class="u-clear">
+    <img class="u-left" src="https://placekitten.com/200/150" alt=""/>
+    <img class="u-right" src="https://placekitten.com/200/150" alt=""/>
+</div>
+
+```
+*/
 
 
 // vertical aligns
@@ -52,46 +89,3 @@
     overflow: hidden;
     /* add clearfix */
 }
-
-
-/* SG
-# Utilities/align
-
-Here are some utility classes to help modify the vertical alignment, text alignment, margins and floats. To see the code used scroll to the code example below.
-
-```
-<h5>Vertical align:</h5>
-<div class="u-align-middle">
-    <img src="https://placekitten.com/200/150">
-    <img src="https://placekitten.com/220/80">
-</div>
-<div class="">
-  <img src="https://placekitten.com/200/150">
-  <img src="https://placekitten.com/220/80" class='u-align-bottom'>
-</div>
-<br />
-
-<h5>Text align:</h5>
-
-<p class='u-text-left' style='background-color:#eee'>Left Text</p>
-<p class='u-text-right' style='background-color:#eee'>Right Text</p>
-<p class='u-text-center' style='background-color:#eee'>Centered Text</p>
-<br />
-
-<h5>Margin center: </h5>
-<div class='u-auto'>
-  <img src="https://placekitten.com/200/150">
-</div>
-<div class='u-margin-center'>
-  <img src="https://placekitten.com/200/150">
-</div>
-<br />
-
-<h5>Floats: </h5>
-<div class='u-clear'>
-    <img class='u-left' src="https://placekitten.com/200/150" />
-    <img class='u-right' src="https://placekitten.com/220/80" />
-</div>
-
-```
-*/

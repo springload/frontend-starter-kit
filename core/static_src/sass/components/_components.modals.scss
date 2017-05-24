@@ -1,7 +1,9 @@
-// ============================================================================
-// Modal lightboxes
-// Requires '_generic.keyframes.scss';
-// ============================================================================
+/* SG
+# Components/Modal lightboxes
+
+Requires '_generic.keyframes.scss';
+*/
+
 
 $z-index-modal: 3000;
 $z-index-modal-matte: 1001;
@@ -148,35 +150,3 @@ $z-index-modal-content: 1002;
             margin-left: -1.25rem;
         }
     }
-
-/* SG
-# Components/modals
-
-Requires '_generic.keyframes.scss';
-
-As of 2015, the vertical-align: middle table is still the best cross-browser
-way to vertically centre stuff. This modal component uses this pattern with
-the following structure:
-
-<xmp><div class="modal modal--active">
-    <div class="modal__table">
-        <div class="modal__center">
-            <div class="modal__content">
-               Hello!
-          </div>
-        </div>
-   </div>
-</div>
-
-<div class="modal modal--active modal--video ">
-    <div class="modal__table">
-        <div class="modal__center">
-            <div class="modal__content">
-               Modal video
-           </div>
-        </div>
-    </div>
-</div>
-</xmp>
-
-*/

@@ -1,8 +1,9 @@
 {
 	"sgComment": "SG",
 	"srcFolder": "./core/static_src/sass",
-	"outputFile": "./docs/styleguide/index.html",
-	"templateFile": "./docs/styleguide/template.html",
+	"outputFile": "./docs/pattern-library/index.html",
+	"templateFile": "./docs/pattern-library/template.html",
 	"themeFile": "./core/static/css/styleguide.css",
-	"highlightStyle": "github"
+	"highlightStyle": "github",
+    "highlightFolder": "./node_modules/highlight.js/styles"
 }

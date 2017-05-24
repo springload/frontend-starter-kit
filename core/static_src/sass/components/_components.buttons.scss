@@ -1,6 +1,13 @@
-// ============================================================================
-// Button
-// ============================================================================
+/* SG
+# Components/Buttons
+
+```
+<p><a href="#" class="btn">Button</a></p>
+<p><a href="#" class="btn btn--small">Button</a></p>
+<p><a href="#" class="btn btn--wide">Button</a></p>
+<p><a href="#" class="btn btn--block">Button</a></p>
+```
+*/
 
 // 1. Allow us to style box model properties.
 // 2. Line different sized buttons up a little nicer.
@@ -100,27 +107,3 @@ $padding-btn: $base-spacing-unit;
             width: 100%;
         }
     }
-
-
-/* SG
-# Components/button
-
-For a base button just add the class "btn" to your anchor.
-To modify the base button you can add the modifiers listed below:
-```
-<p><a href='#' class='btn'> button </a></p>
-
-
-<h5>1. btn--small</h5>
-<p><a href='#' class='btn btn--small'> button </a></p>
-
-
-<h5>2. btn--wide</h5>
-<p><a href='#' class='btn btn--wide'> button </a></p>
-
-
-<h5>3. btn--block </h5>
-<p><a href='#' class='btn btn--block'> button </a></p>
-
-```
-*/

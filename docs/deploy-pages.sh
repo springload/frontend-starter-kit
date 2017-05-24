@@ -7,8 +7,8 @@
 # Compile the project.
 npm run dist
 
-# Regenerate the styleguide.
-styleguide
+# Regenerate the pattern library.
+npm run patterns
 
 # Copy to pages subfolder.
 rm -rf pages

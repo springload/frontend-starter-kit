@@ -1,30 +1,37 @@
 // -----------------------------------------------------------------------------
-// STYLEGUIDE
+// Pattern library
 // -----------------------------------------------------------------------------
 
 @import 'settings';
 @import 'tools';
+@import 'generic';
+@import 'elements';
 
-/* REALLY NEED TO TIDY THIS FILE SINCE WE DON'T NEED TO HACK IT ANYMORE  */
+@import 'print';
 
-/*
+$color-patternlib-brand: #7DC265;
+
+body {
+    background-color: $color-white;
+}
+
 //  Themes
-*/
 
 .theme--dark {
     background-color:#3D4149;
     color:#fff
 }
 .theme--fred {
-    background-color:#7DC265;
+    background-color:$color-patternlib-brand;
     color:#CAFFB2;
 }
 
 .theme--content {
-    background-color:#ffffff;
+    background-color:$color-white;
 }
 
-/* sections */
+// Sections
+
 .styleguide-section {
     border-bottom:4px solid #efefef;
     margin-bottom:30px;
@@ -46,7 +53,9 @@
     border-top-style: dashed;
 
 }
-/* menu */
+
+// Menu
+
 .styleguide-menu  {
     color:#CAFFB2;
 }
@@ -63,16 +72,15 @@
 
 /* overide to make the buttons a bit prettier :) */
 .styleguide .btn {
-    background-color: #7DC265;
+    background-color: $color-patternlib-brand;
     color: #fff;
-    border-color: #7DC265;
+    border-color: $color-patternlib-brand;
     border-radius:0.2rem;
 }
 
 .styleguide .btn:hover{
-    color:  #7DC265;
+    color:  $color-patternlib-brand;
     background-color:#fff;
-
 }
 
 // Page header
@@ -87,23 +95,41 @@ $height-header: $height-logo + (2 * $spacing);
     box-shadow: 0 3px 5px 0 rgba(63,63,63,0.30);
 }
 
-.header--fixed {
-    position: fixed;
-    z-index: 10;
-    height: $height-header;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    + * {
-        margin-top: $height-header;
-    }
+.logo {
+    font-size: 4rem;
 }
-
-// Logo
 
 .icon--leaf {
     width: 33px;
     height: 13px;
+}
+
+// Pattern library helpers
+
+@include xsmall {
+    .breakpoint-on-xsmall { background-color:$color-patternlib-brand; }
+}
+@include smallish {
+    .breakpoint-on-smallish { background-color:$color-patternlib-brand; }
+}
+@include xsmall {
+    .breakpoint-on-small { background-color:$color-patternlib-brand; }
+}
+@include medium {
+    .breakpoint-on-medium { background-color:$color-patternlib-brand; }
+}
+@include large {
+    .breakpoint-on-large { background-color:$color-patternlib-brand; }
+}
+@include xlarge {
+    .breakpoint-on-xlarge { background-color:$color-patternlib-brand; }
+}
+
+.breakpoint-on-xsmall,
+.breakpoint-on-smallish,
+.breakpoint-on-small,
+.breakpoint-on-medium,
+.breakpoint-on-large,
+.breakpoint-on-xlarge {
+    padding: 1rem;
 }

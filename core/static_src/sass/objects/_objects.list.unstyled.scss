@@ -1,6 +1,13 @@
-// ============================================================================
-// Inline lists
-// ============================================================================
+/* SG
+# Objects/Unstyled list
+
+```
+<ul class="list-unstyled">
+	<li>List item one</li>
+	<li>List item two</li>
+</ul>
+```
+*/
 
 .list-unstyled {
     list-style: none;
@@ -9,16 +16,3 @@
     margin-right: 0;
     margin-top: 0;
 }
-
-/* SG
-# Objects/list.unstyled
-
-```
-
-<ul class='list-unstyled'>
-	<li> List item one </li>
-	<li> List item two </li>
-</ul>
-
-```
-*/

@@ -1,6 +1,51 @@
-// ============================================================================
-// Page sections ( Vertical spacing )
-// ============================================================================
+/* SG
+# Components/Page sections
+
+Determines the vertical spacing of the site.
+
+```
+<div style="background-color:#0F984F">
+    <div class="section">
+        <p class="u-text-center" style="background-color:green">Section</p>
+    </div>
+</div>
+<h5>1. section--no-top</h5>
+<p>Removes the top padding.</p>
+<div style="background-color:#0F984F">
+    <div class="section section--no-top">
+        <p class="u-text-center" style="background-color:green">Section</p>
+    </div>
+</div>
+<h5>2. section--no-bottom </h5>
+<p>Removes the bottom padding.</p>
+<div style="background-color:#0F984F">
+    <div class="section section--no-bottom">
+        <p class="u-text-center" style="background-color:green">Section</p>
+    </div>
+</div>
+<h5>3. section--stacked</h5>
+<p>If there is multiple sections stacked on top of each other it removes the top padding.</p>
+
+<div class="section section--stacked ]' style="background-color:#0F984F">
+    <p class="u-text-center" style="background-color:green">Section</p>
+</div>
+<div class="section section--stacked ]' style="background-color:#0F984F">
+    <p class="u-text-center" style="background-color:green">Section</p>
+</div>
+<h5>4. section-overlap--top </h5>
+<p>Removes the bottom padding.</p>
+<div style="background-color:#0F984F">
+    <div class="section">
+        <p class="u-text-center" style="background-color:green">Section</p>
+    </div>
+</div>
+<div style="background-color:orange; opacity:0.7">
+    <div class="section section-overlap--top">
+        <p class="u-text-center" style="background-color:green">Section</p>
+    </div>
+</div>
+```
+*/
 
 
 .section {
@@ -26,72 +71,3 @@
     .section-overlap--top {
         margin-top: -1rem;
     }
-
-/* SG
-# Components/page.sections
-
-Page sections determine the vertical spacing of the site.
-
-```
-<div style="background-color:#0F984F">
-    <div class='[ section ]' >
-        <p class="u-text-center" style="background-color:#f8f8f8">
-            You can see the sections highlighted by the green background
-        </p>
-    </div>
-</div>
-<br />
-<h5>1. section--no-top</h5>
-<p>Removes the top padding.</p>
-<div style="background-color:#0F984F">
-    <div class='[ section section--no-top ]' >
-        <p class="u-text-center" style="background-color:#f8f8f8">
-            You can see the sections highlighted by the green background
-        </p>
-    </div>
-</div>
-<br />
-<h5>2. section--no-bottom </h5>
-<p>Removes the bottom padding.</p>
-<div style="background-color:#0F984F">
-    <div class='[ section section--no-bottom ]' >
-        <p class="u-text-center" style="background-color:#f8f8f8">
-            You can see the sections highlighted by the green background
-        </p>
-    </div>
-</div>
-<br />
-<h5>3. section--stacked</h5>
-<p>If there is multiple sections stacked on top of each other it removes the top padding.</p>
-
-<div class='[ section section--stacked ]' style="background-color:#0F984F">
-    <p class="u-text-center" style="background-color:#f8f8f8">
-        You can see the sections highlighted by the green background
-    </p>
-</div>
-<div class='[ section section--stacked ]' style="background-color:#0F984F">
-    <p class="u-text-center" style="background-color:#f8f8f8">
-        You can see the sections highlighted by the green background
-    </p>
-</div>
-<br />
-<h5>4. section-overlap--top </h5>
-<p>Removes the bottom padding.</p>
-<div style="background-color:#0F984F">
-    <div class='[ section ]' >
-        <p class="u-text-center" style="background-color:#f8f8f8">
-            You can see the sections highlighted by the green background
-        </p>
-    </div>
-</div>
-<div style="background-color:orange; opacity:0.7">
-    <div class='[ section section-overlap--top ]' >
-        <p class="u-text-center" style="background-color:#f8f8f8">
-            You can see the sections highlighted by the green background
-        </p>
-    </div>
-</div>
-<br />
-
-```
-*/

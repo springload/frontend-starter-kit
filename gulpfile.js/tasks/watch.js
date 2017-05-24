@@ -1,16 +1,15 @@
-var gulp = require("gulp");
-var path = require("path");
-var bs = require('browser-sync').create('main');
-var webpack = require('webpack');
-var config = require("../config");
-const webpackCallback = require('./js');
-var webpackConfig = require('../../webpack/webpack.config.dev');
+const gulp = require('gulp');
+const path = require('path');
+const bs = require('browser-sync').create('main');
+const webpack = require('webpack');
+const config = require('../config');
+const webpackConfig = require('../../webpack/webpack.config.dev');
 
 gulp.task('watch', ['build'], function() {
     webpackConfig.watch = true;
 
     bs.init({
-        server: ['core', 'docs'],
+        server: 'core',
         // Use this for our projects, with the port the project uses.
         // proxy: 'localhost:8111',
     }, function() {

@@ -1,39 +1,36 @@
-// ============================================================================
-// Tables
-// ============================================================================
-//
-// Base styles to be shared across all table options
-// We have 5 table options/modifiers. Usually there will be at least two
-// options applied to a table since the table class alone is just basic styles.
-//
-// Eg. class="table table--responsive table--striped@medium"
-//     class="table table--stacked table--striped"
-//
-// This may feel verbose, but it is the most flexible and efficient way to
-// handle the use of many different table styles without having to override
-// each other or use many different cell classes throughout the markup.
-//
-// Types of tables:
-//
-// 1. Responsive tables with more than two columns that break to a different
-//    and easier to read format on small screens.
-// 2. Scrollabe tables, for tables with complex content that doesn't
-//    break down on small screens very easily. Relies on parent container
-//    to control the overflow
-// 3. Stacked tables, for when there isn't too many columns and they want it
-//    to behave a little more like a definition list. Uses data
-//    attributes to add table heading content to table cell pseudo elements
-//    so we don't lose table headings entirely.
-// 4. Striped tables, we don't want this as a base style on all tables
-//    otherwise we have to remove them from various breakpoints in various
-//    situations. Better to lock it down to a class of its own since the
-//    declaration to style the stripes is quite specific.
-// 5. Product tables. These are specifically used for products to list a
-//    group of fees. It is only two columns without any heading data
-//    so much more simplistic.
-//
-// ============================================================================
+/* SG
+# Components/Tables
 
+Base styles to be shared across all table options
+We have 5 table options/modifiers. Usually there will be at least two
+options applied to a table since the table class alone is just basic styles.
+
+- Eg. `class="table table--responsive table--striped@medium"`
+- `class="table table--stacked table--striped"`
+
+This may feel verbose, but it is the most flexible and efficient way to
+handle the use of many different table styles without having to override
+each other or use many different cell classes throughout the markup.
+
+Types of tables:
+
+1. Responsive tables with more than two columns that break to a different
+   and easier to read format on small screens.
+2. Scrollabe tables, for tables with complex content that doesn't
+   break down on small screens very easily. Relies on parent container
+   to control the overflow
+3. Stacked tables, for when there isn't too many columns and they want it
+   to behave a little more like a definition list. Uses data
+   attributes to add table heading content to table cell pseudo elements
+   so we don't lose table headings entirely.
+4. Striped tables, we don't want this as a base style on all tables
+   otherwise we have to remove them from various breakpoints in various
+   situations. Better to lock it down to a class of its own since the
+   declaration to style the stripes is quite specific.
+5. Product tables. These are specifically used for products to list a
+   group of fees. It is only two columns without any heading data
+   so much more simplistic.
+*/
 
 .table {
     border: 1px solid $color-table-border;
@@ -63,16 +60,3 @@
 .table__row--border\+\+ {
     border-bottom: 5px solid  $color-table-border;
 }
-
-
-/* SG
-# Components/page.table.base
-
-Base styles to be shared across all table options.
-We have 5 table options/modifiers. Usually there will be at least two options applied to a table since the table class alone is just basic styles.
-
-```
-
-
-```
-*/

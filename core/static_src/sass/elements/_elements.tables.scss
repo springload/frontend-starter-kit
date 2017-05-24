@@ -1,6 +1,23 @@
-// ============================================================================
-// tables
-// ============================================================================
+/* SG
+# Elements/Tables
+
+```
+<table>
+    <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+        </tr>
+    </tobdy>
+</table>
+```
+*/
 
 table {
     width: 100%;
@@ -11,26 +28,3 @@ table {
     th {
         text-align: left;
     }
-
-
-/* SG
-# Elements/tables
-
-```
-<table >
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-  </tr>
-</table>
-
-```
-*/

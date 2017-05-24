@@ -1,9 +1,33 @@
-// ============================================================================
-// Tables
-// Rows and cells are full width and stack on top of each other
-// at small sizes. We retain some header context by hiding the header and
-// adding data attribute content to pseudo elements.
-// ============================================================================
+/* SG
+# Components/Stacked tables
+
+Rows and cells are full width and stack on top of each other at small sizes.
+We retain some header context by hiding the header and adding data attribute content to pseudo elements.
+
+```
+<table cellspacing="0" class="table table--stacked">
+    <thead class="table__head">
+        <tr class="table__row">
+            <th class="table__header-cell">Header title</th>
+            <th class="table__header-cell">As at 31 December 2015</th>
+            <th class="table__header-cell">As at Now</th>
+        </tr>
+    </thead>
+    <tbody class="table__body">
+        <tr class="table__row">
+            <td class="table__cell table__cell--title@small" data-header="Header title">Actual Solvency Capital (A)</td>
+            <td class="table__cell" data-header="As at 31 December 2015">14,069,000</td>
+            <td class="table__cell" data-header="As at Now">14,069,000</td>
+        </tr>
+        <tr class="table__row">
+            <td class="table__cell table__cell--title@small" data-header="Header title">Minimum Solvency Capital (B)</td>
+            <td class="table__cell" data-header="As at 31 December 2015">5,451,000</td>
+            <td class="table__cell" data-header="As at Now">5,451,000</td>
+        </tr>
+    </tbody>
+</table>
+```
+*/
 
 
 .table--stacked {
@@ -58,53 +82,3 @@
 			font-size: .875em;
 		}
 	}
-
-/* SG
-# Components/page.table.stacked
-
-Stacked tables, for when there isn't too many columns and they want it to behave a little more like a definition list. Uses dataattributes to add table heading content to table cell pseudo elements so we don't lose table headings entirely.
-
-```
-<table cellspacing="0" class="table table--stacked">
-    <thead class="table__head">
-        <tr class="table__row">
-            <th class="table__header-cell">
-                Header title
-            </th>
-            <th class="table__header-cell">
-                As at 31 December 2015
-            </th>
-            <th class="table__header-cell">
-                As at Now
-            </th>
-        </tr>
-    </thead>
-    <tbody class="table__body">
-        <tr class="table__row">
-            <td class="table__cell table__cell--title@small" data-header="Header title">
-                Actual Solvency Capital (A)
-            </td>
-            <td class="table__cell" data-header="As at 31 December 2015">
-                14,069,000
-            </td>
-            <td class="table__cell" data-header="As at Now">
-                14,069,000
-            </td>
-        </tr>
-        <tr class="table__row">
-            <td class="table__cell table__cell--title@small" data-header="Header title">
-                Minimum Solvency Capital (B)
-            </td>
-            <td class="table__cell" data-header="As at 31 December 2015">
-                5,451,000
-            </td>
-            <td class="table__cell" data-header="As at Now">
-                5,451,000
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-
-```
-*/

@@ -1,19 +1,11 @@
-// ============================================================================
-// Page header
-// ============================================================================
 /* SG
-# Components/page.header
-
-The page.header file is where the sites primary navigation normally sits.
-1. page-header--fixed
-You can modify this element by adding the above class this will fix the header to the top of the page. We are unable to show an example as it will break the site but the code is outlined below.
+# Components/Page header
 
 ```
-    <div class="page-header page-header--fixed">
-        <p>fixed header</p>
-    </div>
+<div class="page-header">
+    Page header
+</div>
 ```
-
 */
 
 $height-logo: 2.25rem;

@@ -1,6 +1,17 @@
-// ============================================================================
-// Media blocks
-// ============================================================================
+/* SG
+# Objects/Media blocks
+
+Float an image to the left, with a clearfixed block of content to the right.
+
+```
+<div class="media">
+    <img class="media__image" src="https://placekitten.com/200/150" alt="">
+    <div class="media__body">
+        <p>The text</p>
+     </div>
+</div>
+```
+*/
 
 $spacing-media: 1em;
 
@@ -47,21 +58,3 @@ $spacing-media: 1em;
         }
     }
 }
-
-
-/* SG
-# Objects/media
-
-Float an image to the left, with a clearfixed block of content to the right.
-
-```
-<div class='media'>
-    <img src='https://placekitten.com/200/150' class='media__image'>
-    <div class='media__body'>
-        <p>
-             The text
-        </p>
-     </div>
-</div>
-```
-*/

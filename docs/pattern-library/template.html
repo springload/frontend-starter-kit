@@ -8,7 +8,7 @@
 
     <!--{% include "core/includes/favicons.html" %}-->
 
-    <link rel="stylesheet" href="../../core/static/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     {{> theme}}
 </head>
 <body style='background-color:#fff; height:100%'>
@@ -32,7 +32,7 @@
         <div class='[ wrapper wrapper--narrow ]' style=''>
             <div class='[ section gutters ]'>
                 <div class='u-text-center '>
-                    <img src='../styleguide/fred-logo.png' alt='Fred the friendly front end' class='u-mb'>
+                    <img src='../pattern-library/fred-logo.png' alt='Fred the friendly front end' class='u-mb'>
                     <h1>
                         FRED
                     </h1>
@@ -136,6 +136,7 @@
 
                             <div class="comment">
                                 <h2>{{section}}{{#if heading}}/{{heading}}{{/if}}</h2>
+
                                 {{{comment}}}
                             </div>
 
@@ -144,6 +145,7 @@
                                     {{{code}}}
                                 </div>
                             {{/if}}
+
                             <!--the html code-->
                             {{#if markup}}
                                 <div class="markup hljs">

@@ -1,8 +1,32 @@
-// ============================================================================
-// Button groups
-// ============================================================================
+/* SG
+# Components/Button groups
 
-//rem or em ?? we use rem quite alot should we keep this consistent
+```
+<h5>btn-group</h5>
+<div class="btn-group">
+    <a href="#" class='btn'>btn 1</a>
+    <a href="#" class='btn'>btn 2</a>
+</div>
+<br>
+<h5>btn-group--block</h5>
+<div class="btn-group btn-group--block">
+    <a href="#" class="btn">btn 1</a>
+    <a href="#" class="btn">btn 2</a>
+</div>
+<br>
+<h5>btn-group--justified</h5>
+<div class="btn-group btn-group--justified">
+    <a href="#" class="btn">btn 1</a>
+    <a href="#" class="btn">btn 2</a>
+</div>
+<br>
+<h5>btn-group--reverse@small</h5>
+<div class="btn-group btn-group--reverse@small">
+    <a href="#" class="btn">btn 1</a>
+    <a href="#" class="btn">btn 2</a>
+</div>
+```
+*/
 
 $button-margin: .5em;
 
@@ -89,43 +113,3 @@ $button-margin: .5em;
         }
     }
 }
-
-/* SG
-# Components/button-groups
-
-```
-<h5>1. btn-group</h5>
-<p>Surround the buttons with a "btn-group" class and it will add a right hand margin to each button except for the last button.</p>
-<div class='btn-group'>
-    <a href='#' class='btn'>btn 1</a>
-    <a href='#' class='btn'>btn 2</a>
-</div>
-<br />
-
-<h5>2. btn-group--block</h5>
-<p>Surround the button with this class and it will modify the buttons to a full sized block.</p>
-<p>If you just want to make buttons block elements on the small breakpoint add "@small" to the end (btn-group--block@small)</p>
-<div class='btn-group btn-group--block'>
-    <a href='#' class='btn '>btn 1</a>
-    <a href='#' class='btn '>btn 2</a>
-</div>
-<br />
-
-<h5>3. btn-group--justified</h5>
-<p>Surround the button with this class and it will justify the buttons.</p>
-<div class='btn-group btn-group--justified'>
-    <a href='#' class='btn '>btn 1</a>
-    <a href='#' class='btn '>btn 2</a>
-</div>
-<br />
-
-<h5>4. btn-group--reverse@small: </h5>
-<p>Surround the button with this class and it will reverse the order of the buttons when on the small breakpoint.</p>
-
-<div class='btn-group btn-group--reverse@small'>
-    <a href='#' class='btn '>btn 1</a>
-    <a href='#' class='btn '>btn 2</a>
-</div>
-
-```
-*/

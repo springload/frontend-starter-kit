@@ -1,9 +1,37 @@
-// ============================================================================
-// Themes
-//
-// The default theme goes first
-// Following themes will override the default
-// ============================================================================
+/* SG
+# Theming/Themes
+
+The default theme goes first. Following themes will override the default.
+
+```
+<div class="grid grid--row-spacing grid--col-spacing">
+    <div class="t-pink width-1/4@large width-1/2@medium">
+        <div class="u-current-bg-color">
+            <p>pink</p>
+        </div>
+        <div>
+            <p class="u-current-color">pink</p>
+        </div>
+    </div>
+    <div class="t-green width-1/4@large width-1/2@medium">
+        <div class="u-current-bg-color">
+            <p>green</p>
+        </div>
+        <div>
+            <p class="u-current-color">green</p>
+        </div>
+    </div>
+    <div class="t-blue width-1/4@large width-1/2@medium">
+        <div class="u-current-bg-color">
+            <p>blue</p>
+        </div>
+        <div>
+            <p class="u-current-color">blue</p>
+        </div>
+    </div>
+</div>
+```
+*/
 
 $themes: (
     'pink': (
@@ -68,47 +96,3 @@ $themes: (
         color: $text-color;
     }
 }
-
-
-/* SG
-# Theming/theming
-
-Here are some default themes to get you up and running.
-//todo
-```
-<div class="[ grid grid--row-spacing grid--col-spacing ]">
-    <div class="[ width-1/4@large width-1/2@medium ]">
-        <div class="">
-            <div class="t-pink--bg">
-                Aa <a href>a</a>
-            </div>
-            <div>
-                <p class='t-pink'>t-pink</p>
-            </div>
-        </div>
-    </div>
-    <div class="[ width-1/4@large width-1/2@medium ]">
-        <div class="">
-            <div class="t-green ">
-                Aa <a href>a</a>
-            </div>
-            <div class="">
-                <p>t-green</p>
-            </div>
-        </div>
-    </div>
-    <div class="[ width-1/4@large width-1/2@medium ]">
-        <div class="">
-            <div class="t-blue">
-                Aa <a href>a</a>
-            </div>
-            <div>
-                <p>t-blue</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-```
-*/

@@ -1,10 +1,16 @@
-// ============================================================================
-// Quotes
-// ============================================================================
+/* SG
+# Elements/Quotes
 
-/**
- * Basic styling for quoted text.
- */
+```
+<q>Talk is cheap. Show me the code.</q>
+
+<blockquote>
+  <p>
+   They don't make bugs like Bunny anymore.
+  </p>
+</blockquote>
+```
+*/
 
 q {
   font-style: italic;
@@ -46,18 +52,3 @@ blockquote {
   }
 
 }
-
-
-/* SG
-# Elements/quotes
-
-```
-<q> Talk is cheap. Show me the code </q>
-
-<blockquote>
-  <p>
-   They don't make bugs like Bunny anymore.
-  </p>
-</blockquote>
-```
-*/

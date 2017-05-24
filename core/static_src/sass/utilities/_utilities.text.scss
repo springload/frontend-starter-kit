@@ -1,3 +1,20 @@
+/* SG
+# Utilities/Text
+
+```
+<p class="u-text-bold">Bold text</p>
+<p class="u-text-uppercase">Uppercase text</p>
+<p class="u-text-underline">Underlined text</p>
+<p>base paragraph size</p>
+<p class="u-font-size++">large paragraph size</p>
+<p class="u-font-size--">small paragraph size</p>
+<p class="u-big">Big paragraph size</p>
+<p class="u-text-truncate">Here is a large line of text to show that this text is truncated truncated truncated truncated truncated truncated truncated.</p>
+<p class="u-hyphen">Here is a large line of text to show that this text is hyphenated hyphenated hyphenated hyphenated hyphenated hyphenated hyphenated.</p>
+```
+*/
+
+
 .u-text-bold {
     font-weight: $font-weight-bold;
 }
@@ -48,7 +65,6 @@
     @include truncate;
 }
 
-//todo what is this is it working ??
 .u-hyphen {
     @include xsmall {
         // These are technically the same, but use both
@@ -62,19 +78,3 @@
         hyphens: auto;
     }
 }
-
-/* SG
-# Utilities/text
-Here is a list of typography helpers
-```
-<p class='u-text-bold'>Bold text</p>
-<p class='u-text-uppercase'>Uppercase text</p>
-<p class='u-text-underline'>Underlined text</p>
-<p>base paragraph size</p>
-<p class='u-font-size+'>large paragraph size</p>
-<p class='u-font-size-'>small paragraph size</p>
-<p class='u-big'>Big paragraph size</p>
-<p class='u-text-truncate'>Here is a large line of text to show that this text is truncated truncated truncated truncated truncated truncated truncated.</p>
-<p class='u-hyphen'>hyphen kjahs kasjdh kajs kajsdka dkajs dkas dhaksdj askjdha ks</p>
-```
-*/

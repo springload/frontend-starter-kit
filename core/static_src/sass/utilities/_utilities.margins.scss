@@ -1,3 +1,16 @@
+/* SG
+# Utilities/Margins
+
+```
+<div style="background-color:#0F9850">
+	<p style="background-color:#efefef" class="u-mb--">mb--</p>
+	<p style="background-color:#efefef" class="u-mb-">mb-</p>
+	<p style="background-color:#efefef" class="u-mb">mb</p>
+	<p style="background-color:#efefef" class="u-mb+">mb+</p>
+	<p style="background-color:#efefef" class="u-mb++">mb++</p>
+</div>
+```
+*/
 
 .u-mb-0 {
     margin-bottom: 0 !important;
@@ -14,20 +27,3 @@
 .u-mb-- {
     margin-bottom: round(.5 * $base-spacing-unit) !important;
 }
-
-
-/* SG
-# Utilities/margins
-TODO FIX EXAMPLE AND ARE WE JSUT USING MB FOR THIS  NOT MT ETC
-Here are some handy spacing classes:
-
-```
-<div style='background-color:#0F9850'>
-	<p style='background-color:#efefef' class='u-mb--'>mb--</p>
-	<p style='background-color:#efefef' class='u-mb-'>mb-</p>
-	<p style='background-color:#efefef' class='u-mb'>mb</p>
-	<p style='background-color:#efefef' class='u-mb+'>mb+</p>
-	<p style='background-color:#efefef' class='u-mb++'>mb++</p>
-</div>
-```
-*/

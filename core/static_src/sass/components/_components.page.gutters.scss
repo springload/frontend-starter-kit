@@ -1,14 +1,11 @@
-// ============================================================================
-// Page gutters
-// ============================================================================
 /* SG
-# Components/page.gutters
+# Components/Page gutters
 
 Page gutters determine the horizontal spacing of the site.
 
 ```
-<div class='[ gutters ]' style='background-color:#0F984F'>
-    <p class='u-text-center' style='background-color:#f8f8f8'>
+<div class="gutters" style="background-color:#0F984F">
+    <p class="u-text-center" style="background-color:#f8f8f8">
         You can see the gutters highlighted by the green background
     </p>
 </div>

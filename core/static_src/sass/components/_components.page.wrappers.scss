@@ -1,6 +1,27 @@
-// ============================================================================
-// Page wrappers ( Containing elements )
-// ============================================================================
+/* SG
+# Components/Page wrappers
+
+Page wrappers control the width of the content they contain.
+
+```
+<div class="wrapper">
+    <div class="section gutters">
+        Wrapper
+    </div>
+</div>
+<div class="wrapper wrapper--wide">
+    <div class="section gutters">
+        Wide wrapper
+    </div>
+</div>
+<div class="wrapper wrapper--narrow">
+    <div class="section gutters">
+        Narrow wrapper
+    </div>
+</div>
+```
+*/
+
 
 .wrapper {
     @include clearfix;
@@ -16,22 +37,3 @@
     .wrapper--narrow {
         max-width: 960px;
     }
-
-
-
-/* SG
-# Components/page.wrappers
-
-Page wrappers control the width of the content
-
-```
-<div class='[ wrapper ]' >
-    <div class='[ section gutters ]'>
-        <p>
-            The [ wrapper ] controls the width of the sites content, [ section ] and [ gutters ] sit inside this
-        </p>
-    </div>
-</div>
-
-```
-*/
