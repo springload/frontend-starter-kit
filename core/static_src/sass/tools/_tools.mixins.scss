@@ -154,7 +154,7 @@
 
 @mixin border-dotted {
     border-style: dotted;
-    border-color: $color-grey;
+    border-color: $color-grey-light;
     border-width: 0;
 
     border-image-source: url('../images/dots-grey.svg');
