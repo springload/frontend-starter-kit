@@ -1,3 +1,14 @@
+/* SG
+# Objects/hr
+
+
+```
+<hr class="hr--large"/>
+<hr class="hr--small"/>
+<hr class="hr--xsmall"/>
+```
+*/
+
 .hr--large {
     margin-top: $spacing-xl;
     margin-bottom: $spacing-xl;
@@ -12,14 +23,3 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-
-/* SG
-# Objects/hr
-
-
-```
-<hr class="hr--large"/>
-<hr class="hr--small"/>
-<hr class="hr--xsmall"/>
-```
-*/

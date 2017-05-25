@@ -1,13 +1,3 @@
-// ============================================================================
-// List -- make list of links block elements
-// ============================================================================
-
-.list-block-links {
-	a {
-		display: block;
-	}
-}
-
 /* SG
 # Objects/list.block-links 
 This makes all children a block element
@@ -20,3 +10,9 @@ This makes all children a block element
 
 ```
 */
+
+.list-block-links {
+	a {
+		display: block;
+	}
+}

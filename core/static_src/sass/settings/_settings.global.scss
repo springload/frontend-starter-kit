@@ -40,11 +40,8 @@ $spacing-xxl: ($spacing + 2.5);   // 64px
 
 // Spacing --- Grid
 // ----------------------------------------------------------------------------
+$grid-spacing: $spacing;
 
-$spacing-grid-row: $spacing-s;
-$spacing-grid-row-s: $spacing-xs;
-
-$spacing-grid-col: $spacing;
 
 
 // Spacing --- Gutters 

@@ -1,6 +1,15 @@
-// ============================================================================
-// Icons with text
-// ============================================================================
+/* SG
+# Objects/Icon-text
+
+```
+<span class="icon-text">
+    <span>The text</span>
+        <svg>
+         <use xlink:href="#arrow-next">
+     </svg>
+ </span>
+```
+*/
 
 .icon-text > svg {
     width: 1.25em;
@@ -24,17 +33,3 @@
     height: 1em;
     margin-top: -.125em;
 }
-
-
-/* SG
-# Objects/Icon text
-
-```
-<span class="icon-text">
-    <span>The text</span>
-        <svg>
-         <use xlink:href="#arrow-next">
-     </svg>
- </span>
-```
-*/

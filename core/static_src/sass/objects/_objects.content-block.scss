@@ -1,20 +1,6 @@
-// ============================================================================
-// Content blocks
-// ============================================================================
-
-// blocks of padding normally used around content blocks like rich text editors etc
-
-.content-block {
-	padding: $content-block-spacing;
-}
-
-.content-block-s {
-	padding: $content-block-spacing-s;
-}
-
 /* SG
 # Objects/Content block
-
+Blocks of padding normally used around content blocks like rich text editors etc
 ```
 <div class="content-block">
 	<p>Title goes here</p>
@@ -28,3 +14,11 @@
 
 ```
 */
+
+.content-block {
+	padding: $content-block-spacing;
+}
+
+.content-block-s {
+	padding: $content-block-spacing-s;
+}

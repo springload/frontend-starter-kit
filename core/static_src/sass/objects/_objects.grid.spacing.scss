@@ -3,22 +3,17 @@
 // ============================================================================
 
 .grid--row-spacing {
-    > * {
-        margin-bottom: $spacing-grid-row-s;
-    }
+    margin-bottom: $grid-spacing;
 
-    @include large {
-        > * {
-            margin-bottom: $spacing-grid-row;
-        }
+    > * {
+        margin-bottom: $grid-spacing;
     }
 }
 
-
 .grid--col-spacing {
-    margin-left: -$spacing-grid-col;
+    margin-left: -$grid-spacing;
 
     > * {
-        padding-left: $spacing-grid-col;
+        padding-left: $grid-spacing;
     }
 }

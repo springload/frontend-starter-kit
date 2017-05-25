@@ -5,7 +5,6 @@
 // Media................Media block.
 // Grid.................Float and inline grid setup.
 // List-inline..........Simple abstraction for setting lists out in a line.
-// border.dotted..........Dotted border
 // content-block.........padding around a block of content
 //defintition list table ..... Displays a defintion list like a table which breaks on small 
 //hr ..... 
@@ -24,8 +23,7 @@
 @import 'objects/objects.grid.alignment';
 @import 'objects/objects.list.inline';
 @import 'objects/objects.list.unstyled';
-@import 'objects/objects.list.border';
-@import 'objects/objects.border.dotted';
+
 @import 'objects/objects.content-block';
 @import 'objects/objects.definition-list.table';
 @import 'objects/objects.icons';
