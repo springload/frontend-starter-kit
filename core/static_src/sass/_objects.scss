@@ -7,12 +7,15 @@
 // List-inline..........Simple abstraction for setting lists out in a line.
 // border.dotted..........Dotted border
 // content-block.........padding around a block of content
-//defintition list tabel ..... Displays a defintion list like a table which breaks on small 
-
+//defintition list table ..... Displays a defintion list like a table which breaks on small 
+//hr ..... 
+// Icon Text............SVG icon and text combos.
+// Icons................SVG icon styles.
 @import 'objects/objects.page.wrappers';
 @import 'objects/objects.page.gutters';
 @import 'objects/objects.page.sections';
 @import 'objects/objects.media';
+@import 'objects/objects.hr';
 @import 'objects/objects.grid.inline';
 @import 'objects/objects.grid.float';
 @import 'objects/objects.grid.justified';
@@ -25,3 +28,5 @@
 @import 'objects/objects.border.dotted';
 @import 'objects/objects.content-block';
 @import 'objects/objects.definition-list.table';
+@import 'objects/objects.icons';
+@import 'objects/objects.icon-text';
