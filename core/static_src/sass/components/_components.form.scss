@@ -47,8 +47,8 @@ $form-field-height: 2.5rem;
             line-height: $form-field-height;
             height: $form-field-height;
             appearance: none;
-            border: 1px solid $color-grey-light;
-            background-color: $color-white;
+            border: 1px solid $color-form-base;
+            background-color: $color-input-text-bg;
             font-size: inherit;
         }
 
