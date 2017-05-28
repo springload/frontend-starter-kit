@@ -13,14 +13,6 @@ Simple default styles for headings 1 through 6.
 ```
 */
 
-$font-size-h1:  36;
-$font-size-h2:  28;
-$font-size-h3:  24;
-$font-size-h4:  20;
-$font-size-h5:  18;
-$font-size-h6:  16;
-
-
 h1, h2, h3, h4, h5, h6 {
     font-weight: $font-weight-bold;
     line-height: $line-height-headline;
