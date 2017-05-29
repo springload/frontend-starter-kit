@@ -4,16 +4,50 @@
 Float an image to the left, with a clearfixed block of content to the right.
 
 ```
-<div class="media">
-    <img class="media__image" src="https://placekitten.com/200/150" alt="">
+<h5>Media object</h5>
+<div class="media" style="background-color:#efefef">
+    <img class="media__image" src="https://placekitten.com/150/150" alt="">
     <div class="media__body">
-        <p>The text</p>
+        <p>The textLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in urna ut justo suscipit interdum in at purus. Nam in gravida dolor. Aliquam erat volutpat. Vivamus quis euismod nunc, eu venenatis leo.
+    </div>
+</div>
+<br />
+<h5>Media object reversed (media--rev)</h5>
+<div class="media media--rev" style="background-color:#efefef">
+    <img class="media__image" src="https://placekitten.com/150/150" alt="">
+    <div class="media__body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in urna ut justo suscipit interdum in at purus. Nam in gravida dolor. Aliquam erat volutpat. Vivamus quis euismod nunc, eu venenatis leo.</p>
      </div>
 </div>
+<br />
+<h5>Media object middle alligned (media--middle-align)</h5>
+<div class="media media--middle-align" style="background-color:#efefef">
+    <img class="media__image" src="https://placekitten.com/150/150" alt="">
+    <div class="media__body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in urna ut justo suscipit interdum in at purus. Nam in gravida dolor. Aliquam erat volutpat. Vivamus quis euismod nunc, eu venenatis leo.</p>
+     </div>
+</div>
+<br />
+<h5>Image comes first on small screen (media--break-first)</h5>
+<div class="media media--break-first" style="background-color:#efefef">
+    <img class="media__image" src="https://placekitten.com/150/150" alt="">
+    <div class="media__body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in urna ut justo suscipit interdum in at purus. Nam in gravida dolor. Aliquam erat volutpat. Vivamus quis euismod nunc, eu venenatis leo.</p>
+     </div>
+</div>
+<br />
+<h5>Image comes last on small screen (media--break-last)</h5>
+<div class="media media--break-last" style="background-color:#efefef">
+    <img class="media__image" src="https://placekitten.com/200/150" alt="">
+    <div class="media__body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in urna ut justo suscipit interdum in at purus. Nam in gravida dolor. Aliquam erat volutpat. Vivamus quis euismod nunc, eu venenatis leo.</p>
+     </div>
+</div>
+
 ```
 */
 
-$spacing-media: 1em;
+$reasonable-image-size: 6.25rem;
 
 .media,
 .media--rev,
@@ -21,31 +55,51 @@ $spacing-media: 1em;
     @include clearfix;
 }
 
-.media__image {
-    float: left;
-    margin-right: $spacing-media;
-}
+    .media__image {
+        float: left;
+        margin-right: $spacing;
+    }
 
-.media__body {
-    @include clearfix;
-}
+        .media__image--min-width {
+            min-width: $reasonable-image-size;
+        }
+
+        .media__image--max-width {
+            max-width: $reasonable-image-size;
+
+            > img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+    .media__body {
+        @include clearfix;
+    }
+
+         .media__body--no-wrap {
+            @include smallish {
+                overflow: hidden;
+            }
+        }
 
 
-// Swap the image to the right
-.media--rev > .media__image {
-    float: right;
-    margin-right: 0;
-    margin-left: $spacing-media;
-}
+    // Swap the image to the right
+    .media--rev > .media__image {
+        float: right;
+        margin-right: 0;
+        margin-left: $spacing;
+    }
 
-.media--rev > .media__body {
-    @include clearfix;
-}
+    .media--rev > .media__body {
+        @include clearfix;
+    }
 
 
 //  Modifiers
 // -----------------------------------------------------------------------------
 
+//todo this doesn't seem to be working look into 
 .media--middle-align {
     display: table;
 
@@ -56,5 +110,46 @@ $spacing-media: 1em;
         > * {
             margin: 0;
         }
+    }
+}
+
+// Image comes first on small screens
+.media--break-first > .media__image {
+
+    @include xsmall {
+        margin-bottom: $spacing-xs;
+    }
+
+}
+
+ // Image comes last on small screens
+.media--break-last  {
+    @include xsmall {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+
+        > .media__image {
+            margin-top: $spacing-xs;
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+
+// Remove float from any image that breaks on small screens
+//[class*='break']this means any class that contains the word 'break'
+ .media[class*='break'] > .media__image {
+     @include xsmall {
+        float: none;
+        margin-right: 0;
+        margin-left: 0;
+
+         img {
+            display: block;
+            margin: 0 auto;
+        }
+        //todo slight bug where it stretches image look into
     }
 }
