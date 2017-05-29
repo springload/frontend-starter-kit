@@ -16,34 +16,34 @@ q {
   font-style: italic;
   quotes: "‘" "’";
 
-  &:before {
+  &::before {
     content: open-quote;
   }
 
-  &:after {
+  &::after {
     content: close-quote;
   }
 
 }
 
 blockquote {
-  quotes: "“" "”";
+  quotes: '“' '”';
 
   p {
-    text-indent: -0.42em;
+    text-indent: -.42em;
 
-    &:before {
+    &::before {
       content: open-quote;
     }
 
-    &:after {
+    &::after {
       content: no-close-quote;
     }
 
     &:last-of-type {
       margin-bottom: 0;
 
-      &:after {
+      &::after {
           content: close-quote;
       }
 

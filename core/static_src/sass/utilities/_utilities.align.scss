@@ -87,5 +87,5 @@ Here are some utility classes to help modify the vertical alignment, text alignm
 .u-clear {
     clear: both !important;
     overflow: hidden;
-    /* add clearfix */
+    @include clearfix;
 }

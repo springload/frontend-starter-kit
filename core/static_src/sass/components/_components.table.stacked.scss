@@ -72,7 +72,7 @@ We retain some header context by hiding the header and adding data attribute con
 
 	// Add corresonding table header content to each cell as a
 	// pseudo element so we don't lose column context
-	.table--stacked .table__cell:before {
+	.table--stacked .table__cell::before {
 		@include small {
 			display: block;
 			width: 100%;

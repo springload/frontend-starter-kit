@@ -27,8 +27,8 @@ $base-spacing-unit: 1.5rem; // 24px
 $spacing: $base-spacing-unit;
 
 // Smaller Spacing
-$spacing-xxs: ($spacing *.25);    // 6px
-$spacing-xs: ($spacing *.5);      // 12px
+$spacing-xxs: ($spacing * .25);    // 6px
+$spacing-xs: ($spacing * .5);      // 12px
 $spacing-s: ($spacing - .5);      // 16px
 
 // Larger Spacing
@@ -63,9 +63,9 @@ $breakpoint-xlarge: 1280px;
 
 $base-transition:       all .1s ease-in;
 
-$ease-primary : cubic-bezier(.51,.11,.59,.92);
-$ease-out-primary : cubic-bezier(.2,.42,.59,.92);
-$ease-in-primary : cubic-bezier(.55,.12,1,1);
+$ease-primary: cubic-bezier(.51, .11, .59, .92);
+$ease-out-primary: cubic-bezier(.2 , .42, .59, .92);
+$ease-in-primary: cubic-bezier(.55 , .12, 1, 1);
 
 $ease:                  cubic-bezier(.43, .11, .41, 1);
 $easing-circ:           cubic-bezier(.075, .82, .165, 0);

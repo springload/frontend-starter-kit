@@ -40,7 +40,7 @@ $table-title-spacing: 20px;
         display: block;
         width: 100%;
         text-align: left;
-        border-right: none;
+        border-right: 0;
         margin-top: 0;
     }
 }
@@ -48,7 +48,7 @@ $table-title-spacing: 20px;
 .table--responsive {
     @include small {
         display: block;
-        border: none;
+        border: 0;
         border-bottom: 0;
     }
 }
@@ -56,7 +56,7 @@ $table-title-spacing: 20px;
     // Hide table header, we apply the content to pseudo elements of the corresponding cell instead
     .table--responsive .table__head {
         @include small {
-            display: none;
+            display: 0;
         }
     }
 
@@ -71,22 +71,22 @@ $table-title-spacing: 20px;
         .table--responsive .table__cell {
             @include full-width-styles\@small;
             @include small {
-                overflow: hidden;
                 position: relative;
+                overflow: hidden;
                 padding-left: 50%;
-                background: #F7F7F7;
-                border-top: solid 1px #e6e6e6;
+                background: $color-table-stripe;
+                border-top: solid 1px $color-table-border;
             }
         }
 
         // Make it look like the table headers have moved to the left column
-        .table--responsive .table__cell:before {
+        .table--responsive .table__cell::before {
             @include small {
                 content: attr(data-header);
                 float: left;
                 width: 95%;
                 margin-left: -100%;
-                color: #777;
+                color: $color-grey-dark;
             }
         }
 
@@ -95,7 +95,7 @@ $table-title-spacing: 20px;
             @include small {
                 padding: 0;
                 margin-top: $table-title-spacing;
-                margin-bottom: $table-title-spacing/3;
+                margin-bottom: $table-title-spacing / 3;
                 background: transparent;
                 font-weight: bold;
                 border-top: 0;

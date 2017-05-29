@@ -17,7 +17,7 @@
 // }
 
 @mixin clearfix {
-    &:after {
+    &::after {
         display: table;
         content: '';
         clear: both;
@@ -58,7 +58,7 @@
 
     position: relative;
 
-    &:after {
+    &::after {
         position: absolute;
         content: '';
         border-color: $color;
@@ -124,7 +124,7 @@
     position: relative;
     overflow: hidden;
 
-    &:before {
+    &::before {
         display: block;
         content: "";
         width: 100%;
@@ -142,10 +142,10 @@
 
     .ratio__image {
         display: block;
+        position: absolute;
         min-height: 101%;
         min-width: 100%;
-        position: absolute;
-        left:0;
+        left: 0;
         top: 50%;
         transform: translateY(-50%);
         object-fit: cover;

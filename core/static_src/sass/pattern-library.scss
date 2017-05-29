@@ -9,7 +9,8 @@
 
 @import 'print';
 
-$color-patternlib-brand: #7DC265;
+$color-patternlib-brand: #3d4149;
+$color-patternlib-brand-secondary: #caffb2;
 
 body {
     background-color: $color-white;
@@ -17,30 +18,26 @@ body {
 
 //  Themes
 
-.theme--dark {
-    background-color:#3D4149;
-    color:#fff
-}
-.theme--fred {
-    background-color:$color-patternlib-brand;
-    color:#CAFFB2;
+.theme--pattern-lib {
+    background-color: $color-patternlib-brand;
+    color: $color-white;
 }
 
 .theme--content {
-    background-color:$color-white;
+    background-color: $color-white;
 }
 
 // Sections
 
 .styleguide-section {
-    border-bottom:4px solid #efefef;
-    margin-bottom:30px;
-    padding-bottom:30px;
+    border-bottom: 4px solid $color-grey-light;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .styleguide-section .result,
 .styleguide-section .comment {
-    padding: 0 1em 1em 1em;
+    padding: 0 1em 1em;
 }
 
 .styleguide-section .markup {
@@ -48,8 +45,8 @@ body {
 }
 
 .styleguide-layers li {
-    padding:0.5rem 0;
-    border-top: 2px solid #ddd;
+    padding: .5rem 0;
+    border-top: 2px solid $color-grey-light;
     border-top-style: dashed;
 
 }
@@ -57,30 +54,31 @@ body {
 // Menu
 
 .styleguide-menu  {
-    color:#CAFFB2;
+    color: $color-patternlib-brand-secondary;
 }
 
 .styleguide-menu .submenu {
     list-style-type: none;
 }
+
 .styleguide-menu a {
     display: block;
     text-decoration: none;
-    margin-bottom:9px;
+    margin-bottom: 9px;
 }
 
 
 /* overide to make the buttons a bit prettier :) */
 .styleguide .btn {
     background-color: $color-patternlib-brand;
-    color: #fff;
+    color: $color-white;
     border-color: $color-patternlib-brand;
-    border-radius:0.2rem;
+    border-radius: .2rem;
 }
 
-.styleguide .btn:hover{
+.styleguide .btn:hover {
     color:  $color-patternlib-brand;
-    background-color:#fff;
+    background-color: $color-white;
 }
 
 // Page header
@@ -92,7 +90,7 @@ $height-header: $height-logo + (2 * $spacing);
 .header {
     @include clearfix;
     background-color: $color-white;
-    box-shadow: 0 3px 5px 0 rgba(63,63,63,0.30);
+    box-shadow: 0 3px 5px 0 rgba(63, 63, 63, .3);
 }
 
 .logo {
@@ -107,22 +105,22 @@ $height-header: $height-logo + (2 * $spacing);
 // Pattern library helpers
 
 @include xsmall {
-    .breakpoint-on-xsmall { background-color:$color-patternlib-brand; }
+    .breakpoint-on-xsmall { background-color: $color-patternlib-brand; }
 }
 @include smallish {
-    .breakpoint-on-smallish { background-color:$color-patternlib-brand; }
+    .breakpoint-on-smallish { background-color: $color-patternlib-brand; }
 }
 @include xsmall {
-    .breakpoint-on-small { background-color:$color-patternlib-brand; }
+    .breakpoint-on-small { background-color: $color-patternlib-brand; }
 }
 @include medium {
-    .breakpoint-on-medium { background-color:$color-patternlib-brand; }
+    .breakpoint-on-medium { background-color: $color-patternlib-brand; }
 }
 @include large {
-    .breakpoint-on-large { background-color:$color-patternlib-brand; }
+    .breakpoint-on-large { background-color: $color-patternlib-brand; }
 }
 @include xlarge {
-    .breakpoint-on-xlarge { background-color:$color-patternlib-brand; }
+    .breakpoint-on-xlarge { background-color: $color-patternlib-brand; }
 }
 
 .breakpoint-on-xsmall,

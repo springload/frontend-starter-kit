@@ -5,7 +5,7 @@
 
 //  Brand
 // -----------------------------------------------------------------------------
-$color-brand-primary:               	#0F984F;
+$color-brand-primary:               	#0f984f;
 $color-brand-primary-highlight:     	lighten($color-brand-primary, 5%);
 $color-brand-primary-shadow:        	darken($color-brand-primary,  5%);
 
@@ -19,7 +19,7 @@ $color-brand-secondary-shadow:      	darken($color-brand-secondary,  5%);
 $color-black:                       	#000;
 $color-white:                       	#fff;
 $color-grey-dark: 						#333;
-$color-grey-light:                        #666;
+$color-grey-light:                      #666;
 
 // Page
 // -----------------------------------------------------------------------------
@@ -64,8 +64,8 @@ $color-modal-content-bg: 				#fff;
 
 // Table
 // -----------------------------------------------------------------------------
-$color-table-border: 					#0F984F;
-$color-table-stripe: 					#F4FFFF;
+$color-table-border: 					#0f984f;
+$color-table-stripe: 					#f4ffff;
 
 
 // Pagination
@@ -80,14 +80,14 @@ $color-pagination-bg-current:           $color-brand-primary-highlight;
 // -----------------------------------------------------------------------------
 $base-form-color:					#ccc;
 $base-form-color-border: 			#ccc;
-$input-text-color:              #668 !default;
-$input-text-color-border-hover: rgba(39,41,43,.6) !default;
-$input-text-color-bg:           #FFF !default;
-$input-text-color-shadow:       rgba(0, 137, 91, .6) !default;
+$input-text-color:              	#668 !default;
+$input-text-color-border-hover: 	rgba(39, 41, 43, .6) !default;
+$input-text-color-bg:           	#fff !default;
+$input-text-color-shadow:       	rgba(0, 137, 91, .6) !default;
 
 
-$input-radio-color-bg:          $base-form-color !default;
-$input-radio-color-border:      $base-form-color-border !default;
+$input-radio-color-bg:          	$base-form-color !default;
+$input-radio-color-border:      	$base-form-color-border !default;
 
-$input-checkbox-color-border:      rgb(192,192,192) !default;
-$input-checkbox-color-bg:          rgb(224,224,224);
+$input-checkbox-color-border:      rgb(192, 192, 192) !default;
+$input-checkbox-color-bg:          rgb(224, 224, 224);
