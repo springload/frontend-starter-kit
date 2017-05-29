@@ -30,7 +30,7 @@ they are top aligned by default
 }
 
 //flips content blocks on small 
-.grid--flip-small {
+.grid--flip\@small {
     @include small {
         direction: rtl;
         & > * {
