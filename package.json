@@ -39,7 +39,7 @@
     "browser-sync": "^2.18.8",
     "critical": "^0.8.4",
     "eslint": "3.19.0",
-    "eslint-config-springload": "1.0.2",
+    "eslint-config-springload": "1.0.3",
     "eslint-loader": "^1.6.3",
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-jsx-a11y": "3.0.2",
