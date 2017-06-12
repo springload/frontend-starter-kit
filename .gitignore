@@ -39,6 +39,7 @@ coverage
 .grunt
 .bundle
 docs/pattern-library/index.html
+webpack-stats.json
 
 # -------------------------------------------------
 # Dependency directories

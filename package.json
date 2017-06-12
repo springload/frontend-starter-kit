@@ -89,6 +89,7 @@
     "critical:css": "gulp critical:css",
     "report:css": "gulp report:css",
     "report:coverage": "open coverage/lcov-report/index.html",
+    "report:build": "NODE_ENV=production webpack --config webpack/webpack.config.prod.js --profile --json > webpack-stats.json",
     "js": "gulp js",
     "css": "gulp css",
     "svg": "gulp svg",
