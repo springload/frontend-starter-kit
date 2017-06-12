@@ -23,7 +23,8 @@
               "> 1%",
               "IE 11"
             ]
-          }
+          },
+          "modules": false
         }
       ],
       "react"
