@@ -33,7 +33,7 @@ const webpackConfig = (environment) => {
         entry: {
             site: [
                 path.join(config.paths.source, 'js', 'utils', 'polyfills.js'),
-                path.join(config.paths.source, 'js', 'site.js'),
+                path.join(config.paths.source, 'js', 'site.entry.js'),
             ],
         },
 
