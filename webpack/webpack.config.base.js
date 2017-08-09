@@ -50,6 +50,7 @@ const webpackConfig = (environment) => {
                 reportFilename: path.join(__dirname, 'webpack-stats.html'),
                 // Automatically open report in default browser
                 openAnalyzer: false,
+                logLevel: environment === 'production' ? 'info' : 'warn',
             }),
             new webpack.DefinePlugin({
                 'process.env': {
