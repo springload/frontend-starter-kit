@@ -40,6 +40,7 @@ coverage
 .bundle
 docs/pattern-library/index.html
 webpack-stats.json
+webpack-stats.html
 
 # -------------------------------------------------
 # Dependency directories

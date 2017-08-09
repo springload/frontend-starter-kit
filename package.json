@@ -80,7 +80,8 @@
     "react-test-renderer": "^15.3.2",
     "sass-lint": "^1.10.2",
     "sass-module-importer": "^1.4.0",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "webpack-bundle-analyzer": "^2.9.0"
   },
   "dependencies": {
     "normalize.css": "^7.0.0",
@@ -109,7 +110,7 @@
     "critical:css": "gulp critical:css",
     "report:css": "gulp report:css",
     "report:coverage": "open coverage/lcov-report/index.html",
-    "report:build": "NODE_ENV=production webpack --config webpack/webpack.config.prod.js --profile --json > webpack-stats.json",
+    "report:build": "open webpack/webpack-stats.html",
     "js": "gulp js",
     "css": "gulp css",
     "svg": "gulp svg",

@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const config = require('../gulpfile.js/config');
 
@@ -42,6 +43,14 @@ const webpackConfig = (environment) => {
         },
 
         plugins: [
+            new BundleAnalyzerPlugin({
+                // Can be `server`, `static` or `disabled`.
+                analyzerMode: 'static',
+                // Path to bundle report file that will be generated in `static` mode.
+                reportFilename: path.join(__dirname, 'webpack-stats.html'),
+                // Automatically open report in default browser
+                openAnalyzer: false,
+            }),
             new webpack.DefinePlugin({
                 'process.env': {
                     NODE_ENV: JSON.stringify(environment),
