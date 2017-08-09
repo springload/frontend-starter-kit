@@ -7,17 +7,17 @@ const webpackConfig = require(`../../webpack/webpack.config.${config.prod ? 'pro
 
 gulp.task('js', (done) => {
     webpack(webpackConfig).run((err, stats) => {
-        const hasErrors = err || stats.hasErrors();
-        const message = stats.toString(Object.assign({}, webpackConfig.stats, { timings: false }));
-
-        if (hasErrors) {
-            throw new gutil.PluginError('webpack', {
-                message: err ? err.details : message,
-            });
+        if (err) {
+            done(new gutil.PluginError('webpack', err));
         } else {
-            console.log(message);
+            const message = stats.toString(Object.assign({}, webpackConfig.stats, { timings: false }));
 
-            done();
+            if (stats.hasErrors()) {
+                done(new gutil.PluginError('webpack', message));
+            } else {
+                console.log(message);
+                done();
+            }
         }
     });
 });
