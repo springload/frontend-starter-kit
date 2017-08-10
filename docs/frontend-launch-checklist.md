@@ -93,6 +93,7 @@
 - [ ] JS development aids are removed in production.
 - [ ] Source maps are removed in production.
 - [ ] JS is minified and concatenated in production.
+- [ ] Quick wins identified with the Webpack bundle analyzer (`npm run report:build`) are addressed.
 
 ### Testing
 
