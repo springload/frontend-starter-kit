@@ -7,6 +7,7 @@
 | [Front-end Developer](#front-end-developer) |
 | [Senior Front-end Developer](#senior-front-end-developer) |
 | [Junior Front-end Developer](#junior-front-end-developer) |
+| [Lead Front-end Developer](#lead-front-end-developer) |
 | [Front-end Director](#front-end-director) |
 | [Template](#template) |
 
@@ -211,50 +212,177 @@ See Supporting design, front-end skills for [Front-end Developer](#front-end-dev
 
 ---
 
-## Front-end Director
+## Lead Front-end Developer
 
-- Reports to: Head of Delivery
-- Direct reports: Front-end Development Team
+- Reports to: [Front-end Director](#front-end-director)
+- Direct reports: N/A
 
 ### Description
 
-> To lead the Front-end Development Team and the technical output of Springload.
->
-> To set the strategic technical direction of Springload towards achieving our vision: Making people’s lives better, through the work that we do and the way that we do it.
->
-> The role is responsible for working with the development team to develop web applications: liaise with clients, identify requirements, and plan and implement solutions including technical writing, strategic thinking. Planning and programming. Develop and extend Springload’s technical framework while producing high quality code for websites and web applications. Train staff to implement Springload’s software products.
->
-> The role is also responsible for setting programming standards, and supporting account and project managers working with clients to identify and implement website requirements. They will also work with the web design team to maintain and deliver websites.
+> To lead the Front-end Development Team and set our strategic front-end direction towards achieving our vision.
+> 
+> To direct the front-end output for our clients and projects - liaising with clients, identifying requirements, planning, implementation, solution architecting, strategic thinking. This includes both oversight and execution, as required.
+> 
+> To set the front-end standards internally and externally, oversee training, career progression and recruiting.
 
 ---
 
 ### Key responsibilities
 
-The Front-end Director’s role is varied! It includes, but is not limited to:
+Direction in a multidisciplinary environment.
 
-- Working closely with the Technical Director to guide Springload’s technical direction and to ensure that all work meets our high standards and follows established internal processes.
-- Attending client meetings with the account/project manager and contributing to the planning of websites and web applications.
-- Developing, maintaining and documenting the Springload Technical Framework and Code Library.
-- Working closely with Springload Designers and Developers to ensure our systems efficiently deliver client projects.
-- Staying up-to-date with developing technologies and methodologies.
+- Working closely with the Digital Strategy Team to direct Springload’s projects and ensure that all work meets our high standards and follows established internal processes. 
+- Contributing to Springload’s sales process. Working with potential clients to understand their needs, developing solutions, estimating costs, helping prepare pitches and presenting to potential clients. 
+- Contributing to the long-term client relationship and short-term project needs for all of our clients and projects, with the Client Service Team.
+- Contributing to the planning and architecture of all of our projects as required, in concertation with other discipline leads.
 
-Any other tasks as required.
+Producing high-quality work, efficiently.
+
+- Overseeing the front-end team’s output to ensure that all work meets our high standards and follows established internal processes.
+- Working closely with all other disciplines to ensure our systems efficiently deliver client projects.
+
+Evolving our practices.
+
+- Directing, developing and maintaining Springload’s internal and public projects and toolkits.
+- Keeping Springload up to date with developing technologies and methodologies.
+- Keeping the front-end team’s skills up to date with the needs of our projects, in coordination with other learning & growth efforts.
 
 ---
 
 ### Required skills
 
-- Advanced knowledge of web development languages: JavaScript, HTML and CSS.
+Leadership skills.
+
+- Strong leadership ability, vision, and flexibility to initiate change where appropriate.
 - Strategic thinking and problem solving skills.
-- Ability to articulate technical concepts clearly to clients in easy-to-understand language.
-- Ability to work in a team environment alongside designers and project managers throughout the entire development process.
-- Excellent project management approach and thinking with sound analytical and problem solving skills.
-- Strong leadership ability, vision, and flexibility to initiate change where appropriate combined with personal integrity.
+- Thorough understanding of project management and software development methodologies.
 - Strong coaching skills to support and develop the Springload team.
-- Warmth and authenticity in any interactions, keeping people at the heart of what we do.
-- Passionate about what you do and driven by a desire to be great.
-- Always showing curiosity and desire to keep growing and learning.
-- Commitment to working collaboratively with others in the team, creating a sense of unity and that everyone contributes to the decision making process.
+- Outstanding abilities to collaborate with other teams and individuals, creating a sense of unity and that everyone contributes to the decision making process.
+
+Core front-end skills.
+
+- Strong ability to communicate front-end development matters clearly to other team members, clients, and partners.
+- Expert knowledge of the Web as a medium of expression and a development platform.
+- Advanced understanding of browser, platform, device, performance, and accessibility constraints.
+- Experience with large-scale website and webapp architectures.
+- Solid understanding of object-oriented and functional programming concepts.
+
+Supporting design, engineering skills.
+
+- Experience with client-side frameworks (such as React, Angular, or Backbone).
+- Experience architecting web apps around (REST) APIs.
+- Experience with content management systems or e-commerce platforms.
+- Familiarity with version control via Git, continuous integration, issue trackers, wikis, and pull request workflows.
+- Familiarity with front-end build tools and task runners (npm, Grunt, Gulp, Webpack, Browserify).
+- Familiarity with software testing – unit tests, integration tests.
+- Working knowledge of the Unix command line and a shell of your choice.
+- Working knowledge of graphic software (Illustrator, Sketch, Photoshop), comfortable working with vectors and SVG.
+- Eye for detail, understanding of fundamentals of typography. Pixels out of place will annoy you.
+- Experience working with styleguides and pattern libraries.
+- Familiarity with web development and open-source communities.
+
+---
+
+### Other useful skills
+
+- Experience designing user interfaces with a user experience (UX) approach.
+- Experience with programming in ES6/ES2015+ JavaScript.
+- Ability to do basic server administration from the command line.
+- Familiarity with server-side programming stacks (we use Python and Node).
+- Experience with the Django framework, and Wagtail CMS.
+
+---
+
+> [What are the key differences between software engineers and programmers?](https://softwareengineering.stackexchange.com/a/182147)
+
+```
+Software engineers are people who work at companies that call the people who write software for them "software engineers."
+
+Programmers are people who work at companies that call the people who write software for them "programmers."
+ 
+There are also developers, or software developers. They are people who work at companies that call the people who write software for them "developers" or "software developers," respectively.
+```
+
+---
+
+## Front-end Director
+
+- Reports to: CEO
+- Direct reports: Front-end Development Team
+
+### Description
+
+> To lead the Front-end Development Team and set our strategic front-end direction towards achieving our vision.
+> 
+> To direct the front-end output for our clients and projects - liaising with clients, identifying requirements, planning, implementation, solution architecting, strategic thinking. This includes both oversight and execution, as required.
+> 
+> To set the front-end standards internally and externally, oversee training, career progression and recruiting.
+
+---
+
+### Key responsibilities
+
+Direction in a multidisciplinary environment.
+
+- Working closely with the Digital Strategy Team to direct Springload’s projects and ensure that all work meets our high standards and follows established internal processes. 
+- Contributing to Springload’s sales process. Working with potential clients to understand their needs, developing solutions, estimating costs, helping prepare pitches and presenting to potential clients. 
+- Contributing to the long-term client relationship and short-term project needs for all of our clients and projects, with the Client Service Team.
+- Contributing to the planning and architecture of all of our projects as required, in concertation with other discipline leads.
+
+Producing high-quality work, efficiently.
+
+- Overseeing the front-end team’s output to ensure that all work meets our high standards and follows established internal processes.
+- Working closely with all other disciplines to ensure our systems efficiently deliver client projects.
+
+Evolving our practices.
+
+- Directing, developing and maintaining Springload’s internal and public projects and toolkits.
+- Keeping Springload up to date with developing technologies and methodologies.
+- Keeping the front-end team’s skills up to date with the needs of our projects, in coordination with other learning & growth efforts.
+
+---
+
+### Required skills
+
+Leadership skills.
+
+- Strong leadership ability, vision, and flexibility to initiate change where appropriate.
+- Strategic thinking and problem solving skills.
+- Thorough understanding of project management and software development methodologies.
+- Strong coaching skills to support and develop the Springload team.
+- Outstanding abilities to collaborate with other teams and individuals, creating a sense of unity and that everyone contributes to the decision making process.
+
+Core front-end skills.
+
+- Strong ability to communicate front-end development matters clearly to other team members, clients, and partners.
+- Expert knowledge of the Web as a medium of expression and a development platform.
+- Advanced understanding of browser, platform, device, performance, and accessibility constraints.
+- Experience with large-scale website and webapp architectures.
+- Solid understanding of object-oriented and functional programming concepts.
+
+Supporting design, engineering skills.
+
+- Experience with client-side frameworks (such as React, Angular, or Backbone).
+- Experience architecting web apps around (REST) APIs.
+- Experience with content management systems or e-commerce platforms.
+- Familiarity with version control via Git, continuous integration, issue trackers, wikis, and pull request workflows.
+- Familiarity with front-end build tools and task runners (npm, Grunt, Gulp, Webpack, Browserify).
+- Familiarity with software testing – unit tests, integration tests.
+- Working knowledge of the Unix command line and a shell of your choice.
+- Working knowledge of graphic software (Illustrator, Sketch, Photoshop), comfortable working with vectors and SVG.
+- Eye for detail, understanding of fundamentals of typography. Pixels out of place will annoy you.
+- Experience working with styleguides and pattern libraries.
+- Familiarity with web development and open-source communities.
+
+---
+
+### Other useful skills
+
+- Experience designing user interfaces with a user experience (UX) approach.
+- Experience with programming in ES6/ES2015+ JavaScript.
+- Ability to do basic server administration from the command line.
+- Familiarity with server-side programming stacks (we use Python and Node).
+- Experience with the Django framework, and Wagtail CMS.
 
 ---
 

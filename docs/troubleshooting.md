@@ -3,8 +3,7 @@
 ### `npm install` taking a very long time to download packages and destroying network connectivity
 
 - Add `registry=http://registry.npmjs.org/` to `~/.npmrc` to force HTTP requests instead of HTTPS.
-- If the project is using a `npm-shrinkwrap.json` file, run `sed -i 's/https:/http:/g' npm-shrinkwrap.json` to change all of its URLS to HTTP.
-    - Additionnaly, make sure to update the `shrinkwrap` or `lock` command to do this automatically (see `package.json` on this project for an example).
+- If the project is using a `package-lock.json` file, run `sed -i 's/https:/http:/g' package-lock.json` to change all of its URLS to HTTP.
 
 ### Error: `libsass` bindings not found. Try reinstalling `node-sass`
 
@@ -58,7 +57,7 @@ thibaud          10642   0.0  0.2  3078404  30444 s002  S+    9:24PM   0:05.03 n
 
 Here, the offender is either `13290` or `10642`. So `kill 13290` first, and `kill 10642` second if that was not enough.
 
-### Error: `Failed at the iconv@2.2.1 install script 'node-gyp rebuild'`
+### Error: `Failed at the <package> install script 'node-gyp rebuild'`
 
 TLDR: Make sure your local version of Python is `2.7.x`. If your project is using Python 3, instruct NPM to use Python 2 instead with `npm install --python=python2.7` or `npm config set python python2.7` before running `npm install` (or even `PYTHON=python2.7 npm install`.
 

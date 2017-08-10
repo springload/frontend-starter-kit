@@ -29,7 +29,7 @@ npm run lint:js
 npm run lint:sass
 
 # Project tests.
-npm run test:coverage
+npm run test:coverage -- --runInBand
 
 # Link checking
 # hyperlink "http://example.com/"

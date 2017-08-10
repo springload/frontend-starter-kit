@@ -1,13 +1,13 @@
 // convert pixel to em
 @function em($size, $em-base: 16) {
     $em-size: $size / $em-base;
-    @return #{$em-size}em;
+    @return $em-size * 1em;
 }
 
 // convert pixel to rem
 @function rem($size) {
     $rem-size: strip-unit($size) / strip-unit($base-font-size);
-    @return #{$rem-size}rem;
+    @return $rem-size * 1rem;
 }
 
 // Remove the unit

@@ -1,13 +1,40 @@
-// ============================================================================
-// Grid item alignment modifiers
-//
-// they are top aligned by default
-// ============================================================================
+/* SG
+# Objects/Grid alignment 
 
+they are top aligned by default
+
+```
+<div class="grid grid--middle" style="background-color:#efefef">
+	<div class="width-1/2"><img src="https://placekitten.com/150/150" alt=""></div>
+	<div class="width-1/2"><p>Middle</p></div>
+</div>
+<br />
+<div class="grid grid--bottom" style="background-color:#efefef">
+	<div class="width-1/2"><img src="https://placekitten.com/150/150" alt=""></div>
+	<div class="width-1/2"><p>Bottom</p></div>
+</div>
+<br />
+<div class="grid grid--flip-small" style="background-color:#efefef">
+	<div class="width-1/2">[ col A ]</div>
+	<div class="width-1/2">[ col B ]</div>
+</div>
+
+```
+*/
 .grid--middle > * {
     vertical-align: middle;
 }
 
 .grid--bottom > * {
     vertical-align: bottom;
+}
+
+//flips content blocks on small 
+.grid--flip\@small {
+    @include small {
+        direction: rtl;
+        & > * {
+            direction: ltr;
+        }
+    }
 }

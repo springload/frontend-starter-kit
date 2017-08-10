@@ -23,13 +23,12 @@ module.exports = {
 
     PlzOptions: {
         minifier: prod,
+        // See http://pleeease.io/docs/#mqpacker
         mqpacker: false,
+        // See http://pleeease.io/docs/#filters
         filters: false,
-        rem: true,
-        pseudoElements: true,
-        opacity: true,
         autoprefixer: {
-            browsers: ['ie 8', 'ie 9', '> 1%'],
+            browsers: ['> 0.1%'],
         },
     },
 };

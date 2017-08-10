@@ -6,10 +6,6 @@
     "type": "git",
     "url": "https://github.com/springload/frontend-starter-kit"
   },
-  "engines": {
-    "node": "^6.8.0",
-    "npm": "^3.10.10"
-  },
   "eslintConfig": {
     "extends": "springload"
   },
@@ -23,11 +19,30 @@
               "> 1%",
               "IE 11"
             ]
-          }
+          },
+          "modules": false
         }
       ],
       "react"
-    ]
+    ],
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "env",
+            {
+              "targets": {
+                "browsers": [
+                  "> 1%",
+                  "IE 11"
+                ]
+              }
+            }
+          ],
+          "react"
+        ]
+      }
+    }
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
@@ -39,7 +54,7 @@
     "browser-sync": "^2.18.8",
     "critical": "^0.8.4",
     "eslint": "3.19.0",
-    "eslint-config-springload": "1.0.2",
+    "eslint-config-springload": "1.0.4",
     "eslint-loader": "^1.6.3",
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-jsx-a11y": "3.0.2",
@@ -89,13 +104,13 @@
     "critical:css": "gulp critical:css",
     "report:css": "gulp report:css",
     "report:coverage": "open coverage/lcov-report/index.html",
+    "report:build": "NODE_ENV=production webpack --config webpack/webpack.config.prod.js --profile --json > webpack-stats.json",
     "js": "gulp js",
     "css": "gulp css",
     "svg": "gulp svg",
     "watch": "NODE_ENV=development gulp watch",
     "patterns": "gulp patterns",
     "patterns:dist": "NODE_ENV=production gulp patterns:build",
-    "lock": "npm run lint:versions -s && npm shrinkwrap --dev && sed -i '' 's/https:/http:/g' npm-shrinkwrap.json",
     "deploy:preview": "git push origin master:deploy/preview",
     "deploy:production": "git push origin master:deploy/production"
   }

@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Fail on first line that fails.
+set -e
+
 # Check if this is the initial commit
 if git rev-parse --verify HEAD >/dev/null 2>&1
 then
@@ -13,31 +16,26 @@ if ! git diff-index --check --cached $against
 then
     echo "Aborting commit due to whitespace errors."
     exit 1
-else
-    # Fail on first line that fails.
-    set -e
+fi
 
-    NEW_FILES=$(git --no-pager diff --name-only --cached --diff-filter=d)
-    JS_FILES=$(echo "$NEW_FILES" | { grep .js$ || true; })
-    SNAPSHOT_FILES=$(echo "$NEW_FILES" | { grep .snap$ || true; })
-    SASS_FILES=$(echo "$NEW_FILES" | { grep .scss$ || true; })
+CHANGED_FILES=$(git --no-pager diff --name-only --cached --diff-filter=ACM)
+JS_FILES=$(echo "$CHANGED_FILES" | { grep .js$ || true; })
+SNAPSHOT_FILES=$(echo "$CHANGED_FILES" | { grep .snap$ || true; })
+SASS_FILES=$(echo "$CHANGED_FILES" | { grep .scss$ || true; })
 
-    if [ -n "$JS_FILES" ];
-    then
-        npm run linter:js -s -- $JS_FILES
-    fi
+if [ -n "$JS_FILES" ];
+then
+    npm run linter:js -s -- $JS_FILES
+fi
 
-    if [ -n "$SCSS_FILES" ];
-    then
-        npm run linter:sass -s -- $SCSS_FILES
-    fi
+if [ -n "$SCSS_FILES" ];
+then
+    npm run linter:sass -s -- $SCSS_FILES
+fi
 
-    # To test if there are changes to Sass files as well (not useful at the moment):
-    # || [ -n "$SASS_FILES" ];
-    if [ -n "$JS_FILES" ] || [ -n "$SNAPSHOT_FILES" ];
-    then
-        npm run test:coverage -s
-    fi
-
-    exit 0
+# To test if there are changes to Sass files as well (not useful at the moment):
+# || [ -n "$SASS_FILES" ];
+if [ -n "$JS_FILES" ] || [ -n "$SNAPSHOT_FILES" ];
+then
+    npm run test:coverage -s
 fi
