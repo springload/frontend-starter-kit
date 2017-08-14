@@ -99,6 +99,7 @@
 
 - [ ] Site tested in [all relevant browsers and devices](https://github.com/springload/frontend-starter-kit/tree/master/docs#browser--device-support).
 - [ ] Site is visually tested on non-retina, low contrast screens.
+- [ ] Site works with adblock extensions activated.
 - [ ] Site works with JavaScript turned off, or the sections that do not work are [indicated to the user via messages in `<noscript>` tags](https://github.com/springload/frontend-starter-kit/blob/master/core/templates/core/snippets/enable-javascript.html), styled according to the site's branding.
 - [ ] ['Upgrade your browser'](https://github.com/springload/frontend-starter-kit/blob/master/core/templates/core/snippets/outdated-browser.html) message displayed on unsupported browsers.
 
