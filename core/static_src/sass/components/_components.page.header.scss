@@ -11,7 +11,7 @@
 $height-logo: 2.25rem;
 
 $height-header: $height-logo + (2 * $grid-spacing);
-
+//todo height header on small ? 
 
 .page-header {
     @include clearfix;

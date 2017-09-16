@@ -1,0 +1,39 @@
+/* SG
+# Components/Page gutters
+
+Page gutters determine the horizontal spacing of the site.
+
+```
+<div class="gutters" style="background-color:#0F984F">
+    <p class="u-text-center" style="background-color:#f8f8f8">
+        You can see the gutters highlighted by the green background
+    </p>
+</div>
+```
+*/
+
+
+.gutters {
+    padding-right: $gutter-spacing-s;
+    padding-left: $gutter-spacing-s;
+
+    @include large {
+        padding-right: $gutter-spacing;
+        padding-left: $gutter-spacing;
+    }
+}
+
+    .gutters\@small {
+        @include small {
+            padding-right: $gutter-spacing;
+            padding-left: $gutter-spacing;
+        }
+    }
+    //turns the gutters off while on the breakpoint small
+    .gutters--off\@small {
+
+        @include small {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }

@@ -36,14 +36,29 @@ $spacing-l: ($spacing + .5);      // 32px
 $spacing-xl: ($spacing + 1);      // 40px
 $spacing-xxl: ($spacing + 2.5);   // 64px
 
-// Grid spacing
+
+
+// Spacing --- Grid
+// ----------------------------------------------------------------------------
 $grid-spacing: $spacing;
 
-//Gutters -- horizontal spacing
-$gutter-spacing: $spacing;
 
-//Sections -- Vertical spacing
-$section-spacing:  3rem;
+
+// Spacing --- Gutters 
+// ----------------------------------------------------------------------------
+$gutter-spacing: 3.5rem;
+$gutter-spacing-s: $spacing;
+
+// Spacing --- Sections 
+// ----------------------------------------------------------------------------
+$section-spacing: 3rem;
+$section-spacing-s: $spacing;
+
+
+// Spacing --- Content blocks 
+// ----------------------------------------------------------------------------
+$content-block-spacing: $spacing;
+$content-block-spacing-s: $spacing-s;
 
 
 
