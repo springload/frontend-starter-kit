@@ -1,0 +1,12 @@
+hr {
+	border: 0;
+    height: 1px;
+    color: $color-light-separator;
+    background-color: $color-light-separator;
+    margin-top: $spacing;
+    margin-bottom: $spacing;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
