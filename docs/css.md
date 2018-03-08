@@ -29,41 +29,41 @@ Avoid nesting selectors. This can make styles less reusable. Don't use string co
 <table>
   <tbody>
     <tr>
-      <td>
+      <th>
         Good (easy to search)
       </td>
-      <td>
-        Bad (hard to search for “tile__content”)
-      </td>
+      <th>
+        Bad (hard to search for "tile__content")
+      </th>
     </tr>
     <tr>
       <td>
-        .tile { /* CSS Properties */ }
-        .tile__content { /* CSS Properties */ }
-        .tile__heading { /* CSS Properties */ }
+        .tile { /* properties */ }<br>
+        .tile__content { /* properties */ }<br>
+        .tile__heading { /* properties */ }<br>
       </td>
       <td>
-        .tile { /* CSS Properties */
-        &__content { /* CSS Properties */ }
-        &__heading { /* CSS Properties */ } }
+        .tile { /* properties */<br>
+        &__content { /* properties */ }<br>
+        &__heading { /* properties */ } }<br>
       </td>
     </tr>
     <tr>
-      <td>
-        Good (& for pseudoes is fine)
-      </td>
-      <td>
+      <th>
+        Good (&amp; for pseudoes is fine)
+      </th>
+      <th>
         Also good (on another line)
-      </td>
+      </th>
     </tr>
     <tr>
       <td>
-        .tile { /* CSS Properties */
-        &:hover { /* CSS Properties */ } }
+        .tile { /* properties */<br>
+        &nbsp; &:hover { /* properties */ }<br> }<br>
       </td>
       <td>
-        .tile { /* CSS Properties */ }
-        .tile:hover { /* CSS Properties */ }
+        .tile { /* properties */ }<br>
+        .tile:hover { /* properties */ }<br>
       </td>
     </tr>
   </tbody>
@@ -76,18 +76,18 @@ Component files should use the ‘block” name as the file name, there shouldn�
 <table>
  <tbody>
   <tr>
-   <td>
+   <th>
      Good (in _components.btn.scss)
-   </td>
-   <td>
+   </th>
+   <th>
      Bad (in _components.btn.scss)
-   </td>
+   </th>
   </tr>
   <tr>
     <td>
-     .btn { /* CSS Properties */ }
-     .btn--white { /* CSS Properties */ }
-     .btn__text { /* CSS Properties */ }
+     .btn { /* CSS Properties */ }<br>
+     .btn--white { /* CSS Properties */ }<br>
+     .btn__text { /* CSS Properties */ }<br>
    </td>
    <td>
     .modal-btn { /* CSS Properties */ }
@@ -97,7 +97,7 @@ Component files should use the ‘block” name as the file name, there shouldn�
     <td>
     </td>
     <td>
-      /* Instead in _components.modal.scss */
+      /* Instead in _components.modal.scss */<br>
       .modal__btn { /* CSS Properties */ }
     </td>
   </tr>
@@ -132,14 +132,14 @@ State classes use ...--is-something. A state class is a modifier of an element o
   </tr>
   <tr>
    <td>
-    .block--is-animating {/* CSS Properties */}
-    .modal--is-active {/* CSS Properties */}
-    .accordion--is-open {/* CSS Properties */}
+    .block--is-animating {/* properties */}
+    .modal--is-active {/* properties */}
+    .accordion--is-open {/* properties */}
    </td>
    <td>
-    .is-active {/* CSS Properties */}
-    .-active {/* CSS Properties */}
-    .open {/* CSS Properties */}
+    .is-active {/* properties */}
+    .-active {/* properties */}
+    .open {/* properties */}
    </td>
   </tr>
   </tbody>
