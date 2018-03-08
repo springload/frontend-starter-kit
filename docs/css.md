@@ -123,14 +123,14 @@ Modifier (AKA State) classes use `...--is-something`. A state class is a modifie
   </tr>
   <tr>
    <td>
-    .block--is-animating {/* properties */}
-    .modal--is-active {/* properties */}
-    .accordion--is-open {/* properties */}
+    .block--is-animating {/* properties */}<br>
+    .modal--is-active {/* properties */}<br>
+    .accordion--is-open {/* properties */}<br>
    </td>
    <td>
-    .is-active {/* properties */}
-    .-active {/* properties */}
-    .open {/* properties */}
+    .is-active {/* properties */}<br>
+    .-active {/* properties */}<br>
+    .open {/* properties */}<br>
    </td>
   </tr>
   </tbody>
