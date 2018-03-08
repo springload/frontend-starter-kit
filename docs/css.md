@@ -52,9 +52,6 @@ Avoid nesting selectors. This can make styles less reusable. Don't use string co
       <th>
         Good (&amp; for pseudoes is fine)
       </th>
-      <th>
-        Also good (on another line)
-      </th>
     </tr>
     <tr>
      <td>
@@ -100,19 +97,19 @@ Component files should use the 'block' name as the file name, there shouldn't be
 
 ## More advice
 
-Don't use @extends. Prefer @includes instead if necessary.
+Don't use `@extends`. Prefer `@includes` instead if necessary.
 
 Media Queries should be inside or near css block, not at the bottom or top of files.
 
 Styling only with classes, not Ids, because Ids are globally unique and so prevent reuse, and cause problems with specificity.
 
-Elements shouldn't be targeted after classes (with few exceptions). E.g. `.container td` is probably a bad idea because it's not very reusuable. One notable exception is places where we can't add classes, such as  WYSIWYG fields where the user is creating tags, and in such cases the rules should be carefully scoped and ordered as per ITCSS.
+Elements shouldn't be targeted after classes (with few exceptions). E.g. `.container td` is probably a bad idea because it's not very reusuable. One notable exception is places where we can't add classes, such as  WYSIWYG fields where the user is creating tags and we can't control that, and in such cases the rules should be carefully scoped and ordered as per ITCSS.
 
 Avoid using the words 'mobile' or 'desktop' in classNames, instead opt for more relative terminology such as: small, medium, large, x-large etc. This is because small desktops can match the size of large tablets, so using generic terms is more accurate.
 
 CSS Margins collapse into each other, so only set margins along one axis direction (e.g. top or left, or right and bottom, but not left and right and top and bottom). We prefer right and bottom.
 
-State classes use `...--is-something`. A state class is a modifier of an element or block. Using .active or similar on its own is too obscure, if there is more than one class on an element it is not clear which the `.-active` class belongs to.
+Modifier (AKA State) classes use `...--is-something`. A state class is a modifier of an element or block. Using .active or similar on its own is too obscure, if there is more than one class on an element it is not clear which the `.-active` class belongs to.
 
 <table>
  <tbody>
