@@ -9,7 +9,9 @@
 
 ## Installation
 
-> Clone the project on your computer, and install [Node](https://nodejs.org). This project also uses [nvm](https://github.com/creationix/nvm).
+Clone the project on your computer, install [nvm](https://github.com/creationix/nvm) and then `nvm use`.
+
+We use [Yarn](https://yarnpkg.com/)
 
 
 ## Changelog
