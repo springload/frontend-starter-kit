@@ -9,7 +9,7 @@
 | Before          | After           |
 |-----------------|-----------------|
 | `polyfills.js`  | |
-| *Promise polyfill* | Nothing! Modern browsers have Promise already so the need for this is reduced. IE11 doesn't support Promises but use [`bluebird`](https://www.npmjs.com/package/bluebird) should be used. |
+| *Promise polyfill* | Nothing! Modern browsers have Promise already so the need for this is reduced. IE11 doesn't support Promises but use [`bluebird`](https://www.npmjs.com/package/bluebird). |
 | *Object.assign polyfill* |  The `object.assign` polyfill can be replaced by Babel features. |
 | `format.js`       | |
 | *Date formatting* | Prefer [`Intl`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) available in modern browsers and IE11, or [`date-fns`](https://github.com/date-fns/date-fns) if necessary |
