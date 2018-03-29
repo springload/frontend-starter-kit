@@ -1,10 +1,16 @@
 # 18.0
 
+Version 18... the big 20**18** refactor!
+
+Old things that we're not sure about have been moved to the `./recycle-bin` (because although people could extract files from the Git history, we want non-techies to easily access some of these).
+
 #### :nail_care: Refactor
 * `core/static_src/sass` :arrow_forward: [Springload Starter Styles](springload/frontend-starter-styles) repo!
 * `core/static_src/images` :arrow_forward:  :wastebasket: 
 * `core/static_src/svg` :arrow_forward:  :wastebasket:
 * `core/static_src/js` :arrow_forward:  ...the following table
+
+
 
 | Before          | After           |
 |-----------------|-----------------|
