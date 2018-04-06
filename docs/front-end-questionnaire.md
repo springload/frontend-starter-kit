@@ -6,43 +6,36 @@
 
 ### HTML Principles
 
-- **What are some general principles your team should follow when writing HTML? (for example, authoring semantic HTML5 markup, accessibility, etc. See [these](http://www.yellowshoe.com.au/standards/#html) [resources](http://codeguide.co/#html) for [inspiration](http://manuals.gravitydept.com/code/html))**
+- **What are some general principles your team should follow when writing HTML?** (for example, authoring semantic HTML5 markup, accessibility, etc. See [these](http://www.yellowshoe.com.au/standards/#html) [resources](http://codeguide.co/#html) for [inspiration](http://manuals.gravitydept.com/code/html))
 
-- Doublequotes for HTML attributes.
-- We don't use HTML5 elements. Why? Because the spec is dumb. Unless you're making a blog. Also required JS for layout in old IE.
-- ARIA roles are good. Use them for accessibility.
+- ARIA roles are good. Use them for accessibility. 
 - Use `data-` refs for JS hooks, rather than classnames. Eg, `<div data-analytics></div>` rather than `<div class='js-analytics'>`
 - Use HTML5 doctype
 - Boolean attributes don't need a value: `<option selected>` rather than `<option selected='selected'>`
-- Tag names in lowercase.
-
-
-### JSX principles
-
-- Singlequotes for JS, doublequotes for JSX.
+- Tag names in lowercase. Except in JXS. 
 
 
 ### HTML Tools
 
-- **Are you using an HTML preprocessor** *(such as [HAML](http://haml.info/), [Jade](http://jade-lang.com/), etc)*? No.
-- NZ on screen uses HAML, also AudioCulture. But we dont have much to do with these ongoing.
+- **Are you using an HTML preprocessor** *(such as [HAML](http://haml.info/), [Jade](http://jade-lang.com/), etc)*? 
+- No.
 
 - **Are you using a templating engine** *(such as [Mustache](https://mustache.github.io/), [Handlebars](http://handlebarsjs.com/), etc)*?
 
 - Django Templates, Jinja2, Nunjucks, Twig. All smarty-syntax template engines.
+- Refer to React [JSX](https://reactjs.org/docs/introducing-jsx.html)
 
 - **Does your backend architecture influence the frontend markup in any way** (for example, WordPress will add `wp-paginate` to a class in your markup)? If so, can you highlight these conventions? 
 
 - Django custom tags have to be loaded at the top of a template.
 - Jinja2 requires you to use `iteritems()` to evaluate lists, eg `for item in list.iteritems()`.
 - Django templates forces you to write logic in python.
-- Add a nice function to Wagtail boilerplate for dumping vars. BCITO might have one?
 - Use 'templatetags' for logic (if required), otherwise use partials via `include "includes/my_partial.html"`
 
 ### HTML Style
 
 - **Spaces or Tabs?**
-- Spaces. Four of them.
+- Spaces. Refer to our [prettier config](https://github.com/springload/eslint-plugin-springload/blob/master/prettier.config.js#L4)
 - **What does HTML commenting look like?** 
 - Use Django's comments unless you really want the comment to be in the markup.
 - `{# Hello, i'm a comment #}` instead of `<!-- Hello, I'm a comment -->`
@@ -56,36 +49,16 @@
 
 - **What are some general principles your team should follow when writing CSS?** *(For example, modularity, avoiding long selector strings, etc. See [these](http://cssguidelin.es/) [resources](http://www.yellowshoe.com.au/standards/#css) [for](http://manuals.gravitydept.com/code/css) [inspiration](http://codeguide.co/#css))*
 
-- Keep nesting to a minimum
-- Use mixins sparingly
-- Extend things via placeholders.
-- Colours in variables. Use the american `color` to name things, since thats how CSS works. Eg, `$button-color`.
-- Put extends first in a declaration. Put mixins last.
-
-```sass
-.foo {
-  @extend %bar;
-
-  position: absolute;
-
-  @include medium {
-    position: relative;
-  }
-}
-```
-
-- Start with the least specificity. End with the most specific styles.
-- Style resets first, then elements (eg body, p, h1, small, ul),  then move on to components, and end with your overrides (eg, widths, utilities, grid).
-
+- See our CSS [one pager](https://github.com/springload/frontend-starter-kit/blob/master/docs/css.md)
 
 ### CSS Methodology
 
 - **Is your team using a CSS methodology** *(such as [SMACSS](https://smacss.com/), [BEM](https://en.bem.info/method/), or [OOCSS](http://oocss.org/)*? If yes, where is the documentation for that methodology?
 
-- Thibaud has some thoughts: http://www.springload.co.nz/blog/a-stable-front-end-stack-for-2016/
+- See our CSS [one pager](https://github.com/springload/frontend-starter-kit/blob/master/docs/css.md)
 
 - **Are you deviating from the methodology in any way?** If so, can you highlight these conventions?
-- See above.
+- Refer to link above
 
 
 ### CSS Tools
@@ -97,15 +70,13 @@
 - We don't really write vanilla CSS anymore, so the CSS guidelines above are the sass guidelines.
 
 - **Are you using a CSS base** *(such as [Normalize](https://necolas.github.io/normalize.css/) or a [reset](http://meyerweb.com/eric/tools/css/reset/))*?
-- Normalize.
+- [Normalize](https://github.com/necolas/normalize.css/).
 
 - **Are you using any CSS postprocessors** *(such as Prefixfree or [Autoprefixer](https://github.com/postcss/autoprefixer))*?
 - Pleeease. Mainly for autoprefixing + REM fallbacks for old IE, minification.
 
 - **Are there specific CSS techniques you're utilizing** *(such as [critical CSS](https://www.smashingmagazine.com/2015/08/understanding-critical-css/))*?
-- We did Critical CSS on On The Fence. It's pretty cool but hard to do reliably.
-- Addy Osmani has a good tool for it. We'll give it a whirl on Festival.
-- Scott Jehl vs Addy Osmani showdown! https://github.com/addyosmani/critical
+- No
 
 
 ### CSS Frameworks
@@ -118,9 +89,7 @@
 ### CSS Style
 
 - **Spaces or Tabs?**
-
-Spaces. 4 spaces.
-https://github.com/springload/frontend-starter-kit/blob/master/.sass-lint.yml
+- Spaces. Refer to our [prettier config](https://github.com/springload/eslint-plugin-springload/blob/master/prettier.config.js#L4)
 
 
 - **Spacing around rules?**
