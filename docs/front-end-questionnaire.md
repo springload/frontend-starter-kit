@@ -157,9 +157,24 @@ https://github.com/springload/frontend-starter-kit/blob/master/.sass-lint.yml
 - ClassList
 - Mostly for IE8 compatibility.
 
+- **Which third-party tools do you use for date/time formatting?** 
+    - We prefer [date-fns](https://github.com/date-fns/date-fns) because you can import just the functions you need.
+    - We avoid using [Moment.js](https://momentjs.com/) as it is _very_ heavy, and does not support tree shaking so you can’t just pull out the bits you need. However, in some cases (particularly when you need Timezone functionality) it may be unavoidable.
+    
 
-- **What third-party scripts are dependencies for your project** *(such as scripts for form validation, graphs, animation, etc)*?
-- Look at any local friendly package.json for these. There are many.
+- **Which third-party tools do you use for state management?** 
+    - We prefer [Redux](https://redux.js.org/) and its family of associated packages such as [react-redux](https://github.com/reactjs/react-redux) and [redux-saga](https://github.com/redux-saga/redux-saga), particularly because it is well supported by [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en).
+    - In some smaller projects and libraries it’s might not be appropriate to use redux to manage App state. In these cases we recommend using React’s Context API (as of React 16.3), or libraries such as [unstated](https://github.com/jamiebuilds/unstated).
+
+
+- **Which third-party tools do you use for testing?**
+    - We prefer [Jest](https://facebook.github.io/jest/) as a test-runner.
+    - We prefer [Enzyme](https://github.com/airbnb/enzyme) for testing React components.
+
+
+- **Which third-party tools do you use for utility functions?**
+    - We prefer using vanilla Javascript functions in combination with `babel-polyfill` where possible.
+    - For more advanced utility functions, we prefer [lodash](https://lodash.com/docs).
 
 
 ### JavaScript Style 
