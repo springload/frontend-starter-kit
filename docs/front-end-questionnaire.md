@@ -183,7 +183,7 @@ https://github.com/springload/frontend-starter-kit/blob/master/.sass-lint.yml
 - Should migrate legacy grunt projects to gulp where possible.
 
 - **Are you using a dependency manager** *(such as [Bower](http://bower.io/) or [Composer](https://getcomposer.org/))*
-    - We prefer [Yarn](https://yarnpkg.com/en/), but [npm](https://www.npmjs.com/) is fine too.
+    - We prefer [Yarn](https://yarnpkg.com/en/).
     - We mandate use of an `.nvmrc` file at the project root, so that all developers are using the same version of Node.
     - We mandate use of a `yarn.lock` file (or `package-lock.json` for npm) so that dependencies are identical across all developers' machines.
 
