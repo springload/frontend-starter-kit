@@ -146,16 +146,22 @@ https://github.com/springload/frontend-starter-kit/blob/master/.sass-lint.yml
 
 - **Where is the documentation for those frameworks?**
 - **Are you using any polyfills or shims** *(such as [any of these](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills))*?
+    - `babel-polyfill` in combination with `.babelrc` and [`browserslist`](http://browserl.ist/) key in `package.json`.
+    - A typical browserslist value might look like this:
 
-- RespondJS
-- AddEventLister polyfill
-- Array.prototype.slice
-- requestAnimationFrame
-- Function.prototype.bind
-- ES5 shim + sham
-- document.querySelectorAll
-- ClassList
-- Mostly for IE8 compatibility.
+```json
+{
+    "browserslist": [
+        "ie >= 11",
+        "last 2 Chrome versions",
+        "last 2 Firefox versions",
+        "last 2 Safari versions",
+        "last 2 iOS versions",
+        "last 2 Edge versions"
+    ]
+}
+```
+    - If a specific polyfill is needed for a particular futuristic feature, then look to [corejs](https://github.com/zloirock/core-js) where possible.
 
 
 - **What third-party scripts are dependencies for your project** *(such as scripts for form validation, graphs, animation, etc)*?
