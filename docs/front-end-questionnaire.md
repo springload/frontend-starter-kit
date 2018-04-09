@@ -150,16 +150,22 @@ https://github.com/springload/frontend-starter-kit/blob/master/.sass-lint.yml
 
 
 - **Are you using any polyfills or shims** *(such as [any of these](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills))*?
+    - `babel-polyfill` in combination with `.babelrc` and [`browserslist`](http://browserl.ist/) key in `package.json`.
+    - A typical browserslist value might look like this:
 
-- RespondJS
-- AddEventLister polyfill
-- Array.prototype.slice
-- requestAnimationFrame
-- Function.prototype.bind
-- ES5 shim + sham
-- document.querySelectorAll
-- ClassList
-- Mostly for IE8 compatibility.
+```json
+{
+    "browserslist": [
+        "ie >= 11",
+        "last 2 Chrome versions",
+        "last 2 Firefox versions",
+        "last 2 Safari versions",
+        "last 2 iOS versions",
+        "last 2 Edge versions"
+    ]
+}
+```
+    - If a specific polyfill is needed for a particular futuristic feature, then look to [corejs](https://github.com/zloirock/core-js) where possible.
 
 
 - **What third-party scripts are dependencies for your project** *(such as scripts for form validation, graphs, animation, etc)*?
@@ -187,7 +193,9 @@ https://github.com/springload/frontend-starter-kit/blob/master/.sass-lint.yml
 - Should migrate legacy grunt projects to gulp where possible.
 
 - **Are you using a dependency manager** *(such as [Bower](http://bower.io/) or [Composer](https://getcomposer.org/))*
-- We use NPM. Bower is pointless when you have NPM.
+    - We prefer [Yarn](https://yarnpkg.com/en/).
+    - We mandate use of an `.nvmrc` file at the project root, so that all developers are using the same version of Node.
+    - We mandate use of a `yarn.lock` file (or `package-lock.json` for npm) so that dependencies are identical across all developers' machines.
 
 - **Are you using any scaffolding tools** *(such as [Yeoman](http://yeoman.io/))*
 - CookieCutter. [Link to cookiecutter repo]
