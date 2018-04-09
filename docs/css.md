@@ -42,29 +42,22 @@ For CSS-In-JS we like [Glamor](https://github.com/threepointone/glamor) and [Gla
 - Don't use string concatenation (`&__element-name`) for classes, but pseudoes are ok.   
 
 ```scss
-// Good 
-// Easy to search within the codebase
-
-.tile { /* properties */ }
-.tile__content { /* properties */ }
-.tile__heading { /* properties */ }
+// Good (Easy to search within the codebase)
+.tile {}
+.tile__content {}
+.tile__heading {}
 
 // Good (& for pseudoes is fine)
-
 .tile { 
-    /* properties */
-  &:hover { /* properties */ }
+  &:hover {}
 }
 
-.tile:hover { /* properties */ }
+.tile:hover {}
 
-// Bad 
-// Hard to search for "tile__content"
-
+// Bad (Hard to search for "tile__content")
 .tile { 
-    /* properties */
-  &__content { /* properties */ }
-  &__heading { /* properties */ }
+  &__content {}
+  &__heading {}
 }
 ```
 
@@ -77,14 +70,12 @@ For CSS-In-JS we like [Glamor](https://github.com/threepointone/glamor) and [Gla
 ```scss
 // In _components.btn.scss
 // Good 
-
-.btn { /* properties */ }
-.btn--white { /* properties */ }
-.btn__text { /* properties */ }
+.btn {}
+.btn--white {}
+.btn__text {}
 
 // Bad 
-
-.modal-btn { /*properties */ }
+.modal-btn {}
 ```
 
 ## More advice
@@ -98,13 +89,13 @@ For CSS-In-JS we like [Glamor](https://github.com/threepointone/glamor) and [Gla
 ```scss
 // Good 
 .list { list-style: none; }
-.list__item {/* properties */}
-.banner--home {/* properties */}
+.list__item {}
+.banner--home {}
 
 // Bad
 ul.list { list-style: none;}
-.list li {/* properties */}
-.home div.banner {/* properties */}
+.list li {}
+.home div.banner {}
 ```
 
 - Avoid using the words 'mobile' or 'desktop' in classNames, instead opt for more relative terminology such as: small, medium, large, x-large etc. This is because small desktops can match the size of large tablets, so using generic terms is more accurate.
@@ -115,14 +106,14 @@ ul.list { list-style: none;}
 
 ```scss
 // Good
-.block--is-animating {/* properties */}
-.modal--is-active {/* properties */}
-.accordion--is-open {/* properties */}
+.block--is-animating {}
+.modal--is-active {}
+.accordion--is-open {}
 
 // Bad
-.is-active {/* properties */}
-.-active {/* properties */}
-.open {/* properties */}
+.is-active {}
+.-active {}
+.open {}
 ```
 
 ## New or Old?
