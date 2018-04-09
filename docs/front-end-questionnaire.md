@@ -140,11 +140,15 @@ https://github.com/springload/frontend-starter-kit/blob/master/.sass-lint.yml
 ### JavaScript tools
 
 - **Are you using a JavaScript framework** *(such as [jQuery](http://jquery.com/), [Ember](http://emberjs.com/), [Angular](https://angularjs.org/), etc)*?
-- jQuery on a bunch of projects.
-- React, D3,
-- These days, ES6 modules with utility libraries such as lodash.
+    - We prefer [React](https://reactjs.org/).
+    - To scaffold a batteries-included React project we prefer [Create React App](https://github.com/facebook/create-react-app).
 
-- **Where is the documentation for those frameworks?**
+
+- **Do you use JQuery?**
+    - We try to avoid using JQuery when possible. Most of what can be achieved with JQuery be achieved just as easily in vanilla Javascript, particularly if you don't have to support legacy browsers.
+    - However, you might spot Jquery on a few of our legacy projects, which is fine.
+
+
 - **Are you using any polyfills or shims** *(such as [any of these](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills))*?
     - `babel-polyfill` in combination with `.babelrc` and [`browserslist`](http://browserl.ist/) key in `package.json`.
     - A typical browserslist value might look like this:
