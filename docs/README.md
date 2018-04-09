@@ -2,12 +2,12 @@
 
 | Contents :book:                                        |
 |--------------------------------------------------------|
-| <a href="https://springload.github.io/frontend-starter-kit/pattern-library" data-no-instant>Pattern library</a> |
-| [Front-end principles](front-end-principles.md) |
+| [CSS](css.md) conventions & methodologies |
 | [Front-end questionnaire](front-end-questionnaire.md) |
 | [Team methodologies](front-end-team.md) |
+| [Launch FED checklists](frontend-launch-checklist.md) |
 | [Launch QA checklists](launch-checklist.md) |
-| [Job descriptions](job-descriptions.md) |
+| [Job descriptions](https://drive.google.com/drive/folders/0B2xlfljH4NcSfmhYWU1ncm1fRjVFR3B2Q1MwYWFzdkVWTms0ZkdINURXZjBKTU5fMXhsVUE) Private Drive Folder |
 | [Useful tools](useful-tools.md) |
 | [Troubleshooting](troubleshooting.md) |
 
@@ -40,18 +40,11 @@ We use the [Airbnb style for Javascript](https://github.com/airbnb/javascript), 
 
 - [Official Sass guide](http://sass-lang.com/guide)
 - [The Sass Way](http://thesassway.com/)
-
-#### Flexbox
-
-We use Flexbox for our layouts when browser support allows it, providing appropriate fallbacks. Here are three great resources to learn Flexbox:
-
-- [Flexbox Froggy](http://flexboxfroggy.com/), amazingly fun game to learn Flexbox.
-- [Solved by Flexbox](https://philipwalton.github.io/solved-by-flexbox/), best resource for people who have learned layout the old ways.
-- [Flexbugs](https://github.com/philipwalton/flexbugs), necessary knowledge to make Flexbox work across browsers.
+- Check out how we write [Sass/CSS](css.md) at Springload.
 
 ### Libraries
 
-> We use __React and Redux__, lodash, D3, and Google Analytics.
+> We use __React and Redux__, lodash, and Google Analytics or Google Tag Manager.
 
 To learn more about those libraries:
 
@@ -81,6 +74,14 @@ To understand Flux/Redux:
 
 - [http://jonathancreamer.com/what-the-flux/](http://jonathancreamer.com/what-the-flux/)
 - [https://egghead.io/courses/getting-started-with-redux](https://egghead.io/courses/getting-started-with-redux)
+
+##### Flexbox
+
+We use Flexbox for our layouts when browser support allows it, providing appropriate fallbacks. Here are three great resources to learn Flexbox:
+
+- [Flexbox Froggy](http://flexboxfroggy.com/), amazingly fun game to learn Flexbox.
+- [Solved by Flexbox](https://philipwalton.github.io/solved-by-flexbox/), best resource for people who have learned layout the old ways.
+- [Flexbugs](https://github.com/philipwalton/flexbugs), necessary knowledge to make Flexbox work across browsers.
 
 ### Tooling
 
