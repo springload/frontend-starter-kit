@@ -30,7 +30,9 @@ Old things that we're not sure about have been moved to the `./recycle-bin` (bec
 #### :bug: Bug Fix
 * 
 #### :memo: Documentation
-* 
+* `docs/front-end-principles` :arrow_forward: :wastebasket:
+* `docs/job-descriptions` :arrow_forward: :wastebasket: and moved to drive (so it's only in one place with the rest of the company).
+* `docs/pattern-library/template.html` :arrow_forward: :wastebasket:
 #### :house: Internal
 * 
 
