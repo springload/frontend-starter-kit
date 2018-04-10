@@ -6,14 +6,13 @@
 
 ### HTML Principles
 
+- Use HTML5 doctype
 - **What are some general principles your team should follow when writing HTML?** (for example, authoring semantic HTML5 markup, accessibility, etc. See [these](http://www.yellowshoe.com.au/standards/#html) [resources](http://codeguide.co/#html) for [inspiration](http://manuals.gravitydept.com/code/html))
 
 - ARIA roles are good. Use them for accessibility. 
 - Use `data-` refs for JS hooks, rather than classnames. Eg, `<div data-analytics></div>` rather than `<div class='js-analytics'>`
-- Use HTML5 doctype
 - Boolean attributes don't need a value: `<option selected>` rather than `<option selected='selected'>`
-- Tag names in lowercase. Except in JXS. 
-
+- Tag names in lowercase.
 
 ### HTML Tools
 
@@ -21,11 +20,8 @@
 - No.
 
 - **Are you using a templating engine** *(such as [Mustache](https://mustache.github.io/), [Handlebars](http://handlebarsjs.com/), etc)*?
-
+- No. If you need more complexity than raw HTML can provide you, then you should defer to JSX (via React or Preact or similar).
 - Django Templates, Jinja2, Nunjucks, Twig. All smarty-syntax template engines.
-- Refer to React [JSX](https://reactjs.org/docs/introducing-jsx.html)
-
-- **Does your backend architecture influence the frontend markup in any way** (for example, WordPress will add `wp-paginate` to a class in your markup)? If so, can you highlight these conventions? 
 
 - Django custom tags have to be loaded at the top of a template.
 - Jinja2 requires you to use `iteritems()` to evaluate lists, eg `for item in list.iteritems()`.
