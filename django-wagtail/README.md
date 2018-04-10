@@ -33,7 +33,7 @@ Next add these to your `package.json`,
     }
 
 
-We use Webpack for Django/Wagtail (DW) projects which is based around the concept of a **source** directory and a **build** directory. This is different to how DW projects are typically set up with (for example) `core/static` being directly edited by FEDs to configure templates with these changes available immediately by reloading the webpage (with having to run `yarn build` or any build process).
+We use Webpack for Django/Wagtail (DW) projects which is based around the concept of a **source** directory and a **build** directory. This is different to how DW projects are typically set up with (for example) `core/static` being directly edited by FEDs to design templates and available immediately (when you reload the browser). The point is that you don't normally have to run `yarn build` or any build process.
 
 So to make this work with Webpack we'll treat `core/static` as the **build** directory, and we'll need to make a **source** directory,
 
