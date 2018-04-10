@@ -48,10 +48,12 @@ All your JavaScript and Sass/CSS imports will be defined from your `index.js` fi
 
 That's it. You're done!
 
-# Future Improvements
+Note: To learn how to write JavaScript or import Sass files from JavaScript is a more general question about Webpack (and other bundlers), so we'll deal with that in another file.
 
-* Testing
+# Future Improvements?
+
 * Production build minification.
+* ...your idea goes here
 
 ## Project Files
 
