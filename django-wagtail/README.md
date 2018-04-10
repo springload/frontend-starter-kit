@@ -8,30 +8,11 @@ Please keep a note of what you actually did to get it working and do make improv
 
     cd YOUR_PROJECT
 
-Copy [`.nvmrc`](../.nvmrc), [`webpack.config.js`](./webpack.config.js), [`webpack.fixpath.js`](./webpack.fixpath.js), [`.prettierignore`](./.prettierignore) to `YOUR_PROJECT` directory. Fuller descriptions of these files are at the bottom of this page if you're curious.
+Copy [`.nvmrc`](../.nvmrc), [`package.json`](./package.json), [`webpack.config.js`](./webpack.config.js), [`webpack.fixpath.js`](./webpack.fixpath.js), [`.prettierignore`](./.prettierignore) to `YOUR_PROJECT` directory. Fuller descriptions of these files are at the bottom of this page if you're curious.
 
     nvm install
     nvm use
-    yarn init
-
-Yarn will then ask you the usual NPM init questions. Keep hitting enter if you don't care.
-
-Next add these to your `package.json`,
-
-    "dependencies": {
-      "css-loader": "^0.28.11",
-      "html-webpack-plugin": "^3.0.7",
-      "node-sass": "^4.8.3",
-      "sass-loader": "^6.0.7",
-      "style-loader": "^0.20.3",
-      "webpack": "^4.2.0",
-      "webpack-cli": "^2.0.12"
-    },
-    "scripts": {
-      "build": "NODE_ENV=development webpack",
-      "dist": "NODE_ENV=production webpack",
-    }
-
+    yarn install
 
 We use Webpack for Django/Wagtail (DW) projects which is based around the concept of a **source** directory and a **build** directory. This is different to how DW projects are typically set up with (for example) `core/static` being directly edited by FEDs to design templates and available immediately (when you reload the browser). The point is that you don't normally have to run `yarn build` or any build process.
 
