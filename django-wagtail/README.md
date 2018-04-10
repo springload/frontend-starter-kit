@@ -7,11 +7,16 @@ Please keep a note of what you actually did to get it working and do make improv
 ## Project Setup
 
     cd YOUR_PROJECT
+
+Copy [`.nvmrc`](../.nvmrc), [`webpack.config.js`](./webpack.config.js), [`webpack.fixpath.js`](./webpack.fixpath.js), [`.prettierignore`](./.prettierignore) to `YOUR_PROJECT` directory. Fuller descriptions of these files are at the bottom of this page if you're curious.
+
+    nvm install
+    nvm use
     yarn init
 
-Answer the usual Yarn init questions.
+Yarn will then ask you the usual NPM init questions. Keep hitting enter if you don't care.
 
-Add these to your `package.json`,
+Next add these to your `package.json`,
 
     "dependencies": {
       "css-loader": "^0.28.11",
@@ -27,7 +32,6 @@ Add these to your `package.json`,
       "dist": "NODE_ENV=production webpack",
     }
 
-Copy [`webpack.config.js`](./webpack.config.js), [`webpack.fixpath.js`](./webpack.fixpath.js), and [`.prettierignore`](./.prettierignore) to `YOUR_PROJECT`. Fuller descriptions of these files are at the bottom of this page if you're curious.
 
 We use Webpack for Django/Wagtail (DW) projects which is based around the concept of a **source** directory and a **build** directory. This is different to how DW projects are typically set up with (for example) `core/static` being directly edited by FEDs to configure templates with these changes available immediately by reloading the webpage (with having to run `yarn build` or any build process).
 
