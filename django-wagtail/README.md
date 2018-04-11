@@ -23,7 +23,7 @@ So to make this work with Webpack we'll treat `core/static` as the **build** dir
     mkdir ./core/templates_src
     cp ./core/static/base.html ./core/static_src/base.html
 
-Now when you run `yarn build` Webpack will use both `core/templates_src/base.html` and `core/static_src/index.js`, and Webpack will add `<script>` and `<link rel="stylesheet">` tags to the template as needed, and then write files to `./core/static_src/base.html` and `core/static`.
+Now when you run `yarn build` Webpack will use both `core/templates_src/base.html` and `core/static_src/index.js`, and Webpack will add `<script>` and `<link rel="stylesheet">` tags to the template as needed, and then write files to `./core/templates/base.html` and `core/static`.
 
 All your JavaScript and Sass/CSS imports will be defined from your `index.js` file. This allows Webpack to make decisions about bundling your project.
 
