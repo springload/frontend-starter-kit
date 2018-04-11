@@ -1,6 +1,6 @@
-# Django / Wagtail
+# Django / Wagtail FEDing
 
-This is how to set up a new Django / Wagtail (DW) project at Springload. It's based on the Springload website's own configuration (in a private repo).
+This is how to set up FED stuff for a new Django / Wagtail (DW) project at Springload. It's based on the Springload website's own configuration (in a private repo).
 
 Please keep a note of what you actually did to get it working and do make improvements to these docs.
 
