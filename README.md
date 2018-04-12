@@ -4,15 +4,10 @@
 
 | Important links :book:                                 |
 |--------------------------------------------------------|
-| [Docs](/docs/) |
-| [Pattern library (style guide)](https://github.com/springload/pattern-book) |
-
-## Installation
-
-Clone the project on your computer, install [nvm](https://github.com/creationix/nvm) and then `nvm use`.
-
-We use [Yarn](https://yarnpkg.com/)
-
+| [Django / Wagtail setup](./django-wagtail/)
+| [General Docs](/docs/) |
+| [React Accessible Accordion](https://github.com/springload/react-accessible-accordion) |
+| [Pattern Book (pattern library / style guide)](https://github.com/springload/pattern-book) |
 
 ## Changelog
 

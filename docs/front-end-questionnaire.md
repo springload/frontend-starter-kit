@@ -6,43 +6,32 @@
 
 ### HTML Principles
 
-- **What are some general principles your team should follow when writing HTML? (for example, authoring semantic HTML5 markup, accessibility, etc. See [these](http://www.yellowshoe.com.au/standards/#html) [resources](http://codeguide.co/#html) for [inspiration](http://manuals.gravitydept.com/code/html))**
-
-- Doublequotes for HTML attributes.
-- We don't use HTML5 elements. Why? Because the spec is dumb. Unless you're making a blog. Also required JS for layout in old IE.
-- ARIA roles are good. Use them for accessibility.
-- Use `data-` refs for JS hooks, rather than classnames. Eg, `<div data-analytics></div>` rather than `<div class='js-analytics'>`
 - Use HTML5 doctype
+- **What are some general principles your team should follow when writing HTML?** (for example, authoring semantic HTML5 markup, accessibility, etc. See [these](http://www.yellowshoe.com.au/standards/#html) [resources](http://codeguide.co/#html) for [inspiration](http://manuals.gravitydept.com/code/html))
+
+- ARIA roles are good. Use them for accessibility. 
+- Use `data-` refs for JS hooks, rather than classnames. Eg, `<div data-analytics></div>` rather than `<div class='js-analytics'>`
 - Boolean attributes don't need a value: `<option selected>` rather than `<option selected='selected'>`
 - Tag names in lowercase.
 
-
-### JSX principles
-
-- Singlequotes for JS, doublequotes for JSX.
-
-
 ### HTML Tools
 
-- **Are you using an HTML preprocessor** *(such as [HAML](http://haml.info/), [Jade](http://jade-lang.com/), etc)*? No.
-- NZ on screen uses HAML, also AudioCulture. But we dont have much to do with these ongoing.
+- **Are you using an HTML preprocessor** *(such as [HAML](http://haml.info/), [Jade](http://jade-lang.com/), etc)*? 
+- No.
 
 - **Are you using a templating engine** *(such as [Mustache](https://mustache.github.io/), [Handlebars](http://handlebarsjs.com/), etc)*?
-
+- No. If you need more complexity than raw HTML can provide you, then you should defer to JSX (via React or Preact or similar).
 - Django Templates, Jinja2, Nunjucks, Twig. All smarty-syntax template engines.
-
-- **Does your backend architecture influence the frontend markup in any way** (for example, WordPress will add `wp-paginate` to a class in your markup)? If so, can you highlight these conventions? 
 
 - Django custom tags have to be loaded at the top of a template.
 - Jinja2 requires you to use `iteritems()` to evaluate lists, eg `for item in list.iteritems()`.
 - Django templates forces you to write logic in python.
-- Add a nice function to Wagtail boilerplate for dumping vars. BCITO might have one?
 - Use 'templatetags' for logic (if required), otherwise use partials via `include "includes/my_partial.html"`
 
 ### HTML Style
 
 - **Spaces or Tabs?**
-- Spaces. Four of them.
+- Spaces. Refer to our [prettier config](https://github.com/springload/eslint-plugin-springload/blob/master/prettier.config.js#L4)
 - **What does HTML commenting look like?** 
 - Use Django's comments unless you really want the comment to be in the markup.
 - `{# Hello, i'm a comment #}` instead of `<!-- Hello, I'm a comment -->`
@@ -56,36 +45,16 @@
 
 - **What are some general principles your team should follow when writing CSS?** *(For example, modularity, avoiding long selector strings, etc. See [these](http://cssguidelin.es/) [resources](http://www.yellowshoe.com.au/standards/#css) [for](http://manuals.gravitydept.com/code/css) [inspiration](http://codeguide.co/#css))*
 
-- Keep nesting to a minimum
-- Use mixins sparingly
-- Extend things via placeholders.
-- Colours in variables. Use the american `color` to name things, since thats how CSS works. Eg, `$button-color`.
-- Put extends first in a declaration. Put mixins last.
-
-```sass
-.foo {
-  @extend %bar;
-
-  position: absolute;
-
-  @include medium {
-    position: relative;
-  }
-}
-```
-
-- Start with the least specificity. End with the most specific styles.
-- Style resets first, then elements (eg body, p, h1, small, ul),  then move on to components, and end with your overrides (eg, widths, utilities, grid).
-
+- See our CSS [one pager](https://github.com/springload/frontend-starter-kit/blob/master/docs/css.md)
 
 ### CSS Methodology
 
 - **Is your team using a CSS methodology** *(such as [SMACSS](https://smacss.com/), [BEM](https://en.bem.info/method/), or [OOCSS](http://oocss.org/)*? If yes, where is the documentation for that methodology?
 
-- Thibaud has some thoughts: http://www.springload.co.nz/blog/a-stable-front-end-stack-for-2016/
+- See our CSS [one pager](https://github.com/springload/frontend-starter-kit/blob/master/docs/css.md)
 
 - **Are you deviating from the methodology in any way?** If so, can you highlight these conventions?
-- See above.
+- Refer to link above
 
 
 ### CSS Tools
@@ -97,15 +66,13 @@
 - We don't really write vanilla CSS anymore, so the CSS guidelines above are the sass guidelines.
 
 - **Are you using a CSS base** *(such as [Normalize](https://necolas.github.io/normalize.css/) or a [reset](http://meyerweb.com/eric/tools/css/reset/))*?
-- Normalize.
+- [Normalize](https://github.com/necolas/normalize.css/).
 
 - **Are you using any CSS postprocessors** *(such as Prefixfree or [Autoprefixer](https://github.com/postcss/autoprefixer))*?
 - Pleeease. Mainly for autoprefixing + REM fallbacks for old IE, minification.
 
 - **Are there specific CSS techniques you're utilizing** *(such as [critical CSS](https://www.smashingmagazine.com/2015/08/understanding-critical-css/))*?
-- We did Critical CSS on On The Fence. It's pretty cool but hard to do reliably.
-- Addy Osmani has a good tool for it. We'll give it a whirl on Festival.
-- Scott Jehl vs Addy Osmani showdown! https://github.com/addyosmani/critical
+- No
 
 
 ### CSS Frameworks
@@ -118,9 +85,7 @@
 ### CSS Style
 
 - **Spaces or Tabs?**
-
-Spaces. 4 spaces.
-https://github.com/springload/frontend-starter-kit/blob/master/.sass-lint.yml
+- Spaces. Refer to our [prettier config](https://github.com/springload/eslint-plugin-springload/blob/master/prettier.config.js#L4)
 
 
 - **Spacing around rules?**
@@ -140,22 +105,32 @@ https://github.com/springload/frontend-starter-kit/blob/master/.sass-lint.yml
 ### JavaScript tools
 
 - **Are you using a JavaScript framework** *(such as [jQuery](http://jquery.com/), [Ember](http://emberjs.com/), [Angular](https://angularjs.org/), etc)*?
-- jQuery on a bunch of projects.
-- React, D3,
-- These days, ES6 modules with utility libraries such as lodash.
+    - We prefer [React](https://reactjs.org/).
+    - To scaffold a batteries-included React project we prefer [Create React App](https://github.com/facebook/create-react-app).
 
-- **Where is the documentation for those frameworks?**
+
+- **Do you use JQuery?**
+    - We try to avoid using JQuery when possible. Most of what can be achieved with JQuery be achieved just as easily in vanilla Javascript, particularly if you don't have to support legacy browsers.
+    - However, you might spot Jquery on a few of our legacy projects, which is fine.
+
+
 - **Are you using any polyfills or shims** *(such as [any of these](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills))*?
+    - `babel-polyfill` in combination with `.babelrc` and [`browserslist`](http://browserl.ist/) key in `package.json`.
+    - A typical browserslist value might look like this:
 
-- RespondJS
-- AddEventLister polyfill
-- Array.prototype.slice
-- requestAnimationFrame
-- Function.prototype.bind
-- ES5 shim + sham
-- document.querySelectorAll
-- ClassList
-- Mostly for IE8 compatibility.
+```json
+{
+    "browserslist": [
+        "ie >= 11",
+        "last 2 Chrome versions",
+        "last 2 Firefox versions",
+        "last 2 Safari versions",
+        "last 2 iOS versions",
+        "last 2 Edge versions"
+    ]
+}
+```
+    - If a specific polyfill is needed for a particular futuristic feature, then look to [corejs](https://github.com/zloirock/core-js) where possible.
 
 
 - **What third-party scripts are dependencies for your project** *(such as scripts for form validation, graphs, animation, etc)*?
@@ -186,7 +161,9 @@ https://github.com/springload/frontend-starter-kit/blob/master/.sass-lint.yml
     - Gulp went two years without so much as a patch release, and most of the community moved on. It provides a largely unncessary layer of abstraction to what can now be done really simply with npm scripts, particularly because our compiler of choice Webpack has its own CLI.
 
 - **Are you using a dependency manager** *(such as [Bower](http://bower.io/) or [Composer](https://getcomposer.org/))*
-- We use NPM. Bower is pointless when you have NPM.
+    - We prefer [Yarn](https://yarnpkg.com/en/).
+    - We mandate use of an `.nvmrc` file at the project root, so that all developers are using the same version of Node.
+    - We mandate use of a `yarn.lock` file (or `package-lock.json` for npm) so that dependencies are identical across all developers' machines.
 
 - **Are you using any scaffolding tools** *(such as [Yeoman](http://yeoman.io/))*
 - CookieCutter. [Link to cookiecutter repo]
