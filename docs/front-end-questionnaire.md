@@ -154,8 +154,11 @@
 ## Tooling
 
 - **Are you using a task runner** *(such as [Grunt](http://gruntjs.com/) or [Gulp](http://gulpjs.com/))*?
-- Gulp
-- Should migrate legacy grunt projects to gulp where possible.
+    - [npm scripts](https://docs.npmjs.com/misc/scripts).
+    - Many legacy projects use grunt and gulp, which is fine, though we would migrate these to npm scripts where possible.
+    
+- **Why not Gulp?**
+    - Gulp went two years without so much as a patch release, and most of the community moved on. It provides a largely unncessary layer of abstraction to what can now be done really simply with npm scripts, particularly because our compiler of choice Webpack has its own CLI.
 
 - **Are you using a dependency manager** *(such as [Bower](http://bower.io/) or [Composer](https://getcomposer.org/))*
     - We prefer [Yarn](https://yarnpkg.com/en/).
