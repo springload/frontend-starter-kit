@@ -131,11 +131,7 @@
 }
 ```
     - If a specific polyfill is needed for a particular futuristic feature, then look to [corejs](https://github.com/zloirock/core-js) where possible.
-
-
-- **What third-party scripts are dependencies for your project** *(such as scripts for form validation, graphs, animation, etc)*?
-- Look at any local friendly package.json for these. There are many.
-
+    
 
 ### JavaScript Style 
 
