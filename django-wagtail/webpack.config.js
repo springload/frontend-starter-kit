@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const FixPaths = require("./webpack.fixpaths");
+const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
 const isDev = process.env.NODE_ENV !== "production";
 const devMode = isDev ? "development" : "production";
 
@@ -21,7 +22,8 @@ module.exports = env => {
                     "core/templates_src/base.html"
                 )
             }),
-            new FixPaths()
+            new FixPaths(),
+            new SpriteLoaderPlugin()
         ],
         module: {
             rules: [
@@ -40,6 +42,19 @@ module.exports = env => {
                         {
                             loader: "sass-loader" // compiles Sass to CSS
                         }
+                    ]
+                },
+                {
+                    test: /\.svg$/,
+                    use: [
+                        {
+                            loader: "svg-sprite-loader",
+                            options: {
+                                extract: true,
+                                spriteFilename: "sprite.svg"
+                            }
+                        },
+                        "svgo-loader"
                     ]
                 }
             ]
