@@ -1,6 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const FixPaths = require("./webpack.fixpaths");
+const isDev = process.env.NODE_ENV !== "production";
+const devMode = isDev ? "development" : "production";
 
 module.exports = env => {
     return {
@@ -9,7 +11,7 @@ module.exports = env => {
             filename: "bundle.js",
             path: path.resolve(__dirname, "core/static")
         },
-        mode: process.env.NODE_ENV,
+        mode: devMode,
         plugins: [
             new HtmlWebpackPlugin({
                 title: "Output Management",
@@ -30,7 +32,10 @@ module.exports = env => {
                             loader: "style-loader" // creates style nodes from JS strings
                         },
                         {
-                            loader: "css-loader" // translates CSS into CommonJS
+                            loader: "css-loader", // translates CSS into CommonJS
+                            options: {
+                                sourceMap: isDev
+                            }
                         },
                         {
                             loader: "sass-loader" // compiles Sass to CSS
