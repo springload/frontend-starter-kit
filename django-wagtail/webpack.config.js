@@ -2,8 +2,6 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const FixPaths = require("./webpack.fixpaths");
 const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
-const isDev = process.env.NODE_ENV !== "production";
-const devMode = isDev ? "development" : "production";
 
 module.exports = env => {
     return {
@@ -12,7 +10,7 @@ module.exports = env => {
             filename: "bundle.js",
             path: path.resolve(__dirname, "core/static")
         },
-        mode: devMode,
+        mode: options.mode,
         plugins: [
             new HtmlWebpackPlugin({
                 title: "Output Management",
@@ -36,7 +34,7 @@ module.exports = env => {
                         {
                             loader: "css-loader", // translates CSS into CommonJS
                             options: {
-                                sourceMap: isDev
+                                sourceMap: options.mode === "development"
                             }
                         },
                         {

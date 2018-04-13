@@ -15,8 +15,8 @@
     "webpack-cli": "^2.0.12"
   },
   "scripts": {
-    "build": "NODE_ENV=development webpack",
-    "dist": "NODE_ENV=production webpack",
-    "start": "NODE_ENV=development webpack --watch"
+    "build": "webpack --mode=development",
+    "dist": "webpack --mode=production",
+    "start": "webpack --mode=development --watch"
   }
 }
