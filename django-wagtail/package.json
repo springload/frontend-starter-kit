@@ -1,5 +1,5 @@
 {
-  "name": "frontend-starter-kit",
+  "name": "django-wagtail",
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
@@ -24,9 +24,9 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "start": "NODE_ENV=development webpack --watch",
-    "build": "NODE_ENV=development webpack",
-    "dist": "NODE_ENV=production webpack"
+    "build": "webpack --mode=development",
+    "dist": "webpack --mode=production",
+    "start": "webpack --mode=development --watch"
   },
   "devDependencies": {
     "autoprefixer": "^8.3.0",
