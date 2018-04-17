@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  pages-job:
+    docker:
+      - image: circleci/node:8.9.4
+    working_directory: ~/repo
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "05:39:27:e8:34:47:e9:26:b2:e7:42:6b:be:06:8b:97"
+      - checkout:
+          path: ~/repo
+      - attach_workspace:
+          at: ~/repo
+      - run: git config --global user.email circleci@circleci
+      - run: git config --global user.name CircleCI
+      - run: npx gh-pages -d docs --message="Deploy springload/frontend-starter-kit to github.com/springload/frontend-starter-kit.git:gh-pages [ci skip]"
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - pages-job:
+          filters:
+            branches:
+              only: master
