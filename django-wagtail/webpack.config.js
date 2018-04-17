@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const FixPaths = require("./webpack.fixpaths");
 const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
 
-module.exports = env => {
+module.exports = (env, options) => {
     return {
         entry: "./core/static_src/index.js",
         output: {
