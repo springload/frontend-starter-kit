@@ -1,5 +1,5 @@
 {
-  "name": "django-wagtail",
+  "name": "frontend-starter-kit",
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
@@ -14,9 +14,36 @@
     "webpack": "^4.5.0",
     "webpack-cli": "^2.0.14"
   },
+  "browserslist": [
+    "ie >= 11",
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 iOS versions",
+    "last 2 Edge versions"
+  ],
   "scripts": {
-    "build": "webpack --mode=development",
-    "dist": "webpack --mode=production",
-    "start": "webpack --mode=development --watch"
+    "lint": "eslint .",
+    "start": "NODE_ENV=development webpack --watch",
+    "build": "NODE_ENV=development webpack",
+    "dist": "NODE_ENV=production webpack"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.3.0",
+    "babel-core": "6",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "cssnano": "^3.10.0",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.4.0",
+    "postcss-loader": "^2.1.4",
+    "prettier": "^1.12.0"
   }
 }
