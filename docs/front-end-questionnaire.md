@@ -98,9 +98,9 @@
 
 ### JavaScript Principles
 
-- **What are some general principles your team should follow when writing JavaScript?** *(See [these](https://github.com/airbnb/javascript) [resources](https://github.com/rwaldron/idiomatic.js) for [inspiration](https://github.com/styleguide/javascript))*
-- AirBnB except we use 4 spaces.
-- Maybe investigate WHY everyone suggests 2 spaces. Coz it looks lame.
+- **What are some general principles your team should follow when writing JavaScript?**
+    - Airbnb have published [living style guide](https://github.com/airbnb/javascript), upon which Springload’s styles are heavily modelled and extended.
+    - Airbnb’s styles are trumped in some areas by our [Springload Eslint config](https://github.com/springload/eslint-plugin-springload) files (most obviously in whitespace/indentation).
 
 ### JavaScript tools
 
