@@ -30,7 +30,7 @@
 ### HTML Style
 
 - **Spaces or Tabs?**
-    - Spaces. Refer to our [prettier config](https://github.com/springload/eslint-plugin-springload/blob/master/prettier.config.js#L4)
+    - Spaces. Refer to our [prettier config](https://github.com/springload/prettier-config-springload/blob/master/lib/index.js).
 
 
 - **What does HTML commenting look like?** 
@@ -84,7 +84,7 @@
 ### CSS Style
 
 - **Spaces or Tabs?**
-    - Spaces. Refer to our [prettier config](https://github.com/springload/eslint-plugin-springload/blob/master/prettier.config.js#L4)
+    - Spaces. Refer to our [prettier config](https://github.com/springload/prettier-config-springload/blob/master/lib/index.js).
 
 
 - **Spacing around rules?**
