@@ -46,8 +46,7 @@ jobs:
       - persist_to_workspace:
           root: ~/repo
           paths:
-            - node_modules/*
-            - packages/*/node_modules/*
+            - django-wagtail/node_modules/*
 
   django-wagtail-build-job:
     docker:
@@ -59,7 +58,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/repo
-      - run: yarn workspace react-accessible-tooltip build
+      - run: yarn build
 
 workflows:
   version: 2
