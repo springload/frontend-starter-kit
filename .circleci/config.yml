@@ -1,5 +1,14 @@
 version: 2
 jobs:
+  build-docs-job:
+    docker:
+      - image: jekyll/jekyll
+    working_directory: ~/repo/docs
+    steps:
+      - checkout:
+          path: ~/repo
+      - run: jekyll build
+
   pages-job:
     docker:
       - image: circleci/node:8.9.4
@@ -20,6 +29,7 @@ workflows:
   version: 2
   build-deploy:
     jobs:
+      - build-docs-job
       - pages-job:
           filters:
             branches:
