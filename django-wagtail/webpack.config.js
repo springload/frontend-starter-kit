@@ -1,27 +1,29 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const FixPaths = require("./webpack.fixpaths");
-const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FixPaths = require('./webpack.fixpaths');
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
 
 module.exports = (env, options) => {
     return {
-        entry: "./core/static_src/index.js",
+        entry: './core/static_src/index.js',
         output: {
-            filename: "bundle.js",
-            path: path.resolve(__dirname, "core/static")
+            filename: 'bundle.js',
+            path: path.resolve(__dirname, 'core/static'),
         },
         mode: options.mode,
         plugins: [
             new HtmlWebpackPlugin({
-                title: "Output Management",
-                filename: path.resolve(__dirname, "core/templates/base.html"),
+                title: 'Output Management',
+                filename: path.resolve(__dirname, 'core/templates/base.html'),
                 template: path.resolve(
                     __dirname,
-                    "core/templates_src/base.html"
-                )
+                    'core/templates_src/base.html',
+                ),
             }),
             new FixPaths(),
-            new SpriteLoaderPlugin()
+            new SpriteLoaderPlugin(),
         ],
         module: {
             rules: [
@@ -29,33 +31,50 @@ module.exports = (env, options) => {
                     test: /\.scss$/,
                     use: [
                         {
-                            loader: "style-loader" // creates style nodes from JS strings
+                            loader: 'style-loader', // creates style nodes from JS strings
                         },
                         {
-                            loader: "css-loader", // translates CSS into CommonJS
+                            loader: 'css-loader', // translates CSS into CommonJS
                             options: {
-                                sourceMap: options.mode === "development"
-                            }
+                                sourceMap: options.mode === 'development',
+                            },
                         },
                         {
-                            loader: "sass-loader" // compiles Sass to CSS
-                        }
-                    ]
+                            loader: 'postcss-loader',
+                            options: {
+                                plugins() {
+                                    return [autoprefixer, cssnano];
+                                },
+                            },
+                        },
+                        {
+                            loader: 'sass-loader', // compiles Sass to CSS
+                        },
+                    ],
                 },
                 {
                     test: /\.svg$/,
                     use: [
                         {
-                            loader: "svg-sprite-loader",
+                            loader: 'svg-sprite-loader',
                             options: {
                                 extract: true,
-                                spriteFilename: "sprite.svg"
-                            }
+                                spriteFilename: 'sprite.svg',
+                            },
                         },
-                        "svgo-loader"
-                    ]
-                }
-            ]
-        }
+                        'svgo-loader',
+                    ],
+                },
+                {
+                    test: /\.js$/,
+                    exclude: /(node_modules)/,
+                    use: [
+                        {
+                            loader: 'babel-loader', // creates style nodes from JS strings
+                        },
+                    ],
+                },
+            ],
+        },
     };
 };
