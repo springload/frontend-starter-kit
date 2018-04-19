@@ -25,6 +25,42 @@ jobs:
       - run: git config --global user.name CircleCI
       - run: npx gh-pages -d docs --message="Deploy springload/frontend-starter-kit to github.com/springload/frontend-starter-kit.git:gh-pages [ci skip]"
 
+  django-wagtail-install-job:
+    docker:
+      - image: circleci/node:8.11
+    working_directory: ~/repo/django-wagtail
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node-modules-{{ checksum "yarn.lock" }}
+            - node-modules-
+
+      - run: yarn install
+
+      - save_cache:
+          key: node-modules-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+            - ~/.cache/yarn
+      - persist_to_workspace:
+          root: ~/repo
+          paths:
+            - node_modules/*
+            - packages/*/node_modules/*
+
+  django-wagtail-build-job:
+    docker:
+      - image: circleci/node:8.11
+
+    working_directory: ~/repo/django-wagtail
+
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/repo
+      - run: yarn workspace react-accessible-tooltip build
+
 workflows:
   version: 2
   build-deploy:
@@ -34,3 +70,7 @@ workflows:
           filters:
             branches:
               only: master
+      - django-wagtail-install-job
+      - django-wagtail-build-job:
+          requires:
+            - django-wagtail-install-job
