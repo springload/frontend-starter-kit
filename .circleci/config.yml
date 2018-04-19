@@ -30,7 +30,8 @@ jobs:
       - image: circleci/node:8.11
     working_directory: ~/repo/django-wagtail
     steps:
-      - checkout
+      - checkout:
+          path: ~/repo
       - restore_cache:
           keys:
             - node-modules-{{ checksum "yarn.lock" }}
@@ -55,7 +56,8 @@ jobs:
     working_directory: ~/repo/django-wagtail
 
     steps:
-      - checkout
+      - checkout:
+          path: ~/repo
       - attach_workspace:
           at: ~/repo
       - run: yarn build
