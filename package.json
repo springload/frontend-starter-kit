@@ -12,7 +12,6 @@
   },
   "homepage": "https://github.com/springload/frontend-starter-kit#readme",
   "devDependencies": {
-    "gh-pages": "^1.1.0",
-    "prettier-config-springload": "^1.0.2"
+    "gh-pages": "^1.1.0"
   }
 }
