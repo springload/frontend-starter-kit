@@ -1,7 +1,0 @@
-node_modules
-*.min.js
-**/lib/
-public/
-coverage/
-gulpfile.js
-core/static/
