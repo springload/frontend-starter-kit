@@ -70,7 +70,7 @@ module.exports = (env, options) => {
                     exclude: /(node_modules)/,
                     use: [
                         {
-                            loader: 'babel-loader', // creates style nodes from JS strings
+                            loader: 'babel-loader',
                         },
                     ],
                 },
