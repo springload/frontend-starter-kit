@@ -43,5 +43,6 @@
     "svgo-loader": "^2.1.0",
     "webpack": "^4.5.0",
     "webpack-cli": "^2.0.14"
+    "prettier-config-springload": "^1.0.2"
   }
 }
