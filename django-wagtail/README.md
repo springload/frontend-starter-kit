@@ -35,7 +35,6 @@ Note: To learn how to write JavaScript or import Sass files from JavaScript is a
 
 # Future Improvements?
 
-* Production build minification.
 * ...your idea goes here
 
 ## Project Files
