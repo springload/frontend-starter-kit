@@ -1,12 +1,14 @@
 # Front-end starter kit
 
-> Springload's reference and starter kit for front-end development.
+This repo is for
 
-How we do [*HTML*](./docs/html.md), [*CSS*](./docs/css.md) and [*JavaScript*](./docs/javascript.md).
+- People wanting to learn about how we do frontend development at Springload, including
+  - our approaches to  [*HTML*](./docs/html.md), [*CSS*](./docs/css.md) and [*JavaScript*](./docs/javascript.md) and recommended libraries.
+- People starting new Django/Wagtail projects who want a modern boilerplate.
 
 | Important links :book:                                 |
 |--------------------------------------------------------|
-| [Django / Wagtail setup](./django-wagtail/)
+| [Django / Wagtail](./django-wagtail/)
 | [General Docs](/docs/) |
 | [Frontend Checklist](./docs/frontend-checklist.md) |
 | [React Accessible Accordion](https://github.com/springload/react-accessible-accordion) |
