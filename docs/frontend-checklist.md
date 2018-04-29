@@ -103,6 +103,7 @@ header - `role="banner"`, main content - `role="main"`, footer - `role="contenti
 ## SEO / SMO
 
 - [ ] Run site url through the Facebook debugger (https://developers.facebook.com/tools/debug/) to check it will appear correctly if shared.
+- [ ] Ensure that `<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">` is only on the correct pages.
 - [ ] Ensure meta tags, Open Graph tags, Twitter card tags, and descriptions are set.
 - [ ] Ensure the social meta tags only use a default sharing image if there is no page-specific image to use.
 - [ ] Significant UI states (tabs, modals, etc) should be tracked in the URL via query parameter or the hash or else search engines might not index them.
@@ -125,7 +126,5 @@ header - `role="banner"`, main content - `role="main"`, footer - `role="contenti
 ## Github 
 
 - [ ] Appropriate labels set on GitHub. See https://github.com/springload/labels.
-
-
 
 You made it to the end! Whoo, high five my friend! Now go treat yourself to a drink :tropical_drink:, a hug, or whatever floats your waka :rainbow:. Don’t forget to let your team know that you’ve got this under control, and be proud of that top-notch site you just built.
