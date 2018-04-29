@@ -113,6 +113,10 @@ Where possible use ES2015+ features rather than lodash, but if you need it...
 
 - `lodash`
 
+## Debugging
+
+- [weinre](https://people.apache.org/~pmuellr/weinre/docs/latest/). It's like browser devtools but built in HTML and can be used to debug any browser, including mobile ones.
+
 # Misc
 
 - We avoid using jQuery when possible. Most of what can be achieved with JQuery be achieved just as easily in vanilla Javascript, particularly if you don't have to support legacy browsers. See [http://YouMightNotNeedjQuery.com/](http://YouMightNotNeedjQuery.com/). However, you might spot Jquery on a few of our legacy projects, which is fine.

@@ -8,6 +8,7 @@ How we do [*HTML*](./docs/html.md), [*CSS*](./docs/css.md) and [*JavaScript*](./
 |--------------------------------------------------------|
 | [Django / Wagtail setup](./django-wagtail/)
 | [General Docs](/docs/) |
+| [Frontend Checklist](./docs/frontend-checklist.md) |
 | [React Accessible Accordion](https://github.com/springload/react-accessible-accordion) |
 | [Pattern Book (pattern library / style guide)](https://github.com/springload/pattern-book) |
 

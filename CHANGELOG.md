@@ -10,8 +10,6 @@ Old things that we're not sure about have been moved to the `./recycle-bin` (bec
 * `core/static_src/svg` :arrow_forward:  :wastebasket:
 * `core/static_src/js` :arrow_forward:  ...the following table
 
-
-
 | Before          | After           |
 |-----------------|-----------------|
 | `polyfills.js`  | |

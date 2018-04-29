@@ -116,6 +116,14 @@ ul.list { list-style: none;}
 .open {}
 ```
 
+# Misc
+
+- [CSS stats](http://cssstats.com) | > Get some statistics about the CSS used on your project.| Number of rules, Number of selectors, Specificity graph, File 
+
+### Error: `libsass` bindings not found. Try reinstalling `node-sass`
+
+You're probably running the wrong version of Node. Do `nvm use` and try again.
+
 ## New or Old?
 
 For legacy projects we follow whatever conventions they have, but where possible we try to migrate to these newer approaches.

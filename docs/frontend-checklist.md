@@ -12,7 +12,7 @@ It might be a good idea to copy this file to your project and go through the che
 - [ ] Links to all deploy environments and any associated Git branch names.
 - [ ] Links to CI, Trello board, Harvest project, project run sheet, Google Drive folder, Zeplin, InVision, Atomic, other.
 - [ ] Expected Browser support and accessibility support.
-- [ ] Debugging trickss.
+- [ ] Debugging tricks.
 
 ## Code quality
 
