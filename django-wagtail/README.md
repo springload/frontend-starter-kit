@@ -33,6 +33,10 @@ That's it. You're done!
 
 Note: To learn how to write JavaScript or import Sass files from JavaScript is a more general question about Webpack (and other bundlers), so we'll deal with that in another file.
 
+## Code Comments
+
+- Use Django's comments unless you really want the comment to be in the markup. `{# Hello, i'm a comment #}` instead of `<!-- Hello, I'm a comment -->`
+
 # Future Improvements?
 
 * ...your idea goes here

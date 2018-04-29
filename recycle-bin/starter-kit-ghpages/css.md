@@ -8,7 +8,7 @@ Make sure [your text editor](https://code.visualstudio.com/&sa=D&ust=15204578975
 ## File Structure
 
 We use a methodology called [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/),
-in which CSS is organised by increasing CSS specificity (CSS [Normalize](https://github.com/necolas/normalize.css/), then base styles, component styles, and finally utility classes, or that general approach).  
+in which CSS is organised by increasing CSS specificity (CSS reset or normalize, then base styles, component styles, and finally utility classes, or that general approach).  
 Note: There is a framework built from this concept called [INUITCSS](https://github.com/inuitcss/inuitcss)
 
 
