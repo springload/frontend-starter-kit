@@ -1,6 +1,4 @@
-# Front-end starter kit
-
-> Springload's reference and starter kit for front-end development.
+# Front-end starter kit - Docs
 
 How we do [**HTML**](./html.md), [**CSS**](./css.md) and [**JavaScript**](./javascript.md) here at Springload.
 
