@@ -1,3 +1,7 @@
+# 18.1
+* `gh-pages` repo deleted and moved to the `recycle-bin`.
+* Frontend checklists merged. The distinction between what was necessary to know at launch vs start was dubious.
+
 # 18.0
 
 Version 18... the big 20**18** refactor!

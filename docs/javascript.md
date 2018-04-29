@@ -1,6 +1,6 @@
 # JavaScript
 
-CMS sites shouldn't require JavaScript. Apps probably need it. Use [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement) where reasonable.
+> JavaScript should be readable, modular, and splitable.
 
 ## Formatting
 
@@ -109,9 +109,7 @@ We quite like [React Accessible Accordion](https://github.com/springload/react-a
 
 ## Utilities and Functionaliy Programming
 
-Where possible use ES2015+ features rather than lodash, but if you need it...
-
-- `lodash`
+Where possible use ES2015+ features rather than lodash, but if you need it.
 
 ## Debugging
 
@@ -121,6 +119,7 @@ Where possible use ES2015+ features rather than lodash, but if you need it...
 
 - We avoid using jQuery when possible. Most of what can be achieved with JQuery be achieved just as easily in vanilla Javascript, particularly if you don't have to support legacy browsers. See [http://YouMightNotNeedjQuery.com/](http://YouMightNotNeedjQuery.com/). However, you might spot Jquery on a few of our legacy projects, which is fine.
 - Inspiration https://github.com/airbnb/javascript  https://github.com/rwaldron/idiomatic.js https://github.com/styleguide/javascript
+- CMS sites probably shouldn't require JavaScript. Apps probably need it. Use [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement) where reasonable.
 
 
 # New or Old?
