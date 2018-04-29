@@ -3,7 +3,7 @@
 This repo is for
 
 - People wanting to learn about how we do frontend development at Springload, including
-  - our approaches to  [*HTML*](./docs/html.md), [*CSS*](./docs/css.md) and [*JavaScript*](./docs/javascript.md) and recommended libraries.
+  - our approaches to  [**HTML**](./docs/html.md), [**CSS**](./docs/css.md) and [**JavaScript**](./docs/javascript.md) and recommended libraries.
 - People starting new Django/Wagtail projects who want a modern boilerplate.
 
 | Important links :book:                                 |
