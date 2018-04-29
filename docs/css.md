@@ -1,5 +1,7 @@
 # CSS
 
+> CSS should be modular, readable, and not unnecessarily specific.
+
 ## Formatting
 
 We delegate that to [Prettier](https://prettier.io/).   
