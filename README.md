@@ -14,4 +14,7 @@ This repo is for
 | [React Accessible Accordion](https://github.com/springload/react-accessible-accordion) |
 | [Pattern Book (pattern library / style guide)](https://github.com/springload/pattern-book) |
 
-See [CHANGELOG.md for revisions](CHANGELOG.md)
+
+--------------------------------
+
+<sup> See [CHANGELOG.md for revisions](CHANGELOG.md)</sup>
