@@ -4,7 +4,7 @@
 
 ## Formatting
 
-We delegate that to [Prettier](https://prettier.io/) (although Django/Wagtail templates are often `.html` and not just HTML as they include template instructions, so note that the `.prettierignore` for D/W projects ignores `*.html` files).
+We delegate that to [Prettier](https://prettier.io/) (although Django/Wagtail templates are often named `.html` with template instructions so Prettier might break them... note that the `.prettierignore` for D/W projects is configured to ignore `*.html` files).
 
 Make sure [your text editor](https://code.visualstudio.com/&sa=D&ust=1520457897533000&usg=AFQjCNF3QTfRTIBG7ZBDeYbNMcYimiKSbw) has [that extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), and that it's configured to auto-format on save. 
 
