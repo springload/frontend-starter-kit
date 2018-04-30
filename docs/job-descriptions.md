@@ -6,7 +6,6 @@
 |---------------------------------------------|
 | [Front-end Developer](#front-end-developer) |
 | [Senior Front-end Developer](#senior-front-end-developer) |
-| [Junior Front-end Developer](#junior-front-end-developer) |
 | [Lead Front-end Developer](#lead-front-end-developer) |
 | [Front-end Director](#front-end-director) |
 | [Template](#template) |
@@ -43,6 +42,7 @@ The world is your oyster. |  `\.__.-''       `.
 
 Collaborating in a multidisciplinary environment.
 
+- Ability to communicate front-end development matters clearly to other team members, clients, and partners.
 - Working closely with other disciplines and individuals to produce high-quality responsive sites and applications.
 - Work with the design team to realise projects with a high level of visual refinement.
 - Work with the content team to architect the site structure and identify content management requirements.
@@ -57,6 +57,8 @@ Producing high-quality work.
 - Maintain websites and test changes across a range of browsers and devices. Be familiar with unit and integration tests and use them where applicable.
 - Contribute to project documentation and code reuse.
 - Set-up, deploy, and test using command line tools.
+- Experience with browser development tools (such as Chrome or Firefox DevTools).
+
 
 Evolving our practices.
 
@@ -165,38 +167,6 @@ See [Front-end Developer](#front-end-developer). In addition,
 
 > :seedling: :sunglasses: [This is What a Programmer Looks Like](http://love.djangogirls.org/)
 
----
-
-## Junior Front-end Developer
-
-- Reports to: [Front-end Director](#front-end-director)
-- Direct reports: N/A
-
-### Description
-
-See [Front-end Developer](#front-end-developer). In addition,
-
-> Throughout the work, collaborate with and receive support from the wider front-end team.
-
----
-
-### Key responsibilities
-
-See [Front-end Developer](#front-end-developer).
-
----
-
-### Required skills
-
-- Ability to communicate front-end development matters clearly to other team members, clients, and partners.
-- Understanding of browser, platform, device constraints.
-- Basic HTML and CSS knowledge.
-- Experience with CSS preprocessing and HTML templating.
-- Experience with programming in JavaScript.
-- Basic understanding of object-oriented and functional programming concepts.
-- Experience with browser development tools (such as Chrome or Firefox DevTools).
-
----
 
 ### Other useful skills
 
