@@ -2,6 +2,21 @@
 
 > JavaScript should be readable, modular, and splitable.
 
+
+## Project Structure
+
+The reason why Project Structure is in JavaScript is because it's often related to Webpack organisation which uses JavaScript.
+
+We tend to prefer project structures organised by features and routes (AKA business logic), rather than technology. We have found that this approach means that related code is often nearby and easier to navigate, and it
+
+To be clear, this mean that we discourage directories named "components", "containers", "reducers", and so on.
+
+Instead we might name files "_feature_.component.js", "feature.scss", and "_feature_.test.js", and group these files in a _feature_ directory.
+
+Read [this documentation](https://github.com/reactjs/reactjs.org/blob/master/content/docs/faq-structure.md) for more ideas. Also consider whether [globally unique filenames](https://www.reddit.com/r/reactjs/comments/6al7h2/facebook_has_30000_react_components_how_do_you/dhgruqh/) might be useful in larger projects.
+
+Obviously any particular framework (Wagtail-Django) or boilerplate might impose its own restrictions so work within those, and this is just a suggestion.
+
 ## Formatting
 
 We delegate that to [Prettier](https://prettier.io/).   
@@ -17,18 +32,6 @@ Use [NVM](https://github.com/creationix/nvm) to install Node, and make sure your
 ## Package Manager
 
 For now we prefer Yarn not NPM, because NPM still seems to have _"it works on my machine!"_ type bugs, despite having a lock file.
-
-## File Structure
-
-We tend to prefer project structures organised by features and routes (AKA business logic), rather than technology. We have found that this approach means that related code is often nearby and easier to navigate, and it
-
-To be clear, this mean that we discourage directories named "components", "containers", "reducers", and so on.
-
-Instead we might name files "_feature_.component.js", "feature.scss", and "_feature_.test.js", and group these files in a _feature_ directory.
-
-Read [this documentation](https://github.com/reactjs/reactjs.org/blob/master/content/docs/faq-structure.md) for more ideas. Also consider whether [globally unique filenames](https://www.reddit.com/r/reactjs/comments/6al7h2/facebook_has_30000_react_components_how_do_you/dhgruqh/) might be useful in larger projects.
-
-Obviously any particular framework (Wagtail-Django) or boilerplate might impose its own restrictions so work within those, and this is just a suggestion.
 
 ## Type Checking
 
