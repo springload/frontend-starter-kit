@@ -1,6 +1,6 @@
 # JavaScript
 
-> JavaScript should be readable, modular, and splitable.
+> JavaScript should be readable, modular, and splittable.
 
 
 ## Project Structure
