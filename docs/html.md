@@ -2,6 +2,8 @@
 
 > HTML should be structural, semantic, and accessible.
 
+_Work in progress_
+
 ## Formatting
 
 We delegate that to [Prettier](https://prettier.io/) (although Django/Wagtail templates are often named `.html` with template instructions so Prettier might break them... note that the `.prettierignore` for D/W projects is configured to ignore `*.html` files).
@@ -15,8 +17,6 @@ Refer to our [prettier config](https://github.com/springload/prettier-config-spr
 Aside from CSS colours, HTML is primarily responsible for making accessible webpages (regardless of whether you're generating HTML from Django/Wagtail or React etc.).
 
 Go read Sam's [Being pragmatic about accessibility](https://www.springload.co.nz/blog/pragmatic-about-accessibility/).
-
-_Work in progress_
 
 ### Accessibility Reading
 - https://github.com/Heydon/inclusive-design-checklist
