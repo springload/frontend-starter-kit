@@ -7,6 +7,8 @@
 
 The reason why Project Structure is in JavaScript is because it's often related to Webpack which uses JavaScript.
 
+Generally speaking we like [Mono-repos](https://danluu.com/monorepo/) rather than Multi-repos.
+
 We tend to prefer project structures organised by features and routes (AKA business logic), rather than technology. We have found that this approach means that related code is often nearby and easier to navigate.
 
 To be clear, this mean that we discourage directories named `components`, `containers`, `reducers`, and so on. Instead we might name files "_feature_.component.js", "feature.scss", and "_feature_.test.js", and group these files in a "_feature_" directory.
