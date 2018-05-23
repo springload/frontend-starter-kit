@@ -8,7 +8,7 @@ This repo is for
 
 | Important links :book:                                 |
 |--------------------------------------------------------|
-| [Django / Wagtail](./django-wagtail/)
+| [Django / Wagtail and Webpack 4](./django-wagtail/)
 | [General Docs (HTML / CSS / JavaScript)](/docs/) |
 | [Frontend Checklist](./docs/frontend-checklist.md) |
 | [React Accessible Accordion](https://github.com/springload/react-accessible-accordion) |
