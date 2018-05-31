@@ -1,6 +1,6 @@
 # 18.5
 
-* Trashed the `recycle-bin`. Recover any files from [the history](https://github.com/springload/frontend-starter-kit/tree/c35abe435eb4905565e79a8bbc5cc257b2e5a77c).s
+* Trashed the `recycle-bin`. Recover any files from [the history](https://github.com/springload/frontend-starter-kit/tree/c35abe435eb4905565e79a8bbc5cc257b2e5a77c).
 
 # 18.1
 
@@ -36,7 +36,7 @@ Old things that we're not sure about have been moved to the `./recycle-bin` (bec
 
 #### :bug: Bug Fix
 
-*
+\*
 
 #### :memo: Documentation
 
@@ -46,22 +46,22 @@ Old things that we're not sure about have been moved to the `./recycle-bin` (bec
 
 #### :house: Internal
 
-*
+\*
 
 # 1.0 before 2018
 
 #### :bug: Bug Fix
 
-*
+\*
 
 #### :nail_care: Enhancement
 
-*
+\*
 
 #### :memo: Documentation
 
-*
+\*
 
 #### :house: Internal
 
-*
+\*
