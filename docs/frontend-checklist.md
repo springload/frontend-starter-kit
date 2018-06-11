@@ -1,6 +1,6 @@
 # Frontend project checklist
 
-Copy this file to your project as an Issue and go through the checklist.
+Copy this file into a new `Issue` on your project and go through the checklist.
 
 These rules aren't mandatory and might not make sense for your project, so use your common sense.
 
