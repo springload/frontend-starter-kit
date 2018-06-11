@@ -8,7 +8,7 @@ Please keep a note of what you actually did to get it working and do make improv
 
     cd YOUR_PROJECT
 
-Copy [`.nvmrc`](../.nvmrc), [`package.json`](./package.json), [`webpack.config.js`](./webpack.config.js), [`webpack.fixpath.js`](./webpack.fixpath.js), [`.prettierignore`](./.prettierignore) to `YOUR_PROJECT` directory. Fuller descriptions of these files are at the bottom of this page if you're curious.
+Copy [`.nvmrc`](../.nvmrc), [`package.json`](./package.json), [`webpack.config.js`](./webpack.config.js), [`webpack.fixpaths.js`](./webpack.fixpaths.js), [`.prettierignore`](./.prettierignore) to `YOUR_PROJECT` directory. Fuller descriptions of these files are at the bottom of this page if you're curious.
 
     nvm install
     nvm use
