@@ -1,10 +1,8 @@
 # Frontend project checklist
 
-Ideally we would want as many of those line items to already be taken care of, but in practice, it is not that simple and we need such a checklist to make sure that we deliver top-notch experiences.
+Copy this file to your project as an Issue and go through the checklist.
 
-This is meant to be used when a site goes live, but do go through it sooner to make sure there won't be too many surprises.
-
-It might be a good idea to copy this file to your project and go through the checklist.
+These rules aren't mandatory and might not make sense for your project, so use your common sense.
 
 ## The project's `README.md` contains
 
