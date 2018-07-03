@@ -11,6 +11,7 @@ This repo is for
 | [Django / Wagtail and Webpack 4](./django-wagtail/)
 | [General Docs (HTML / CSS / JavaScript)](/docs/) |
 | [Frontend Checklist](./docs/frontend-checklist.md) |
+| [Browser & device support](./docs/browser-device-support.md) |
 | [React Accessible Accordion](https://github.com/springload/react-accessible-accordion) |
 | [Pattern Book (pattern library / style guide)](https://github.com/springload/pattern-book) |
 
