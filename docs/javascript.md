@@ -48,9 +48,13 @@ We prefer [Flow](https://flow.org/) more than [TypeScript](https://www.typescrip
 
 # Recommended Libraries
 
-For SPAs we like [React](https://reactjs.org/) and [Preact](https://preactjs.com/). For a boilerplate we like [Create React App (CRA)](https://github.com/facebook/create-react-app).
+## View / SPAs
 
-Unless have very simple needs don't use [Mustache](https://mustache.github.io/)/[Handlebars](http://handlebarsjs.com/), etc.
+React is amazing. Do read the [basic theory of React](https://github.com/reactjs/react-basic).
+
+For a boilerplate we like [Create React App (CRA)](https://github.com/facebook/create-react-app).
+
+Unless have very simple needs don't use [Mustache](https://mustache.github.io/)/[Handlebars](http://handlebarsjs.com/), etc. Preact is probably a better choice in that scenario.
 
 ## Test
 
