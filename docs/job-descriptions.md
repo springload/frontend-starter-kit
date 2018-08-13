@@ -6,7 +6,7 @@
 |---------------------------------------------|
 | [Front-end Developer](#front-end-developer) |
 | [Senior Front-end Developer](#senior-front-end-developer) |
-| [Lead Front-end Developer](#lead-front-end-developer) |
+| [Guild Front-end Developer](#lead-front-end-developer) |
 | [Front-end Director](#front-end-director) |
 | [Template](#template) |
 
@@ -32,7 +32,7 @@ The world is your oyster. |  `\.__.-''       `.
 
 ### Description
 
-> Create, develop, maintain and improve user interfaces for browser-based products and services. Collaborate with other disciplines and individuals to produce high quality experiences with front-end code (HTML, CSS, SVG and JavaScript).
+> Create, develop, maintain and improve user interfaces for browser-based products and services. Collaborate with other disciplines and individuals to produce high quality experiences with front-end code (JavaScript, HTML, CSS, SVG).
 >
 > Contribute to Springload's front-end capabilities by researching new ideas, maintaining our projects, improving our practices, and demonstrating our expertise.
 
@@ -84,10 +84,10 @@ Core front-end skills.
 
 Supporting design, engineering skills.
 
-- Experience with client-side frameworks (such as React, Angular, or Backbone).
+- Experience with client-side frameworks (such as React, Vue).
 - Experience with content management systems or e-commerce platforms.
 - Familiarity with version control via Git, continuous integration, issue trackers, wikis, and pull request workflows.
-- Familiarity with front-end build tools and task runners (npm, Grunt, Gulp, Webpack, Browserify).
+- Familiarity with front-end build tools and task runners (npm, Webpack).
 - Familiarity with software testing – unit tests, integration tests.
 - Working knowledge of the Unix command line and a shell of your choice.
 - Working knowledge of graphic software (Illustrator, Sketch, Photoshop), comfortable working with vectors and SVG.
@@ -182,7 +182,7 @@ See Supporting design, front-end skills for [Front-end Developer](#front-end-dev
 
 ---
 
-## Lead Front-end Developer
+## Guild Lead Front-end Developer
 
 - Reports to: [Front-end Director](#front-end-director)
 - Direct reports: N/A
@@ -239,11 +239,11 @@ Core front-end skills.
 
 Supporting design, engineering skills.
 
-- Experience with client-side frameworks (such as React, Angular, or Backbone).
-- Experience architecting web apps around (REST) APIs.
+- Experience with client-side frameworks (such as React, Vue).
+- Experience architecting web apps around (GraphQL, REST) APIs.
 - Experience with content management systems or e-commerce platforms.
 - Familiarity with version control via Git, continuous integration, issue trackers, wikis, and pull request workflows.
-- Familiarity with front-end build tools and task runners (npm, Grunt, Gulp, Webpack, Browserify).
+- Familiarity with front-end build tools and task runners (npm scripts, Webpack).
 - Familiarity with software testing – unit tests, integration tests.
 - Working knowledge of the Unix command line and a shell of your choice.
 - Working knowledge of graphic software (Illustrator, Sketch, Photoshop), comfortable working with vectors and SVG.
@@ -258,7 +258,7 @@ Supporting design, engineering skills.
 - Experience designing user interfaces with a user experience (UX) approach.
 - Experience with programming in ES6/ES2015+ JavaScript.
 - Ability to do basic server administration from the command line.
-- Familiarity with server-side programming stacks (we use Python and Node).
+- Familiarity with server-side programming stacks.
 - Experience with the Django framework, and Wagtail CMS.
 
 ---
