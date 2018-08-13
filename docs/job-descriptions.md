@@ -6,7 +6,7 @@
 |---------------------------------------------|
 | [Front-end Developer](#front-end-developer) |
 | [Senior Front-end Developer](#senior-front-end-developer) |
-| [Guild Front-end Developer](#lead-front-end-developer) |
+| [Guild Front-end Lead](#guild-front-end-lead) |
 | [Front-end Director](#front-end-director) |
 | [Template](#template) |
 
@@ -182,7 +182,7 @@ See Supporting design, front-end skills for [Front-end Developer](#front-end-dev
 
 ---
 
-## Guild Lead Front-end Developer
+## Guild Front-end Lead
 
 - Reports to: [Front-end Director](#front-end-director)
 - Direct reports: N/A
