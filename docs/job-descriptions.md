@@ -159,6 +159,7 @@ Leadership.
 See [Front-end Developer](#front-end-developer). In addition,
 
 - Advanced knowledge of React – Redux, client-side routing, code splitting, etc.
+- Experience with typed languages (Flow, TypeScript).
 - Advanced testing skills – accessibility tests, automated cross-browser tests, automated UI regression.
 - Experience architecting front-end codebases in client-side JS stacks.
 - Familiarity with other development stacks and platforms (iOS, Android, .NET, etc).
