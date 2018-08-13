@@ -189,7 +189,7 @@ See Supporting design, front-end skills for [Front-end Developer](#front-end-dev
 
 ### Description
 
-> To lead the Front-end Development Team and set our strategic front-end direction towards achieving our vision.
+> To lead the Front-end Development Guild and set our strategic front-end direction towards achieving our vision.
 > 
 > To direct the front-end output for our clients and projects - liaising with clients, identifying requirements, planning, implementation, solution architecting, strategic thinking. This includes both oversight and execution, as required.
 > 
@@ -240,6 +240,7 @@ Core front-end skills.
 Supporting design, engineering skills.
 
 - Experience with client-side frameworks (such as React, Vue).
+- Experience with typed languages (Flow, TypeScript)
 - Experience architecting web apps around (GraphQL, REST) APIs.
 - Experience with content management systems or e-commerce platforms.
 - Familiarity with version control via Git, continuous integration, issue trackers, wikis, and pull request workflows.
