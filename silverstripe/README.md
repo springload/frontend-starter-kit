@@ -44,6 +44,8 @@ We have a Starter Style kit especially for css, it uses ITCSS and you can learn 
 To add your CSS and JS to your `Page.ss` you will need to add these next lines to your `./app/src/pages/PageController.php` file.
 
 ```php
+# ./app/src/pages/PageController.php
+
 use SilverStripe\Control\Director;
 use SilverStripe\View\Requirements;
 
