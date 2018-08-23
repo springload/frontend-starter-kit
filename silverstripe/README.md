@@ -77,9 +77,15 @@ Note: To learn how to write JavaScript or import Sass files from JavaScript is a
 
 - Use Silverstripe's comments unless you really want the comment to be in the markup. `<%-- Hello, i'm a comment --%>` instead of `<!-- Hello, I'm a comment -->`
 
-# Future Improvements?
+## Issues
+
+* Fonts are not loading properly on non-root level pages on local setups.
+
+## Future Improvements?
 
 * ...your idea goes here
+
+
 
 ### .prettierignore
 
