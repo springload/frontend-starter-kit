@@ -6,7 +6,7 @@
 |---------------------------------------------|
 | [Front-end Developer](#front-end-developer) |
 | [Senior Front-end Developer](#senior-front-end-developer) |
-| [Lead Front-end Developer](#lead-front-end-developer) |
+| [Guild Front-end Lead](#guild-front-end-lead) |
 | [Front-end Director](#front-end-director) |
 | [Template](#template) |
 
@@ -32,7 +32,7 @@ The world is your oyster. |  `\.__.-''       `.
 
 ### Description
 
-> Create, develop, maintain and improve user interfaces for browser-based products and services. Collaborate with other disciplines and individuals to produce high quality experiences with front-end code (HTML, CSS, SVG and JavaScript).
+> Create, develop, maintain and improve user interfaces for browser-based products and services. Collaborate with other disciplines and individuals to produce high quality experiences with front-end code (JavaScript, HTML, CSS, SVG).
 >
 > Contribute to Springload's front-end capabilities by researching new ideas, maintaining our projects, improving our practices, and demonstrating our expertise.
 
@@ -84,10 +84,10 @@ Core front-end skills.
 
 Supporting design, engineering skills.
 
-- Experience with client-side frameworks (such as React, Angular, or Backbone).
+- Experience with client-side frameworks (such as React, Vue).
 - Experience with content management systems or e-commerce platforms.
 - Familiarity with version control via Git, continuous integration, issue trackers, wikis, and pull request workflows.
-- Familiarity with front-end build tools and task runners (npm, Grunt, Gulp, Webpack, Browserify).
+- Familiarity with front-end build tools and task runners (npm, Webpack).
 - Familiarity with software testing – unit tests, integration tests.
 - Working knowledge of the Unix command line and a shell of your choice.
 - Working knowledge of graphic software (Illustrator, Sketch, Photoshop), comfortable working with vectors and SVG.
@@ -159,6 +159,7 @@ Leadership.
 See [Front-end Developer](#front-end-developer). In addition,
 
 - Advanced knowledge of React – Redux, client-side routing, code splitting, etc.
+- Experience with typed languages (Flow, TypeScript).
 - Advanced testing skills – accessibility tests, automated cross-browser tests, automated UI regression.
 - Experience architecting front-end codebases in client-side JS stacks.
 - Familiarity with other development stacks and platforms (iOS, Android, .NET, etc).
@@ -182,14 +183,14 @@ See Supporting design, front-end skills for [Front-end Developer](#front-end-dev
 
 ---
 
-## Lead Front-end Developer
+## Guild Front-end Lead
 
 - Reports to: [Front-end Director](#front-end-director)
 - Direct reports: N/A
 
 ### Description
 
-> To lead the Front-end Development Team and set our strategic front-end direction towards achieving our vision.
+> To lead the Front-end Development Guild and set our strategic front-end direction towards achieving our vision.
 > 
 > To direct the front-end output for our clients and projects - liaising with clients, identifying requirements, planning, implementation, solution architecting, strategic thinking. This includes both oversight and execution, as required.
 > 
@@ -239,11 +240,12 @@ Core front-end skills.
 
 Supporting design, engineering skills.
 
-- Experience with client-side frameworks (such as React, Angular, or Backbone).
-- Experience architecting web apps around (REST) APIs.
+- Experience with client-side frameworks (such as React, Vue).
+- Experience with typed languages (Flow, TypeScript)
+- Experience architecting web apps around (GraphQL, REST) APIs.
 - Experience with content management systems or e-commerce platforms.
 - Familiarity with version control via Git, continuous integration, issue trackers, wikis, and pull request workflows.
-- Familiarity with front-end build tools and task runners (npm, Grunt, Gulp, Webpack, Browserify).
+- Familiarity with front-end build tools and task runners (npm scripts, Webpack).
 - Familiarity with software testing – unit tests, integration tests.
 - Working knowledge of the Unix command line and a shell of your choice.
 - Working knowledge of graphic software (Illustrator, Sketch, Photoshop), comfortable working with vectors and SVG.
@@ -258,7 +260,7 @@ Supporting design, engineering skills.
 - Experience designing user interfaces with a user experience (UX) approach.
 - Experience with programming in ES6/ES2015+ JavaScript.
 - Ability to do basic server administration from the command line.
-- Familiarity with server-side programming stacks (we use Python and Node).
+- Familiarity with server-side programming stacks.
 - Experience with the Django framework, and Wagtail CMS.
 
 ---
