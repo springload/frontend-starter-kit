@@ -31,11 +31,12 @@ All your JavaScript, Sass/CSS, and SVG imports will be defined from your `./app/
 
 ### Add your JS
 
-Copy the `./app/static_src/js` to `YOUR_PROJECT`. 
+Copy the [`./app/static_src/js`](./app/static_src/js) to `YOUR_PROJECT`, along with the [`./app/static_src/index.js`](./app/static_src/index.js) file.
 
 ### Add your SCSS 
 
 We have a Starter Style kit especially for css, it uses ITCSS and you can learn more about how we [write css at Springload here](../docs/css.md). 
+
 **Copy** the Starter Style kit [sass folder](https://github.com/springload/frontend-starter-styles/tree/master/src/sass) to your project at `./app/static_src/sass` folder.
 
 ### Adding the CSS and JS files to your project
