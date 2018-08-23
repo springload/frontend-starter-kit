@@ -1,0 +1,9 @@
+# FE ignores
+.DS_Store
+/public/resources/
+/public/css/
+/public/javascript/
+/public/fonts/
+node_modules
+/app/templates/Includes/InlineSvgs.ss
+
