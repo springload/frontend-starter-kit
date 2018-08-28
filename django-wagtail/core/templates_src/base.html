@@ -1,9 +1,89 @@
+{% load compress static wagtailuserbar wagtailcore_tags wagtailimages_tags core_tags %}
 <!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+<!--[if lt IE 7]><html class="no-js lte-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 8]><html class="no-js lte-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 9]><html class="no-js lte-ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}{% if self.seo_title %}{{ self.seo_title }} | {% elif self.title %}{{ self.title }} | {% endif %}{% endblock %}{% block title_suffix %} YOUR_PROJECT_NAME {% endblock %}</title>
+        <meta name="description" content="{% firstof self.search_description self.intro|default:''|striptags self.body_excerpt|default:''|striptags|truncatewords:40 self.title %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</body>
+        {% include "core/snippets/meta_icons.html" %}
+        {% include "core/snippets/meta_twitter_card.html" %}
+        {% include "core/snippets/meta_open_graph.html" %}
+
+        {% block og_images %}
+            {% include "core/snippets/meta_open_graph_image.html" %}
+        {% endblock %}
+
+        {% block extra_css %}
+            {# Needed for specific cases #}
+        {% endblock %}
+        {# To use the accessibilty tabbing (used in conjunction with JS) #}
+        <style class="accessTab"></style>
+        <script>
+            document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+        </script>
+    </head>
+    <body class="{% block body_class %}{% endblock %}">
+        {% if GOOGLE_TAG_MANAGER %}
+            <!-- Google Tag Manager -->
+            <noscript><iframe src="//www.googletagmanager.com/ns.html?id={{ GOOGLE_TAG_MANAGER }}"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','{{ GOOGLE_TAG_MANAGER }}');</script>
+            <!-- End Google Tag Manager -->
+        {% endif %}
+
+        {# Feel free to drop the bar if not necessary #}
+        {% wagtailuserbar %}
+        
+        {# To use SVG's in your project #}
+        <div class="u-hide">
+            <% if (htmlWebpackPlugin.files.sprites) { %>
+                <% for (var spriteFileName in htmlWebpackPlugin.files.sprites) { %>
+                    <%= htmlWebpackPlugin.files.sprites[spriteFileName] %>
+                <% } %>
+            <% } %>
+        </div>
+
+        {# To use if the website or part of it does not support "old IE" users. #}
+        {# {% include "core/snippets/outdated-browser.html" %} #}
+
+        {# To use if the website or part of it does not support JS-less users. #}
+        {# {% include "core/snippets/enable-javascript.html" %} #}
+        
+
+
+        {% block extra_js %}
+            {# Needed for specific cases #}
+        {% endblock %}
+
+        {% if GOOGLE_ANALYTICS_KEY %}
+            <!-- Google Analytics -->
+            <script>
+                window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+                ga('create','{{ GOOGLE_ANALYTICS_KEY }}','auto');ga('send','pageview')
+            </script>
+            <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+            <!-- End Google Analytics -->
+        {% endif %}
+
+        {% if SENTRY_FRONTEND_DSN %}
+        {# Load Sentry JS before bundle #}
+            <script src="https://cdn.ravenjs.com/3.26.2/raven.min.js" crossorigin="anonymous"></script>
+            <script>
+                Raven.config('{{ SENTRY_FRONTEND_DSN }}', {
+                    release: '{{ SENTRY_RELEASE }}',
+                    environment: '{{ SENTRY_ENVIRONMENT }}'
+                }).install()
+            </script>
+        {% endif %}
+   </body>
 </html>
+
