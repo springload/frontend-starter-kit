@@ -88,7 +88,7 @@ Regardless of your choice [be aware of normalizing state patterns](https://redux
 
 ## CSS classnames
 
-[classnames](https://github.com/JedWatson/classnames).
+[classNames](https://github.com/JedWatson/classnames).
 
 ## Date / Time
 
@@ -112,7 +112,7 @@ We quite like [React Accessible Accordion](https://github.com/springload/react-a
 
 ## Style Guide / Pattern Library
 
-[Pattern Book](https://github.com/springload/pattern-book) |
+[React Patterns](https://github.com/springload/react-patterns)
 
 ## Utilities and Functionaliy Programming
 
