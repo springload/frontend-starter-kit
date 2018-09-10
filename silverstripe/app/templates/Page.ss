@@ -15,17 +15,18 @@
         <script>
             document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
         </script>
+        <% include GTMHead %>
     </head>
     <body class="template-$ClassName.LowerCase">
-        <% include GTM %>
-
-        <div class="u-hide">
-            <%-- Remove if not using SVG's --%>
-            <% include InlineSvgs %>
-        </div>
+        <% include GTMBody %>
 
         $Layout
         $Form
+
+        <%-- Remove if not using SVG's --%>
+        <div class="u-hide">
+            <% include Svg %>
+        </div>
 
         <% include Sentry %>
     </body>

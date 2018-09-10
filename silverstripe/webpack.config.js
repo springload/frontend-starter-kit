@@ -7,13 +7,14 @@ const cssnano = require('cssnano');
 module.exports = (env, options) => ({
     entry: ['@babel/polyfill', './app/static_src/index.js'],
     output: {
-        filename: 'javascript/bundle.js',
-        path: path.resolve(__dirname, 'public'),
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'public/dist'),
     },
     mode: options.mode,
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'css/[name].css',
+            filename: '[name].css',
+            chunkFilename: '[id].css',
         }),
         new SpriteLoaderPlugin(),
     ],
@@ -83,24 +84,9 @@ module.exports = (env, options) => ({
                               options: {
                                   name: '[name].[ext]',
                                   outputPath: './fonts',
-                                  publicPath: '../fonts',
+                                  publicPath: './fonts',
                               },
                           },
-                ],
-            },
-            {
-                test: /\.(gif|png|jpe?g)$/i,
-                use: [
-                    options.mode === 'development'
-                        ? { loader: 'url-loader' }
-                        : {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: './images',
-                            publicPath: '../images',
-                        },
-                    },
                 ],
             },
             {
@@ -110,8 +96,7 @@ module.exports = (env, options) => ({
                         loader: 'svg-sprite-loader',
                         options: {
                             extract: true,
-                            spriteFilename:
-                                '../app/templates/Includes/InlineSvgs.ss',
+                            spriteFilename: 'sprite.svg',
                         },
                     },
                     'svgo-loader',

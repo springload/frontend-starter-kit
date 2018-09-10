@@ -25,7 +25,7 @@ yarn install
 
 We use Webpack for Silverstripe projects which is based around the concept of a **source** directory and a **build** directory. In our Silverstripe project we have a **app** and a **public** folder, the [`./app`](./app) folder is where all our working files live. 
 
-So to make this work with Webpack we'll treat `public` as the **build** directory, and `app/static_src` as the **source** directory.
+So to make this work with Webpack we'll treat `public/dist` as the **build** directory, and `app/static_src` as the **source** directory.
 
 All your JavaScript, Sass/CSS, and SVG imports will be defined from your `./app/static_src/index.js` file. This allows Webpack to make decisions about bundling your project.
 
@@ -54,9 +54,9 @@ protected function init()
         parent::init();
 
         if (Director::isLive()) {
-            Requirements::css('css/main.css');
+            Requirements::css('dist/main.css');
         }
-        Requirements::javascript('javascript/bundle.js');
+        Requirements::javascript('dist/bundle.js');
     }
 }
 ```
@@ -67,7 +67,9 @@ Learn more about it in the [Silverstripe docs](https://docs.silverstripe.org/en/
 
 ### Using SVG's in your project
 
-SVG's are added through javascript and webpack will create a file in `app/templates/Includes/InlineSvgs.ss` this file is then included in your `Page.ss` if you get an error when visiting the site for the first time make sure the `InlineSvgs.ss` is being built and added to the correct place.
+SVG's are added through javascript and webpack will create a file in `public/dist/sprite.svg`, this file now needs to be copied into your `templates/Includes` folder (with the name `Svg.ss`) to be able to `include` the file in your `Page.ss`. For this you need to run a `yarn build` everytime you make a change to your svg files. 
+
+**Note:** If you get a template error when visiting the site for the first time make sure the `Svg.ss` is being built and added to the correct place.
 
 **That's it. You're done!**
 
