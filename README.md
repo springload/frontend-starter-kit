@@ -2,7 +2,7 @@
 
 This repo is for
 
-- People wanting to learn about how we do **f**ront**e**nd **d**evelopment (FED) at Springload, including our approaches to web standards and recommended libraries.
+- People wanting to learn about how we do **f**ront**e**nd **d**evelopment (FED) at [Springload](https://springload.co.nz), including our approaches to web standards and recommended libraries.
 - People starting new Django/Wagtail or Silverstripe projects who want a modern boilerplate.
 
 | Important links :book:                                 |
