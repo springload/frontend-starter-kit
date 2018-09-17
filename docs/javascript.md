@@ -76,6 +76,8 @@ Prefer to keep state in JavaScript not in HTML attributes. This will make it eas
 
 We quite like [`unstated`](https://www.npmjs.com/package/unstated), and [`redux`](https://redux.js.org/) (and [react-redux](https://redux.js.org/basics/usage-with-react)).
 
+[Immer.js](https://www.npmjs.com/package/immer) is preferable to immutable.js because it has less boilerplate.
+
 Regardless of your choice [be aware of normalizing state patterns](https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape) such as the `byId` pattern to ensure your state (aka your browser database) stays manageable.
 
 ## Forms
