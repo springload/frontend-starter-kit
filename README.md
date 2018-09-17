@@ -22,7 +22,7 @@ This repo is for
 | Open source projects                                   |
 |--------------------------------------------------------|
 | [React Accessible Accordion](https://github.com/springload/react-accessible-accordion) |
-| [Pattern Book (pattern library / style guide)](https://github.com/springload/pattern-book) |
+| [React Patterns (pattern library / style guide)](https://github.com/springload/react-patterns) |
 | [Quicktube](https://github.com/springload/quicktube) |
 
 --------------------------------
