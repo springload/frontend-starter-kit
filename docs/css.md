@@ -29,8 +29,7 @@ Note: There is a framework built from this concept called [INUITCSS](https://git
 We use [Sass](http://sass-lang.com/guide)   
 [Sass](https://github.com/sass/libsass) for build-time styles. Where possible prefer build-time styles more than run-time styles, because they're probably faster.
 
-For CSS-In-JS we like [Glamor](https://github.com/threepointone/glamor) and [Glamorous](https://glamorous.rocks/).
-
+For CSS-In-JS we like [styled-components :nail_care:](https://styled-components.com).
 
 ### Naming conventions
 
