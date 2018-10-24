@@ -1,3 +1,7 @@
+# 18.10
+
+* For CSS in JS we like ~~Glamor~~ **_Styled-Components_** :nail_care:
+
 # 18.5
 
 * Trashed the `recycle-bin`. Recover any files from [the history](https://github.com/springload/frontend-starter-kit/tree/c35abe435eb4905565e79a8bbc5cc257b2e5a77c).
