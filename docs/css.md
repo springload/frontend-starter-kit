@@ -26,10 +26,9 @@ Note: There is a framework built from this concept called [INUITCSS](https://git
 
 ## CSS preprocessors / compilers / templaters
 
-We use [Sass](http://sass-lang.com/guide)   
-[Sass](https://github.com/sass/libsass) for build-time styles. Where possible prefer build-time styles more than run-time styles, because they're probably faster.
+We use [Sass](http://sass-lang.com/guide) for build-time styles. Where possible prefer build-time styles more than run-time styles, because they're probably faster.
 
-For CSS-In-JS we like [styled-components :nail_care:](https://styled-components.com).
+However for larger projects with code-splitting, or for dynamic CSS we like [styled-components :nail_care:](https://styled-components.com).
 
 ### Naming conventions
 
