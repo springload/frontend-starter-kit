@@ -1,4 +1,6 @@
-# Browser & device support
+# Browser & device support temmplate
+
+Copy this into your project's README.md and update with your supported browsers.
 
 
 **Supported browser / device versions:**
