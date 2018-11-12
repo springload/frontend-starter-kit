@@ -14,7 +14,6 @@ This repo is for
 | **Serverside FED integration** |
 |  •  [Django / Wagtail and Webpack 4](./django-wagtail/) |
 |  •  [Silverstripe and Webpack 4](./silverstripe/) |
-| [Git](https://github.com/springload/wiki/blob/master/_springload-coding-standards/version-control/git.md) and [repo naming conventions](https://github.com/springload/wiki/blob/master/_springload-coding-standards/version-control/github.md) |
 | **Open source projects** |
 |  •  [React Accessible Accordion](https://github.com/springload/react-accessible-accordion) |
 |  •  [React Accessible Ellipsis](https://github.com/springload/react-accessible-ellipsis) |
