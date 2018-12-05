@@ -35,7 +35,7 @@ These rules aren't mandatory and might not make sense for your project, so use y
 
 ##  CSS
 
-- [ ] Ensure form controls are dark theme compatible. Ie, that you don't rely on default background colours for form controls. Test this by setting `input,select{background:black}` as the first CSS rule and see if the rest of the site's styles override it correctly.
+- [ ] Ensure form controls are dark theme compatible. Ie, that you don't rely on default background colours for form controls. Test this by setting `input,select,textarea {background:black}` as the first CSS rule and see if the rest of the site's styles override it correctly.
 - [ ] Print styles are defined and tested on all templates / pages.
 - [ ] CSS classes use a consistent naming methodology (BEM).
 - [ ] No vendor prefixes or IE filters in Sass (autoprefixer should handle this).
