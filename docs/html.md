@@ -16,7 +16,7 @@ Refer to our [prettier config](https://github.com/springload/prettier-config-spr
 
 Aside from CSS colours, HTML is primarily responsible for making accessible webpages (regardless of whether you're generating HTML from Django/Wagtail or React etc.).
 
-Go read Sam's [Being pragmatic about accessibility](https://www.springload.co.nz/blog/pragmatic-about-accessibility/).
+Go read Sam's [Being pragmatic about accessibility](https://www.springload.co.nz/blog/being-pragmatic-about-accessibility/).
 
 ### Accessibility Reading
 - https://github.com/Heydon/inclusive-design-checklist
