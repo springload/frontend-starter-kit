@@ -11,7 +11,7 @@ Generally speaking we like [Mono-repos](https://danluu.com/monorepo/) rather tha
 
 We tend to prefer project structures organised by features and routes (AKA business logic), rather than technology. We have found that this approach means that related code is often nearby and easier to navigate.
 
-To be clear, this mean that we discourage directories named `components`, `containers`, `reducers`, and so on. Instead we might name files "_feature_.component.js", "feature.scss", and "_feature_.test.js", and group these files in a "_feature_" directory.
+To be clear, this mean that we discourage directories named `components`, `containers`, `reducers`, and so on. Instead we might name files "_feature_.component.js", "_feature_.scss", and "_feature_.test.js", and group these files in a "_feature_" directory.
 
 Read [this documentation](https://github.com/reactjs/reactjs.org/blob/master/content/docs/faq-structure.md) for more ideas. Also consider whether [globally unique filenames](https://www.reddit.com/r/reactjs/comments/6al7h2/facebook_has_30000_react_components_how_do_you/dhgruqh/) might be useful in larger projects.
 
