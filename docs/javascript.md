@@ -37,14 +37,14 @@ For now we prefer Yarn not NPM, because NPM still seems to have _"it works on my
 
 Variable Type Checking (e.g. string vs boolean vs Object) is a like little unit tests all over your code; catching bugs before users do.
 
-We prefer [Flow](https://flow.org/) more than [TypeScript](https://www.typescriptlang.org/) but we're keeping an eye on TS and we might change our minds. For now, Flow improves our code and catches bugs that TS doesn't, and it has sufficient bindings for our projects.
+We prefer [TypeScript](https://www.typescriptlang.org/) more than [Flow](https://flow.org/).
 
 # Coding Suggestions
 
 - Write JavaScript with the next developer in mind, or as if it'll be released publicly as Open Source.
 - Choose your variable and function names carefully.
-- Feature Detection, not Browser Detection. Don't bring back the days of IE-only or Chrome-only sites.
-- Use [JS design patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/) when appropriate.
+- Feature Detection, not Browser Detection, if possible. Don't bring back the days of IE-only or Chrome-only sites.
+- Use [JS design patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/) where appropriate.
 
 # Recommended Libraries
 
@@ -52,7 +52,7 @@ We prefer [Flow](https://flow.org/) more than [TypeScript](https://www.typescrip
 
 React is amazing. Do read the [basic theory of React](https://github.com/reactjs/react-basic).
 
-For a boilerplate we like [Create React App (CRA)](https://github.com/facebook/create-react-app).
+For a boilerplate we like [Create React App (CRA)](https://github.com/facebook/create-react-app), and [Gatsby](https://www.gatsbyjs.org/).
 
 Unless have very simple needs don't use [Mustache](https://mustache.github.io/)/[Handlebars](http://handlebarsjs.com/), etc. Preact is probably a better choice in that scenario.
 
