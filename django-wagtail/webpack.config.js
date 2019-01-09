@@ -36,22 +36,6 @@ module.exports = (env, options) => ({
                 use: [
                     {
                         loader: 'babel-loader',
-                        options: {
-                            presets: [
-                                [
-                                    '@babel/preset-env',
-                                    {
-                                        targets: {
-                                            browsers: [
-                                                'last 2 versions',
-                                                'safari >= 7',
-                                            ],
-                                        },
-                                    },
-                                ],
-                                '@babel/preset-flow',
-                            ],
-                        },
                     },
                 ],
             },
