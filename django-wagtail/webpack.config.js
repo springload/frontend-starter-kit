@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const FixPaths = require('./scripts/webpack.fixpaths');
+const FixPaths = require('./webpack.fixpaths');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
@@ -36,22 +36,6 @@ module.exports = (env, options) => ({
                 use: [
                     {
                         loader: 'babel-loader',
-                        options: {
-                            presets: [
-                                [
-                                    '@babel/preset-env',
-                                    {
-                                        targets: {
-                                            browsers: [
-                                                'last 2 versions',
-                                                'safari >= 7',
-                                            ],
-                                        },
-                                    },
-                                ],
-                                '@babel/preset-flow',
-                            ],
-                        },
                     },
                 ],
             },

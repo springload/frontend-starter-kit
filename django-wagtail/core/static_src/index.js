@@ -1,3 +1,6 @@
+/* eslint springload/import/first: 0 */
+import './js/public-path'; // MUST be first (yes, before absolute imports)
+
 // Import your SVG index file here:
 // import './svg';
 // Copy/download and use the Springload Starter Styles as your base at https://github.com/springload/frontend-starter-styles/tree/master/src/sass and
