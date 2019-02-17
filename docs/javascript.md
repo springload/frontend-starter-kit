@@ -54,7 +54,7 @@ React is amazing. Do read the [basic theory of React](https://github.com/reactjs
 
 For a boilerplate we like [Create React App (CRA)](https://github.com/facebook/create-react-app), and [Gatsby](https://www.gatsbyjs.org/).
 
-Unless have very simple needs don't use [Mustache](https://mustache.github.io/)/[Handlebars](http://handlebarsjs.com/), etc. Preact is probably a better choice in that scenario.
+If you need tiny filesizes then we suggest not using [Mustache](https://mustache.github.io/)/[Handlebars](http://handlebarsjs.com/), etc., as Preact is probably a better choice in that scenario.
 
 ## Test
 
@@ -68,7 +68,7 @@ End-to-End (E2E) testing with Browserstack, [Nightwatch.js](http://nightwatchjs.
 
 ## Routing
 
-[React-Router](https://github.com/ReactTraining/react-router). Although a router is necessary for basic navigation between pages of an SPA, we're generally wary and unconvinced of putting routing logic deeper in the component tree.
+[Reach-Router](https://github.com/reach/router). Although a router is necessary for basic navigation between pages of an SPA, we're generally wary and unconvinced of putting routing logic deeper in the component tree.
 
 ## State Management
 
