@@ -2,6 +2,7 @@
 
 Copy this into your project's README.md and update with your supported browsers.
 
+Note that `N` refers to the current version number, and so `N - 3` means that the site would support the 3 previous versions of that browser.
 
 **Supported browser / device versions:**
 
