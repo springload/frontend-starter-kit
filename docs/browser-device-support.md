@@ -7,14 +7,15 @@ Copy this into your project's README.md and update with your supported browsers.
 
 | Browser | Device/OS | Version |
 |---------|-----------|---------|
-| Mobile Safari | iOS Phone | latest |
-| Mobile Safari | iOS Tablet | latest |
-| Chrome | Android | latest |
-| IE | Desktop | 11 |
-| Chrome | Desktop | latest |
-| MS Edge | Desktop | latest |
-| Firefox | Desktop | latest |
-| Safari | OSX | latest |
+| Mobile Safari | iOS Phone | N - 3 |
+| Mobile Safari | iOS Tablet | N - 3 |
+| Chrome | Android | N - 3 |
+| Chrome | Desktop | N - 3 |
+| MS Edge | Desktop | N - 2 |
+| Firefox | Desktop | N - 3 |
+| Safari | OSX | N - 2  |
+
+If IE11 support is required we suggest increasing the overall FED budget (perhaps by as much as 10% depending on the project) and having this as a separate line item on the proposal to indicate the increased development time.
 
 > Those browser / device / version combinations are the ones the site *is tested* on. 
 
