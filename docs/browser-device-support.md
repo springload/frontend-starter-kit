@@ -18,6 +18,4 @@ Note that `N` refers to the current version number, and so `N - 3` means that th
 
 If IE11 support is required we suggest increasing the overall FED budget (perhaps by as much as 10% depending on the project) and having this as a separate line item on the proposal to indicate the increased development time.
 
-> Those browser / device / version combinations are the ones the site *is tested* on. 
 
-> Our development standards means sites **must** still be usable on older browsers, users must be able to navigate *most* pages, content must be readable, important interactions must still work **and will work on future browsers**.
