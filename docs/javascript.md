@@ -119,6 +119,7 @@ We quite like [React Accessible Accordion](https://github.com/springload/react-a
 ## Utilities and Functionaliy Programming
 
 Where possible use ES2015+ features rather than lodash, but if you need it.
+See [State Management](https://github.com/springload/frontend-starter-kit/blob/master/docs/javascript.md#state-management) for other utilities.
 
 ## Debugging
 
