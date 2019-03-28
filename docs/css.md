@@ -110,8 +110,7 @@ ul.list { list-style: none;}
 
 - Avoid using the words 'mobile' or 'desktop' in classNames, instead opt for more relative terminology such as: small, medium, large, x-large etc. This is because small desktops can match the size of large tablets, so using generic terms is more accurate.
 - Don’t use units on line-heights. Do this: `line-height: 1.25`, don't do this: `line-height: 1.25rem`.
-- CSS Margins collapse into each other, so only set margins along one axis direction (e.g. `top and left`, or `right and bottom`, but not `left and right and top and bottom`). We typically use `right and bottom`. And be consistent with 
-[vertical spacing](http://webtypography.net/2.2.2)
+- Set `margin`s along one axis direction where possible. We favour `right` and `bottom`. Using only one vertical margin (`bottom` and not `top`) makes layouts more manageable and helps avoid the weird [vertical margin collapsing issue](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing). Also, be consistent with [vertical spacing](http://webtypography.net/2.2.2).
 - Modifier (AKA State) classes use `...--is-something`. A state class is a modifier of an element or block. Using .active or similar on its own is too obscure, if there is more than one class on an element it is not clear which the `.-active` class belongs to.
 
 ```scss
