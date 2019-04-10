@@ -54,10 +54,10 @@ However for larger projects with code-splitting, or for dynamic CSS we like [sty
 ```scss
 // Good (Easy to search within the codebase)
 .tile {}
-.tile--blue {}
+.tile--error {}
 .tile__content {}
 .tile__heading {}
-.tile__heading--red {}
+.tile__heading--error {}
 
 // Good (& for pseudoes is fine)
 .tile { 
