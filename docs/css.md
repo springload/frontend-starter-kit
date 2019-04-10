@@ -56,6 +56,7 @@ However for larger projects with code-splitting, or for dynamic CSS we like [sty
 .tile {}
 .tile__content {}
 .tile__heading {}
+.tile__heading--red {}
 
 // Good (& for pseudoes is fine)
 .tile { 
