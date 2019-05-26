@@ -110,7 +110,6 @@ header - `role="banner"`, main content - `role="main"`, footer - `role="contenti
 - [ ] Check analytics are configured in development with a development property.
 - [ ] Check analytics are configured in production with the production property on the live site.
 - [ ] Check the relevant client-side interactions are tracked with events.
-- [ ] If relevant, client-side JS errors are logged as [exceptions](https://developers.google.com/analytics/devguides/collection/analyticsjs/exceptions).
 - [ ] Page and event tracking is being displayed correctly in the GA dashboard.
 - [ ] Help pagination with `rel=”next”` and `rel=”prev”` attributes.
 
@@ -124,6 +123,6 @@ header - `role="banner"`, main content - `role="main"`, footer - `role="contenti
 
 ## Github 
 
-- [ ] Appropriate labels set on GitHub. See https://github.com/springload/labels.
+- [ ] Appropriate labels set on GitHub or Jira.
 
 You made it to the end! Whoo, high five my friend! Now go treat yourself to a drink :tropical_drink:, a hug, or whatever floats your waka :rainbow:. Don’t forget to let your team know that you’ve got this under control, and be proud of that top-notch site you just built.
