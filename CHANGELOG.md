@@ -1,3 +1,7 @@
+# 19.5
+
+* Removing Github labels (in favour of default labels and Jira), and removing Analytics error tracking in favour of Sentry
+
 # 18.10
 
 * For CSS in JS we like ~~Glamor~~ **_Styled-Components_** :nail_care:
