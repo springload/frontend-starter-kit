@@ -30,6 +30,23 @@ We use [Sass](http://sass-lang.com/guide) for build-time styles. Where possible 
 
 However for larger projects with code-splitting, or for dynamic CSS we like [styled-components :nail_care:](https://styled-components.com).
 
+## Autoprefixer
+
+We use [Autoprefixer](https://github.com/postcss/autoprefixer) to ensure things get automatically vendor-prefixed. Depending on which browsers your project needs to support, you can update the settings in a `.browserslistrc` file. 
+
+Your project may already have Autoprefixer set up, create-react-app includes it for instance.
+
+With Autoprefixer set up you won’t need to (**and shouldn’t!**\*) add vendor prefixes to your scss files. 
+
+\*There are a couple of exceptions where a css property isn’t part of the CSS spec and therefore does need to be vendor-prefixed, such as the “appearance” example below:
+```
+.my-select {
+  // “appearance” isn't part of the CSS spec.
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+```
+
 ### Naming conventions
 
 - Use [BEM](https://en.bem.info/) (**b**lock__**e**lement--**m**odifier) with lowercase words separated by single hyphens.
@@ -74,7 +91,7 @@ However for larger projects with code-splitting, or for dynamic CSS we like [sty
 ### Naming files and components
 
 - Component files should use the 'block' name as the file name, there shouldn't be any css in the file that doesn't start with the block name. eg. `_components.btn.scss`.  
-- File names should be all lowercase and using period (.) to seperate words. eg. `_objects.grid.scss`, `_objects.grid.spacing.scss`  
+- File names should be all lowercase and using period (.) to separate words. eg. `_objects.grid.scss`, `_objects.grid.spacing.scss`  
 - Images: Try and prefix file names with what they are: I.e. if it’s a sprite for buttons, call it `sprite-buttons.png`. If it’s an icon for Facebook, call it `icon-facebook.png` etc.  
 
 ```scss
@@ -125,15 +142,17 @@ ul.list { list-style: none;}
 .open {}
 ```
 
-# Misc
+## Layout
+We prefer flex and grid. We almost never use `float`.
 
-- [CSS stats](http://cssstats.com) | > Get some statistics about the CSS used on your project.| Number of rules, Number of selectors, Specificity graph, File 
+Contrary to popular belief, CSS grid does work in IE11 - just with some limitations (notable examples include no implicit rows/columns, no grid-gap).
 
-### Error: `libsass` bindings not found. Try reinstalling `node-sass`
+Flex works in IE11 but suffers from a number of [flexbugs](https://github.com/philipwalton/flexbugs).
+
+So what should you use? Basically, if you need to support IE11, use flex and maybe some grid. If you don’t need to support IE11, use grid and maybe some flex.
+
+If you want to use an off-the-shelf responsive grid system for column layout, use a modern and light-weight system like [Flexbox Grid](http://flexboxgrid.com/), rather than something that does a whole heap of other stuff (e.g. Bootstrap 🙅). 
+
+## Error: `libsass` bindings not found. Try reinstalling `node-sass`
 
 You're probably running the wrong version of Node. Do `nvm use` and try again.
-
-## New or Old?
-
-For legacy projects we follow whatever conventions they have, but where possible we try to migrate to these newer approaches.
-
