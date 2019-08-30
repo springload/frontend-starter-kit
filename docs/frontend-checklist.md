@@ -12,14 +12,20 @@ These rules aren't mandatory and might not make sense for your project, so use y
 - [ ] Expected Browser support and accessibility support. Copy [browser-device-support.md](./browser-device-support.md) into your README.md and modify to suit.
 - [ ] Debugging tricks.
 
+## Project structure
+
+- [ ] Project has an `.nvmrc` file (bonus points for an LTS version of Node)
+- [ ] Consider a `polyfills.tsx` file.
+
 ## Code quality
 
 - [ ] Try a fresh install of the project (preferably in a new VM or on a different machine) to ensure it can be installed from scratch... eg, that all dependencies are referenced and not implicit.
-- [ ] CI runs the CI tests and the build breaks if they fail.
-- [ ] GitHooks on changed files.
+- [ ] Prettier config
+- [ ] ESLint config
+- [ ] CI runs the CI tests
 - [ ] Clean up commented/unnecessary code.
 - [ ] Check all TODO and FIXME comments in the code are still relevant.
-- [ ] Unintentional console logs and breakpoints removed.
+- [ ] Unintentional console logs statements removed. ALL `debugger` statements removed.
 - [ ] Code comments to document quirks or odd workarounds / compromises as is appropriate.
 
 ## Testing
