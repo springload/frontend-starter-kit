@@ -5,7 +5,7 @@ Copy this file into a new `Issue` on your project and go through the checklist.
 These rules aren't mandatory and might not make sense for your project, so use your common sense.
 
 ## Launch approach
-- [ ] Soft Launch or Hard Launch? Often sites have a password on them until launch (Hard Launch), which means that testing favicons and social media integration may be difficult. Because of this you may wish to consider a *Soft Launch* (rather than a *Hard Launch*) where the password is removed days before any announcement.
+- [ ] Have you considered a Soft Launch or Hard Launch? Often sites have a password on them until launch (Hard Launch), which means that testing favicons and social media integration may be difficult. Because of this you may wish to consider a *Soft Launch* (rather than a *Hard Launch*) where the password is removed days/weeks before any announcement.
 
 ## The project's `README.md` contains
 
