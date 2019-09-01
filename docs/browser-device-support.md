@@ -1,21 +1,13 @@
 # Browser & device support template
 
-Copy this into your project's README.md and update with your supported browsers.
+Our browser support is defined in a Browserslist `.browserslistrc` file which is used by Babel, Autoprefixer, and many other packages. Do not define Browserslist details in `package.json`.
 
-Note that `N` refers to the current version number, and so `N - 3` means that the site would support the 3 previous versions of that browser.
+These supported browsers can be visualised on https://browserl.ist/ by making a custom URL like,
 
-**Supported browser / device versions:**
+    https://browserl.ist/?q=%3E+1%25%2Clast+1+version%2Cnot+dead%2Cnot+IE+11
 
-| Browser | Device/OS | Version |
-|---------|-----------|---------|
-| Mobile Safari | iOS Phone | N - 3 |
-| Mobile Safari | iOS Tablet | N - 3 |
-| Chrome | Android | N - 3 |
-| Chrome | Desktop | N - 3 |
-| MS Edge | Desktop | N - 2 |
-| Firefox | Desktop | N - 3 |
-| Safari | OSX | N - 2  |
+Add a heading and link to the `browserl.ist` service in your `README.md` with your chosen browsers.
 
-If IE11 support is required we suggest increasing the overall FED budget (perhaps by as much as 10% depending on the project) and having this as a separate line item on the proposal to indicate the increased development time.
+Note that _contractually_ the supported browsers will probably be a subset of ones shown on `browserl.ist` (eg. just because `browserl.ist` mentions Baidu Browser doesn't necessarily mean that we need to support it, contractually).
 
 
