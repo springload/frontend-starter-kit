@@ -19,6 +19,8 @@ These rules aren't mandatory and might not make sense for your project, so use y
 
 - [ ] Project has an `.nvmrc` file (bonus points for an LTS version of Node)
 - [ ] Consider a `polyfills.tsx` file.
+- [ ] A [prettier config](https://prettier.io/docs/en/configuration.html) file is available
+- [ ] [ES lint configuration](https://github.com/springload/eslint-config-springload) is available 
 
 ## Code quality
 
