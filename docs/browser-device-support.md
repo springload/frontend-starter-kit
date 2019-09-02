@@ -8,8 +8,14 @@ These `.browserslistrc` supported browsers can be visualised on https://browserl
 
 ([link](https://browserl.ist/?q=%3E+1%25%2Clast+1+version%2Cnot+dead%2Cnot+IE+11))
 
-Add a heading and link to the `browserl.ist` service in your `README.md` with your chosen browsers.
+Add a heading and link to the `browserl.ist` service in your `README.md` with your chosen browsers. Eg.
 
-Note that _contractually_ the supported browsers will probably be a subset of ones shown on `browserl.ist` (eg. just because `browserl.ist` mentions Baidu Browser doesn't necessarily mean that we need to support it, contractually).
+    > ## Supported browsers
+    > 
+    > [BrowsersList Supported Browsers](https://browserl.ist/?q=%3E+1%25%2Clast+1+version%2Cnot+dead%2Cnot+IE+11))
+
+You will have to manually keep that URL in sync with your `.browserslistrc` file.
+
+Note that the _contractually_ supported browsers will probably be a subset of ones shown on `browserl.ist` (eg. just because `browserl.ist` mentions Baidu Browser doesn't necessarily mean that we need to support it, contractually).
 
 
