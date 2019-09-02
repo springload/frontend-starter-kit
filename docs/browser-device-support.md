@@ -1,6 +1,6 @@
 # Browser & device support template
 
-Our browser support is defined in a Browserslist `.browserslistrc` file which is used by Babel, Autoprefixer, and many other packages. Do not define Browserslist details in `package.json`, and don't make a `<table>` of supported browsers.
+Our browser support is defined in a Browserslist `.browserslistrc` file which is used by Babel, Autoprefixer, and many other packages. Do not define Browserslist details in `package.json`, and don't make a `<table>` of supported browsers in your `README.md`.
 
 These `.browserslistrc` supported browsers can be visualised on https://browserl.ist/ by making a custom URL like,
 
