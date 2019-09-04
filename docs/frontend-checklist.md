@@ -60,7 +60,7 @@ These rules aren't mandatory and might not make sense for your project, so use y
 
 - [ ] Links with `target="_blank"` use [`rel="noopener`](https://mathiasbynens.github.io/rel-noopener/) to avoid security problems.
 - [ ] Links from user-submitted (untrusted) content use [`rel="nofollow`](https://support.google.com/webmasters/answer/96569)
-- [ ] Where possible `data-thing` attributes are used to select elements, not classes or ids or tags.
+- [ ] Where possible `data-thing` attributes are used to select elements in JS, not classes or ids or tags.
 
 ## Accessibility
 
