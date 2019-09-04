@@ -67,9 +67,9 @@ These rules aren't mandatory and might not make sense for your project, so use y
 - [ ] Make sure all pages, in all states, are keyboard navigable.
 - [ ] Body copy and visuals have enough contrast according to WCAG guidelines https://leaverou.github.io/contrast-ratio/.
 - [ ] Most important content and pages are tested for color-blindness and vision disorders with http://lowvision.support/.
-- [ ] Ensure form fields have labels.
+- [ ] Form fields have **associated** labels. Either nest inputs inside labels, or use a label's `for` attribute.
+- [ ] Forms and/or fields should have accessible validation messages. For simple frontend validation, HTML5 validation may be sufficient. For backend or form-wide validation, see "Ensure Server-side Errors are Accessible" [here](https://www.washington.edu/accessibility/checklist/form-validation/).
 - [ ] Ensure any acronyms use the `<abbr>` tag.
-- [ ] In forms for accessibility reasons you may wish to display a validation summary of all page errors, or a “Sorry, there were some errors” at the top of the form.
 - [ ] Roles (ARIA landmarks) are assigned to basic site sections.
 header - `role="banner"`, main content - `role="main"`, footer - `role="contentinfo"`
 - [ ] All images must have appropriate alt tags - extra great if you include all text that appears. Eg. English and Māori translation text in a lot of company logos in NZ. [empty `alt=""` can be appropriate](http://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/).
@@ -77,8 +77,6 @@ header - `role="banner"`, main content - `role="main"`, footer - `role="contenti
 - [ ] `<html>` element has attribute `lang="en-nz"`.
 - [ ] If you have used outline: 0 anywhere make sure you have called the tab focus function in utils js file or any other alternative style for focus state.
 - [ ] Screen reader only text for links with images/icons only.
-- [ ] Form fields are inside the label element.
-- [ ] Form error messages should be inside label element.
 - [ ] All toggle content should have aria controls and expanded states.
 
 ## Images
