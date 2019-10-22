@@ -68,7 +68,7 @@ End-to-End (E2E) testing with Browserstack, [Nightwatch.js](http://nightwatchjs.
 
 ## Routing
 
-[Reach-Router](https://github.com/reach/router). Although a router is necessary for basic navigation between pages of an SPA, we're generally wary and unconvinced of putting routing logic deeper in the component tree.
+[React Router 5.1 or later](https://reacttraining.com/blog/react-router-v5-1/). Although a router is necessary for basic navigation between pages of an SPA, we're generally wary and unconvinced of putting routing logic deeper in the component tree.
 
 ## State Management
 
