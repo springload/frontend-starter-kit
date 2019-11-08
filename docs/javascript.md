@@ -110,7 +110,11 @@ Instead write [npm scripts](https://docs.npmjs.com/misc/scripts), perhaps with p
 
 ## Accordion
 
-We quite like [React Accessible Accordion](https://github.com/springload/react-accessible-accordion)
+We quite like [React Accessible Accordion](https://github.com/springload/react-accessible-accordion).
+
+## Mouse vs Keyboard focus
+
+[What Input](https://www.npmjs.com/package/what-input).
 
 ## Style Guide / Pattern Library
 
