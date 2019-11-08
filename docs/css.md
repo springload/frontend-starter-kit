@@ -54,7 +54,7 @@ However for larger projects with code-splitting, or for dynamic CSS we like [sty
 ```scss
 // Good (Easy to search within the codebase)
 .tile {}
-.tile--error {}
+.tile--has-error {}
 .tile__content {}
 .tile__heading {}
 .tile__heading--error {}
