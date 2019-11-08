@@ -57,7 +57,7 @@ However for larger projects with code-splitting, or for dynamic CSS we like [sty
 .tile--has-error {}
 .tile__content {}
 .tile__heading {}
-.tile__heading--error {}
+.tile__heading--has-error {}
 
 // Good (& for pseudoes is fine)
 .tile { 
