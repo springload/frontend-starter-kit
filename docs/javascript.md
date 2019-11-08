@@ -17,6 +17,12 @@ Read [this documentation](https://github.com/reactjs/reactjs.org/blob/master/con
 
 Obviously any particular framework (Wagtail-Django) or boilerplate might impose its own restrictions so work within those, and this is just a suggestion.
 
+## Type Checking
+
+Variable Type Checking (e.g. string vs boolean vs Object) is a like little unit tests all over your code; catching bugs at build time, before run-time users experience them.
+
+We prefer [TypeScript](https://www.typescriptlang.org/) more than [Flow](https://flow.org/).
+
 ## Formatting
 
 We delegate that to [Prettier](https://prettier.io/).   
@@ -33,11 +39,6 @@ Use [NVM](https://github.com/creationix/nvm) to install Node, and make sure your
 
 For now we prefer Yarn not NPM, because NPM still seems to have _"it works on my machine!"_ type bugs, despite having a lock file.
 
-## Type Checking
-
-Variable Type Checking (e.g. string vs boolean vs Object) is a like little unit tests all over your code; catching bugs before users do.
-
-We prefer [TypeScript](https://www.typescriptlang.org/) more than [Flow](https://flow.org/).
 
 # Coding Suggestions
 
