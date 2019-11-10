@@ -1,4 +1,4 @@
-# JavaScript
+# JavaScript (TypeScript) / Node
 
 > JavaScript should be readable, modular, and splittable.
 
@@ -19,9 +19,9 @@ Obviously any particular framework (Wagtail-Django) or boilerplate might impose 
 
 ## Type Checking
 
-Variable Type Checking (e.g. string vs boolean vs Object) is a like little unit tests all over your code; catching bugs at build time, before run-time users experience them.
+Typed languages (e.g. string vs boolean) are like unit tests all over your code; catching bugs at build time, before run-time users experience them.
 
-We prefer [TypeScript](https://www.typescriptlang.org/) more than [Flow](https://flow.org/).
+We prefer [TypeScript](https://www.typescriptlang.org/) more than [Flow](https://flow.org/). Avoid Prop-Types.
 
 ## Formatting
 
@@ -29,16 +29,13 @@ We delegate that to [Prettier](https://prettier.io/).
 
 Make sure [your text editor](https://code.visualstudio.com/&sa=D&ust=1520457897533000&usg=AFQjCNF3QTfRTIBG7ZBDeYbNMcYimiKSbw) has [that extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), and that it's configured to auto-format on save. Here's [the ESLint config](https://github.com/springload/eslint-plugin-springload).
 
-## Node
+## Versioning and Package Managers
 
 Our projects should use the [latest LTS release](https://github.com/nodejs/LTS) of Node, along with the npm version it ships with.
 
 Use [NVM](https://github.com/creationix/nvm) to install Node, and make sure your project has an [`.nvmrc`](../.nvmrc) file.
 
-## Package Manager
-
 For now we prefer Yarn not NPM, because NPM still seems to have _"it works on my machine!"_ type bugs, despite having a lock file.
-
 
 # Coding Suggestions
 
@@ -95,7 +92,7 @@ Regardless of your choice [be aware of normalizing state patterns](https://redux
 
 ## Date / Time
 
-We suggest avoiding `moment.js` because it's very large.
+We suggest avoiding `moment.js` because it's very large (500kb+ of timezone data).
 
 Instead prefer the native Intl browser functionality or [`date-fns`](https://date-fns.org/).
 
@@ -117,27 +114,24 @@ We quite like [React Accessible Accordion](https://github.com/springload/react-a
 
 [What Input](https://www.npmjs.com/package/what-input).
 
-## Style Guide / Pattern Library
+## Node
 
-[React Patterns](https://github.com/springload/react-patterns)
+* Web Server, API server [Hapi](https://www.npmjs.com/package/hapi).
+* Database / ORM [Knex](http://knexjs.org/) ([Knex tips](https://devhints.io/knex)).
+* Validation [Joi](https://github.com/hapijs/joi)
+* Data, [Apollo](https://www.apollographql.com/)
 
 ## Utilities and Functionaliy Programming
 
 Where possible use ES2015+ features rather than lodash, but if you need it.
 See [State Management](https://github.com/springload/frontend-starter-kit/blob/master/docs/javascript.md#state-management) for other utilities.
 
-## Debugging
-
-- [weinre](https://people.apache.org/~pmuellr/weinre/docs/latest/). It's like browser devtools but built in HTML and can be used to debug any browser, including mobile ones.
-
-# Misc
-
-- We avoid using jQuery when possible. Most of what can be achieved with JQuery be achieved just as easily in vanilla Javascript, particularly if you don't have to support legacy browsers. See [http://YouMightNotNeedjQuery.com/](http://YouMightNotNeedjQuery.com/). However, you might spot Jquery on a few of our legacy projects, which is fine.
-- Inspiration https://github.com/airbnb/javascript  https://github.com/rwaldron/idiomatic.js https://github.com/styleguide/javascript
-- CMS sites probably shouldn't require JavaScript. Apps probably need it. Use [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement) where reasonable.
-
-
 # New or Old?
 
 For legacy projects we follow whatever conventions they have, but where possible we try to migrate to these newer approaches (for example, migrating from NPM to Yarn).
 
+# Misc
+
+- We avoid using jQuery when possible. Most of what can be achieved with JQuery be achieved just as easily in vanilla Javascript, particularly if you don't have to support IE9. See [http://YouMightNotNeedjQuery.com/](http://YouMightNotNeedjQuery.com/). However, you might spot Jquery on a few of our legacy projects, which is fine.
+- Inspiration https://github.com/airbnb/javascript  https://github.com/rwaldron/idiomatic.js https://github.com/styleguide/javascript
+- CMS sites probably shouldn't require JavaScript. Apps probably need it. Use [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement) where reasonable.
