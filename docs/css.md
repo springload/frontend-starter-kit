@@ -71,8 +71,10 @@ With Autoprefixer set up you won’t need to (**and shouldn’t!**\*) add vendor
 ```scss
 // Good (Easy to search within the codebase)
 .tile {}
+.tile--has-error {}
 .tile__content {}
 .tile__heading {}
+.tile__heading--has-error {}
 
 // Good (& for pseudoes is fine)
 .tile { 
