@@ -5,7 +5,7 @@ Copy this file into a new `Issue` on your project and go through the checklist.
 These rules aren't mandatory and might not make sense for your project, so use your common sense.
 
 ## Launch approach
-- [ ] Have you considered a Soft Launch or Hard Launch? Often sites have a password on them until launch (Hard Launch), which means that testing favicons and social media integration may be difficult. Because of this you may wish to consider a *Soft Launch* (rather than a *Hard Launch*) where the password is removed days/weeks before any announcement.
+- [ ] Have you considered a Soft Launch or Hard Launch? Often sites have a password on them until launch (Hard Launch), which means that testing favicons and social media integration may be difficult. Because of this you may wish to consider a *Soft Launch* where the password is removed days/weeks before any announcement.
 
 ## The project's `README.md` contains
 
@@ -58,6 +58,7 @@ These rules aren't mandatory and might not make sense for your project, so use y
 
 ## HTML
 
+- [ ] Page translation by Chrome is disabled if appropriate `<meta name="google" content="notranslate">` ([more](https://support.google.com/webmasters/answer/79812)). Sometimes clients take the blame for bad translations and it's better to just disable it, but this is a judgement call.
 - [ ] Links with `target="_blank"` use `rel="noopener noreferrer"` to avoid security problems. [More info](https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/).
 - [ ] Links from user-submitted (untrusted) content use [`rel="nofollow"`](https://support.google.com/webmasters/answer/96569)
 - [ ] Where possible `data-thing` attributes are used to select elements in JS, not classes or ids or tags.
