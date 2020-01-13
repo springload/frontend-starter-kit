@@ -1,5 +1,7 @@
-/* eslint springload/import/first: 0 */
 import './js/public-path'; // MUST be first (yes, before absolute imports)
+
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 
 // Import your SVG index file here:
 // import './svg';
@@ -16,7 +18,7 @@ const site = {
      * Initialises the site's modules.
      * Each module defines its own init function, this is just the glue.
      */
-    init() {
+    init(): void {
         tabFocus();
     },
 };
