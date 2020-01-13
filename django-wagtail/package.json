@@ -2,14 +2,21 @@
   "name": "django-wagtail",
   "version": "1.0.0",
   "license": "MIT",
-  "browserslist": [
-    "ie >= 11",
-    "last 2 Chrome versions",
-    "last 2 Firefox versions",
-    "last 2 Safari versions",
-    "last 2 iOS versions",
-    "last 2 Edge versions"
-  ],
+  "browserslist": {
+    "production": [
+      "ie >= 11",
+      "last 2 Chrome versions",
+      "last 2 Firefox versions",
+      "last 2 Safari versions",
+      "last 2 iOS versions",
+      "last 2 Edge versions"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "scripts": {
     "lint": "eslint .",
     "build": "webpack --mode=development",
