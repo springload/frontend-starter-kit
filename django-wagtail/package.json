@@ -3,21 +3,14 @@
     "version": "1.0.0",
     "private": true,
     "license": "MIT",
-    "browserslist": {
-        "production": [
-            "ie >= 11",
-            "last 2 Chrome versions",
-            "last 2 Firefox versions",
-            "last 2 Safari versions",
-            "last 2 iOS versions",
-            "last 2 Edge versions"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
+    "browserslist": [
+        "ie >= 11",
+        "last 2 Chrome versions",
+        "last 2 Firefox versions",
+        "last 2 Safari versions",
+        "last 2 iOS versions",
+        "last 2 Edge versions"
+    ],
     "scripts": {
         "lint": "eslint 'core/static_src/**'",
         "build": "webpack --mode=development",
