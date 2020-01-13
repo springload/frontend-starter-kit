@@ -3,9 +3,11 @@
         [
             "@babel/preset-env",
             {
-                "useBuiltIns": "usage",
-                "corejs": "3.6"
+                "useBuiltIns": "entry",
+                "corejs": "3.6",
+                "modules": false
             }
-        ]
+        ],
+        "@babel/preset-typescript"
     ]
 }

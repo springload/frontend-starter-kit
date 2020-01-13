@@ -6,8 +6,9 @@
 // Remove CSS outlines in an accessible manner
 // Make sure you have an empty style tag that
 // lives after your main style sheet
-export function tabFocus(selector = '.accessTab') {
+export function tabFocus(selector = '.accessTab'): void {
     const tabFocusElmt = document.querySelector(selector);
+    if (!tabFocusElmt) throw Error(`Can't find selector '${selector}'`);
     window.addEventListener('mousedown', () => {
         tabFocusElmt.innerHTML = '';
     });

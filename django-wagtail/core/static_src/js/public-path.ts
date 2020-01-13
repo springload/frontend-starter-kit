@@ -8,5 +8,7 @@
  * https://webpack.js.org/concepts/output/#advanced
  */
 
-// eslint-disable-next-line camelcase, no-undef
+/* eslint-disable */
+// @ts-ignore
 __webpack_public_path__ = window.staticRoot;
+/* eslint-enable */
