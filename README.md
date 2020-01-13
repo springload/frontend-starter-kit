@@ -17,9 +17,9 @@ This repo is for
 | **Open source projects** |
 |  •  [React Accessible Accordion](https://github.com/springload/react-accessible-accordion) |
 |  •  [React Accessible Ellipsis](https://github.com/springload/react-accessible-ellipsis) |
-|  •  [React Patterns (pattern library / style guide / design system)](https://github.com/springload/react-patterns) |
-|  •  [Quicktube](https://github.com/springload/quicktube) |
+|  •  [MetaTemplate](https://github.com/springload/metatemplate)
 |  •  [Springload CSS starter kit](https://github.com/springload/frontend-starter-styles) |
+
 
 --------------------------------
 
