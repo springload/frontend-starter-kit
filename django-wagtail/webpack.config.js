@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FixPaths = require('./webpack.fixpaths');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const postcssNormalize = require('postcss-normalize');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 
@@ -52,22 +53,22 @@ module.exports = (env, options) => ({
                         loader: 'css-loader', // translates CSS into CommonJS
                         options: {
                             sourceMap: options.mode === 'development',
+                            importLoaders: 2,
                         },
                     },
                     {
                         loader: 'postcss-loader',
                         options: {
-                            plugins() {
-                                return [autoprefixer, cssnano];
-                            },
+                            sourceMap: options.mode === 'development',
+                            ident: 'postcss',
+                            plugins: () => [
+                                postcssNormalize,
+                                autoprefixer,
+                                cssnano,
+                            ],
                         },
                     },
-                    {
-                        loader: 'sass-loader', // compiles Sass to CSS
-                        options: {
-                            includePaths: ['node_modules/normalize.css'],
-                        },
-                    },
+                    'sass-loader', // compiles Sass to CSS
                 ],
             },
             {
