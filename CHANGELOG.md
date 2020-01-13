@@ -1,3 +1,8 @@
+# 20.1
+
+* Updating Wagtail starter to use TypeScript.
+* Removing [React Patterns](https://github.com/springload/react-patterns) and [Quicktube](https://github.com/springload/quicktube)
+
 # 19.5
 
 * Removing Github labels (in favour of default labels and Jira), and removing Analytics error tracking in favour of Sentry
