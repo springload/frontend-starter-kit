@@ -42,8 +42,6 @@ These rules aren't mandatory and might not make sense for your project, so use y
 - [ ] CSP
 - [ ] Static files are cache-busted with a unique hash (eg. main._4hjk54j6_.js) in production JS/CSS/etc. and have HTTP headers to cache for a long time (exact length at your discretion). Check this with [PageSpeed](https://developers.google.com/speed/pagespeed/insights/) or [GTmetrix](https://gtmetrix.com/)) on the live site.
 
-
-
 ## HTML
 
 - [ ] Page translation by Chrome is disabled if appropriate `<meta name="google" content="notranslate">` ([more](https://support.google.com/webmasters/answer/79812)). Sometimes clients take the blame for bad translations and it's better to just disable it, but this is a judgement call.
@@ -68,17 +66,16 @@ These rules aren't mandatory and might not make sense for your project, so use y
 
 - [ ] Make sure all pages, in all states, are keyboard navigable.
 - [ ] Body copy and visuals have enough contrast according to WCAG guidelines https://leaverou.github.io/contrast-ratio/ and http://lowvision.support/ .
-- [ ] Current WCAG compliance if possible.
--- [ ] Ensure focus is visible.
--- [ ] Roles (ARIA landmarks) are assigned to basic site sections.
+- [ ] `<html>` element has attribute `lang="en-nz"` or `lang="mi"` (not `lang="mi-nz"). Screen readers such as NVDA can pronounce Te Reo with these hints.
+- [ ] Current WCAG compliance if possible. The following list is not exhaustive and is only meant to prompt you to consider common issues (a full WCAG audit may be appropriate):
+  - [ ] Ensure focus is visible.
+  - [ ] Roles (ARIA landmarks) are assigned to basic site sections.
 header - `role="banner"`, main content - `role="main"`, footer - `role="contentinfo"`
--- [ ] Form fields have **associated** labels.
--- [ ] Form fields have their [`name`, `autocomplete` and `autocorrect` attributes](https://html.spec.whatwg.org/multipage/forms.html#attr-fe-autocomplete) set correctly.
-- [ ] Forms and/or fields should have accessible validation messages. [Ensure Server-side Errors are Accessible](https://www.washington.edu/accessibility/checklist/form-validation/).
-- [ ] All images must have appropriate alt tags - extra great if you include all text that appears. Eg. English and Māori translation text in a lot of company logos in NZ. [empty `alt=""` can be appropriate](http://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/).
-- [ ] Ensure any acronyms/abbreviations use the `<abbr>` tag.
-- [ ] `<html>` element has attribute `lang="en-nz"` or `lang="mi"`.
-- [ ] Screen reader only text for links with images/icons.
+  - [ ] Form fields have **associated** labels. [Placeholders aren't labels!](https://twitter.com/ryanflorence/status/1217206251387383808)
+  - [ ] Form fields have their [`name`, `autocomplete` and `autocorrect` attributes](https://html.spec.whatwg.org/multipage/forms.html#attr-fe-autocomplete) set correctly.
+  - [ ] Forms and/or fields should have accessible validation messages. [Ensure Server-side Errors are Accessible](https://www.washington.edu/accessibility/checklist/form-validation/).
+  - [ ] All images must have appropriate alt tags - extra great if you include all text that appears. Eg. English and Māori translation text in a lot of company logos in NZ. [empty `alt=""` can be appropriate](http://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/).
+  - [ ] Ensure any acronyms/abbreviations use the `<abbr>` tag.
 - [ ] Pagination with `rel=”next”` and `rel=”prev”` attributes.
 
 ## Fonts
