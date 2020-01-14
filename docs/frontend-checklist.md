@@ -38,9 +38,11 @@ These rules aren't mandatory and might not make sense for your project, so use y
 
 ## HTTP
 
-- [ ] CSP
-- [ ] Static files are cache-busted with a unique hash (eg. main._4hjk54j6_.js) in production JS/CSS/etc.
 - [ ] HTTP to HTTPS redirect exists, with `Strict-Transport-Security`.
+- [ ] CSP
+- [ ] Static files are cache-busted with a unique hash (eg. main._4hjk54j6_.js) in production JS/CSS/etc. and have HTTP headers to cache for a long time (exact length at your discretion). Check this with [PageSpeed](https://developers.google.com/speed/pagespeed/insights/) or [GTmetrix](https://gtmetrix.com/)) on the live site.
+
+
 
 ## HTML
 
@@ -89,11 +91,18 @@ header - `role="banner"`, main content - `role="main"`, footer - `role="contenti
 - [ ] Site uses a mobile-friendly, zoomable viewport, if possible.
 - [ ] Platform-specific ([Apple](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html),Android, Windows, etc) meta tags and favicons are added and checked with the [Favicon checker](https://realfavicongenerator.net/favicon_checker).
 
+## Performance
+
+- [ ] Test site in Chrome's Lighthouse (Devtools | Audits). While we don't have any specific targets (ie, 'must be above 90') across all projects use this tool to find areas for optimisation. Eg:
+  - [ ] CSS/JS files are minified in production (bonus points for HTML too).
+  - [ ] if images are unoptimised use [ImageOptim](https://imageoptim.com/mac)/[SVGOMG](https://jakearchibald.github.io/svgomg/) or similar to compress them.
+
 ## Security
 
 - [ ] Data is sanitised before display (ie, User generated content) to prevent exploits such as XSS.
 - [ ] Forms use CSRF tokens when they mutate state (POST/PUT/DELETE, eg. editing a user/booking/listing’s data).
 - [ ] Form fields use the correct [input types for the appropriate mobile keyboard](http://baymard.com/labs/touch-keyboard-types).
+- [ ] OWASP Top 10... see if anything there is relevant to your site.
 
 ## SEO / SMO
 
@@ -108,14 +117,6 @@ header - `role="banner"`, main content - `role="main"`, footer - `role="contenti
 - [ ] Check analytics are configured in production with the production property on the live site.
 - [ ] Check the relevant client-side interactions are tracked with events.
 - [ ] Page and event tracking is being displayed correctly in the GA dashboard.
-
-
-## Performance
-
-- [ ] Test site in Chrome's Lighthouse (Devtools | Audits). While we don't have any specific targets (ie, 'must be above 90') across all projects use this tool to find areas for optimisation. Eg:
-  - [ ] CSS/JS files are minified in production (bonus points for HTML too).
-  - [ ] if images are unoptimised use [ImageOptim](https://imageoptim.com/mac)/[SVGOMG](https://jakearchibald.github.io/svgomg/) or similar to compress them.
-- [ ] Static files are cached for a long time in production (JS/CSS/images/etc, check this with [PageSpeed](https://developers.google.com/speed/pagespeed/insights/) or [GTmetrix](https://gtmetrix.com/)) on the live site.
 
 ## Tickets
 
