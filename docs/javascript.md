@@ -84,6 +84,10 @@ Regardless of your choice [be aware of normalizing state patterns](https://redux
 
 [Motion](https://www.framer.com/motion/)
 
+## Accessible UI patterns
+
+[Reach UI](https://reacttraining.com/reach-ui/) is a good library for common UI patterns such as modals, sliders, tabs, tooltips.
+
 ## Forms
 
 [`react-hook-form`](https://react-hook-form.com) over [Formik](https://github.com/jaredpalmer/formik) or [Redux-Form](https://redux-form.com/), because it allows for simpler and shorter code, isolates component re-renders, reduces the number of renders, mounts faster, and has a smaller bundle size.
