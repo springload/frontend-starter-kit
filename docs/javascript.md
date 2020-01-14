@@ -82,6 +82,8 @@ Regardless of your choice [be aware of normalizing state patterns](https://redux
 
 [React-Spring](https://www.react-spring.io/)
 
+[Motion](https://www.framer.com/motion/)
+
 ## Forms
 
 [`react-hook-form`](https://react-hook-form.com) over [Formik](https://github.com/jaredpalmer/formik) or [Redux-Form](https://redux-form.com/), because it allows for simpler and shorter code, isolates component re-renders, reduces the number of renders, mounts faster, and has a smaller bundle size.
