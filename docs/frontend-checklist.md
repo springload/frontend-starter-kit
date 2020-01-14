@@ -45,8 +45,6 @@ These rules aren't mandatory and might not make sense for your project, so use y
 ## HTML
 
 - [ ] Page translation by Chrome is disabled if appropriate `<meta name="google" content="notranslate">` ([more](https://support.google.com/webmasters/answer/79812)). Sometimes clients take the blame for bad translations and it's better to just disable it, but this is a judgement call.
-- [ ] Links with `target="_blank"` use `rel="noopener noreferrer"` to avoid security problems. [More info](https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/).
-- [ ] Links from user-submitted (untrusted) content use [`rel="nofollow noreferrer"`](https://support.google.com/webmasters/answer/96569)
 - [ ] 404 page exists and is styled.
 - [ ] 500 page exists and is styled.
 - [ ] Maintenance page exists and is styled, if relevant.
@@ -96,10 +94,12 @@ header - `role="banner"`, main content - `role="main"`, footer - `role="contenti
 
 ## Security
 
-- [ ] Data is sanitised before display (ie, User generated content) to prevent exploits such as XSS.
-- [ ] Forms use CSRF tokens when they mutate state (POST/PUT/DELETE, eg. editing a user/booking/listing’s data).
-- [ ] Form fields use the correct [input types for the appropriate mobile keyboard](http://baymard.com/labs/touch-keyboard-types).
 - [ ] OWASP Top 10... see if anything there is relevant to your site.
+- [ ] Data is sanitised before display (ie, User generated content) to prevent exploits such as XSS.
+  - [ ] Links from user-submitted (untrusted) content use [`rel="nofollow noreferrer"`](https://support.google.com/webmasters/answer/96569)
+- [ ] Links with `target="_blank"` use `rel="noopener noreferrer"` to avoid security problems. [More info](https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/).
+- [ ] Forms use CSRF tokens when they mutate state (POST/PUT/DELETE, eg. editing a user/booking/listing’s data). This is more a BED issue.
+- [ ] Form fields use the correct [input types for the appropriate mobile keyboard](http://baymard.com/labs/touch-keyboard-types).
 
 ## SEO / SMO
 
