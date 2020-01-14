@@ -78,6 +78,10 @@ We quite like [`unstated`](https://www.npmjs.com/package/unstated), and [`redux`
 
 Regardless of your choice [be aware of normalizing state patterns](https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape) such as the `byId` pattern to ensure your state (aka your browser database) stays manageable.
 
+## Animation
+
+[React-Spring](https://www.react-spring.io/)
+
 ## Forms
 
 [Formik](https://github.com/jaredpalmer/formik) more than [Redux-Form](https://redux-form.com/), because Formik is smaller and it only re-renders individual fields when those fields change.
