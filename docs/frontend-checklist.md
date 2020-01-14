@@ -113,8 +113,8 @@ header - `role="banner"`, main content - `role="main"`, footer - `role="contenti
 ## Performance
 
 - [ ] Test site in Chrome's Lighthouse (Devtools | Audits). While we don't have any specific targets (ie, 'must be above 90') across all projects use this tool to find areas for optimisation. Eg:
--- [ ] CSS/JS files are minified in production (bonus points for HTML too).
--- [ ] if images are unoptimised use [ImageOptim](https://imageoptim.com/mac)/[SVGOMG](https://jakearchibald.github.io/svgomg/) or similar to compress them.
+  - [ ] CSS/JS files are minified in production (bonus points for HTML too).
+  - [ ] if images are unoptimised use [ImageOptim](https://imageoptim.com/mac)/[SVGOMG](https://jakearchibald.github.io/svgomg/) or similar to compress them.
 - [ ] Static files are cached for a long time in production (JS/CSS/images/etc, check this with [PageSpeed](https://developers.google.com/speed/pagespeed/insights/) or [GTmetrix](https://gtmetrix.com/)) on the live site.
 
 ## Tickets
