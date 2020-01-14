@@ -25,7 +25,7 @@ We prefer [TypeScript](https://www.typescriptlang.org/) more than [Flow](https:/
 
 ## Formatting
 
-We delegate that to [Prettier](https://prettier.io/).   
+We delegate that to [Prettier](https://prettier.io/).
 
 Make sure [your text editor](https://code.visualstudio.com/&sa=D&ust=1520457897533000&usg=AFQjCNF3QTfRTIBG7ZBDeYbNMcYimiKSbw) has [that extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), and that it's configured to auto-format on save. Here's [the ESLint config](https://github.com/springload/eslint-plugin-springload).
 
@@ -58,7 +58,7 @@ If you need tiny filesizes then we suggest not using [Mustache](https://mustache
 
 [Jest](https://facebook.github.io/jest/) seems good, and it can do code coverage and snapshot testing.
 
-[`Enzyme`](https://www.npmjs.com/package/enzyme) is a useful addition for interactivity tests and shallow rendering.
+[`@testing-library`](https://testing-library.com/docs/react-testing-library/intro) is a useful addition for interactivity tests and shallow rendering.
 
 [BackstopJS](https://github.com/garris/BackstopJS) for testing visual regressions.
 
@@ -82,9 +82,15 @@ Regardless of your choice [be aware of normalizing state patterns](https://redux
 
 [React-Spring](https://www.react-spring.io/)
 
+[Motion](https://www.framer.com/motion/)
+
+## Accessible UI patterns
+
+[Reach UI](https://reacttraining.com/reach-ui/) is a good library for common UI patterns such as modals, sliders, tabs, tooltips.
+
 ## Forms
 
-[Formik](https://github.com/jaredpalmer/formik) more than [Redux-Form](https://redux-form.com/), because Formik is smaller and it only re-renders individual fields when those fields change.
+[`react-hook-form`](https://react-hook-form.com) over [Formik](https://github.com/jaredpalmer/formik) or [Redux-Form](https://redux-form.com/), because it allows for simpler and shorter code, isolates component re-renders, reduces the number of renders, mounts faster, and has a smaller bundle size.
 
 ## Async / Side Effects
 
