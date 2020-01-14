@@ -25,7 +25,7 @@ We prefer [TypeScript](https://www.typescriptlang.org/) more than [Flow](https:/
 
 ## Formatting
 
-We delegate that to [Prettier](https://prettier.io/).   
+We delegate that to [Prettier](https://prettier.io/).
 
 Make sure [your text editor](https://code.visualstudio.com/&sa=D&ust=1520457897533000&usg=AFQjCNF3QTfRTIBG7ZBDeYbNMcYimiKSbw) has [that extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), and that it's configured to auto-format on save. Here's [the ESLint config](https://github.com/springload/eslint-plugin-springload).
 
