@@ -84,7 +84,7 @@ Regardless of your choice [be aware of normalizing state patterns](https://redux
 
 ## Forms
 
-[Formik](https://github.com/jaredpalmer/formik) more than [Redux-Form](https://redux-form.com/), because Formik is smaller and it only re-renders individual fields when those fields change.
+[`react-hook-form`](https://react-hook-form.com) over [Formik](https://github.com/jaredpalmer/formik) or [Redux-Form](https://redux-form.com/), because it allows for simpler and shorter code, isolates component re-renders, reduces the number of renders, mounts faster, and has a smaller bundle size.
 
 ## Async / Side Effects
 
