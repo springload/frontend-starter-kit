@@ -58,7 +58,7 @@ If you need tiny filesizes then we suggest not using [Mustache](https://mustache
 
 [Jest](https://facebook.github.io/jest/) seems good, and it can do code coverage and snapshot testing.
 
-[`Enzyme`](https://www.npmjs.com/package/enzyme) is a useful addition for interactivity tests and shallow rendering.
+[`@testing-library`](https://testing-library.com/docs/react-testing-library/intro) is a useful addition for interactivity tests and shallow rendering.
 
 [BackstopJS](https://github.com/garris/BackstopJS) for testing visual regressions.
 
