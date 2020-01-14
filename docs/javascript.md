@@ -72,7 +72,7 @@ End-to-End (E2E) testing with Browserstack, [Nightwatch.js](http://nightwatchjs.
 
 Prefer to keep state in JavaScript not in HTML attributes. This will make it easier to reason about your code, and it will probably run faster too.
 
-We quite like [`unstated`](https://www.npmjs.com/package/unstated), and [`redux`](https://redux.js.org/) (and [react-redux](https://redux.js.org/basics/usage-with-react)).
+Generally speaking we quite like React Context rather than [`redux`](https://redux.js.org/).
 
 [Immer.js](https://www.npmjs.com/package/immer) is preferable to immutable.js because it has less boilerplate.
 
