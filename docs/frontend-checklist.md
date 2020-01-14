@@ -18,27 +18,22 @@ These rules aren't mandatory and might not make sense for your project, so use y
 ## Project structure
 
 - [ ] Project has an `.nvmrc` file (bonus points for an LTS version of Node)
-- [ ] Consider a `polyfills.tsx` file.
 - [ ] A [prettier config](https://prettier.io/docs/en/configuration.html) file is available
-- [ ] [ES lint configuration](https://github.com/springload/eslint-config-springload) is available 
+- [ ] [ES lint configuration](https://github.com/springload/eslint-config-springload) is available
 
 ## Code quality
 
 - [ ] Try a fresh install of the project (preferably in a new VM or on a different machine) to ensure it can be installed from scratch... eg, that all dependencies are referenced and not implicit.
 - [ ] Clean up commented/unnecessary code.
 - [ ] Check all TODO and FIXME comments in the code are still relevant.
-- [ ] Unintentional console logs statements removed. ALL `debugger` statements removed.
-- [ ] Code comments to document quirks or odd workarounds / compromises as is appropriate.
+- [ ] Unintentional console logs statements removed. All `debugger` statements removed.
+- [ ] Code comments to document quirks or odd workarounds / compromises as appropriate.
 
 ## Testing
 
-- [ ] Production site has Sentry tracking.
 - [ ] Site tested in all relevant browsers and devices.
-- [ ] Site works with adblock.
+- [ ] Site works with adblocking software (ie, uBlock).
 - [ ] Site works with JavaScript turned off, or the sections that do not work are indicated to the user via messages in `<noscript>` tags or similar.
-- [ ] 404 page exists and is styled.
-- [ ] 500 page exists and is styled.
-- [ ] Maintenance page exists and is styled, if relevant.
 - [ ] Site has a favicon.ico.
 
 ## HTTP
@@ -46,6 +41,15 @@ These rules aren't mandatory and might not make sense for your project, so use y
 - [ ] CSP
 - [ ] Static files are cache-busted with a unique hash (eg. main._4hjk54j6_.js) in production JS/CSS/etc.
 - [ ] HTTP to HTTPS redirect exists, with `Strict-Transport-Security`.
+
+## HTML
+
+- [ ] Page translation by Chrome is disabled if appropriate `<meta name="google" content="notranslate">` ([more](https://support.google.com/webmasters/answer/79812)). Sometimes clients take the blame for bad translations and it's better to just disable it, but this is a judgement call.
+- [ ] Links with `target="_blank"` use `rel="noopener noreferrer"` to avoid security problems. [More info](https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/).
+- [ ] Links from user-submitted (untrusted) content use [`rel="nofollow noreferrer"`](https://support.google.com/webmasters/answer/96569)
+- [ ] 404 page exists and is styled.
+- [ ] 500 page exists and is styled.
+- [ ] Maintenance page exists and is styled, if relevant.
 
 ##  CSS
 
@@ -57,13 +61,6 @@ These rules aren't mandatory and might not make sense for your project, so use y
 ## JS
 
 - [ ] Polyfills are included if appropriate. Consider isolating polyfills from the rest of the codebase (ie, in a `polyfills.tsx` file) so that they're easier to remove in the future.
-
-## HTML
-
-- [ ] Page translation by Chrome is disabled if appropriate `<meta name="google" content="notranslate">` ([more](https://support.google.com/webmasters/answer/79812)). Sometimes clients take the blame for bad translations and it's better to just disable it, but this is a judgement call.
-- [ ] Links with `target="_blank"` use `rel="noopener noreferrer"` to avoid security problems. [More info](https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/).
-- [ ] Links from user-submitted (untrusted) content use [`rel="nofollow noreferrer"`](https://support.google.com/webmasters/answer/96569)
-
 
 ## Accessibility
 
@@ -126,6 +123,7 @@ header - `role="banner"`, main content - `role="main"`, footer - `role="contenti
 
 ## Infra
 
-- [ ] CI runs the CI tests
+- [ ] CI runs tests
+- [ ] Production site has Sentry tracking.
 
 You made it to the end! Whoo, high five my friend! Now go treat yourself to a drink :tropical_drink:, a hug, or whatever floats your waka :rainbow:. Don’t forget to let your team know that you’ve got this under control, and be proud of that top-notch site you just built.
