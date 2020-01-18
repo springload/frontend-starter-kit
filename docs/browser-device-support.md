@@ -18,4 +18,8 @@ You will have to manually keep that URL in sync with your `.browserslistrc` file
 
 Note that the _contractually_ supported browsers will probably be a subset of ones shown on `browserl.ist` (eg. just because `browserl.ist` mentions Baidu Browser doesn't necessarily mean that we need to support it, contractually).
 
+## Progressive Enhancement / Graceful Degradation
 
+Some sites / webapps that we make have features that don't require JavaScript, and other features that do require JavaScript.
+
+To (1) assist testers, and (2) inform future developers to avoid regressions: please describe the default approach (ie, 'site doesn't require JS'), and any deviations from this per-component/feature in your documentation.
