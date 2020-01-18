@@ -2,8 +2,6 @@
 
 > HTML should be structural, semantic, and accessible.
 
-_Work in progress_
-
 ## Formatting
 
 We delegate that to [Prettier](https://prettier.io/) (although Django/Wagtail templates are often named `.html` with template instructions so Prettier might break them... note that the `.prettierignore` for D/W projects is configured to ignore `*.html` files).
