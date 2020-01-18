@@ -5,7 +5,7 @@
 
 ## Project Structure
 
-The reason why Project Structure is in JavaScript is because it's often related to Webpack which uses JavaScript.
+The reason why the heading _'Project Structure'_ is in JavaScript is because it's often related to Webpack which uses JavaScript.
 
 Generally speaking we like [Mono-repos](https://danluu.com/monorepo/) rather than Multi-repos.
 
