@@ -4,17 +4,17 @@
 
 ## Formatting
 
-We delegate that to [Prettier](https://prettier.io/) (although Django/Wagtail templates are often named `.html` with template instructions so Prettier might break them... note that the `.prettierignore` for D/W projects is configured to ignore `*.html` files).
-
-Make sure [your text editor](https://code.visualstudio.com/&sa=D&ust=1520457897533000&usg=AFQjCNF3QTfRTIBG7ZBDeYbNMcYimiKSbw) has [that extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), and that it's configured to auto-format on save. 
+We delegate that to [Prettier](https://prettier.io/). Make sure [your text editor](https://code.visualstudio.com/&sa=D&ust=1520457897533000&usg=AFQjCNF3QTfRTIBG7ZBDeYbNMcYimiKSbw) has [that extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), and that it's configured to auto-format on save. 
 
 Refer to our [prettier config](https://github.com/springload/prettier-config-springload/blob/master/lib/index.js).
 
+Django/Wagtail templates are often named `.html` with template instructions so Prettier might break them... note that the `.prettierignore` for D/W projects is configured to ignore `*.html` files.
+
 ## Accessibility
 
-Aside from CSS colours, HTML is primarily responsible for making accessible webpages (regardless of whether you're generating HTML from Django/Wagtail or React etc.).
+We should adhere to WCAG. Go read Sam's [Being pragmatic about accessibility](https://www.springload.co.nz/blog/being-pragmatic-about-accessibility/).
 
-Go read Sam's [Being pragmatic about accessibility](https://www.springload.co.nz/blog/being-pragmatic-about-accessibility/).
+HTML is primarily responsible for making accessible webpages (aside from colours) regardless of whether you're generating HTML from Django/Wagtail or React etc.
 
 ### Accessibility Reading
 - https://github.com/Heydon/inclusive-design-checklist
@@ -22,7 +22,7 @@ Go read Sam's [Being pragmatic about accessibility](https://www.springload.co.nz
 
 ### 
 - Make sure it works with keyboard only, can you navigate the site using only the keyboard? 
-- Provide visible and clear focus styles (TODO: find that new approach, reference our current approach).
+- Provide visible and clear focus styles.
 - Use native HTML elements and attributes as much as possible.
 - Don't override native HTML semantics, unless absolutely necessary.
     **Good:**
@@ -32,13 +32,6 @@ Go read Sam's [Being pragmatic about accessibility](https://www.springload.co.nz
     <div class="button">Play</div>
     <span class="checkbox"></span>
 Apply `aria-role="presentation"` and `aria-hidden="true"` to images and icons/svgs that are decorative only.
-
-Provide a <title> on svg’s that are used as content, eg. Social icons
-
-    <svg class="i i-social" role="img">
-        <title>Find us on Facebook</title>
-        <use xlink:href="#i-facebook"></use>
-    </svg>
 
 Provide large touch "targets" for interactive elements (specifically on small devices).
 
@@ -68,7 +61,7 @@ The screen reader will literally read out XXXXXX in this situation. It also will
   Both assistive technologies and conventional user agents can render text more accurately if the language of each passage of text is identified. Screen readers can use the pronunciation rules of the language of the text. For more on Language read this article.
 
 - Tabindex:
-    tabindex="0" Adds an element to the Tab order at its position in the source order.
+    tabindex="0" Adds an element to the Tab order at its position in the DOM order.
     tabindex="-1" Removes an element from the Tab order. Makes non-focusable elements programmatically focusable. For example, if you have two elements side by side linking to the same place, an image links, as well as some text beside it, you might want to take the tabindex off the image so that the user only needs to tab once.
     tabindex="1+" (Avoid) Will move the element up the tab order, so it will be the first thing you tab to on the page, it messes with the flow of the page. 
 
@@ -101,5 +94,3 @@ The screen reader will literally read out XXXXXX in this situation. It also will
 - http://www.yellowshoe.com.au/standards/#html
 - http://codeguide.co/#html
 - http://manuals.gravitydept.com/code/html
-
-_More documentation to come._
