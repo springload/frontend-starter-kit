@@ -1,4 +1,4 @@
-# JavaScript (TypeScript) / Node
+# JavaScript (TypeScript) and Node
 
 > JavaScript should be readable, modular, and splittable.
 
