@@ -1,11 +1,9 @@
+The reason why the heading _'Project Structure'_ is in `JavaScript.md` is because it's related to Webpack which uses JavaScript.
 # JavaScript (TypeScript) / Node
 
 > JavaScript should be readable, modular, and splittable.
 
-
 ## Project Structure
-
-The reason why the heading _'Project Structure'_ is in JavaScript is because it's often related to Webpack which uses JavaScript.
 
 Generally speaking we like [Mono-repos](https://danluu.com/monorepo/) rather than Multi-repos.
 
@@ -21,7 +19,7 @@ Obviously any particular framework (Wagtail-Django) or boilerplate might impose 
 
 Typed languages (e.g. string vs boolean) are like unit tests all over your code; catching bugs at build time, before run-time users experience them.
 
-We prefer [TypeScript](https://www.typescriptlang.org/) more than [Flow](https://flow.org/). Avoid Prop-Types.
+We prefer [TypeScript](https://www.typescriptlang.org/) more than [Flow](https://flow.org/). Avoid [Prop-Types](https://www.npmjs.com/package/prop-types) because run-time checks are often exposed to users.
 
 ## Formatting
 
