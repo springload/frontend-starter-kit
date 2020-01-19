@@ -1,9 +1,8 @@
-The reason why the heading _'Project Structure'_ is in `JavaScript.md` is because it's related to Webpack which uses JavaScript.
 # JavaScript (TypeScript) / Node
 
 > JavaScript should be readable, modular, and splittable.
 
-## Project Structure
+## Project Structure (for JS/HTML/CSS)
 
 Generally speaking we like [Mono-repos](https://danluu.com/monorepo/) rather than Multi-repos.
 
