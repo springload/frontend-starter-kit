@@ -16,6 +16,7 @@ This repo is for
 |  •  [Silverstripe and Webpack 4](./silverstripe/) |
 | **Open source projects** |
 |  •  [React Accessible Accordion](https://github.com/springload/react-accessible-accordion) |
+|  •  [React Accessible Headings](https://github.com/springload/react-accessible-headings) |
 |  •  [React Accessible Ellipsis](https://github.com/springload/react-accessible-ellipsis) |
 |  •  [MetaTemplate](https://github.com/springload/metatemplate)
 |  •  [Springload CSS starter kit](https://github.com/springload/frontend-starter-styles) |
