@@ -18,7 +18,7 @@ Obviously any particular framework (Wagtail-Django) or boilerplate might impose 
 
 Typed languages (e.g. string vs boolean) are like unit tests all over your code; catching bugs at build time, before run-time users experience them.
 
-We prefer [TypeScript](https://www.typescriptlang.org/) more than [Flow](https://flow.org/). Avoid [Prop-Types](https://www.npmjs.com/package/prop-types) because run-time checks are often exposed to users.
+We prefer [TypeScript](https://www.typescriptlang.org/) more than [Flow](https://flow.org/). Avoid run-time approaches like [Prop-Types](https://www.npmjs.com/package/prop-types) because static type checking catches mistakes earlier.
 
 ## Formatting
 
@@ -40,6 +40,10 @@ For now we prefer Yarn not NPM, because NPM still seems to have _"it works on my
 - Choose your variable and function names carefully.
 - Feature Detection, not Browser Detection, if possible. Don't bring back the days of IE-only or Chrome-only sites.
 - Use [JS design patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/) where appropriate.
+
+## Configuring components from a CMS
+
+Consider an [Inline JSON payload](./inline-json-payload).
 
 # Recommended Libraries
 
