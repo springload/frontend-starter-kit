@@ -1,27 +1,25 @@
 # Mounting and configuring components
 
-This document applies primarily to CMS builds that want to enhance pages with JavaScript components.
+_This is a preferred pattern for providing component configuration on our CMS build projects_
 
 ## 1. Inline JSON Payload (IJP)
 
-_This is a preferred pattern for providing component configuration._
+Often when we make JavaScript components they can take props/params/args that are configurable by a CMS site admin.
 
-Often when we make JavaScript components they can take props/params/args that are configurable by a site admin.
-
-Eg. in React imagine a header component that took props of,
+Eg. Consider a `MyHeader` React component,
 
 ```jsx
-<Header background="#ff0000" />
+<MyHeader background="#ff0000" />
 ```
 
-and our task is to make the `#ff0000` string configurable by a site admin.
+Our task is to make the `#ff0000` string configurable by a site admin.
 
 So we have several options,
 
-1. We could make an API (HTTP or Websockets etc), but that means waiting on a network response to get that configuration.
-2. We could put the configuration in the HTML with the initial page load which would be faster to load
+1. We could make an API (HTTP or Websockets etc), but that means waiting on a network response to get that configuration, which is slower.
+2. We could put the configuration in the HTML with the initial page load which would be faster to load. This data could be in the page as `<script>` tags.
 
-This data could be in the page as `<script>` tags, and here we have a few options...
+Let's consider Option 2, and we have a few obvious options: JavaScript or JSON data.
 
 In [a blog post from 2019 the Chrome v8 blog talks about parsing (reading) data](https://v8.dev/blog/cost-of-javascript-2019#json)...
 
@@ -29,23 +27,23 @@ In [a blog post from 2019 the Chrome v8 blog talks about parsing (reading) data]
 >
 > Because the JSON grammar is much simpler than JavaScript’s grammar, JSON can be parsed more efficiently than JavaScript. This knowledge can be applied to improve start-up performance for web apps that ship large JSON-like configuration object literals (such as inline Redux stores). Instead of inlining the data as a JavaScript object literal, like so:
 
-As they say this is slow:
+This is slow:
 
 > `const data = { foo: 42, bar: 1337 }; // 🐌`
 
-Whereas this is fast:
+This is fast:
 
 > `const data = JSON.parse('{"foo":42,"bar":1337}'); // 🚀`
 
-As the blog post says: for very small amounts of data (1kb or lesser) it doesn't really matter, but larger amounts of data (10kb or greater) we should definitely prefer JSON.
+As the blog post says: for very small amounts of data it doesn't really matter, but for large amounts of data (10kb or greater) we should choose JSON.
 
-This might mean that we have serverside templates that include JSON looking like
+As there is no downside to JSON, even for small amounts of data, we recommend JSON for all data.
+
+This might mean that we have serverside templates that include JSON looking like:
 
 ```html
 <script type="application/json">{"colour":"#ff0000"}</script>
 ```
-
-which leads into the next pattern...
 
 ## 2. Mounting Components
 
