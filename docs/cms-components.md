@@ -138,3 +138,14 @@ To reduce the initial JavaScript bundle size consider whether components should 
 ```
 
 Don't do this for components that are used on every page (eg. primary nav).
+
+## Progressive enhancement
+
+There's no need for the container to be empty, so consider including serverside templates that are progressively enhanced with JavaScript components.
+
+```html
+<div data-component="MyHeader" data-component-config="my-unique-id" class="header">
+  <a href="/faq" class="header__link">FAQ</a>
+</div>
+<script type="application/json" id="my-unique-id">{"links":[{"href":"/faq","text":"FAQ"}]}</script>
+```
