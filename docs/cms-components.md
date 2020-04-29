@@ -61,7 +61,7 @@ With serverside HTML we often know the location in the DOM where we want to moun
 <div data-component="MyHeader"></div>
 ```
 
-Then on `DOMContentLoaded` we `document.querySelectorAll("[data-component]");` and use the `<div>` value ("MyHeader" in this example) to load the MyHeader component.
+Then on `DOMContentLoaded` we `document.querySelectorAll("[data-component]");` and use the attribute value to choose a component id, (eg) the `MyHeader` component.
 
 The code to do that might look like,
 
@@ -147,11 +147,14 @@ Don't do this for components that are used on every page (eg. primary nav).
 
 ## Progressive enhancement
 
-There's no need for the container to be empty, so consider including serverside templates that are progressively enhanced with JavaScript components.
+There's no need for the container to be a `<div>` or for it to be empty, so consider including serverside templates that are progressively enhanced with JavaScript components. Eg.
 
 ```html
 <div data-component="MyHeader" data-component-config="my-unique-id" class="header">
-  <a href="/faq" class="header__link">FAQ</a>
+  <a href="/" class="header__link">Home</a>
+  <a href="/about" class="header__link">About</a>
 </div>
-<script type="application/json" id="my-unique-id">{"links":[{"href":"/faq","text":"FAQ"}]}</script>
+<script type="application/json" id="my-unique-id">{"links":[{"href":"/","text":"Home"},{"href":"/about","text":"About"}]}</script>
 ```
+
+This does mean writing the HTML twice (in the serverside template, and in JSX) but the CSS can be reused.
