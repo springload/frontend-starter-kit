@@ -62,7 +62,7 @@ The code to do that might look like,
 ```typescript
 const components = document.querySelectorAll("[data-component]");
 
-[...compoonents].forEach((container: HTMLElement): void => {
+[...components].forEach((container: HTMLElement): void => {
   const componentId = container.getAttribute("data-component");
     
   switch(componentId) {
