@@ -20,7 +20,7 @@ Eg. Consider a `MyHeader` React component,
 <MyHeader background="#ff0000" />
 ```
 
-Our task is to make the `#ff0000` string configurable by a site admin.
+Our task is to make the `#ff0000` string configurable by a CMS site admin.
 
 So we have several options,
 
