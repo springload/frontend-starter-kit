@@ -157,4 +157,4 @@ There's no need for the container to be a `<div>` or for it to be empty, so cons
 <script type="application/json" id="my-unique-id">{"links":[{"href":"/","text":"Home"},{"href":"/about","text":"About"}]}</script>
 ```
 
-This does mean writing the HTML twice (in the serverside template, and in JSX) but the CSS can be reused.
+This does mean writing the HTML twice (in the serverside template, and in JSX) but the CSS can be reused. While the serverside templating language is different to the clientside language this is probably the best we can hope for.
