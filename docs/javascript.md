@@ -41,9 +41,9 @@ For now we prefer Yarn not NPM, because NPM still seems to have _"it works on my
 - Feature Detection, not Browser Detection, if possible. Don't bring back the days of IE-only or Chrome-only sites.
 - Use [JS design patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/) where appropriate.
 
-## Configuring components from a CMS
+## CMS Components patterns
 
-Consider an [Inline JSON payload](./inline-json-payload).
+Read some potential patterns for [CMS Components](./cms-components.md).
 
 # Recommended Libraries
 
