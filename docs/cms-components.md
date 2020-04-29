@@ -1,3 +1,10 @@
+
+* [Mounting and configuring components](#mounting-and-configuring-components)
+  * [1. Inline JSON Payload (IJP)](#1-inline-json-payload-ijp)
+  * [2. Mounting Components](#2-mounting-components)
+  * [Combining 1 & 2](#combining-1--2)
+* [Other considerations](#other-considerations)
+
 # Mounting and configuring components
 
 _This is a preferred pattern for providing component configuration on our CMS build projects_
