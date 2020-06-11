@@ -62,6 +62,31 @@ With Autoprefixer set up you won’t need to (**and shouldn’t!**\*) add vendor
 .block-name__element-name--modifier {}
 ```
 
+# Mobile-first
+
+We prefer mobile-first CSS. Using mobile-first breakpoints (i.e. min-width-based overrides) has performance benefits (due to fewer competing rules for mobiles) and can lead to simpler code.
+
+```scss
+// Good (generic & mobile styles first, min-width-based overrides):
+.something {
+  font-size: $font-size-small;
+  
+  @include breakpoint($min-width: $breakpoint-lg) {
+  // (or something like "@include lg")
+    font-size: $font-size-lg;
+  }
+}
+
+// Bad (max-width-based overrides):
+.something {
+  font-size: $font-size-lg;
+  
+  @include breakpoint($max-width: $breakpoint-sm) {
+  // (or something like "@include mobile-only")
+    font-size: $font-size-sm;
+  }
+}
+```
 
 # Advice
 
