@@ -64,12 +64,16 @@ With Autoprefixer set up you won’t need to (**and shouldn’t!**\*) add vendor
 
 # Mobile-first
 
-We prefer mobile-first CSS. Using mobile-first breakpoints (i.e. min-width-based overrides) has performance benefits (due to fewer competing rules for mobiles) and can lead to simpler code.
+Use mobile-first CSS (i.e. min-width breakpoints, not max-width breakpoints).
+
+Using mobile-first breakpoints has performance benefits for mobiles (where performance matters more) due to the mobile browser not having to deal with competing style rules (the desktop rules AND the mobile rules).
+
+A mobile-first approach will also tend to lead to simpler code, because there generally are fewer layout rules on mobile (e.g. it's more likely to be a single column layout, more likely to have simple alignment and rules etc than on larger screens).
 
 ```scss
 // Good (generic & mobile styles first, min-width-based overrides):
 .something {
-  font-size: $font-size-small;
+  font-size: $font-size-sm;
   
   @include breakpoint($min-width: $breakpoint-lg) {
   // (or something like "@include lg")
