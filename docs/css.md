@@ -62,7 +62,7 @@ With Autoprefixer set up you won’t need to (**and shouldn’t!**\*) add vendor
 .block-name__element-name--modifier {}
 ```
 
-# Mobile-first
+## Mobile-first
 
 Use mobile-first CSS (i.e. min-width breakpoints, not max-width breakpoints).
 
@@ -92,7 +92,7 @@ A mobile-first approach will also tend to lead to simpler code, because there ge
 }
 ```
 
-# Advice
+## Advice
 
 - Avoid nesting selectors. This can make styles less reusable and it will mess with the cascade, and styles will be very hard to override.  
 - Don't use string concatenation (`&__element-name`) for classes, but pseudoes are ok.   
@@ -119,7 +119,7 @@ A mobile-first approach will also tend to lead to simpler code, because there ge
 }
 ```
 
-### Naming files and components
+## Naming files and components
 
 - Component files should use the 'block' name as the file name, there shouldn't be any css in the file that doesn't start with the block name. eg. `_components.btn.scss`.  
 - File names should be all lowercase and using period (.) to separate words. eg. `_objects.grid.scss`, `_objects.grid.spacing.scss`  
