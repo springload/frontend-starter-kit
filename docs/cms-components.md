@@ -6,7 +6,7 @@
 
 ------------------------------------
 
-# Mounting and configuring components
+# CMS Components
 
 _This is a preferred pattern for providing component configuration on our CMS build projects_
 
