@@ -25,9 +25,9 @@ Our task is to make the `#ff0000` string configurable by a CMS site admin.
 So we have several options,
 
 1. We could make an API (HTTP or Websockets etc), but that means waiting on a network response to get that configuration, which is slower.
-2. We could put the configuration in the HTML with the initial page load which would be faster to load. This data could be in the page as `<script>` tags.
+2. We could put the configuration in the HTML with the initial page load which would be faster to load. This data could be in `data-anything="config"` or as `<script>` tags.
 
-Let's consider Option 2, and we have a few obvious options: JavaScript or JSON data.
+Let's consider Option 2 with `<script>` tags, and we have a few obvious options: JavaScript or JSON data.
 
 In [a blog post from 2019 the Chrome v8 blog talks about parsing (reading) data](https://v8.dev/blog/cost-of-javascript-2019#json)...
 
