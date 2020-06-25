@@ -11,7 +11,7 @@ These rules aren't mandatory and might not make sense for your project, so use y
 
 - [ ] Project installation instructions.
 - [ ] Links to all deploy environments and any associated Git branch names.
-- [ ] Links to CI, Trello board, Harvest project, project run sheet, Google Drive folder, Zeplin, InVision, Atomic, other.
+- [ ] Links to CI, Jira/Trello, Harvest project, project run sheet, Google Drive folder, Figma/Zeplin, other.
 - [ ] Expected Browser support and accessibility support. Copy [browser-device-support.md](./browser-device-support.md) into your README.md and modify to suit.
 - [ ] Any debugging tricks or quirks that might be useful for future devs.
 
