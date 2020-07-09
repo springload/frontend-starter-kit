@@ -1,7 +1,6 @@
 # Silverstripe FEDing
 
-This is how to set up FED stuff for a new Silverstripe project at Springload. 
-
+This is how to set up FED stuff for a new Silverstripe project at Springload.
 
 ## Project Setup
 
@@ -11,9 +10,9 @@ Clone the repo from git if it already exists, if not read Springload's [repo nam
 cd ~/sites
 git clone YOUR_PROJECT
 cd YOUR_PROJECT
-``` 
+```
 
-Copy [`.nvmrc`](./.nvmrc), [`package.json`](./package.json), [`webpack.config.js`](./webpack.config.js), [`.prettierignore`](./.prettierignore), [`prettier.config.js`](./prettier.config.js), [`.editorconfig`](./.editorconfig), [`.eslintignore`](./.eslintignore) and [`.eslintrc`](./.eslintrc) to `YOUR_PROJECT` directory. Copy the contents of the [`.gitignore`](./.gitignore) file and add them to your project's `.gitignore`.
+Copy [`.nvmrc`](./.nvmrc), [`package.json`](./package.json), [`webpack.config.js`](./webpack.config.js), [`.prettierignore`](./.prettierignore), [`prettier.config.js`](./prettier.config.js), [`.editorconfig`](./.editorconfig), [`.eslintignore`](./.eslintignore) [`.babelrc`](./.babelrc), [`tsconfig.json`](./tsconfig.json), [`custom.d.ts`](./custom.d.ts)] and [`.eslintrc`](./.eslintrc) to `YOUR_PROJECT` directory. Copy the contents of the [`.gitignore`](./.gitignore) file and add them to your project's `.gitignore`.
 
 ```sh
 # Make sure you are using the correct version of node.
@@ -21,9 +20,9 @@ nvm install
 nvm use
 # Then, install all project dependencies.
 yarn install
-``` 
+```
 
-We use Webpack for Silverstripe projects which is based around the concept of a **source** directory and a **build** directory. In our Silverstripe project we have a **app** and a **public** folder, the [`./app`](./app) folder is where all our working files live. 
+We use Webpack for Silverstripe projects which is based around the concept of a **source** directory and a **build** directory. In our Silverstripe project we have a **app** and a **public** folder, the [`./app`](./app) folder is where all our working files live.
 
 So to make this work with Webpack we'll treat `public/dist` as the **build** directory, and `app/static_src` as the **source** directory.
 
@@ -33,11 +32,11 @@ All your JavaScript, Sass/CSS, and SVG imports will be defined from your `./app/
 
 Copy the [`./app/static_src/js`](./app/static_src/js) to `YOUR_PROJECT`, along with the [`./app/static_src/index.js`](./app/static_src/index.js) file.
 
-### Add your SCSS 
+### Add your SCSS
 
 **Copy** the Starter Style kit [sass folder](https://github.com/springload/frontend-starter-styles/tree/master/src/sass) to your project at `./app/static_src/sass` folder.
 
-> We have a Starter Style kit especially for css, it uses ITCSS and you can learn more about how we [write css at Springload here](../docs/css.md). 
+> We have a Starter Style kit especially for css, it uses ITCSS and you can learn more about how we [write css at Springload here](../docs/css.md).
 
 ### Adding the CSS and JS files to your project
 
@@ -67,7 +66,7 @@ Learn more about it in the [Silverstripe docs](https://docs.silverstripe.org/en/
 
 ### Using SVG's in your project
 
-SVG's are added through javascript and webpack will create a file in `public/dist/sprite.svg`, this file now needs to be copied into your `templates/Includes` folder (with the name `Svg.ss`) to be able to `include` the file in your `Page.ss`. For this you need to run a `yarn build` everytime you make a change to your svg files. 
+SVG's are added through javascript and webpack will create a file in `public/dist/sprite.svg`, this file now needs to be copied into your `templates/Includes` folder (with the name `Svg.ss`) to be able to `include` the file in your `Page.ss`. For this you need to run a `yarn build` everytime you make a change to your svg files.
 
 **Note:** If you get a template error when visiting the site for the first time make sure the `Svg.ss` is being built and added to the correct place.
 
@@ -77,17 +76,15 @@ Note: To learn how to write JavaScript or import Sass files from JavaScript is a
 
 ## Code Comments
 
-- Use Silverstripe's comments unless you really want the comment to be in the markup. `<%-- Hello, i'm a comment --%>` instead of `<!-- Hello, I'm a comment -->`
+-   Use Silverstripe's comments unless you really want the comment to be in the markup. `<%-- Hello, i'm a comment --%>` instead of `<!-- Hello, I'm a comment -->`
 
 ## Issues
 
-* Fonts are not loading properly on non-root level pages on local setups.
+-   Fonts are not loading properly on non-root level pages on local setups.
 
 ## Future Improvements?
 
-* ...your idea goes here
-
-
+-   ...your idea goes here
 
 ### .prettierignore
 
@@ -95,6 +92,6 @@ Prettier seems to mangle our Silverstripe templates because they have template `
 
 ## Useful resources
 
-* [Webpack](https://webpack.js.org/)
-* [SilverStripe docs](https://docs.silverstripe.org/en/4/)
-* [SilverStripe lessons](https://www.silverstripe.org/learn/lessons/v4/)
+-   [Webpack](https://webpack.js.org/)
+-   [SilverStripe docs](https://docs.silverstripe.org/en/4/)
+-   [SilverStripe lessons](https://www.silverstripe.org/learn/lessons/v4/)
