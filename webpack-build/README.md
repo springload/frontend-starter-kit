@@ -52,6 +52,7 @@ If you're new to this, have a quick read of our guide on "[CMS Components](../do
 This repo contains some useful files for getting started adding such components:
 
 - [`components.tsx`](./src/components/components.tsx)
+- [`SomeReactComponentInit.tsx`](./src/components/SomeReactComponent/SomeReactComponentInit.tsx)
 - [`SomeReactComponent.tsx`](./src/components/SomeReactComponent/SomeReactComponent.tsx)
 
 ## Notes
