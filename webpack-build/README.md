@@ -12,9 +12,9 @@ How to create a new CMS-based project is outside of the scope of this readme. As
 
 Once you have your new project, copy the following files into its root directory:
 
-- [`.nvmrc`](../.nvmrc)
-- [`package.json`](./package.json)
 - [`webpack.config.js`](./webpack.config.js)
+- [`package.json`](./package.json)
+- [`.nvmrc`](../.nvmrc)
 - [`webpack.fixpaths.js`](./webpack.fixpaths.js)
 - [`.browserslistrc`](./.browserslistrc)
 - [`.prettierrc`](./.prettierrc)
@@ -44,6 +44,15 @@ nvm use
 yarn policies set-version
 yarn install
 ```
+
+## Using React components in a CMS project
+
+If you're new to this, have a quick read of our guide on "[CMS Components](../docs/cms-components.md)", which is about using React/JS components inside server-generated templates (e.g. Django/Wagtail or Silverstripe).
+
+This repo contains some useful files for getting started adding such components:
+
+- [`components.tsx`](./src/components/components.tsx)
+- [`SomeReactComponent.tsx`](./src/components/SomeReactComponent/SomeReactComponent.tsx)
 
 ## Notes
 
