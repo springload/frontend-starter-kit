@@ -12,7 +12,7 @@ git clone YOUR_PROJECT
 cd YOUR_PROJECT
 ```
 
-Copy [`.nvmrc`](./.nvmrc), [`package.json`](./package.json), [`webpack.config.js`](./webpack.config.js), [`.prettierignore`](./.prettierignore), [`prettier.config.js`](./prettier.config.js), [`.editorconfig`](./.editorconfig), [`.eslintignore`](./.eslintignore) [`.babelrc`](./.babelrc), [`tsconfig.json`](./tsconfig.json), [`custom.d.ts`](./custom.d.ts)] and [`.eslintrc`](./.eslintrc) to `YOUR_PROJECT` directory. Copy the contents of the [`.gitignore`](./.gitignore) file and add them to your project's `.gitignore`.
+Copy [`.nvmrc`](./.nvmrc), [`package.json`](./package.json), [`webpack.config.js`](./webpack.config.js), [`.prettierignore`](./.prettierignore), [`prettier.config.js`](./prettier.config.js), [`.editorconfig`](./.editorconfig), [`.eslintignore`](./.eslintignore) [`.babelrc`](./.babelrc), [`tsconfig.json`](./tsconfig.json), [`custom.d.ts`](./custom.d.ts) and [`.eslintrc`](./.eslintrc) to `YOUR_PROJECT` directory. Copy the contents of the [`.gitignore`](./.gitignore) file and add them to your project's `.gitignore`.
 
 ```sh
 # Make sure you are using the correct version of node.
