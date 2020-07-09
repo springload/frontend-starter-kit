@@ -1,40 +1,11 @@
-{% load compress static wagtailuserbar wagtailcore_tags wagtailimages_tags core_tags %}
 <!DOCTYPE html>
-
-<html class="no-js" lang="en">
+<html>
     <head>
         <meta charset="utf-8">
-        <title>{% block title %}{% if self.seo_title %}{{ self.seo_title }} | {% elif self.title %}{{ self.title }} | {% endif %}{% endblock %}{% block title_suffix %} YOUR_PROJECT_NAME {% endblock %}</title>
-        <meta name="description" content="{% firstof self.search_description self.intro|default:''|striptags self.body_excerpt|default:''|striptags|truncatewords:40 self.title %}">
+        <title>I am a website</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        {# Break out social meta data into seperate files as shown here below #}
-        {# {% include "core/snippets/meta_icons.html" %} #}
-        {# {% include "core/snippets/meta_twitter_card.html" %} #}
-        {# {% include "core/snippets/meta_open_graph.html" %} #}
-
-        {% block og_images %}
-            {# {% include "core/snippets/meta_open_graph_image.html" %} #}
-        {% endblock %}
-
-        {% block extra_css %}
-            {# Needed for specific cases #}
-        {% endblock %}
-
-        <script>
-            document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-        </script>
     </head>
     <body>
-        
-        {# To use SVG's in your project #}
-        <div class="u-hide">
-            <% if (htmlWebpackPlugin.files.sprites) { %>
-                <% for (var spriteFileName in htmlWebpackPlugin.files.sprites) { %>
-                    <%= htmlWebpackPlugin.files.sprites[spriteFileName] %>
-                <% } %>
-            <% } %>
-        </div>
 
         <script id="some-react-component" type="application/json">{"greeting": "why hello there world"}</script>
         <div data-component="some-react-component">
@@ -42,15 +13,6 @@
             <p>I will be swapped out with something else if a React component exists for 'some-react-component'.</p>
         </div>
 
-        {# TODO? #}
-        <script type="text/javascript">
-            window.staticRoot = "{% static 'dist/' %}";
-        </script>
-        
-        {# TODO? #}
-        {% block extra_js %}
-            {# Needed for specific cases #}
-        {% endblock %}
    </body>
 </html>
 

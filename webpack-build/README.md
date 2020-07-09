@@ -29,7 +29,7 @@ Once you have your new project, copy the following files into its root directory
 
 Update things as needed. Specifically:
 
-- In `package.json`, change the 'cms' variable. If you're using Silverstripe, set it to `silverstripe`. If you're using Django/wagtail, set it to `django`. If you're using something else (or no CMS), you will need to update `webpack.congig.json`. If you do, **please make a PR** that adds this new setup as an option for other future projects.
+- In `package.json`, change the 'cms' variable. If you're using Silverstripe, set it to `silverstripe`. If you're using Django/wagtail, set it to `django`. If you're using something else (or no CMS), you will need to update `webpack.config.json`. If you do, **please make a PR** that adds this new setup as an option for other future projects.
 - Update `.browserslistrc` if necessary. Currently it is evergreen only (modern browsers, i.e. no IE).
 - Change any other stuff that you want to change. This isn't a list of rules, just a startring point. If you make a change you think is a general improvement that will help others, **please make a PR**.
 
