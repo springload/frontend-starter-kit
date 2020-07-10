@@ -1,5 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-//polyfills?
+import ComponentsInit from './components/components';
+// Plus any polyfills, monolithic sass file, etc
 
-//some component
+(function (): void {
+  // Init site here
+  ComponentsInit();
+})();

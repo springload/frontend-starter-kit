@@ -3,8 +3,7 @@
   "name": "YOUR_PROJECT",
   "version": "1.0.0",
   "private": true,
-  "description": "YOUR_PROJECT - built with Silverstripe",
-  "main": "index.js",
+  "description": "YOUR_PROJECT - yada yada",
   "author": "Springload <hello@springload.co.nz>",
   "license": "MIT",
   "repository": {
