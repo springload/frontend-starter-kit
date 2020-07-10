@@ -1,0 +1,62 @@
+{
+  "cms": "silverstripe",
+  "name": "YOUR_PROJECT",
+  "version": "1.0.0",
+  "private": true,
+  "description": "YOUR_PROJECT - yada yada",
+  "author": "Springload <hello@springload.co.nz>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/springload/YOUR_PROJECT.git"
+  },
+  "bugs": {
+    "url": "https://github.com/springload/YOUR_PROJECT/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@typescript-eslint/eslint-plugin": "^3.6.0",
+    "@typescript-eslint/parser": "^3.6.0",
+    "css-loader": "^3.6.0",
+    "eslint": "^7.4.0",
+    "eslint-plugin-springload": "^2.2.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^2.0.5",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1",
+    "svgo": "^1.3.2",
+    "svgo-loader": "^2.2.1",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "lint:versions": "NVM_VERSION=$(cat .nvmrc); NODE_VERSION=$(node --version); echo $NODE_VERSION | grep -q $NVM_VERSION && echo \"✓ running node $NODE_VERSION - all clear\" || (echo \"✗ running node $NODE_VERSION - expected $NVM_VERSION. Use nvm to install the right version.\" && exit 1)",
+    "lint:js": "eslint",
+    "lint": "yarn run lint:versions && yarn run lint:js ./app",
+    "build": "webpack --mode=development",
+    "dist": "webpack --mode=production",
+    "start": "webpack --mode=development --watch",
+    "deploy:preview": "git push origin master:deploy/preview",
+    "deploy": "git push origin master:deploy/production"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "autoprefixer": "^9.8.4",
+    "babel-loader": "^8.1.0",
+    "cssnano": "^4.1.10",
+    "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1",
+    "postcss-normalize": "^9.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
