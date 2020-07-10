@@ -12,8 +12,7 @@ This repo is for
 |  •  [Browser and device support](./docs/browser-device-support.md) |
 |  • [Frontend checklist](./docs/frontend-checklist.md) |
 | **Serverside FED integration** |
-|  •  [Django / Wagtail and Webpack 4](./django-wagtail/) |
-|  •  [Silverstripe and Webpack 4](./silverstripe/) |
+|  •  [Django / Wagtail / Silverstripe and Webpack 4](./webpack-build/)
 | **Open source projects** |
 |  •  [React Accessible Accordion](https://github.com/springload/react-accessible-accordion) |
 |  •  [React Accessible Headings](https://github.com/springload/react-accessible-headings) |
