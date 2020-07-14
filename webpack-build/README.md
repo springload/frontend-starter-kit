@@ -88,3 +88,11 @@ protected function init()
     }
 }
 ```
+
+## Useful resources
+
+- [Webpack](https://webpack.js.org/) - [Webpack](https://webpack.js.org/)
+- [SilverStripe docs](https://docs.silverstripe.org/en/4/) - [SilverStripe docs](https://docs.silverstripe.org/en/4/)
+- [SilverStripe lessons](https://www.silverstripe.org/learn/lessons/v4/) - [SilverStripe lessons](https://www.silverstripe.org/learn/lessons/v4/)
+
+## Using with Django/Wagtail
