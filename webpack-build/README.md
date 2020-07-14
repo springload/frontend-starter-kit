@@ -55,21 +55,11 @@ This repo contains some useful files for getting started adding such components:
 - [`SomeReactComponentInit.tsx`](./src/components/SomeReactComponent/SomeReactComponentInit.tsx)
 - [`SomeReactComponent.tsx`](./src/components/SomeReactComponent/SomeReactComponent.tsx)
 
-## Notes
-
-### webpack.config.js and webpack.fixpaths.js
-
-The main Webpack configuration, supporting Babel and Sass. Our config works around some different assumptions between Webpack and DW relating to project file structure and webserver URLs. Specifically DW has templates in one directory and static files in another (`core/templates` and `core/static`) but the webserver URLs for these directories aren't side-by-side, so the `webpack.fixpaths.js` fixes these paths.
-
-If you need to make DW use different file structures or webserver URLs then this is the place to configure it.
-
-### .prettierignore
-
-Prettier seems to mangle our Django templates because they have template `{% if %}` syntax inside `.html` files but they're not HTML. This `.prettierignore` file ensures that `.html` won't be reformatted for this reason.
-
 ## Using with Silverstripe
 
 ### Adding the CSS and JS files to your project
+
+- You'll need to add these into the Silverstripe page controller
 
 ```php
 # ./app/src/pages/PageController.php
@@ -89,10 +79,21 @@ protected function init()
 }
 ```
 
+## Notes
+
 ## Useful resources
 
-- [Webpack](https://webpack.js.org/) - [Webpack](https://webpack.js.org/)
-- [SilverStripe docs](https://docs.silverstripe.org/en/4/) - [SilverStripe docs](https://docs.silverstripe.org/en/4/)
-- [SilverStripe lessons](https://www.silverstripe.org/learn/lessons/v4/) - [SilverStripe lessons](https://www.silverstripe.org/learn/lessons/v4/)
+- [Webpack](https://webpack.js.org/)
+- [SilverStripe docs](https://docs.silverstripe.org/en/4/)
+- [SilverStripe lessons](https://www.silverstripe.org/learn/lessons/v4/)
+- [Wagtail](https://wagtail.io/)
 
-## Using with Django/Wagtail
+### webpack.config.js and webpack.fixpaths.js
+
+The main Webpack configuration, supporting Babel and Sass. Our config works around some different assumptions between Webpack and DW relating to project file structure and webserver URLs. Specifically DW has templates in one directory and static files in another (`core/templates` and `core/static`) but the webserver URLs for these directories aren't side-by-side, so the `webpack.fixpaths.js` fixes these paths.
+
+If you need to make DW use different file structures or webserver URLs then this is the place to configure it.
+
+### .prettierignore
+
+Prettier seems to mangle our Django templates because they have template `{% if %}` syntax inside `.html` files but they're not HTML. This `.prettierignore` file ensures that `.html` won't be reformatted for this reason.
