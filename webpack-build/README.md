@@ -66,3 +66,25 @@ If you need to make DW use different file structures or webserver URLs then this
 ### .prettierignore
 
 Prettier seems to mangle our Django templates because they have template `{% if %}` syntax inside `.html` files but they're not HTML. This `.prettierignore` file ensures that `.html` won't be reformatted for this reason.
+
+## Using with Silverstripe
+
+### Adding the CSS and JS files to your project
+
+```php
+# ./app/src/pages/PageController.php
+
+use SilverStripe\Control\Director;
+use SilverStripe\View\Requirements;
+
+protected function init()
+    {
+        parent::init();
+
+        if (Director::isLive()) {
+            Requirements::css('public/dist/main.css');
+        }
+        Requirements::javascript('public/dist/bundle.js');
+    }
+}
+```
