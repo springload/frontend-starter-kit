@@ -81,7 +81,7 @@ protected function init()
 
 ## Notes
 
-## Useful resources
+### Useful resources
 
 - [Webpack](https://webpack.js.org/)
 - [SilverStripe docs](https://docs.silverstripe.org/en/4/)
