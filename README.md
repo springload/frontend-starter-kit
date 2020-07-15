@@ -18,7 +18,7 @@ This repo is for
 | • [React Accessible Accordion](https://github.com/springload/react-accessible-accordion) |
 | • [React Accessible Headings](https://github.com/springload/react-accessible-headings) |
 | • [React Accessible Ellipsis](https://github.com/springload/react-accessible-ellipsis) |
-| • [MetaTemplate](https://github.com/springload/metatemplate)
+| • [MetaComponent (formerly MetaTemplate)](https://github.com/springload/metacomponent)
 | • [Springload CSS starter kit](https://github.com/springload/frontend-starter-styles) |
 
 ---
