@@ -55,7 +55,38 @@ This repo contains some useful files for getting started adding such components:
 - [`SomeReactComponentInit.tsx`](./src/components/SomeReactComponent/SomeReactComponentInit.tsx)
 - [`SomeReactComponent.tsx`](./src/components/SomeReactComponent/SomeReactComponent.tsx)
 
+## Using with Silverstripe
+
+### Adding the CSS and JS files to your project
+
+- You'll need to add these into the Silverstripe page controller
+
+```php
+# ./app/src/pages/PageController.php
+
+use SilverStripe\Control\Director;
+use SilverStripe\View\Requirements;
+
+protected function init()
+    {
+        parent::init();
+
+        if (Director::isLive()) {
+            Requirements::css('public/dist/main.css');
+        }
+        Requirements::javascript('public/dist/bundle.js');
+    }
+}
+```
+
 ## Notes
+
+### Useful resources
+
+- [Webpack](https://webpack.js.org/)
+- [SilverStripe docs](https://docs.silverstripe.org/en/4/)
+- [SilverStripe lessons](https://www.silverstripe.org/learn/lessons/v4/)
+- [Wagtail](https://wagtail.io/)
 
 ### webpack.config.js and webpack.fixpaths.js
 
