@@ -1,18 +1,13 @@
 import SomeReactComponentInit from './SomeReactComponent/SomeReactComponentInit';
 
 const markerAttributeName = 'data-component';
-const components = document.querySelectorAll(`[${markerAttributeName}]`);
-
 
 function ComponentInit(container: HTMLElement): void {
-    const componentName = container.getAttribute(markerAttributeName);
-    if (!componentName) {
-        console.error(
-            `Invalid marker attribute ${markerAttributeName}`,
-            container,
-        );
-        throw Error('Invalid marker attribute on container. See console.');
-    }
+  const componentName = container.getAttribute(markerAttributeName);
+  if (!componentName) {
+    console.error(`Invalid marker attribute ${markerAttributeName}`, container);
+    throw Error('Invalid marker attribute on container. See console.');
+  }
 
   switch (componentName) {
     case 'some-react-component':
@@ -24,7 +19,7 @@ function ComponentInit(container: HTMLElement): void {
     default:
       throw Error(`Invalid component id "${componentName}"`);
   }
-});
+}
 
 export default function ComponentsInit(): void {
   const containers = document.querySelectorAll<HTMLElement>(
