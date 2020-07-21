@@ -12,15 +12,13 @@ This repo is for
 | • [Browser and device support](./docs/browser-device-support.md)                                       |
 | • [Frontend checklist](./docs/frontend-checklist.md)                                                   |
 | **Serverside FED integration**                                                                         |
-
-| • [Webpack build/react set up: can be used with Django / Wagtail / Silverstripe](./webpack-build/)|
-| **Open source projects** |
-| • [React Accessible Accordion](https://github.com/springload/react-accessible-accordion) |
-| • [React Accessible Headings](https://github.com/springload/react-accessible-headings) |
-| • [React Accessible Ellipsis](https://github.com/springload/react-accessible-ellipsis) |
-| • [MetaComponent (formerly MetaTemplate)](https://github.com/springload/metacomponent)|
-| • [Springload CSS starter kit](https://github.com/springload/frontend-starter-styles) |
-
----
+| • [Webpack build/react set up: can be used with Django / Wagtail / Silverstripe](./webpack-build/)     |
+| **Open source projects**                                                                               |
+| • [React Accessible Accordion](https://github.com/springload/react-accessible-accordion)               |
+| • [React Accessible Headings](https://github.com/springload/react-accessible-headings)                 |
+| • [React Accessible Ellipsis](https://github.com/springload/react-accessible-ellipsis)                 |
+| • [MetaComponent (formerly MetaTemplate)](https://github.com/springload/metacomponent)                 |
+| • [Springload CSS starter kit](https://github.com/springload/frontend-starter-styles)                  |
+| ------------------------------------------------------------------------------------------------------ |
 
 <sup> See [CHANGELOG.md for revisions](CHANGELOG.md)</sup>
