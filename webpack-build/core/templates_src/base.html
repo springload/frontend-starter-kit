@@ -7,11 +7,23 @@
     </head>
     <body>
 
-        <script id="some-react-component" type="application/json">{"greeting": "why hello there world"}</script>
-        <div data-component="some-react-component">
+        {{ self.title|json_script:"some-react-component-1" }}
+        <div data-component="some-react-component" data-component-id="some-react-component-1">
             <p>I am the server-generated text.<p>
             <p>I will be swapped out with something else if a React component exists for 'some-react-component'.</p>
         </div>
+
+        <div data-component="some-other-react-component">
+            <p>Component 2 (also react).</p>
+        </div>
+        
+        <div data-component="and-another-component">
+            <p>Component 3, non-react</p>
+        </div>
+        
+        <script type="text/javascript">
+            window.staticRoot = "{% static 'dist/' %}";
+        </script>
 
    </body>
 </html>

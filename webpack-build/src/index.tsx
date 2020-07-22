@@ -1,5 +1,6 @@
+/* eslint springload/import/first: 0 */
+import './public-path'; // MUST be first (yes, before absolute imports)
 import ComponentsInit from './components/components';
-// Plus any polyfills, monolithic sass file, etc
 
 (function (): void {
   // Init site here

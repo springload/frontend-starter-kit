@@ -1,11 +1,17 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
-const SomeReactComponent = (): JSX.Element => {
-  return (
-    <div>
-      <p>This is a react component.</p>
-      <p>[Here is some JSX]</p>
-    </div>
-  );
+type Props = {
+  pageTitle: string;
 };
-export default SomeReactComponent;
+
+const SomeReactComponent = ({ pageTitle }: Props): JSX.Element => {
+  return <div>{pageTitle} (this is the react content)</div>;
+};
+
+export default function SomeReactComponentInit(
+  container: Element,
+  pageTitle: string,
+): void {
+  ReactDOM.render(<SomeReactComponent pageTitle={pageTitle} />, container);
+}
