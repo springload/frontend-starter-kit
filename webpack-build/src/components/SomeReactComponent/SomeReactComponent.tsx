@@ -13,7 +13,7 @@ const SomeReactComponent = ({ pageTitle }: Props): JSX.Element => {
   );
 };
 
-export function DOMRender(container: Element, pageTitle: string): void {
+export function initComponent(container: Element, pageTitle: string): void {
   ReactDOM.render(<SomeReactComponent pageTitle={pageTitle} />, container);
 }
 

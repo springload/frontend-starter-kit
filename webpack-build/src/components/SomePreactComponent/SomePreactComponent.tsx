@@ -23,7 +23,7 @@ const SomePreactComponent = () => {
   );
 };
 
-export function DOMRender(container: Element): void {
+export function initComponent(container: Element): void {
   // preact appends to your container instead of replacing content,
   // so you may want to do something like this
   container.innerHTML = '';

@@ -9,8 +9,8 @@ function ComponentInit(container: HTMLElement, componentData: unknown): void {
 
   function mountAsyncComponent(asyncComponent: Promise<any>): void {
     asyncComponent.then((module) => {
-      const { DOMRender } = module;
-      DOMRender(container, componentData);
+      const { initComponent } = module;
+      initComponent(container, componentData);
     });
   }
 
