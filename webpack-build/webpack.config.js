@@ -43,7 +43,7 @@ module.exports = (env, options) => {
   return {
     mode: options.mode,
     devtool: options.mode !== 'production' ? 'inline-source-map' : undefined,
-    entry: './core/static_src/js/index.tsx',
+    entry: './src/index.tsx',
     output: {
       filename: '[name].js',
       path: path.resolve(__dirname, outputPath),
