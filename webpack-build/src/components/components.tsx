@@ -8,6 +8,13 @@ function ComponentInit(container: HTMLElement, componentData: unknown): void {
   }
 
   function mountAsyncComponent(asyncComponent: Promise<any>): void {
+    asyncComponent.then((module) => {
+      const { DOMRender } = module;
+      DOMRender(container, componentData);
+    });
+  }
+
+  function mountAsyncVanillaComponent(asyncComponent: Promise<any>): void {
     asyncComponent.then((module) => module.default(container, componentData));
   }
 
@@ -16,14 +23,14 @@ function ComponentInit(container: HTMLElement, componentData: unknown): void {
       mountAsyncComponent(import('./SomeReactComponent/SomeReactComponent'));
       break;
 
-    case 'some-other-react-component':
-      mountAsyncComponent(
-        import('./SomeOtherReactComponent/SomeOtherReactComponent'),
-      );
+    case 'some-preact-component':
+      mountAsyncComponent(import('./SomePreactComponent/SomePreactComponent'));
       break;
 
-    case 'and-another-component':
-      mountAsyncComponent(import('./AndAnotherComponent/AndAnotherComponent'));
+    case 'vanilla-js-component':
+      mountAsyncVanillaComponent(
+        import('./SomeVanillaJsComponent/SomeVanillaJsComponent'),
+      );
       break;
 
     default:
@@ -41,9 +48,11 @@ export default function ComponentsInit(): void {
     let componentData;
 
     if (componentDataId) {
-      componentData = JSON.parse(
-        document.getElementById(componentDataId).innerHTML,
-      );
+      const dataEl = document.getElementById(componentDataId);
+      const data = dataEl?.innerHTML;
+      if (data) {
+        componentData = JSON.parse(data);
+      }
     }
 
     ComponentInit(container, componentData);

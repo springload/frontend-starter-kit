@@ -6,12 +6,15 @@ type Props = {
 };
 
 const SomeReactComponent = ({ pageTitle }: Props): JSX.Element => {
-  return <div>{pageTitle} (this is the react content)</div>;
+  return (
+    <div>
+      This is a react component. Here is a prop: <em>{pageTitle}</em>
+    </div>
+  );
 };
 
-export default function SomeReactComponentInit(
-  container: Element,
-  pageTitle: string,
-): void {
+export function DOMRender(container: Element, pageTitle: string): void {
   ReactDOM.render(<SomeReactComponent pageTitle={pageTitle} />, container);
 }
+
+export default SomeReactComponent;
