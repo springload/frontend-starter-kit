@@ -1,5 +1,0 @@
-core/static
-core/templates
-node_modules
-
-*.log
