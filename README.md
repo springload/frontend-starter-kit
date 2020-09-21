@@ -7,7 +7,7 @@ This repo is for
 
 
 ## General Docs :book:
-* [**HTML**](./docs/html.md), [**CSS**](./docs/css.md) and [**JavaScript/Node**](./docs/javascript.md)
+* [**HTML**](./docs/html.md), [**CSS**](./docs/css.md) and [**JavaScript/TypeScript/Node**](./docs/javascript.md)
 * [Browser and device support](./docs/browser-device-support.md)
 * [Frontend checklist](./docs/frontend-checklist.md)
 ### Serverside FED integration
