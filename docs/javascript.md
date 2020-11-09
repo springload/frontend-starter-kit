@@ -87,6 +87,8 @@ Regardless of your choice [be aware of normalizing state patterns](https://redux
 
 ## Accessible UI patterns
 
+[Chakra UI](https://chakra-ui.com/).
+
 [Reach UI](https://reacttraining.com/reach-ui/) is a good library for common UI patterns such as modals, sliders, tabs, tooltips.
 
 ## Forms
@@ -124,6 +126,10 @@ We quite like [React Accessible Accordion](https://github.com/springload/react-a
 ## Mouse vs Keyboard focus
 
 [What Input](https://www.npmjs.com/package/what-input).
+
+## Websockets
+
+Prefer either raw Websockets or Sock.js not Socket.IO.
 
 ## Node
 
