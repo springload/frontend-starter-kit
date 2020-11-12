@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '../../scss/components/some-react-component.scss';
 
 type Props = {
   pageTitle: string;
@@ -7,7 +8,8 @@ type Props = {
 
 const SomeReactComponent = ({ pageTitle }: Props): JSX.Element => {
   return (
-    <div>
+    // the css is created in scss/components/some-react-component.scss
+    <div className="some-react-component">
       This is a react component. Here is a prop: <em>{pageTitle}</em>
     </div>
   );

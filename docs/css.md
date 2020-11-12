@@ -183,7 +183,3 @@ Flex works in IE11 but suffers from a number of [flexbugs](https://github.com/ph
 So what should you use? Basically, if you need to support IE11, use flex and maybe some grid. If you don’t need to support IE11, use grid and maybe some flex.
 
 If you want to use an off-the-shelf responsive grid system for column layout, use a modern and light-weight system like [Flexbox Grid](http://flexboxgrid.com/), rather than something that does a whole heap of other stuff (e.g. Bootstrap 🙅). 
-
-## Error: `libsass` bindings not found. Try reinstalling `node-sass`
-
-You're probably running the wrong version of Node. Do `nvm use` and try again.
