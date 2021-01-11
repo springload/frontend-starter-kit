@@ -19,6 +19,6 @@ This repo is for
 | • [React Accessible Ellipsis](https://github.com/springload/react-accessible-ellipsis)                 |
 | • [MetaComponent (formerly MetaTemplate)](https://github.com/springload/metacomponent)                 |
 | • [Springload CSS starter kit](https://github.com/springload/frontend-starter-styles)                  |
-| ------------------------------------------------------------------------------------------------------ |
+
 
 <sup> See [CHANGELOG.md for revisions](CHANGELOG.md)</sup>
