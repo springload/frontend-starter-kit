@@ -21,4 +21,4 @@ This repo is for
 | • [Springload CSS starter kit](https://github.com/springload/frontend-starter-styles)                  |
 
 
-<sup> See [CHANGELOG.md for revisions](CHANGELOG.md)</sup>
+<sup> See [CHANGELOG.md for major revisions](CHANGELOG.md)</sup>
