@@ -1,7 +1,0 @@
-# FE ignores
-.DS_Store
-/public/resources/
-/public/dist/
-node_modules
-/app/templates/Includes/Svg.ss
-

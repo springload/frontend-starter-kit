@@ -1,24 +1,28 @@
+# 20.8
+
+- Merged our Webpack configs for SilverStripe and Django/Wagtail. Recover any files from [the history](https://github.com/springload/frontend-starter-kit/commit/d8e1cc4b31e6df6a8f6fc29eea4cd759adbcc449).
+
 # 20.1
 
-* Updating Wagtail starter to use TypeScript.
-* Removing [React Patterns](https://github.com/springload/react-patterns) and [Quicktube](https://github.com/springload/quicktube)
+- Updating Wagtail starter to use TypeScript.
+- Removing [React Patterns](https://github.com/springload/react-patterns) and [Quicktube](https://github.com/springload/quicktube)
 
 # 19.5
 
-* Removing Github labels (in favour of default labels and Jira), and removing Analytics error tracking in favour of Sentry
+- Removing Github labels (in favour of default labels and Jira), and removing Analytics error tracking in favour of Sentry
 
 # 18.10
 
-* For CSS in JS we like ~~Glamor~~ **_Styled-Components_** :nail_care:
+- For CSS in JS we like ~~Glamor~~ **_Styled-Components_** :nail_care:
 
 # 18.5
 
-* Trashed the `recycle-bin`. Recover any files from [the history](https://github.com/springload/frontend-starter-kit/tree/c35abe435eb4905565e79a8bbc5cc257b2e5a77c).
+- Trashed the `recycle-bin`. Recover any files from [the history](https://github.com/springload/frontend-starter-kit/tree/c35abe435eb4905565e79a8bbc5cc257b2e5a77c).
 
 # 18.1
 
-* `gh-pages` repo deleted and moved to the `recycle-bin`.
-* Frontend checklists merged. The distinction between what was necessary to know at launch vs start was dubious.
+- `gh-pages` repo deleted and moved to the `recycle-bin`.
+- Frontend checklists merged. The distinction between what was necessary to know at launch vs start was dubious.
 
 # 18.0
 
@@ -28,10 +32,10 @@ Old things that we're not sure about have been moved to the `./recycle-bin` (bec
 
 #### :nail_care: Refactor
 
-* `core/static_src/sass` :arrow_forward: [Springload Starter Styles](https://github.com/springload/frontend-starter-styles) repo!
-* `core/static_src/images` :arrow_forward: :wastebasket:
-* `core/static_src/svg` :arrow_forward: :wastebasket:
-* `core/static_src/js` :arrow_forward: ...the following table
+- `core/static_src/sass` :arrow_forward: [Springload Starter Styles](https://github.com/springload/frontend-starter-styles) repo!
+- `core/static_src/images` :arrow_forward: :wastebasket:
+- `core/static_src/svg` :arrow_forward: :wastebasket:
+- `core/static_src/js` :arrow_forward: ...the following table
 
 | Before                   | After                                                                                                                                                                                                            |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -53,9 +57,9 @@ Old things that we're not sure about have been moved to the `./recycle-bin` (bec
 
 #### :memo: Documentation
 
-* `docs/front-end-principles` :arrow_forward: :wastebasket:
-* `docs/job-descriptions` :arrow_forward: :wastebasket: and moved to drive (so it's only in one place with the rest of the company).
-* `docs/pattern-library/template.html` :arrow_forward: :wastebasket:
+- `docs/front-end-principles` :arrow_forward: :wastebasket:
+- `docs/job-descriptions` :arrow_forward: :wastebasket: and moved to drive (so it's only in one place with the rest of the company).
+- `docs/pattern-library/template.html` :arrow_forward: :wastebasket:
 
 #### :house: Internal
 

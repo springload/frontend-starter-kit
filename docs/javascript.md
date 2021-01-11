@@ -8,7 +8,7 @@ Generally speaking we like [Mono-repos](https://danluu.com/monorepo/) rather tha
 
 We tend to prefer project structures organised by features and routes (AKA business logic), rather than technology. We have found that this approach means that related code is often nearby and easier to navigate.
 
-To be clear, this mean that we discourage directories named `components`, `containers`, `reducers`, and so on. Instead we might name files "_feature_.component.js", "_feature_.scss", and "_feature_.test.js", and group these files in a "_feature_" directory.
+To be clear, this mean that we discourage directories named `components`, `containers`, `reducers`, and so on. Instead we might name files "_feature_.component.tsx", "_feature_.scss", and "_feature_.test.tsx", and group these files in a "_feature_" directory.
 
 Read [this documentation](https://github.com/reactjs/reactjs.org/blob/master/content/docs/faq-structure.md) for more ideas. Also consider whether [globally unique filenames](https://www.reddit.com/r/reactjs/comments/6al7h2/facebook_has_30000_react_components_how_do_you/dhgruqh/) might be useful in larger projects.
 
@@ -19,6 +19,19 @@ Obviously any particular framework (Wagtail-Django) or boilerplate might impose 
 Typed languages (e.g. string vs boolean) are like unit tests all over your code; catching bugs at build time, before run-time users experience them.
 
 We prefer [TypeScript](https://www.typescriptlang.org/) more than [Flow](https://flow.org/). Avoid run-time approaches like [Prop-Types](https://www.npmjs.com/package/prop-types) because static type checking catches mistakes earlier.
+
+## File Extensions
+
+In TypeScript [`.ts` files have a different syntax to `.tsx` files](https://stackoverflow.com/a/54614279),
+
+```typescript
+const blah = 1 as string // ok in ts and tsx
+const blah2 = <string>a // only valid in ts
+```
+
+We recommend that all files should have a `.tsx` extension (even server side), and that `.ts` isn't used, in order to allow moving code between files more easily, and so that JSX can be added to files without renaming. Minor point, but it's a better default that helps standardise TS syntax in a codebase.
+
+See [this Twitter thread about how Discord do this](https://twitter.com/buildsghost/status/1252104307672969217).
 
 ## Formatting
 
@@ -87,6 +100,8 @@ Regardless of your choice [be aware of normalizing state patterns](https://redux
 
 ## Accessible UI patterns
 
+[Chakra UI](https://chakra-ui.com/).
+
 [Reach UI](https://reacttraining.com/reach-ui/) is a good library for common UI patterns such as modals, sliders, tabs, tooltips.
 
 ## Forms
@@ -124,6 +139,10 @@ We quite like [React Accessible Accordion](https://github.com/springload/react-a
 ## Mouse vs Keyboard focus
 
 [What Input](https://www.npmjs.com/package/what-input).
+
+## Websockets
+
+Prefer either raw Websockets or Sock.js not Socket.IO.
 
 ## Node
 

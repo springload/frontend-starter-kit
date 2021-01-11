@@ -1,0 +1,6 @@
+.some-react-component {
+  background-color: transparent;
+  &:hover {
+    background-color: red;
+  }
+}
