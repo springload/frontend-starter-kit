@@ -29,7 +29,9 @@ const blah = 1 as string // ok in ts and tsx
 const blah2 = <string>a // only valid in ts
 ```
 
-We recommend that all files should have a `.tsx` extension (even server side), and that `.ts` isn't used, in order to allow moving code between files more easily.
+We recommend that all files should have a `.tsx` extension (even server side), and that `.ts` isn't used, in order to allow moving code between files more easily, and so that JSX can be added to files without renaming. Minor point, but it's a better default that helps standardise TS syntax in a codebase.
+
+See [this Twitter thread about how Discord do this](https://twitter.com/buildsghost/status/1252104307672969217).
 
 ## Formatting
 
