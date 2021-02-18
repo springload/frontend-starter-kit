@@ -4,7 +4,10 @@ Copy this file into a new `Issue` on your project and go through the checklist.
 
 These rules aren't mandatory and might not make sense for your project, so use your common sense.
 
+Some items may make more sense to be checked by a tester, backender or ops person. So divvy up the list for your project as necessary.
+
 ## Launch approach
+
 - [ ] Have you considered a Soft Launch or Hard Launch? Often sites have a password on them until launch (Hard Launch), which means that testing favicons and social media integration may be difficult. Because of this we prefer a *Soft Launch* where the site is public before any announcement of the site launch.
 
 ## The project's `README.md` contains
@@ -34,7 +37,7 @@ These rules aren't mandatory and might not make sense for your project, so use y
 - [ ] Site tested in all relevant browsers and devices.
 - [ ] Site works with adblocking software (ie, uBlock).
 - [ ] Site works with JavaScript turned off, or the sections that do not work are indicated to the user via messages in `<noscript>` tags or similar.
-- [ ] Site has a favicon.ico.
+- [ ] Platform-specific ([Apple](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html),Android, Windows, etc) meta tags and favicons are added and checked with the [Favicon checker](https://realfavicongenerator.net/favicon_checker).
 
 ## HTTP
 
@@ -64,7 +67,7 @@ These rules aren't mandatory and might not make sense for your project, so use y
 
 - [ ] Make sure all pages, in all states, are keyboard navigable.
 - [ ] Body copy and visuals have enough contrast according to WCAG guidelines https://leaverou.github.io/contrast-ratio/ and http://lowvision.support/ .
-- [ ] `<html>` element has attribute `lang="en-nz"` or `lang="mi"` (not `lang="mi-nz"). Screen readers such as NVDA can pronounce Te Reo with these hints.
+- [ ] `<html>` element has attribute `lang="en-NZ"` or `lang="mi"` (not `lang="mi-NZ"`). Screen readers such as NVDA can pronounce Te Reo with these hints.
 - [ ] Current WCAG compliance if possible. The following list is not exhaustive and is only meant to prompt you to consider common issues (a full WCAG audit may be appropriate):
   - [ ] Ensure focus is visible.
   - [ ] Roles (ARIA landmarks) are assigned to basic site sections.
@@ -75,22 +78,27 @@ header - `role="banner"`, main content - `role="main"`, footer - `role="contenti
   - [ ] All images must have appropriate alt tags - extra great if you include all text that appears. Eg. English and Māori translation text in a lot of company logos in NZ. [empty `alt=""` can be appropriate](http://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/).
   - [ ] Ensure any acronyms/abbreviations use the `<abbr>` tag.
 - [ ] Pagination with `rel=”next”` and `rel=”prev”` attributes.
+- [ ] Test all templates/components with the axe plugin (including states like modal open, megamenu open). Fix all errors.
 
 ## Fonts
 
 - [ ] All of the fonts used on the project are correctly licensed, at the appropriate license level (expected pageviews/month).
 - [ ] If relevant, Analytics email alerts are set up when audience levels go over the fonts' license thresholds.
+- [ ] Optimise font loading depending on your browser support needs.
+  - [ ] Include only the formats needed (e.g. if only supporting modern browsers, you may only need woff2)
+  - [ ] Choose the best `font-display` setting for your needs (e.g. `swap`). Check [browser support](https://caniuse.com/css-font-rendering-controls).
 
 ## Mobile
 
-- [ ] Site uses a mobile-friendly, zoomable viewport, if possible.
-- [ ] Platform-specific ([Apple](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html),Android, Windows, etc) meta tags and favicons are added and checked with the [Favicon checker](https://realfavicongenerator.net/favicon_checker).
+- [ ] Site uses a mobile-friendly, zoomable viewport. E.g. `<meta content="width=device-width, initial-scale=1" name="viewport"/>`
 
 ## Performance
 
 - [ ] Test site in Chrome's Lighthouse (Devtools | Audits). While we don't have any specific targets (ie, 'must be above 90') across all projects use this tool to find areas for optimisation. Eg:
   - [ ] CSS/JS files are minified in production (bonus points for HTML too).
   - [ ] if images are unoptimised use [ImageOptim](https://imageoptim.com/mac)/[SVGOMG](https://jakearchibald.github.io/svgomg/) or similar to compress them.
+  - [ ] Images dimensions are appropriate. For wagtail/silverstripe sites, images should be cropped in the template to ensure that any enormous images uploaded by the client aren't presented full-res to the user). 
+  - [ ] Images are swapped out responsively, if appropriate. See [Responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) on MDN.
 
 ## Security
 
