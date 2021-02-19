@@ -77,7 +77,6 @@ header - `role="banner"`, main content - `role="main"`, footer - `role="contenti
   - [ ] Forms and/or fields should have accessible validation messages. [Ensure Server-side Errors are Accessible](https://www.washington.edu/accessibility/checklist/form-validation/).
   - [ ] All images must have appropriate alt tags - extra great if you include all text that appears. Eg. English and Māori translation text in a lot of company logos in NZ. [empty `alt=""` can be appropriate](http://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/).
   - [ ] Ensure any acronyms/abbreviations use the `<abbr>` tag.
-- [ ] Pagination with `rel=”next”` and `rel=”prev”` attributes.
 - [ ] Test all templates/components with the axe plugin (including states like modal open, megamenu open). Fix all errors.
 
 ## Fonts
