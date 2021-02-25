@@ -110,7 +110,7 @@ Regardless of your choice [be aware of normalizing state patterns](https://redux
 
 ### Validation
 
-* Validation [Joi](https://github.com/hapijs/joi) or preferably [Yup](https://github.com/jquense/yup).
+[Joi](https://github.com/hapijs/joi) or preferably [Yup](https://github.com/jquense/yup).
 
 #### Essential reading for how you should validate types of form fields
 
