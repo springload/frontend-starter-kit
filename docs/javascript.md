@@ -108,6 +108,18 @@ Regardless of your choice [be aware of normalizing state patterns](https://redux
 
 [`react-hook-form`](https://react-hook-form.com) over [Formik](https://github.com/jaredpalmer/formik) or [Redux-Form](https://redux-form.com/), because it allows for simpler and shorter code, isolates component re-renders, reduces the number of renders, mounts faster, and has a smaller bundle size.
 
+### Validation
+
+* Validation [Joi](https://github.com/hapijs/joi) or preferably [Yup](https://github.com/jquense/yup).
+
+#### Essential reading for how you should validate types of form fields
+
+* [_I Knew How To Validate An Email Address Until I Read The RFC_](https://haacked.com/archive/2007/08/21/i-knew-how-to-validate-an-email-address-until-i.aspx/)
+* [Falsehoods developers believe about people's names](https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/)
+* [Falsehoods developers believe about telephone numbers](https://github.com/googlei18n/libphonenumber/blob/master/FALSEHOODS.md)
+* [Falsehoods developers believe about addresses](https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses/)
+* [...more falsehoods](https://github.com/kdeldycke/awesome-falsehood).
+
 ## Async / Side Effects
 
 [redux-saga](https://redux-saga.js.org/) is pretty good, although we're concerned about the size of the generator polyfill and we're waiting on a good replacement.
@@ -148,7 +160,6 @@ Prefer either raw Websockets or Sock.js not Socket.IO.
 
 * Web Server, API server [Hapi](https://www.npmjs.com/package/hapi).
 * Database / ORM [Knex](http://knexjs.org/) ([Knex tips](https://devhints.io/knex)).
-* Validation [Joi](https://github.com/hapijs/joi) or [Yup](https://github.com/jquense/yup).
 * Data, [Apollo](https://www.apollographql.com/)
 
 ## Utilities and Functionality Programming
