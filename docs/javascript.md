@@ -148,10 +148,10 @@ Prefer either raw Websockets or Sock.js not Socket.IO.
 
 * Web Server, API server [Hapi](https://www.npmjs.com/package/hapi).
 * Database / ORM [Knex](http://knexjs.org/) ([Knex tips](https://devhints.io/knex)).
-* Validation [Joi](https://github.com/hapijs/joi)
+* Validation [Joi](https://github.com/hapijs/joi) or [Yup](https://github.com/jquense/yup).
 * Data, [Apollo](https://www.apollographql.com/)
 
-## Utilities and Functionaliy Programming
+## Utilities and Functionality Programming
 
 Where possible use ES2015+ features rather than lodash, but if you need it.
 See [State Management](https://github.com/springload/frontend-starter-kit/blob/master/docs/javascript.md#state-management) for other utilities.
