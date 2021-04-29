@@ -82,6 +82,11 @@ The screen reader will literally read out XXXXXX in this situation. It also will
   - Use Chrome accessibility dev tools to view if elements are being picked up correctly.
   - Use Chrome devtools > audits > accessibility to do an assessment of your site. 
 
+## Lazy load
+
+- Images and iframes can have lazy loading via the [`loading="lazy"`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading). Use liberally. It's good.
+- [More about Lazy Loading](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading)
+
 ## Misc
 
 - Use HTML5 doctype
