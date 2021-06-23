@@ -15,7 +15,7 @@ Some items may make more sense to be checked by a tester, backender or ops perso
 - [ ] Project installation instructions.
 - [ ] Links to all deploy environments and any associated Git branch names.
 - [ ] Links to CI, Jira/Trello, Harvest project, project run sheet, Google Drive folder, Figma/Zeplin, other.
-- [ ] Expected Browser support and accessibility support. Copy [browser-device-support.md](./browser-device-support.md) into your README.md and modify to suit.
+- [ ] Expected Browser support and accessibility support. Copy [browser-device-support.md](https://github.com/springload/frontend-starter-kit/blob/main/docs/browser-device-support.md) into your README.md and modify to suit.
 - [ ] Any debugging tricks or quirks that might be useful for future devs.
 
 ## Project structure
