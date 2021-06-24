@@ -114,6 +114,7 @@ header - `role="banner"`, main content - `role="main"`, footer - `role="contenti
 - [ ] Run site url through the Facebook debugger (https://developers.facebook.com/tools/debug/) to check it will appear correctly if shared.
 - [ ] Ensure that `<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">` is only on the correct pages.
 - [ ] Ensure meta tags, OpenGraph tags, Twitter card tags, and descriptions are set.
+  - [ ] Consider using [RealFaviconGenerator.net](https://realfavicongenerator.net/) to generate these files.
 - [ ] Ensure the social meta tags only use a default sharing image if there is no page-specific image to use.
 - [ ] Significant UI states (tabs, modals, etc) should be tracked in the URL via query parameter or the hash or else search engines might not index them.
 - [ ] Google Tag Manager or Google Analytics are loaded.
